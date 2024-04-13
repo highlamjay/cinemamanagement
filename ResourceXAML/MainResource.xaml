@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:i="http://schemas.microsoft.com/xaml/behaviors"                   
+                    xmlns:viewmodelLogin="clr-namespace:cinema_management.ViewModel.LoginVM"
+                    xmlns:viewmodelMainAdmin="clr-namespace:cinema_management.ViewModel.AdminVM"
+                    xmlns:viewmodelForgotPass="clr-namespace:cinema_management.ViewModel.LoginVM">
+
+
+    <viewmodelForgotPass:ForgotPassViewModel x:Key="ForgotPassVM"/>
+    <viewmodelLogin:LoginViewModel x:Key="LoginVM"/>
+    <viewmodelMainAdmin:MainAdminViewModel x:Key="AdminVM"/>
+</ResourceDictionary>
