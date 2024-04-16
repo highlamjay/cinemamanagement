@@ -150,47 +150,9 @@
     <Compile Include="ViewModel\BaseViewModel.cs" />
     <Compile Include="ViewModel\LoginVM\ForgotPassViewModel.cs" />
     <Compile Include="ViewModel\LoginVM\LoginViewModel.cs" />
-    <Compile Include="Views\Admin\CustomerManagement\CustomerManagement.xaml.cs">
-      <DependentUpon>CustomerManagement.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Admin\CustomerManagement\EditCustomer.xaml.cs">
-      <DependentUpon>EditCustomer.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="ViewModel\MainAdminViewModel.cs" />
     <Compile Include="Views\Admin\MainAdminWindow.xaml.cs">
       <DependentUpon>MainAdminWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Admin\MovieManagement\AddMovieWindow.xaml.cs">
-      <DependentUpon>AddMovieWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Admin\MovieManagement\EditMovie.xaml.cs">
-      <DependentUpon>EditMovie.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Admin\MovieManagement\InforMovieWindow.xaml.cs">
-      <DependentUpon>InforMovieWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Admin\MovieManagement\MovieManagement.xaml.cs">
-      <DependentUpon>MovieManagement.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Admin\ShowtimeManagement\AddShowtimeWindow.xaml.cs">
-      <DependentUpon>AddShowtimeWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Admin\ShowtimeManagement\Infor_EditShowtimeWindow.xaml.cs">
-      <DependentUpon>Infor_EditShowtimeWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Admin\ShowtimeManagement\ShowtimeManagement.xaml.cs">
-      <DependentUpon>ShowtimeManagement.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Admin\StaffManagement\AddStaffWindow.xaml.cs">
-      <DependentUpon>AddStaffWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Admin\StaffManagement\ChangePasswordWindow.xaml.cs">
-      <DependentUpon>ChangePasswordWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Admin\StaffManagement\EditStaffWindow.xaml.cs">
-      <DependentUpon>EditStaffWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Admin\StaffManagement\StaffManagementPage.xaml.cs">
-      <DependentUpon>StaffManagementPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\LoginWindow\ChangePasswordPage.xaml.cs">
       <DependentUpon>ChangePasswordPage.xaml</DependentUpon>
@@ -232,59 +194,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Admin\CustomerManagement\CustomerManagement.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Admin\CustomerManagement\EditCustomer.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Views\Admin\MainAdminWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Admin\MovieManagement\AddMovieWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Admin\MovieManagement\EditMovie.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Admin\MovieManagement\InforMovieWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Admin\MovieManagement\MovieManagement.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Admin\ShowtimeManagement\AddShowtimeWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Admin\ShowtimeManagement\Infor_EditShowtimeWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Admin\ShowtimeManagement\ShowtimeManagement.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Admin\StaffManagement\AddStaffWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Admin\StaffManagement\ChangePasswordWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Admin\StaffManagement\EditStaffWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Admin\StaffManagement\StaffManagementPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -349,7 +259,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Fonts\" />
-    <Folder Include="Resources\Icon\" />
     <Folder Include="ViewModel\AdminVM\ShowtimeManagementVM\" />
   </ItemGroup>
   <ItemGroup>
@@ -379,6 +288,9 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\TemplateOfEmail\reset_password_html.txt" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Models\Services\CinemaManagementModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>CinemaManagementModel.edmx</DependentUpon>
@@ -389,6 +301,15 @@
       <DependentUpon>CinemaManagementModel.edmx</DependentUpon>
       <LastGenOutput>CinemaManagementModel.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resources\Icon\award1.png" />
+    <Resource Include="Resources\Icon\error.png" />
+    <Resource Include="Resources\Icon\ErrorIcon.png" />
+    <Resource Include="Resources\Icon\iconApp.ico" />
+    <Resource Include="Resources\Icon\info.png" />
+    <Resource Include="Resources\Icon\Money.jpg" />
+    <Resource Include="Resources\Icon\pencil.png" />
+    <Resource Include="Resources\Icon\succes.png" />
+    <Resource Include="Resources\Icon\warning.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\MaterialDesignThemes.5.0.0\build\MaterialDesignThemes.targets" Condition="Exists('packages\MaterialDesignThemes.5.0.0\build\MaterialDesignThemes.targets')" />

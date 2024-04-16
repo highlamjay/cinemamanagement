@@ -164,7 +164,7 @@ namespace cinema_management.ViewModel.LoginVM
             {
                 Password = "";
                 //TicketBillViewModel.Staff = staff;
-                if (staff.StaffRole == "Quản lý")
+                if (staff.StaffRole == "Quan ly")
                 {
 
                     MainFrame.Content = new RolePage();

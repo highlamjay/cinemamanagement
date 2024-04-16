@@ -40,22 +40,22 @@ namespace cinema_management.Views
                 case MessageType.Info:
                     System.Media.SystemSounds.Beep.Play();
                     ChangeBackGround((Color)ColorConverter.ConvertFromString("#FF2196F3"));
-                    ImgMessage.Source = new BitmapImage(new Uri("pack://application:,,,/CinemaManagement;component/Resources/Icon/info.png"));
+                    ImgMessage.Source = new BitmapImage(new Uri("pack://application:,,,/cinema-management;component/Resources/Icon/info.png"));                   
                     break;
                 case MessageType.Success:
                     System.Media.SystemSounds.Beep.Play();
                     ChangeBackGround((Color)ColorConverter.ConvertFromString("#FF4CAF50"));
-                    ImgMessage.Source = new BitmapImage(new Uri("pack://application:,,,/CinemaManagement;component/Resources/Icon/succes.png"));
+                    ImgMessage.Source = new BitmapImage(new Uri("pack://application:,,,/cinema-management;component/Resources/Icon/succes.png"));
                     break;
                 case MessageType.Warning:
                     System.Media.SystemSounds.Beep.Play();
                     ChangeBackGround((Color)ColorConverter.ConvertFromString("#FFF3BA0E"));
-                    ImgMessage.Source = new BitmapImage(new Uri("pack://application:,,,/CinemaManagement;component/Resources/Icon/warning.png"));
+                    ImgMessage.Source = new BitmapImage(new Uri("pack://application:,,,/cinema-management;component/Resources/Icon/warning.png"));
                     break;
                 case MessageType.Error:
                     System.Media.SystemSounds.Hand.Play();
                     ChangeBackGround((Color)ColorConverter.ConvertFromString("#FFED4538"));
-                    ImgMessage.Source = new BitmapImage(new Uri("pack://application:,,,/CinemaManagement;component/Resources/Icon/ErrorIcon.png"));
+                    //ImgMessage.Source = new BitmapImage(new Uri("pack://application:,,,/CinemaManagement;component/Resources/Icon/ErrorIcon.png"));
                     break;
             }
             switch (Buttons)

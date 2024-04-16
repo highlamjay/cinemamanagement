@@ -1,6 +1,4 @@
 ﻿using cinema_management.DTOs;
-using cinema_management.Views.Admin.CustomerManagement;
-using cinema_management.Views.Admin.ShowtimeManagement;
 using cinema_management.Views.Admin;
 using cinema_management.Views.LoginWindow;
 using cinema_management.Views;
