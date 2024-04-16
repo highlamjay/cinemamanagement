@@ -1,6 +1,6 @@
 ﻿using cinema_management.DTOs;
 using cinema_management.Views.Admin.CustomerManagement;
-using cinema_management.Views.Admin.ShowtimeManagement;
+
 using cinema_management.Views.Admin;
 using cinema_management.Views.LoginWindow;
 using cinema_management.Views;
@@ -48,7 +48,14 @@ namespace cinema_management.ViewModel.AdminVM
 
         public MainAdminViewModel()
         {
-
+            LoadQLKHPageCM = new RelayCommand<Frame>((p) => { return p != null; }, (p) =>
+            {
+                if (MainAdminWindow.Slidebtn != null)
+                    MainAdminWindow.Slidebtn.IsChecked = false;
+                SelectedFuncName = "Quản lý khách hàng";
+                if (p != null)
+                    p.Content = new CustomerManagement();
+            });
         }
     }
 }

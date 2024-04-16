@@ -35,7 +35,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <WarningLevel>5</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -58,6 +58,11 @@
     </Reference>
     <Reference Include="MaterialDesignThemes.Wpf, Version=5.0.0.0, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
       <HintPath>packages\MaterialDesignThemes.5.0.0\lib\net462\MaterialDesignThemes.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Tools.Schema.Sql, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>$(SSDTPath)\Microsoft.Data.Tools.Schema.Sql.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.Xaml.Behaviors, Version=1.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Xaml.Behaviors.Wpf.1.1.39\lib\net45\Microsoft.Xaml.Behaviors.dll</HintPath>
@@ -90,62 +95,64 @@
     <Compile Include="DTOs\ShowTimeDTO.cs" />
     <Compile Include="DTOs\TicketBillInfo.cs" />
     <Compile Include="DTOs\Trouble.cs" />
-    <Compile Include="Models\Services\Bill.cs">
-      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
+    <Compile Include="Models\Bill.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Services\CinemaManagementModel.Context.cs">
+    <Compile Include="Models\Customer.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Genre.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CinemaManagementModel.Context.tt</DependentUpon>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Services\CinemaManagementModel.cs">
+    <Compile Include="Models\Model1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Services\CinemaManagementModel.Designer.cs">
+    <Compile Include="Models\Model1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CinemaManagementModel.edmx</DependentUpon>
+      <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\Services\Customer.cs">
-      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
+    <Compile Include="Models\Movie.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Services\Genre.cs">
-      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
+    <Compile Include="Models\Product.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Services\Movie.cs">
-      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
+    <Compile Include="Models\ProductReceipt.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Services\Product.cs">
-      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
+    <Compile Include="Models\Room.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Services\ProductReceipt.cs">
-      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
+    <Compile Include="Models\Seat.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Services\Room.cs">
-      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Services\Seat.cs">
-      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Services\ShowTime.cs">
-      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Services\ShowtimeSetting.cs">
-      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Services\Staff.cs">
-      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
-    </Compile>
+    <Compile Include="Models\Services\CustomerService.cs" />
     <Compile Include="Models\Services\StaffService.cs" />
-    <Compile Include="Models\Services\Ticket.cs">
-      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
+    <Compile Include="Models\ShowTime.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ShowtimeSetting.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Staff.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Ticket.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Utils\CloudinaryService.cs" />
     <Compile Include="Utils\Constant.cs" />
     <Compile Include="Utils\Helper.cs" />
     <Compile Include="Utils\RegrexUtilities.cs" />
+    <Compile Include="ViewModel\AdminVM\CustomerManagementVM\CustomerManagementViewModel.cs" />
     <Compile Include="ViewModel\AdminVM\MainAdminViewModel.cs" />
     <Compile Include="ViewModel\BaseViewModel.cs" />
     <Compile Include="ViewModel\LoginVM\ForgotPassViewModel.cs" />
@@ -158,39 +165,6 @@
     </Compile>
     <Compile Include="Views\Admin\MainAdminWindow.xaml.cs">
       <DependentUpon>MainAdminWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Admin\MovieManagement\AddMovieWindow.xaml.cs">
-      <DependentUpon>AddMovieWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Admin\MovieManagement\EditMovie.xaml.cs">
-      <DependentUpon>EditMovie.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Admin\MovieManagement\InforMovieWindow.xaml.cs">
-      <DependentUpon>InforMovieWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Admin\MovieManagement\MovieManagement.xaml.cs">
-      <DependentUpon>MovieManagement.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Admin\ShowtimeManagement\AddShowtimeWindow.xaml.cs">
-      <DependentUpon>AddShowtimeWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Admin\ShowtimeManagement\Infor_EditShowtimeWindow.xaml.cs">
-      <DependentUpon>Infor_EditShowtimeWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Admin\ShowtimeManagement\ShowtimeManagement.xaml.cs">
-      <DependentUpon>ShowtimeManagement.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Admin\StaffManagement\AddStaffWindow.xaml.cs">
-      <DependentUpon>AddStaffWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Admin\StaffManagement\ChangePasswordWindow.xaml.cs">
-      <DependentUpon>ChangePasswordWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Admin\StaffManagement\EditStaffWindow.xaml.cs">
-      <DependentUpon>EditStaffWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Admin\StaffManagement\StaffManagementPage.xaml.cs">
-      <DependentUpon>StaffManagementPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\LoginWindow\ChangePasswordPage.xaml.cs">
       <DependentUpon>ChangePasswordPage.xaml</DependentUpon>
@@ -244,50 +218,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Admin\MovieManagement\AddMovieWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Admin\MovieManagement\EditMovie.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Admin\MovieManagement\InforMovieWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Admin\MovieManagement\MovieManagement.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Admin\ShowtimeManagement\AddShowtimeWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Admin\ShowtimeManagement\Infor_EditShowtimeWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Admin\ShowtimeManagement\ShowtimeManagement.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Admin\StaffManagement\AddStaffWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Admin\StaffManagement\ChangePasswordWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Admin\StaffManagement\EditStaffWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Admin\StaffManagement\StaffManagementPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Views\LoginWindow\ChangePasswordPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -331,12 +261,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="Models\Services\CinemaManagementModel.edmx">
+    <EntityDeploy Include="Models\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>CinemaManagementModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Models\Services\CinemaManagementModel.edmx.diagram">
-      <DependentUpon>CinemaManagementModel.edmx</DependentUpon>
+    <None Include="Models\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -349,7 +279,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Fonts\" />
-    <Folder Include="Resources\Icon\" />
     <Folder Include="ViewModel\AdminVM\ShowtimeManagementVM\" />
   </ItemGroup>
   <ItemGroup>
@@ -362,10 +291,6 @@
     <Resource Include="Resources\ImageFilm\7.jpg" />
   </ItemGroup>
   <ItemGroup Condition="$(VisualStudioVersion) == '17.0'">
-    <Reference Include="Microsoft.Data.Tools.Schema.Sql, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>$(SSDTPath)\Microsoft.Data.Tools.Schema.Sql.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Microsoft.Data.Tools.Schema.Sql.UnitTesting, Version=17.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>$(SSDTUnitTestPath)\Microsoft.Data.Tools.Schema.Sql.UnitTesting.dll</HintPath>
       <Private>True</Private>
@@ -379,16 +304,28 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Models\Services\CinemaManagementModel.Context.tt">
+    <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>CinemaManagementModel.edmx</DependentUpon>
-      <LastGenOutput>CinemaManagementModel.Context.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\Services\CinemaManagementModel.tt">
+    <Content Include="Models\Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>CinemaManagementModel.edmx</DependentUpon>
-      <LastGenOutput>CinemaManagementModel.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resources\Icon\award1.png" />
+    <Resource Include="Resources\Icon\error.png" />
+    <Resource Include="Resources\Icon\ErrorIcon.png" />
+    <Resource Include="Resources\Icon\iconApp.ico" />
+    <Resource Include="Resources\Icon\info.png" />
+    <Resource Include="Resources\Icon\Money.jpg" />
+    <Resource Include="Resources\Icon\pencil %281%29.png" />
+    <Resource Include="Resources\Icon\succes.png" />
+    <Resource Include="Resources\Icon\warning.png" />
+    <Resource Include="Resources\ImageStaff\pencil.png" />
+    <Resource Include="Resources\ImageStaff\delete.png" />
+    <Resource Include="Resources\ImageStaff\add-user.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\MaterialDesignThemes.5.0.0\build\MaterialDesignThemes.targets" Condition="Exists('packages\MaterialDesignThemes.5.0.0\build\MaterialDesignThemes.targets')" />

@@ -7,7 +7,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows;
 using cinema_management.DTOs;
-using cinema_management.Model.Service;
+using cinema_management.Models.Services;
 using cinema_management.Views.LoginWindow;
 using cinema_management.Views.Admin;
 using cinema_management.ViewModel.AdminVM;
