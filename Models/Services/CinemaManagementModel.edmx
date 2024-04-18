@@ -12,7 +12,7 @@
           <Property Name="BillID" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="CustomerID" Type="varchar" MaxLength="50" />
           <Property Name="StaffID" Type="varchar" MaxLength="50" />
-          <Property Name="BillTime" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+          <Property Name="BillTime" Type="date" />
           <Property Name="TotalPrice" Type="money" />
         </EntityType>
         <EntityType Name="Customer">
@@ -24,8 +24,8 @@
           <Property Name="PhoneNubmer" Type="varchar" MaxLength="50" />
           <Property Name="CreateAt" Type="date" />
           <Property Name="Email" Type="varchar" MaxLength="100" />
-          <Property Name="IsDeleted" Type="bit" />
-          <Property Name="IsMember" Type="bit" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="IsMember" Type="bit" Nullable="false" />
         </EntityType>
         <EntityType Name="Genre">
           <Key>
@@ -40,15 +40,22 @@
           </Key>
           <Property Name="MovieId" Type="int" Nullable="false" />
           <Property Name="DisplayName" Type="nvarchar" MaxLength="50" />
-          <Property Name="RunningTime" Type="nvarchar" MaxLength="50" />
+          <Property Name="RunningTime" Type="int" />
           <Property Name="Country" Type="nvarchar" MaxLength="50" />
           <Property Name="Description" Type="nvarchar" MaxLength="50" />
           <Property Name="ReleaseYear" Type="int" />
           <Property Name="MovieType" Type="nvarchar" MaxLength="50" />
           <Property Name="Image" Type="varchar" MaxLength="50" />
           <Property Name="Director" Type="nvarchar" MaxLength="50" />
-          <Property Name="IsDeleted" Type="bit" />
-          <Property Name="Movie_Genre_ID" Type="int" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MovieGenre">
+          <Key>
+            <PropertyRef Name="MovieID" />
+            <PropertyRef Name="GenreID" />
+          </Key>
+          <Property Name="MovieID" Type="int" Nullable="false" />
+          <Property Name="GenreID" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Product">
           <Key>
@@ -60,10 +67,10 @@
           <Property Name="Quantity" Type="int" />
           <Property Name="Price" Type="money" />
           <Property Name="Image" Type="varchar" MaxLength="50" />
-          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
         </EntityType>
         <!--Errors Found During Generation:
-warning 6013: The table/view 'CinemaManagement.dbo.ProductBillInfo' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+warning 6013: The table/view 'CinemaManagement2.dbo.ProductBillInfo' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
         <EntityType Name="ProductBillInfo">
           <Property Name="BillID" Type="varchar" MaxLength="50" />
           <Property Name="ProductID" Type="int" />
@@ -78,7 +85,7 @@ warning 6013: The table/view 'CinemaManagement.dbo.ProductBillInfo' does not hav
           <Property Name="ProductID" Type="int" />
           <Property Name="ImportPrice" Type="money" />
           <Property Name="Quantity" Type="int" />
-          <Property Name="TimeOfReceipt" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+          <Property Name="TimeOfReceipt" Type="date" />
           <Property Name="StaffID" Type="varchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="Room">
@@ -98,12 +105,15 @@ warning 6013: The table/view 'CinemaManagement.dbo.ProductBillInfo' does not hav
           <Property Name="RoomID" Type="int" />
         </EntityType>
         <!--Errors Found During Generation:
-warning 6013: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+warning 6002: The table/view 'CinemaManagement2.dbo.SeatSetting' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="SeatSetting">
+          <Key>
+            <PropertyRef Name="Status" />
+          </Key>
           <Property Name="SeatID" Type="int" />
           <Property Name="ShowTimeID" Type="int" />
-          <Property Name="Status" Type="bit" />
-        </EntityType>-->
+          <Property Name="Status" Type="bit" Nullable="false" />
+        </EntityType>
         <EntityType Name="ShowTime">
           <Key>
             <PropertyRef Name="ShowTimeID" />
@@ -133,10 +143,10 @@ warning 6013: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a 
           <Property Name="PhoneNumber" Type="varchar" MaxLength="10" />
           <Property Name="Email" Type="varchar" MaxLength="50" />
           <Property Name="Sex" Type="varchar" MaxLength="10" />
+          <Property Name="StaffBirthday" Type="date" />
           <Property Name="StartingDate" Type="date" />
           <Property Name="StaffRole" Type="nvarchar" MaxLength="50" />
-          <Property Name="StaffBirthDay" Type="datetime" />
-          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
         </EntityType>
         <EntityType Name="Ticket">
           <Key>
@@ -161,7 +171,7 @@ warning 6013: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a 
           </ReferentialConstraint>
         </Association>
         <!--Errors Found During Generation:
-error 6004: The table 'CinemaManagement.dbo.ProductBillInfo' is referenced by a relationship, but cannot be found.
+error 6004: The table 'CinemaManagement2.dbo.ProductBillInfo' is referenced by a relationship, but cannot be found.
         <Association Name="fk_Bill_ID" />-->
         <Association Name="fk_Customer_ID">
           <End Role="Customer" Type="Self.Customer" Multiplicity="0..1" />
@@ -187,15 +197,27 @@ error 6004: The table 'CinemaManagement.dbo.ProductBillInfo' is referenced by a 
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="fk_Movie_Genre_ID">
+        <Association Name="fk_MovieGenre_GenreID">
           <End Role="Genre" Type="Self.Genre" Multiplicity="1" />
-          <End Role="Movie" Type="Self.Movie" Multiplicity="0..1" />
+          <End Role="MovieGenre" Type="Self.MovieGenre" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Genre">
               <PropertyRef Name="GenreID" />
             </Principal>
-            <Dependent Role="Movie">
+            <Dependent Role="MovieGenre">
+              <PropertyRef Name="GenreID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_MovieGenre_MovieID">
+          <End Role="Movie" Type="Self.Movie" Multiplicity="1" />
+          <End Role="MovieGenre" Type="Self.MovieGenre" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Movie">
               <PropertyRef Name="MovieId" />
+            </Principal>
+            <Dependent Role="MovieGenre">
+              <PropertyRef Name="MovieID" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -212,7 +234,7 @@ error 6004: The table 'CinemaManagement.dbo.ProductBillInfo' is referenced by a 
           </ReferentialConstraint>
         </Association>
         <!--Errors Found During Generation:
-error 6004: The table 'CinemaManagement.dbo.ProductBillInfo' is referenced by a relationship, but cannot be found.
+error 6004: The table 'CinemaManagement2.dbo.ProductBillInfo' is referenced by a relationship, but cannot be found.
         <Association Name="fk_Product_ID" />-->
         <Association Name="fk_Room">
           <End Role="Room" Type="Self.Room" Multiplicity="0..1" />
@@ -250,12 +272,30 @@ error 6004: The table 'CinemaManagement.dbo.ProductBillInfo' is referenced by a 
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <!--Errors Found During Generation:
-error 6004: The table 'CinemaManagement.dbo.SeatSetting' is referenced by a relationship, but cannot be found.
-        <Association Name="fk_Seat_ID" />-->
-        <!--Errors Found During Generation:
-error 6004: The table 'CinemaManagement.dbo.SeatSetting' is referenced by a relationship, but cannot be found.
-        <Association Name="fk_Show_ID" />-->
+        <Association Name="fk_Seat_ID">
+          <End Role="Seat" Type="Self.Seat" Multiplicity="0..1" />
+          <End Role="SeatSetting" Type="Self.SeatSetting" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Seat">
+              <PropertyRef Name="SeatID" />
+            </Principal>
+            <Dependent Role="SeatSetting">
+              <PropertyRef Name="SeatID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_Show_ID">
+          <End Role="ShowTime" Type="Self.ShowTime" Multiplicity="0..1" />
+          <End Role="SeatSetting" Type="Self.SeatSetting" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ShowTime">
+              <PropertyRef Name="ShowTimeID" />
+            </Principal>
+            <Dependent Role="SeatSetting">
+              <PropertyRef Name="ShowTimeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="fk_Show_Setting">
           <End Role="ShowtimeSetting" Type="Self.ShowtimeSetting" Multiplicity="0..1" />
           <End Role="ShowTime" Type="Self.ShowTime" Multiplicity="*" />
@@ -309,6 +349,7 @@ error 6004: The table 'CinemaManagement.dbo.SeatSetting' is referenced by a rela
           <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Genre" EntityType="Self.Genre" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Movie" EntityType="Self.Movie" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MovieGenre" EntityType="Self.MovieGenre" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ProductReceipt" EntityType="Self.ProductReceipt" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Room" EntityType="Self.Room" Schema="dbo" store:Type="Tables" />
@@ -317,6 +358,13 @@ error 6004: The table 'CinemaManagement.dbo.SeatSetting' is referenced by a rela
           <EntitySet Name="ShowtimeSetting" EntityType="Self.ShowtimeSetting" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Staff" EntityType="Self.Staff" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Ticket" EntityType="Self.Ticket" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SeatSetting" EntityType="Self.SeatSetting" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [SeatSetting].[SeatID] AS [SeatID], 
+    [SeatSetting].[ShowTimeID] AS [ShowTimeID], 
+    [SeatSetting].[Status] AS [Status]
+    FROM [dbo].[SeatSetting] AS [SeatSetting]</DefiningQuery>
+          </EntitySet>
           <AssociationSet Name="fk_Bill" Association="Self.fk_Bill">
             <End Role="Bill" EntitySet="Bill" />
             <End Role="Ticket" EntitySet="Ticket" />
@@ -329,9 +377,13 @@ error 6004: The table 'CinemaManagement.dbo.SeatSetting' is referenced by a rela
             <End Role="Movie" EntitySet="Movie" />
             <End Role="ShowTime" EntitySet="ShowTime" />
           </AssociationSet>
-          <AssociationSet Name="fk_Movie_Genre_ID" Association="Self.fk_Movie_Genre_ID">
+          <AssociationSet Name="fk_MovieGenre_GenreID" Association="Self.fk_MovieGenre_GenreID">
             <End Role="Genre" EntitySet="Genre" />
+            <End Role="MovieGenre" EntitySet="MovieGenre" />
+          </AssociationSet>
+          <AssociationSet Name="fk_MovieGenre_MovieID" Association="Self.fk_MovieGenre_MovieID">
             <End Role="Movie" EntitySet="Movie" />
+            <End Role="MovieGenre" EntitySet="MovieGenre" />
           </AssociationSet>
           <AssociationSet Name="fk_Product" Association="Self.fk_Product">
             <End Role="Product" EntitySet="Product" />
@@ -348,6 +400,14 @@ error 6004: The table 'CinemaManagement.dbo.SeatSetting' is referenced by a rela
           <AssociationSet Name="fk_Seat" Association="Self.fk_Seat">
             <End Role="Seat" EntitySet="Seat" />
             <End Role="Ticket" EntitySet="Ticket" />
+          </AssociationSet>
+          <AssociationSet Name="fk_Seat_ID" Association="Self.fk_Seat_ID">
+            <End Role="Seat" EntitySet="Seat" />
+            <End Role="SeatSetting" EntitySet="SeatSetting" />
+          </AssociationSet>
+          <AssociationSet Name="fk_Show_ID" Association="Self.fk_Show_ID">
+            <End Role="ShowTime" EntitySet="ShowTime" />
+            <End Role="SeatSetting" EntitySet="SeatSetting" />
           </AssociationSet>
           <AssociationSet Name="fk_Show_Setting" Association="Self.fk_Show_Setting">
             <End Role="ShowtimeSetting" EntitySet="ShowtimeSetting" />
@@ -378,7 +438,7 @@ error 6004: The table 'CinemaManagement.dbo.SeatSetting' is referenced by a rela
           <Property Name="BillID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="CustomerID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="StaffID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="BillTime" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="BillTime" Type="DateTime" Precision="0" />
           <Property Name="TotalPrice" Type="Decimal" Precision="19" Scale="4" />
           <NavigationProperty Name="Tickets" Relationship="Self.fk_Bill" FromRole="Bill" ToRole="Ticket" />
           <NavigationProperty Name="Customer" Relationship="Self.fk_Customer_ID" FromRole="Bill" ToRole="Customer" />
@@ -393,8 +453,8 @@ error 6004: The table 'CinemaManagement.dbo.SeatSetting' is referenced by a rela
           <Property Name="PhoneNubmer" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="CreateAt" Type="DateTime" Precision="0" />
           <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="IsDeleted" Type="Boolean" />
-          <Property Name="IsMember" Type="Boolean" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="IsMember" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="Bills" Relationship="Self.fk_Customer_ID" FromRole="Customer" ToRole="Bill" />
         </EntityType>
         <EntityType Name="Genre">
@@ -403,7 +463,7 @@ error 6004: The table 'CinemaManagement.dbo.SeatSetting' is referenced by a rela
           </Key>
           <Property Name="GenreID" Type="Int32" Nullable="false" />
           <Property Name="GenreDisplayName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="Movie" Relationship="Self.fk_Movie_Genre_ID" FromRole="Genre" ToRole="Movie" />
+          <NavigationProperty Name="Movies" Relationship="Self.MovieGenre" FromRole="Genre" ToRole="Movie" />
         </EntityType>
         <EntityType Name="Movie">
           <Key>
@@ -411,17 +471,16 @@ error 6004: The table 'CinemaManagement.dbo.SeatSetting' is referenced by a rela
           </Key>
           <Property Name="MovieId" Type="Int32" Nullable="false" />
           <Property Name="DisplayName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="RunningTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="RunningTime" Type="Int32" />
           <Property Name="Country" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="ReleaseYear" Type="Int32" />
           <Property Name="MovieType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Image" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="Director" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="IsDeleted" Type="Boolean" />
-          <Property Name="Movie_Genre_ID" Type="Int32" />
-          <NavigationProperty Name="Genre" Relationship="Self.fk_Movie_Genre_ID" FromRole="Movie" ToRole="Genre" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="ShowTimes" Relationship="Self.fk_Movie" FromRole="Movie" ToRole="ShowTime" />
+          <NavigationProperty Name="Genres" Relationship="Self.MovieGenre" FromRole="Movie" ToRole="Genre" />
         </EntityType>
         <EntityType Name="Product">
           <Key>
@@ -433,7 +492,7 @@ error 6004: The table 'CinemaManagement.dbo.SeatSetting' is referenced by a rela
           <Property Name="Quantity" Type="Int32" />
           <Property Name="Price" Type="Decimal" Precision="19" Scale="4" />
           <Property Name="Image" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="IsDeleted" Type="Boolean" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="ProductReceipts" Relationship="Self.fk_Product" FromRole="Product" ToRole="ProductReceipt" />
         </EntityType>
         <EntityType Name="ProductReceipt">
@@ -444,7 +503,7 @@ error 6004: The table 'CinemaManagement.dbo.SeatSetting' is referenced by a rela
           <Property Name="ProductID" Type="Int32" />
           <Property Name="ImportPrice" Type="Decimal" Precision="19" Scale="4" />
           <Property Name="Quantity" Type="Int32" />
-          <Property Name="TimeOfReceipt" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="TimeOfReceipt" Type="DateTime" Precision="0" />
           <Property Name="StaffID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="Product" Relationship="Self.fk_Product" FromRole="ProductReceipt" ToRole="Product" />
           <NavigationProperty Name="Staff" Relationship="Self.fk_Staff" FromRole="ProductReceipt" ToRole="Staff" />
@@ -468,6 +527,7 @@ error 6004: The table 'CinemaManagement.dbo.SeatSetting' is referenced by a rela
           <Property Name="RoomID" Type="Int32" />
           <NavigationProperty Name="Room" Relationship="Self.fk_Room" FromRole="Seat" ToRole="Room" />
           <NavigationProperty Name="Tickets" Relationship="Self.fk_Seat" FromRole="Seat" ToRole="Ticket" />
+          <NavigationProperty Name="SeatSettings" Relationship="Self.fk_Seat_ID" FromRole="Seat" ToRole="SeatSetting" />
         </EntityType>
         <EntityType Name="ShowTime">
           <Key>
@@ -479,6 +539,7 @@ error 6004: The table 'CinemaManagement.dbo.SeatSetting' is referenced by a rela
           <Property Name="TicketPrice" Type="Decimal" Precision="19" Scale="4" />
           <Property Name="StartTime" Type="Time" Precision="7" />
           <NavigationProperty Name="Movie" Relationship="Self.fk_Movie" FromRole="ShowTime" ToRole="Movie" />
+          <NavigationProperty Name="SeatSettings" Relationship="Self.fk_Show_ID" FromRole="ShowTime" ToRole="SeatSetting" />
           <NavigationProperty Name="ShowtimeSetting" Relationship="Self.fk_Show_Setting" FromRole="ShowTime" ToRole="ShowtimeSetting" />
           <NavigationProperty Name="Tickets" Relationship="Self.fk_Shown" FromRole="ShowTime" ToRole="Ticket" />
         </EntityType>
@@ -503,10 +564,10 @@ error 6004: The table 'CinemaManagement.dbo.SeatSetting' is referenced by a rela
           <Property Name="PhoneNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
           <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="Sex" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="StaffBirthday" Type="DateTime" Precision="0" />
           <Property Name="StartingDate" Type="DateTime" Precision="0" />
           <Property Name="StaffRole" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="StaffBirthDay" Type="DateTime" Precision="3" />
-          <Property Name="IsDeleted" Type="Boolean" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="Bills" Relationship="Self.fk_Staff_ID" FromRole="Staff" ToRole="Bill" />
           <NavigationProperty Name="ProductReceipts" Relationship="Self.fk_Staff" FromRole="Staff" ToRole="ProductReceipt" />
         </EntityType>
@@ -522,6 +583,16 @@ error 6004: The table 'CinemaManagement.dbo.SeatSetting' is referenced by a rela
           <NavigationProperty Name="Bill" Relationship="Self.fk_Bill" FromRole="Ticket" ToRole="Bill" />
           <NavigationProperty Name="Seat" Relationship="Self.fk_Seat" FromRole="Ticket" ToRole="Seat" />
           <NavigationProperty Name="ShowTime" Relationship="Self.fk_Shown" FromRole="Ticket" ToRole="ShowTime" />
+        </EntityType>
+        <EntityType Name="SeatSetting">
+          <Key>
+            <PropertyRef Name="Status" />
+          </Key>
+          <Property Name="SeatID" Type="Int32" />
+          <Property Name="ShowTimeID" Type="Int32" />
+          <Property Name="Status" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Seat" Relationship="Self.fk_Seat_ID" FromRole="SeatSetting" ToRole="Seat" />
+          <NavigationProperty Name="ShowTime" Relationship="Self.fk_Show_ID" FromRole="SeatSetting" ToRole="ShowTime" />
         </EntityType>
         <Association Name="fk_Bill">
           <End Role="Bill" Type="Self.Bill" Multiplicity="0..1" />
@@ -556,18 +627,6 @@ error 6004: The table 'CinemaManagement.dbo.SeatSetting' is referenced by a rela
             </Principal>
             <Dependent Role="Bill">
               <PropertyRef Name="StaffID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="fk_Movie_Genre_ID">
-          <End Role="Genre" Type="Self.Genre" Multiplicity="1" />
-          <End Role="Movie" Type="Self.Movie" Multiplicity="0..1" />
-          <ReferentialConstraint>
-            <Principal Role="Genre">
-              <PropertyRef Name="GenreID" />
-            </Principal>
-            <Dependent Role="Movie">
-              <PropertyRef Name="MovieId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -643,6 +702,30 @@ error 6004: The table 'CinemaManagement.dbo.SeatSetting' is referenced by a rela
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="fk_Seat_ID">
+          <End Role="Seat" Type="Self.Seat" Multiplicity="0..1" />
+          <End Role="SeatSetting" Type="Self.SeatSetting" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Seat">
+              <PropertyRef Name="SeatID" />
+            </Principal>
+            <Dependent Role="SeatSetting">
+              <PropertyRef Name="SeatID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_Show_ID">
+          <End Role="ShowTime" Type="Self.ShowTime" Multiplicity="0..1" />
+          <End Role="SeatSetting" Type="Self.SeatSetting" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ShowTime">
+              <PropertyRef Name="ShowTimeID" />
+            </Principal>
+            <Dependent Role="SeatSetting">
+              <PropertyRef Name="ShowTimeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="fk_Show_Setting">
           <End Role="ShowtimeSetting" Type="Self.ShowtimeSetting" Multiplicity="0..1" />
           <End Role="ShowTime" Type="Self.ShowTime" Multiplicity="*" />
@@ -667,7 +750,11 @@ error 6004: The table 'CinemaManagement.dbo.SeatSetting' is referenced by a rela
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="CinemaManagementEntities" annotation:LazyLoadingEnabled="true">
+        <Association Name="MovieGenre">
+          <End Role="Genre" Type="Self.Genre" Multiplicity="*" />
+          <End Role="Movie" Type="Self.Movie" Multiplicity="*" />
+        </Association>
+        <EntityContainer Name="CinemaManagementEntities7" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Bills" EntityType="Self.Bill" />
           <EntitySet Name="Customers" EntityType="Self.Customer" />
           <EntitySet Name="Genres" EntityType="Self.Genre" />
@@ -680,6 +767,7 @@ error 6004: The table 'CinemaManagement.dbo.SeatSetting' is referenced by a rela
           <EntitySet Name="ShowtimeSettings" EntityType="Self.ShowtimeSetting" />
           <EntitySet Name="Staffs" EntityType="Self.Staff" />
           <EntitySet Name="Tickets" EntityType="Self.Ticket" />
+          <EntitySet Name="SeatSettings" EntityType="Self.SeatSetting" />
           <AssociationSet Name="fk_Bill" Association="Self.fk_Bill">
             <End Role="Bill" EntitySet="Bills" />
             <End Role="Ticket" EntitySet="Tickets" />
@@ -691,10 +779,6 @@ error 6004: The table 'CinemaManagement.dbo.SeatSetting' is referenced by a rela
           <AssociationSet Name="fk_Staff_ID" Association="Self.fk_Staff_ID">
             <End Role="Staff" EntitySet="Staffs" />
             <End Role="Bill" EntitySet="Bills" />
-          </AssociationSet>
-          <AssociationSet Name="fk_Movie_Genre_ID" Association="Self.fk_Movie_Genre_ID">
-            <End Role="Genre" EntitySet="Genres" />
-            <End Role="Movie" EntitySet="Movies" />
           </AssociationSet>
           <AssociationSet Name="fk_Movie" Association="Self.fk_Movie">
             <End Role="Movie" EntitySet="Movies" />
@@ -720,6 +804,14 @@ error 6004: The table 'CinemaManagement.dbo.SeatSetting' is referenced by a rela
             <End Role="Seat" EntitySet="Seats" />
             <End Role="Ticket" EntitySet="Tickets" />
           </AssociationSet>
+          <AssociationSet Name="fk_Seat_ID" Association="Self.fk_Seat_ID">
+            <End Role="Seat" EntitySet="Seats" />
+            <End Role="SeatSetting" EntitySet="SeatSettings" />
+          </AssociationSet>
+          <AssociationSet Name="fk_Show_ID" Association="Self.fk_Show_ID">
+            <End Role="ShowTime" EntitySet="ShowTimes" />
+            <End Role="SeatSetting" EntitySet="SeatSettings" />
+          </AssociationSet>
           <AssociationSet Name="fk_Show_Setting" Association="Self.fk_Show_Setting">
             <End Role="ShowtimeSetting" EntitySet="ShowtimeSettings" />
             <End Role="ShowTime" EntitySet="ShowTimes" />
@@ -728,13 +820,17 @@ error 6004: The table 'CinemaManagement.dbo.SeatSetting' is referenced by a rela
             <End Role="ShowTime" EntitySet="ShowTimes" />
             <End Role="Ticket" EntitySet="Tickets" />
           </AssociationSet>
+          <AssociationSet Name="MovieGenre" Association="Self.MovieGenre">
+            <End Role="Genre" EntitySet="Genres" />
+            <End Role="Movie" EntitySet="Movies" />
+          </AssociationSet>
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="CinemaManagementModelStoreContainer" CdmEntityContainer="CinemaManagementEntities">
+        <EntityContainerMapping StorageEntityContainer="CinemaManagementModelStoreContainer" CdmEntityContainer="CinemaManagementEntities7">
           <EntitySetMapping Name="Bills">
             <EntityTypeMapping TypeName="CinemaManagementModel.Bill">
               <MappingFragment StoreEntitySet="Bill">
@@ -780,7 +876,6 @@ error 6004: The table 'CinemaManagement.dbo.SeatSetting' is referenced by a rela
                 <ScalarProperty Name="Image" ColumnName="Image" />
                 <ScalarProperty Name="Director" ColumnName="Director" />
                 <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
-                <ScalarProperty Name="Movie_Genre_ID" ColumnName="Movie_Genre_ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -857,9 +952,9 @@ error 6004: The table 'CinemaManagement.dbo.SeatSetting' is referenced by a rela
                 <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
                 <ScalarProperty Name="Email" ColumnName="Email" />
                 <ScalarProperty Name="Sex" ColumnName="Sex" />
+                <ScalarProperty Name="StaffBirthday" ColumnName="StaffBirthday" />
                 <ScalarProperty Name="StartingDate" ColumnName="StartingDate" />
                 <ScalarProperty Name="StaffRole" ColumnName="StaffRole" />
-                <ScalarProperty Name="StaffBirthDay" ColumnName="StaffBirthDay" />
                 <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -875,6 +970,23 @@ error 6004: The table 'CinemaManagement.dbo.SeatSetting' is referenced by a rela
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="SeatSettings">
+            <EntityTypeMapping TypeName="CinemaManagementModel.SeatSetting">
+              <MappingFragment StoreEntitySet="SeatSetting">
+                <ScalarProperty Name="SeatID" ColumnName="SeatID" />
+                <ScalarProperty Name="ShowTimeID" ColumnName="ShowTimeID" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="MovieGenre" TypeName="CinemaManagementModel.MovieGenre" StoreEntitySet="MovieGenre">
+            <EndProperty Name="Genre">
+              <ScalarProperty Name="GenreID" ColumnName="GenreID" />
+            </EndProperty>
+            <EndProperty Name="Movie">
+              <ScalarProperty Name="MovieId" ColumnName="MovieID" />
+            </EndProperty>
+          </AssociationSetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

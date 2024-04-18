@@ -1,6 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Models",
+    "\\Models\\Services",
+    "\\ViewModel",
+    "\\ViewModel\\AdminVM",
+    "\\ViewModel\\AdminVM\\MovieManagementVM"
   ],
+  "SelectedNode": "\\ViewModel\\AdminVM\\MovieManagementVM\\Add.MovieViewModel.cs",
   "PreviewInSolutionExplorer": false
 }

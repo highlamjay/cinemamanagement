@@ -23,7 +23,7 @@ namespace cinema_management.Models.Services
         public string BillID { get; set; }
         public string CustomerID { get; set; }
         public string StaffID { get; set; }
-        public byte[] BillTime { get; set; }
+        public Nullable<System.DateTime> BillTime { get; set; }
         public Nullable<decimal> TotalPrice { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

@@ -30,14 +30,14 @@ namespace cinema_management.Model.Service
         }
         public async Task<List<StaffDTO>> GetAllStaff()
         {
-            using (var context = new CinemaManagementEntities())
+            using (var context = new CinemaManagementEntities7())
             {
                 var staffs = (from s in context.Staffs
                               where s.IsDeleted == false
                               select new StaffDTO
                               {
                                   StaffId = s.StaffID,
-                                  StaffBirthDay = s.StaffBirthDay,
+                                  StaffBirthDay = s.StaffBirthday,
                                   Sex = s.Sex,
                                   Username = s.UserName,
                                   StaffName = s.StaffName,
@@ -57,14 +57,14 @@ namespace cinema_management.Model.Service
 
             try
             {
-                using (var context = new CinemaManagementEntities())
+                using (var context = new CinemaManagementEntities7())
                 {
                     var staff = await (from s in context.Staffs
                                        where s.UserName == username && s.StaffPassword == hassPass
                                        select new StaffDTO
                                        {
                                            StaffId = s.StaffID,
-                                           StaffBirthDay = s.StaffBirthDay,
+                                           StaffBirthDay = s.StaffBirthday,
                                            Sex = s.Sex,
                                            Username = s.UserName,
                                            StaffName = s.StaffName,
@@ -105,7 +105,7 @@ namespace cinema_management.Model.Service
         {
             try
             {
-                using (var context = new CinemaManagementEntities())
+                using (var context = new CinemaManagementEntities7())
                 {
                     bool usernameIsExist = await context.Staffs.AnyAsync(s => s.UserName == newStaff.Username);
                     bool PhoneNumberIsExist = await context.Staffs.AnyAsync(s => s.PhoneNumber == newStaff.PhoneNumber);
@@ -152,7 +152,7 @@ namespace cinema_management.Model.Service
         {
             return new Staff
             {
-                StaffBirthDay = s.StaffBirthDay,
+                StaffBirthday = s.StaffBirthDay,
                 Sex = s.Sex,
                 UserName = s.Username,
                 StaffName = s.StaffName,
@@ -167,7 +167,7 @@ namespace cinema_management.Model.Service
         {
             try
             {
-                using (var context = new CinemaManagementEntities())
+                using (var context = new CinemaManagementEntities7())
                 {
                     bool usernameIsExist = await context.Staffs.AnyAsync(s => s.UserName == updatedStaff.Username && s.StaffID != updatedStaff.StaffId);
 
@@ -198,7 +198,7 @@ namespace cinema_management.Model.Service
                         return (false, "Nhân viên không tồn tại");
                     }
 
-                    staff.StaffBirthDay = updatedStaff.StaffBirthDay;
+                    staff.StaffBirthday = updatedStaff.StaffBirthDay;
                     staff.Sex = updatedStaff.Sex;
                     staff.UserName = updatedStaff.Username;
                     staff.StaffName = updatedStaff.StaffName;
@@ -227,7 +227,7 @@ namespace cinema_management.Model.Service
         {
             try
             {
-                using (var context = new CinemaManagementEntities())
+                using (var context = new CinemaManagementEntities7())
                 {
                     Staff staff = await context.Staffs.FindAsync(StaffId);
                     if (staff is null)
@@ -255,7 +255,7 @@ namespace cinema_management.Model.Service
         {
             try
             {
-                using (var context = new CinemaManagementEntities())
+                using (var context = new CinemaManagementEntities7())
                 {
                     Staff staff = await (from p in context.Staffs
                                          where p.StaffID.ToString() == Id && p.IsDeleted == false
@@ -291,7 +291,7 @@ namespace cinema_management.Model.Service
         {
             try
             {
-                using (var context = new CinemaManagementEntities())
+                using (var context = new CinemaManagementEntities7())
                 {
                     Staff staff = (from p in context.Staffs
                                    where p.UserName == username && p.IsDeleted == false

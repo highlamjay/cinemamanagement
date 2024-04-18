@@ -18,7 +18,7 @@ namespace cinema_management.Models.Services
         public Nullable<int> ProductID { get; set; }
         public Nullable<decimal> ImportPrice { get; set; }
         public Nullable<int> Quantity { get; set; }
-        public byte[] TimeOfReceipt { get; set; }
+        public Nullable<System.DateTime> TimeOfReceipt { get; set; }
         public string StaffID { get; set; }
     
         public virtual Product Product { get; set; }

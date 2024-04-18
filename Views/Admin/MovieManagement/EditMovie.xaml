@@ -3,8 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:cinema_management.Views.Admin.MovieManagement"
-       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         TextElement.FontWeight="Regular"
@@ -55,7 +55,8 @@
                 <!---HEADER-->
                 <Grid Grid.Row="0">
                     <Border BorderThickness="0,0,0,1"
-                            BorderBrush="Black">
+                            BorderBrush="Black"
+                            materialDesign:ShadowAssist.ShadowAnimationDuration="2000">
                         <Grid>
                             <TextBlock Text="Chỉnh sửa phim"
                                        FontSize="25"

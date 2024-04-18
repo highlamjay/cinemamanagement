@@ -26,7 +26,7 @@ namespace cinema_management.Models.Services
         public Nullable<int> Quantity { get; set; }
         public Nullable<decimal> Price { get; set; }
         public string Image { get; set; }
-        public Nullable<bool> IsDeleted { get; set; }
+        public bool IsDeleted { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ProductReceipt> ProductReceipts { get; set; }

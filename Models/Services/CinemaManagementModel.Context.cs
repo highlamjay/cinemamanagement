@@ -13,10 +13,10 @@ namespace cinema_management.Models.Services
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class CinemaManagementEntities : DbContext
+    public partial class CinemaManagementEntities7 : DbContext
     {
-        public CinemaManagementEntities()
-            : base("name=CinemaManagementEntities")
+        public CinemaManagementEntities7()
+            : base("name=CinemaManagementEntities7")
         {
         }
     
@@ -37,5 +37,6 @@ namespace cinema_management.Models.Services
         public virtual DbSet<ShowtimeSetting> ShowtimeSettings { get; set; }
         public virtual DbSet<Staff> Staffs { get; set; }
         public virtual DbSet<Ticket> Tickets { get; set; }
+        public virtual DbSet<SeatSetting> SeatSettings { get; set; }
     }
 }

@@ -10,7 +10,6 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace cinema_management.Views.Admin.MovieManagement
@@ -18,7 +17,7 @@ namespace cinema_management.Views.Admin.MovieManagement
     /// <summary>
     /// Interaction logic for MovieManagement.xaml
     /// </summary>
-    public partial class MovieManagement : Page
+    public partial class MovieManagement : Window
     {
         public MovieManagement()
         {

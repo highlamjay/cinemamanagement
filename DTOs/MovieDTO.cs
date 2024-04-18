@@ -22,7 +22,7 @@ namespace cinema_management.DTOs
         public Nullable<int> ReleaseYear { get; set; }
         public string MovieType { get; set; }
         public string Director { get; set; }
-        //public IList<ShowTimeDTO> ShowTimes { get; set; }
+        public IList<ShowTimeDTO> Showtimes { get; set; }
         public IList<GenreDTO> Genres { get; set; }
 
         public string Image

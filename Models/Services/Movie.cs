@@ -18,22 +18,23 @@ namespace cinema_management.Models.Services
         public Movie()
         {
             this.ShowTimes = new HashSet<ShowTime>();
+            this.Genres = new HashSet<Genre>();
         }
     
         public int MovieId { get; set; }
         public string DisplayName { get; set; }
-        public string RunningTime { get; set; }
+        public Nullable<int> RunningTime { get; set; }
         public string Country { get; set; }
         public string Description { get; set; }
         public Nullable<int> ReleaseYear { get; set; }
         public string MovieType { get; set; }
         public string Image { get; set; }
         public string Director { get; set; }
-        public Nullable<bool> IsDeleted { get; set; }
-        public Nullable<int> Movie_Genre_ID { get; set; }
+        public bool IsDeleted { get; set; }
     
-        public virtual Genre Genre { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ShowTime> ShowTimes { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Genre> Genres { get; set; }
     }
 }
