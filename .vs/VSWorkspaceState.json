@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ViewModel",
+    "\\ViewModel\\AdminVM",
+    "\\ViewModel\\AdminVM\\StaffManagementVM"
   ],
-  "SelectedNode": "\\cinema-management.sln",
+  "SelectedNode": "\\packages.config",
   "PreviewInSolutionExplorer": false
 }

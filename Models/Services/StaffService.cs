@@ -47,7 +47,7 @@ namespace cinema_management.Model.Service
                                   StartingDate = s.StartingDate,
                                   StaffPassword = s.StaffPassword,
                                   Email = s.Email
-                              }).ToListAsync();
+                              }).ToListAsync();               
                 return await staffs;
             }
         }
@@ -132,7 +132,8 @@ namespace cinema_management.Model.Service
                     var maxId = await context.Staffs.MaxAsync(s => s.StaffID);
                     Staff st = Copy(newStaff);                    
                     st.StaffID = CreateNextStaffId(maxId);
-                    newStaff.StaffId = st.StaffID;
+                    st.IsDeleted = false;
+                    newStaff.StaffId = st.StaffID;           
                     st.StaffPassword = Helper.MD5Hash(newStaff.StaffPassword);
 
                     context.Staffs.Add(st);

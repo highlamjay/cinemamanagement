@@ -60,5 +60,6 @@ namespace cinema_management.DTOs
                 return Helper.FormatVNMoney(BenefitContribution);
             }
         }
+        public bool IsDeleted { get; set; }
     }
 }

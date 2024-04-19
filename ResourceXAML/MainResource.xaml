@@ -3,10 +3,12 @@
                     xmlns:i="http://schemas.microsoft.com/xaml/behaviors"                   
                     xmlns:viewmodelLogin="clr-namespace:cinema_management.ViewModel.LoginVM"
                     xmlns:viewmodelMainAdmin="clr-namespace:cinema_management.ViewModel.AdminVM"
-                    xmlns:viewmodelForgotPass="clr-namespace:cinema_management.ViewModel.LoginVM">
+                    xmlns:viewmodelForgotPass="clr-namespace:cinema_management.ViewModel.LoginVM"
+                    xmlns:viewmodelStaffManagement="clr-namespace:cinema_management.ViewModel.AdminVM.StaffManagementVM">
     
 
     <viewmodelLogin:LoginViewModel x:Key="LoginVM"/>
     <viewmodelMainAdmin:MainAdminViewModel x:Key="MainAdminVM"/>
     <viewmodelForgotPass:ForgotPassViewModel x:Key="ForgotPassVM"/>
+    <viewmodelStaffManagement:StaffManagementViewModel x:Key="StaffManagementVM"/>
 </ResourceDictionary>

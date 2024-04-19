@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows;
+using cinema_management.Views.Admin.StaffManagement;
 
 namespace cinema_management.ViewModel.AdminVM
 {
@@ -46,7 +47,39 @@ namespace cinema_management.ViewModel.AdminVM
 
         public MainAdminViewModel()
         {
+           
+            SignoutCM = new RelayCommand<FrameworkElement>((p) => { return p == null ? false : true; }, (p) =>
+            {
+                FrameworkElement window = GetParentWindow(p);
+                var w = window as Window;
+                if (w != null)
+                {
+                    w.Hide();
+                    LoginWindow w1 = new LoginWindow();
+                    w1.ShowDialog();
+                    w.Close();
+                }
+            });
+            LoadQLNVPageCM = new RelayCommand<Frame>((p) => { return p != null; }, (p) =>
+            {
+                if (MainAdminWindow.Slidebtn != null)
+                    MainAdminWindow.Slidebtn.IsChecked = false;
+                SelectedFuncName = "Quản lý nhân sự";
+                if (p != null)
+                    p.Content = new StaffManagementPage();
+            });
 
+            //======================================
+            FrameworkElement GetParentWindow(FrameworkElement p)
+            {
+                FrameworkElement parent = p;
+
+                while (parent.Parent != null)
+                {
+                    parent = parent.Parent as FrameworkElement;
+                }
+                return parent;
+            }
         }
     }
 }

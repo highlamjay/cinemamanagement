@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\cinema-management - Copy\obj\Debug\
+C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\
 cinema_management
 none
 false
 DEBUG;TRACE
-D:\cinema-management - Copy\App.xaml
-9-1801392986
+C:\Users\Nguyen\source\repos\cinemamanagement\App.xaml
+13-72054734
 2-1520821729
-52-791133756
-251230529808
-Resources\Scrollbar\Scrollbar.xaml;ResourceXAML\MainResource.xaml;Views\Admin\MainAdminWindow.xaml;Views\LoginWindow\ChangePasswordPage.xaml;Views\LoginWindow\ForgotPasswordPage.xaml;Views\LoginWindow\LoginPage.xaml;Views\LoginWindow\LoginWindow.xaml;Views\LoginWindow\RolePage.xaml;Views\MessageBoxCustom.xaml;
+59-1709091999
+25-980274504
+Resources\Scrollbar\Scrollbar.xaml;ResourceXAML\MainResource.xaml;Views\Admin\MainAdminWindow.xaml;Views\Admin\StaffManagement\AddStaffWindow.xaml;Views\Admin\StaffManagement\ChangePasswordWindow.xaml;Views\Admin\StaffManagement\EditStaffWindow.xaml;Views\Admin\StaffManagement\StaffManagementPage.xaml;Views\LoginWindow\ChangePasswordPage.xaml;Views\LoginWindow\ForgotPasswordPage.xaml;Views\LoginWindow\LoginPage.xaml;Views\LoginWindow\LoginWindow.xaml;Views\LoginWindow\RolePage.xaml;Views\MessageBoxCustom.xaml;
 
-False
+True
 
