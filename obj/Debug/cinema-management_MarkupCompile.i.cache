@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\
+C:\Users\minhk\source\repos\cinema3\obj\Debug\
 cinema_management
 none
 false
 DEBUG;TRACE
-D:\Đồ án NM CNPM\cinemamanagement\App.xaml
+C:\Users\minhk\source\repos\cinema3\App.xaml
 11335683923
 2-1223955081
 55-911177446
-25-242430652
+25485423511
 Resources\Scrollbar\Scrollbar.xaml;ResourceXAML\MainResource.xaml;Views\Admin\CustomerManagement\CustomerManagement.xaml;Views\Admin\CustomerManagement\EditCustomer.xaml;Views\Admin\MainAdminWindow.xaml;Views\LoginWindow\ChangePasswordPage.xaml;Views\LoginWindow\ForgotPasswordPage.xaml;Views\LoginWindow\LoginPage.xaml;Views\LoginWindow\LoginWindow.xaml;Views\LoginWindow\RolePage.xaml;Views\MessageBoxCustom.xaml;
 
 True
