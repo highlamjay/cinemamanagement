@@ -1,6 +1,9 @@
 ﻿
 FD:\Đồ án NM CNPM\cinemamanagement\App.xaml;;
 FD:\Đồ án NM CNPM\cinemamanagement\ResourceXAML\MainResource.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\Views\Admin\ShowtimeManagement\AddShowtimeWindow.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\Views\Admin\ShowtimeManagement\Infor_EditShowtimeWindow.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\Views\Admin\ShowtimeManagement\ShowtimeManagement.xaml;;
 FD:\Đồ án NM CNPM\cinemamanagement\Views\LoginWindow\ChangePasswordPage.xaml;;
 FD:\Đồ án NM CNPM\cinemamanagement\Views\LoginWindow\ForgotPasswordPage.xaml;;
 FD:\Đồ án NM CNPM\cinemamanagement\Views\LoginWindow\LoginPage.xaml;;

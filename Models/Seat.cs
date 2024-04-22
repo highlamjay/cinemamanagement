@@ -18,15 +18,18 @@ namespace cinema_management.Models
         public Seat()
         {
             this.Tickets = new HashSet<Ticket>();
+            this.SeatSettings = new HashSet<SeatSetting>();
         }
     
         public int SeatID { get; set; }
-        public Nullable<int> SeatNumber { get; set; }
+        public int SeatNumber { get; set; }
         public string RowOfSeat { get; set; }
-        public Nullable<int> RoomID { get; set; }
+        public int RoomID { get; set; }
     
         public virtual Room Room { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Ticket> Tickets { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<SeatSetting> SeatSettings { get; set; }
     }
 }

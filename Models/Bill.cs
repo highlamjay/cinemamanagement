@@ -18,16 +18,19 @@ namespace cinema_management.Models
         public Bill()
         {
             this.Tickets = new HashSet<Ticket>();
+            this.ProductBillInfoes = new HashSet<ProductBillInfo>();
         }
     
         public string BillID { get; set; }
         public string CustomerID { get; set; }
         public string StaffID { get; set; }
-        public Nullable<System.DateTime> BillTime { get; set; }
-        public Nullable<decimal> TotalPrice { get; set; }
+        public System.DateTime BillTime { get; set; }
+        public decimal TotalPrice { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Ticket> Tickets { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ProductBillInfo> ProductBillInfoes { get; set; }
         public virtual Customer Customer { get; set; }
         public virtual Staff Staff { get; set; }
     }

@@ -36,7 +36,7 @@
     <EntitySetMapping Name="Movies">
       <EntityTypeMapping TypeName="CinemaManagementModel.Movie">
         <MappingFragment StoreEntitySet="Movie">
-          <ScalarProperty Name="MovieId" ColumnName="MovieId" />
+          <ScalarProperty Name="MovieID" ColumnName="MovieID" />
           <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
           <ScalarProperty Name="RunningTime" ColumnName="RunningTime" />
           <ScalarProperty Name="Country" ColumnName="Country" />
@@ -66,7 +66,7 @@
     <EntitySetMapping Name="ProductReceipts">
       <EntityTypeMapping TypeName="CinemaManagementModel.ProductReceipt">
         <MappingFragment StoreEntitySet="ProductReceipt">
-          <ScalarProperty Name="ProductReciptID" ColumnName="ProductReciptID" />
+          <ScalarProperty Name="ProductReceiptID" ColumnName="ProductReceiptID" />
           <ScalarProperty Name="ProductID" ColumnName="ProductID" />
           <ScalarProperty Name="ImportPrice" ColumnName="ImportPrice" />
           <ScalarProperty Name="Quantity" ColumnName="Quantity" />
@@ -107,9 +107,9 @@
     <EntitySetMapping Name="ShowtimeSettings">
       <EntityTypeMapping TypeName="CinemaManagementModel.ShowtimeSetting">
         <MappingFragment StoreEntitySet="ShowtimeSetting">
-          <ScalarProperty Name="ShowtimeSettingId" ColumnName="ShowtimeSettingId" />
+          <ScalarProperty Name="ShowtimeSettingID" ColumnName="ShowtimeSettingID" />
           <ScalarProperty Name="ShowDate" ColumnName="ShowDate" />
-          <ScalarProperty Name="RoomId" ColumnName="RoomId" />
+          <ScalarProperty Name="RoomID" ColumnName="RoomID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -123,7 +123,7 @@
           <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
           <ScalarProperty Name="Email" ColumnName="Email" />
           <ScalarProperty Name="Sex" ColumnName="Sex" />
-          <ScalarProperty Name="StaffBirthday" ColumnName="StaffBirthday" />
+          <ScalarProperty Name="StaffBirthDay" ColumnName="StaffBirthDay" />
           <ScalarProperty Name="StartingDate" ColumnName="StartingDate" />
           <ScalarProperty Name="StaffRole" ColumnName="StaffRole" />
           <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
@@ -141,5 +141,32 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="ProductBillInfoes">
+      <EntityTypeMapping TypeName="CinemaManagementModel.ProductBillInfo">
+        <MappingFragment StoreEntitySet="ProductBillInfo">
+          <ScalarProperty Name="BillID" ColumnName="BillID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="PricePerItem" ColumnName="PricePerItem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SeatSettings">
+      <EntityTypeMapping TypeName="CinemaManagementModel.SeatSetting">
+        <MappingFragment StoreEntitySet="SeatSetting">
+          <ScalarProperty Name="SeatID" ColumnName="SeatID" />
+          <ScalarProperty Name="ShowTimeID" ColumnName="ShowTimeID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="MovieGenre" TypeName="CinemaManagementModel.MovieGenre" StoreEntitySet="MovieGenre">
+      <EndProperty Name="Genre">
+        <ScalarProperty Name="GenreID" ColumnName="GenreID" />
+      </EndProperty>
+      <EndProperty Name="Movie">
+        <ScalarProperty Name="MovieID" ColumnName="MovieID" />
+      </EndProperty>
+    </AssociationSetMapping>
   </EntityContainerMapping>
 </Mapping>

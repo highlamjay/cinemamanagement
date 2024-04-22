@@ -10,5 +10,8 @@
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("models/model1.context.tt")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("models/model1.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/emailtemplate/common_template.html")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/emailtemplate/new_customer.html")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/emailtemplate/top5_customer_gratitude.html")]
 
 

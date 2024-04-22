@@ -61,14 +61,14 @@ namespace cinema_management.Models.Services
                 {
                     using (var context = new CinemaManagementEntities())
                     {
-                        var customer = await context.Customers.Where(c => c.IsDeleted == false && c.CreateAt.Value.Year == year).Select(c => new CustomerDTO
+                        var customer = await context.Customers.Where(c => c.IsDeleted == false && c.CreateAt.Year == year).Select(c => new CustomerDTO
                         {
                             Id = c.CustomerID,
                             Name = c.CustomerName,
                             PhoneNumber = c.PhoneNumber,
                             Email = c.Email,
-                            StartDate = c.CreateAt.Value,
-                            Expense = c.Bills.Where(b => b.BillTime.Value.Year == year).Sum(b => (decimal?)b.TotalPrice) ?? 0
+                            StartDate = c.CreateAt,
+                            Expense = c.Bills.Where(b => b.BillTime.Year == year).Sum(b => (decimal?)b.TotalPrice) ?? 0
                         }).ToListAsync();
 
                         return customer;
@@ -78,15 +78,15 @@ namespace cinema_management.Models.Services
                 {
                     using (var context = new CinemaManagementEntities())
                     {
-                        var customer = await context.Customers.Where(c => c.IsDeleted == false && c.CreateAt.Value.Year == DateTime.Today.Year && c.CreateAt.Value.Month == month)
+                        var customer = await context.Customers.Where(c => c.IsDeleted == false && c.CreateAt.Year == DateTime.Today.Year && c.CreateAt.Month == month)
                             .Select(c => new CustomerDTO
                             {
                                 Id = c.CustomerID,
                                 Name = c.CustomerName,
                                 PhoneNumber = c.PhoneNumber,
                                 Email = c.Email,
-                                StartDate = c.CreateAt.Value,
-                                Expense = c.Bills.Where(b => b.BillTime.Value.Year == year && b.BillTime.Value.Month == month).Sum(b => (decimal?)b.TotalPrice) ?? 0
+                                StartDate = c.CreateAt,
+                                Expense = c.Bills.Where(b => b.BillTime.Year == year && b.BillTime.Month == month).Sum(b => (decimal?)b.TotalPrice) ?? 0
                             }).ToListAsync();
 
                         return customer;
@@ -265,7 +265,7 @@ namespace cinema_management.Models.Services
             {
                 using (var context = new CinemaManagementEntities())
                 {
-                    var customers = await context.Customers.Where(c => c.CreateAt.Value.Year == DateTime.Today.Year && DbFunctions.DiffDays(c.CreateAt, DateTime.Now) <= 30)
+                    var customers = await context.Customers.Where(c => c.CreateAt.Year == DateTime.Today.Year && DbFunctions.DiffDays(c.CreateAt, DateTime.Now) <= 30)
                         .Select(c => new CustomerDTO
                         {
                             Id = c.CustomerID,

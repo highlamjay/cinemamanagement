@@ -16,9 +16,9 @@ namespace cinema_management.Models
     {
         public int TicketID { get; set; }
         public string BillID { get; set; }
-        public Nullable<int> ShowTimeID { get; set; }
-        public Nullable<int> SeatID { get; set; }
-        public Nullable<decimal> Price { get; set; }
+        public int ShowTimeID { get; set; }
+        public int SeatID { get; set; }
+        public decimal Price { get; set; }
     
         public virtual Bill Bill { get; set; }
         public virtual Seat Seat { get; set; }
