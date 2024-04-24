@@ -194,7 +194,7 @@
                                                materialDesign:TextBlockAssist.AutoToolTip="True"
                                                VerticalAlignment="Bottom"
                                                TextAlignment="Center"
-                                               Text="Squadin Cinema"
+                                               Text="VMN Cinema"
                                                FontFamily="Helvetica"
                                                FontWeight="Bold"
                                                Foreground="#e3e9fa"

@@ -17,16 +17,19 @@ namespace cinema_management.Models.Services
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public ShowTime()
         {
+            this.SeatSettings = new HashSet<SeatSetting>();
             this.Tickets = new HashSet<Ticket>();
         }
     
         public int ShowTimeID { get; set; }
-        public Nullable<int> ShowTimeSettingID { get; set; }
-        public Nullable<int> MovieID { get; set; }
-        public Nullable<decimal> TicketPrice { get; set; }
-        public Nullable<System.TimeSpan> StartTime { get; set; }
+        public int ShowTimeSettingID { get; set; }
+        public int MovieID { get; set; }
+        public decimal TicketPrice { get; set; }
+        public System.TimeSpan StartTime { get; set; }
     
         public virtual Movie Movie { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<SeatSetting> SeatSettings { get; set; }
         public virtual ShowtimeSetting ShowtimeSetting { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Ticket> Tickets { get; set; }

@@ -1,10 +1,15 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Models",
+    "\\Models\\Services",
     "\\ViewModel",
     "\\ViewModel\\AdminVM",
-    "\\ViewModel\\AdminVM\\StaffManagementVM"
+    "\\ViewModel\\AdminVM\\StaffManagementVM",
+    "\\Views",
+    "\\Views\\Admin",
+    "\\Views\\Admin\\StaffManagement"
   ],
-  "SelectedNode": "\\packages.config",
+  "SelectedNode": "\\ViewModel\\AdminVM\\MainAdminViewModel.cs",
   "PreviewInSolutionExplorer": false
 }

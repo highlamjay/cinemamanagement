@@ -384,3 +384,11 @@ C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\Admin\StaffManagem
 C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\ChangePasswordWindow.g.cs
 C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\EditStaffWindow.g.cs
 C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\StaffManagementPage.g.cs
+C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\DoneError.g.cs
+C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\ProcessingError.g.cs
+C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\WaitingError.g.cs
+C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\ErrorManagement.g.cs
+C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\DoneError.baml
+C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\ProcessingError.baml
+C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\WaitingError.baml
+C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\ErrorManagement.baml

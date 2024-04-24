@@ -22,7 +22,7 @@ namespace cinema_management.Models.Services
         }
     
         public int RoomID { get; set; }
-        public Nullable<int> SeatQuantity { get; set; }
+        public int SeatQuantity { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Seat> Seats { get; set; }

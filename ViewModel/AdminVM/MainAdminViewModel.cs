@@ -4,13 +4,17 @@ using cinema_management.Views.LoginWindow;
 using cinema_management.Views;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using System.Windows;
+
 using cinema_management.Views.Admin.StaffManagement;
+using cinema_management.Models.Services;
+using cinema_management.ViewModel.AdminVM.ErrorVM;
+using cinema_management.Views.Admin.ErrorManagement;
 
 namespace cinema_management.ViewModel.AdminVM
 {
@@ -68,6 +72,15 @@ namespace cinema_management.ViewModel.AdminVM
                 if (p != null)
                     p.Content = new StaffManagementPage();
             });
+            LoadErrorPage = new RelayCommand<Frame>((p) => { return p != null; }, (p) =>
+            {
+                if (MainAdminWindow.Slidebtn != null)
+                    MainAdminWindow.Slidebtn.IsChecked = false;
+                SelectedFuncName = "Sự cố";
+                if (p != null)
+                    p.Content = new ErrorManagement();
+
+            });
 
             //======================================
             FrameworkElement GetParentWindow(FrameworkElement p)
@@ -80,6 +93,40 @@ namespace cinema_management.ViewModel.AdminVM
                 }
                 return parent;
             }
+
+            // this is  the ErrorViewmodel resources
+            LoadDetailErrorCM = new RelayCommand<object>((p) => { return true; }, (p) =>
+            {
+                ChoseWindow();
+            });
+            UpdateErrorCM = new RelayCommand<Window>((p) => { if (IsSaving) return false; return true; }, async (p) =>
+            {
+                if (SelectedStatus is null)
+                {
+                    MessageBoxCustom mb = new MessageBoxCustom("Cảnh báo", "Không hợp lệ!", MessageType.Warning, MessageButtons.OK);
+                    mb.ShowDialog();
+                    return;
+                }
+                IsSaving = true;
+                await UpdateErrorFunc(p);
+                IsSaving = false;
+            });
+            ReloadErrorListCM = new RelayCommand<ComboBox>((p) => { return true; }, async (p) =>
+            {
+                ListError = new System.Collections.ObjectModel.ObservableCollection<TroubleDTO>();
+                IsGettingSource = true;
+
+                await ReloadErrorList();
+
+                IsGettingSource = false;
+            });
+            SelectedDate = DateTime.Today;
+            SelectedFinishDate = DateTime.Today;
+        }
+        public async Task CountErrorFunc()
+        {
+            int counttemp = await TroubleService.Ins.GetWaitingTroubleCount();
+            ErrorCount = counttemp.ToString();
         }
     }
 }
