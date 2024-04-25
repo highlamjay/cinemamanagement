@@ -9,7 +9,7 @@ using System.Windows.Media;
 
 namespace cinema_management.ViewModel.AdminVM.FoodManagementVM
 {
-    public class FoodManagementViewModel : BaseViewModel
+    public partial class FoodManagementViewModel : BaseViewModel
     {
         public void LoadImportFoodWindow(ImportFoodWindow wd)
         {

@@ -10,7 +10,7 @@ using System.Windows.Media;
 
 namespace cinema_management.ViewModel.AdminVM.AddFoodManagementVM
 {
-    public class EditManagementViewModel : BaseViewModel
+    public partial class FoodManagementViewModel : BaseViewModel
     {
         public async Task LoadEditFood(EditFoodWindow wd)
         {
@@ -29,7 +29,7 @@ namespace cinema_management.ViewModel.AdminVM.AddFoodManagementVM
 
         public async Task EditFood(Window p)
         {
-            if (Id != -1 && IsValidData())
+            if (ID != -1 && IsValidData())
             {
                 ProductDTO product = new ProductDTO();
                 product.DisplayName = DisplayName;

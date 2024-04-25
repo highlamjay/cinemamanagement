@@ -8,7 +8,7 @@ using System.Windows;
 
 namespace cinema_management.ViewModel.AdminVM.AddFoodManagementVM
 {
-    public class AddManagementViewModel : BaseViewModel
+    public partial class FoodManagementViewModel : BaseViewModel
     {
         public async Task AddFood(Window p)
         {
