@@ -4,8 +4,10 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:i2="http://schemas.microsoft.com/expression/2010/interactivity"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:i1="http://schemas.microsoft.com/netfx/2009/xaml/presentation"
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         TextElement.FontWeight="Regular"
         TextElement.FontSize="13"
@@ -18,7 +20,7 @@
         WindowStartupLocation="CenterScreen"
         AllowsTransparency="True"
         Name="ImportFoodWd"
-        MouseLeftButtonDown="ImportFoodWd_MouseLeftButtonDown"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown"
         ResizeMode="NoResize"
         Height="250"
         Width="550">
@@ -117,11 +119,11 @@
                                           ItemsSource="{Binding Path=FoodList}"
                                           DisplayMemberPath="DisplayName"
                                           SelectedItem="{Binding SelectedProduct}">
-                                    <!--<i:Interaction.Triggers>
+                                    <i:Interaction.Triggers>
                                         <i:EventTrigger EventName="SelectionChanged">
                                             <i:InvokeCommandAction Command="{Binding ImportFoodChangeCommand}" />
                                         </i:EventTrigger>
-                                    </i:Interaction.Triggers>-->
+                                    </i:Interaction.Triggers>
                                 </ComboBox>
                             </Grid>
                             <Grid Grid.Row="1">
@@ -143,7 +145,7 @@
                                 <TextBlock Text="Giá nhập"
                                            x:Name="tboxName" />
                                 <TextBox Grid.Column="1"
-                                         PreviewTextInput="_price_PreviewTextInput"
+                                         PreviewTextInput="TextBox_PreviewTextInput"
                                          TextChanged="TextBox_TextChanged"
                                          Text="{Binding Price, Mode=TwoWay}" />
                             </Grid>

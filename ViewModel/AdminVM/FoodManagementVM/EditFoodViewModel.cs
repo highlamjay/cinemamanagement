@@ -5,6 +5,7 @@ using cinema_management.Views;
 using cinema_management.Views.Admin.FoodManagement;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Media;
 
 namespace cinema_management.ViewModel.AdminVM.AddFoodManagementVM

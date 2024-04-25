@@ -20,7 +20,7 @@
         ResizeMode="NoResize"
         Height="450"
         Width="300"
-        MouseLeftButtonDown="AddFoodWd_MouseLeftButtonDown">
+        MouseLeftButtonDown="Window_MouseLeftButtonDown">
 
     <Window.Triggers>
         <EventTrigger RoutedEvent="Window.Loaded">
@@ -130,8 +130,8 @@
                                x:Name="tboxName" />
                     <TextBox Grid.Column="1"
                              Text="{Binding Price, Mode=TwoWay}"
-                             PreviewTextInput="TextBox_PreviewTextInput"
-                             TextChanged="TextBox_TextChanged"
+                             PreviewTextInput="tboxPrice_PreviewTextInput"
+                             TextChanged="tboxPrice_TextChanged"
                              x:Name="tboxPrice" />
                 </Grid>
                 <Grid Grid.Row="4">
@@ -192,14 +192,14 @@
                             materialDesign:ButtonAssist.CornerRadius="8"
                             Command="{Binding CloseCommand}"
                             CommandParameter="{Binding ElementName=AddFoodWd}"
-                            Background="OrangeRed" />
+                            Background="OrangeRed" Click="Button_Click" />
 
                     <Button Content="Thêm"
                             Margin="0 0 10 10"
                             materialDesign:ButtonAssist.CornerRadius="8"
                             Command="{Binding AddFoodCommand}"
                             CommandParameter="{Binding ElementName=AddFoodWd}"
-                            BorderBrush="Transparent" />
+                            BorderBrush="Transparent" Click="Button_Click_1" />
 
                 </Grid>
 

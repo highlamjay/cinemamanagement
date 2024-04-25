@@ -1,6 +1,8 @@
-﻿
+﻿E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\GeneratedInternalTypeHelper.g.cs
 FE:\học\nmcnpm\doanchinh\cinemamanagement\App.xaml;;
 FE:\học\nmcnpm\doanchinh\cinemamanagement\ResourceXAML\MainResource.xaml;;
+FE:\học\nmcnpm\doanchinh\cinemamanagement\Views\Admin\FoodManagement\AddFoodWindow.xaml;;
+FE:\học\nmcnpm\doanchinh\cinemamanagement\Views\Admin\FoodManagement\EditFoodWindow.xaml;;
 FE:\học\nmcnpm\doanchinh\cinemamanagement\Views\Admin\ShowtimeManagement\AddShowtimeWindow.xaml;;
 FE:\học\nmcnpm\doanchinh\cinemamanagement\Views\Admin\ShowtimeManagement\Infor_EditShowtimeWindow.xaml;;
 FE:\học\nmcnpm\doanchinh\cinemamanagement\Views\Admin\ShowtimeManagement\ShowtimeManagement.xaml;;
@@ -10,7 +12,4 @@ FE:\học\nmcnpm\doanchinh\cinemamanagement\Views\LoginWindow\LoginPage.xaml;;
 FE:\học\nmcnpm\doanchinh\cinemamanagement\Views\LoginWindow\LoginWindow.xaml;;
 FE:\học\nmcnpm\doanchinh\cinemamanagement\Views\LoginWindow\RolePage.xaml;;
 FE:\học\nmcnpm\doanchinh\cinemamanagement\Views\MessageBoxCustom.xaml;;
-FE:\học\nmcnpm\doanchinh\cinemamanagement\Views\Admin\FoodManagement\AddFoodWindow.xaml;;
-FE:\học\nmcnpm\doanchinh\cinemamanagement\Views\Admin\FoodManagement\EditFoodWindow.xaml;;
-FE:\học\nmcnpm\doanchinh\cinemamanagement\Views\Admin\FoodManagement\FoodPage.xaml;;
 

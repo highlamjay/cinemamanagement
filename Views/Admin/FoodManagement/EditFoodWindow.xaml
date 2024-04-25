@@ -18,7 +18,7 @@
         WindowStartupLocation="CenterScreen"
         Name="EditFoodWd"
         ResizeMode="NoResize"
-        MouseLeftButtonDown="EditFoodWd_MouseLeftButtonDown"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown"
         Height="450"
         Width="300">
 
@@ -132,7 +132,7 @@
                             <TextBox Grid.Column="1"
                                      x:Name="_price"
                                      PreviewTextInput="_price_PreviewTextInput"
-                                     TextChanged="TextBox_TextChanged"
+                                     TextChanged="_price_TextChanged"
                                      Text="{Binding Price,StringFormat=., Mode=TwoWay}" />
                         </Grid>
                         <Grid Grid.Row="4">

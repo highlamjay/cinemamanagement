@@ -488,3 +488,4 @@ E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\cinema-management_MarkupCom
 E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\cinema-management.exe
 E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\cinema-management.pdb
 E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\Views\Admin\FoodManagement\ImportFoodWindow.baml
+E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\Views\Admin\FoodManagement\FoodPage.baml

@@ -5,6 +5,7 @@ using cinema_management.Views;
 using System.Threading.Tasks;
 using System.Windows;
 
+
 namespace cinema_management.ViewModel.AdminVM.AddFoodManagementVM
 {
     public class AddManagementViewModel : BaseViewModel
