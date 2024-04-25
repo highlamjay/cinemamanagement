@@ -1,13 +1,16 @@
 ﻿
-FD:\Đồ án NM CNPM\cinemamanagement\App.xaml;;
-FD:\Đồ án NM CNPM\cinemamanagement\ResourceXAML\MainResource.xaml;;
-FD:\Đồ án NM CNPM\cinemamanagement\Views\Admin\ShowtimeManagement\AddShowtimeWindow.xaml;;
-FD:\Đồ án NM CNPM\cinemamanagement\Views\Admin\ShowtimeManagement\Infor_EditShowtimeWindow.xaml;;
-FD:\Đồ án NM CNPM\cinemamanagement\Views\Admin\ShowtimeManagement\ShowtimeManagement.xaml;;
-FD:\Đồ án NM CNPM\cinemamanagement\Views\LoginWindow\ChangePasswordPage.xaml;;
-FD:\Đồ án NM CNPM\cinemamanagement\Views\LoginWindow\ForgotPasswordPage.xaml;;
-FD:\Đồ án NM CNPM\cinemamanagement\Views\LoginWindow\LoginPage.xaml;;
-FD:\Đồ án NM CNPM\cinemamanagement\Views\LoginWindow\LoginWindow.xaml;;
-FD:\Đồ án NM CNPM\cinemamanagement\Views\LoginWindow\RolePage.xaml;;
-FD:\Đồ án NM CNPM\cinemamanagement\Views\MessageBoxCustom.xaml;;
+FE:\học\nmcnpm\doanchinh\cinemamanagement\App.xaml;;
+FE:\học\nmcnpm\doanchinh\cinemamanagement\ResourceXAML\MainResource.xaml;;
+FE:\học\nmcnpm\doanchinh\cinemamanagement\Views\Admin\ShowtimeManagement\AddShowtimeWindow.xaml;;
+FE:\học\nmcnpm\doanchinh\cinemamanagement\Views\Admin\ShowtimeManagement\Infor_EditShowtimeWindow.xaml;;
+FE:\học\nmcnpm\doanchinh\cinemamanagement\Views\Admin\ShowtimeManagement\ShowtimeManagement.xaml;;
+FE:\học\nmcnpm\doanchinh\cinemamanagement\Views\LoginWindow\ChangePasswordPage.xaml;;
+FE:\học\nmcnpm\doanchinh\cinemamanagement\Views\LoginWindow\ForgotPasswordPage.xaml;;
+FE:\học\nmcnpm\doanchinh\cinemamanagement\Views\LoginWindow\LoginPage.xaml;;
+FE:\học\nmcnpm\doanchinh\cinemamanagement\Views\LoginWindow\LoginWindow.xaml;;
+FE:\học\nmcnpm\doanchinh\cinemamanagement\Views\LoginWindow\RolePage.xaml;;
+FE:\học\nmcnpm\doanchinh\cinemamanagement\Views\MessageBoxCustom.xaml;;
+FE:\học\nmcnpm\doanchinh\cinemamanagement\Views\Admin\FoodManagement\AddFoodWindow.xaml;;
+FE:\học\nmcnpm\doanchinh\cinemamanagement\Views\Admin\FoodManagement\EditFoodWindow.xaml;;
+FE:\học\nmcnpm\doanchinh\cinemamanagement\Views\Admin\FoodManagement\FoodPage.xaml;;
 

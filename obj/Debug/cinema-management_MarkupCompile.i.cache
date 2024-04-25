@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\
+E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\
 cinema_management
 none
 false
 DEBUG;TRACE
-D:\Đồ án NM CNPM\cinemamanagement\App.xaml
-141210252318
+E:\học\nmcnpm\doanchinh\cinemamanagement\App.xaml
+18957837089
 5-1456820431
-72910944394
-1501377737445
-Resources\Scrollbar\Scrollbar.xaml;ResourceXAML\MainResource.xaml;Views\Admin\CustomerManagement\CustomerManagement.xaml;Views\Admin\CustomerManagement\EditCustomer.xaml;Views\Admin\MainAdminWindow.xaml;Views\Admin\ShowtimeManagement\AddShowtimeWindow.xaml;Views\Admin\ShowtimeManagement\Infor_EditShowtimeWindow.xaml;Views\Admin\ShowtimeManagement\ShowtimeManagement.xaml;Views\LoginWindow\ChangePasswordPage.xaml;Views\LoginWindow\ForgotPasswordPage.xaml;Views\LoginWindow\LoginPage.xaml;Views\LoginWindow\LoginWindow.xaml;Views\LoginWindow\RolePage.xaml;Views\MessageBoxCustom.xaml;
+801856849296
+150-1118051400
+Resources\Scrollbar\Scrollbar.xaml;ResourceXAML\MainResource.xaml;Views\Admin\CustomerManagement\CustomerManagement.xaml;Views\Admin\CustomerManagement\EditCustomer.xaml;Views\Admin\FoodManagement\AddFoodWindow.xaml;Views\Admin\FoodManagement\EditFoodWindow.xaml;Views\Admin\FoodManagement\FoodPage.xaml;Views\Admin\FoodManagement\ImportFoodWindow.xaml;Views\Admin\MainAdminWindow.xaml;Views\Admin\ShowtimeManagement\AddShowtimeWindow.xaml;Views\Admin\ShowtimeManagement\Infor_EditShowtimeWindow.xaml;Views\Admin\ShowtimeManagement\ShowtimeManagement.xaml;Views\LoginWindow\ChangePasswordPage.xaml;Views\LoginWindow\ForgotPasswordPage.xaml;Views\LoginWindow\LoginPage.xaml;Views\LoginWindow\LoginWindow.xaml;Views\LoginWindow\RolePage.xaml;Views\MessageBoxCustom.xaml;
 
-False
+True
 

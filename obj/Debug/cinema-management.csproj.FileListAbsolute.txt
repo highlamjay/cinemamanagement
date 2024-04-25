@@ -457,3 +457,34 @@ D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\zh-Hant\Microsoft.VisualStudio.S
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\AddShowtimeWindow.baml
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\Infor_EditShowtimeWindow.baml
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\ShowtimeManagement.baml
+E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\cinema-management.csproj.AssemblyReference.cache
+E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\cinema-management.csproj.SuggestedBindingRedirects.cache
+E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\cinema-management.exe.config
+E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\Resources\Scrollbar\Scrollbar.baml
+E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\Views\Admin\CustomerManagement\CustomerManagement.baml
+E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\Views\Admin\CustomerManagement\EditCustomer.baml
+E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\Views\Admin\MainAdminWindow.baml
+E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\Views\Admin\CustomerManagement\CustomerManagement.g.cs
+E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\Views\Admin\CustomerManagement\EditCustomer.g.cs
+E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\Views\Admin\FoodManagement\AddFoodWindow.g.cs
+E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\Views\Admin\FoodManagement\EditFoodWindow.g.cs
+E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\Views\Admin\FoodManagement\FoodPage.g.cs
+E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\Views\Admin\FoodManagement\ImportFoodWindow.g.cs
+E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\Views\Admin\MainAdminWindow.g.cs
+E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\AddShowtimeWindow.g.cs
+E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\Infor_EditShowtimeWindow.g.cs
+E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\ShowtimeManagement.g.cs
+E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\Views\LoginWindow\ChangePasswordPage.g.cs
+E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\Views\LoginWindow\ForgotPasswordPage.g.cs
+E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\Views\LoginWindow\LoginPage.g.cs
+E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\Views\LoginWindow\LoginWindow.g.cs
+E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\Views\LoginWindow\RolePage.g.cs
+E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\Views\MessageBoxCustom.g.cs
+E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\App.g.cs
+E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\cinema-management_Content.g.cs
+E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\cinema-management_MarkupCompile.cache
+E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\cinema-management_MarkupCompile.lref
+E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\cinema-management.exe
+E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\cinema-management.pdb
+E:\học\nmcnpm\doanchinh\cinemamanagement\obj\Debug\Views\Admin\FoodManagement\ImportFoodWindow.baml

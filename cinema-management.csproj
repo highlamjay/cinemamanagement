@@ -273,6 +273,10 @@
     <Compile Include="Utils\Helper.cs" />
     <Compile Include="Utils\RegrexUtilities.cs" />
     <Compile Include="ViewModel\AdminVM\CustomerManagementVM\CustomerManagementViewModel.cs" />
+    <Compile Include="ViewModel\AdminVM\FoodManagementVM\AddFoodViewModel.cs" />
+    <Compile Include="ViewModel\AdminVM\FoodManagementVM\EditFoodViewModel.cs" />
+    <Compile Include="ViewModel\AdminVM\FoodManagementVM\FoodManagementViewModel.cs" />
+    <Compile Include="ViewModel\AdminVM\FoodManagementVM\ImportFoodViewModel.cs" />
     <Compile Include="ViewModel\AdminVM\MainAdminViewModel.cs" />
     <Compile Include="ViewModel\AdminVM\ShowtimeManagementVM\AddShowtimeViewModel.cs" />
     <Compile Include="ViewModel\AdminVM\ShowtimeManagementVM\Infor_EditShowtimeViewModel.cs" />
@@ -286,6 +290,18 @@
     </Compile>
     <Compile Include="Views\Admin\CustomerManagement\EditCustomer.xaml.cs">
       <DependentUpon>EditCustomer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\FoodManagement\AddFoodWindow.xaml.cs">
+      <DependentUpon>AddFoodWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\FoodManagement\EditFoodWindow.xaml.cs">
+      <DependentUpon>EditFoodWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\FoodManagement\FoodPage.xaml.cs">
+      <DependentUpon>FoodPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\FoodManagement\ImportFoodWindow.xaml.cs">
+      <DependentUpon>ImportFoodWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Admin\MainAdminWindow.xaml.cs">
       <DependentUpon>MainAdminWindow.xaml</DependentUpon>
@@ -344,6 +360,22 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Admin\CustomerManagement\EditCustomer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\FoodManagement\AddFoodWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\FoodManagement\EditFoodWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\FoodManagement\FoodPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\FoodManagement\ImportFoodWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
