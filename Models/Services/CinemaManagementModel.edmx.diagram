@@ -4,8 +4,8 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="f9c78ff22dd8439093f2d2eb6f339fd0" Name="Diagram1">
-        <EntityTypeShape EntityType="CinemaManagementModel.Bill" Width="1.5" PointX="3" PointY="16.375" IsExpanded="true" />
+      <Diagram DiagramId="e770a2191cfc489ca06e1b746923d3d3" Name="Diagram1">
+        <EntityTypeShape EntityType="CinemaManagementModel.Bill" Width="1.5" PointX="3" PointY="16.25" IsExpanded="true" />
         <EntityTypeShape EntityType="CinemaManagementModel.Customer" Width="1.5" PointX="0.75" PointY="14.25" IsExpanded="true" />
         <EntityTypeShape EntityType="CinemaManagementModel.Genre" Width="1.5" PointX="0.75" PointY="10.875" IsExpanded="true" />
         <EntityTypeShape EntityType="CinemaManagementModel.Movie" Width="1.5" PointX="3" PointY="9.875" IsExpanded="true" />

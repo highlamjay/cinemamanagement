@@ -53,6 +53,12 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="LiveCharts, Version=0.9.8.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>packages\LiveCharts.Wpf.NetCore3.0.9.8\lib\net40\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.8.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>packages\LiveCharts.Wpf.NetCore3.0.9.8\lib\net40\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
     <Reference Include="MaterialDesignColors, Version=3.0.0.0, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
       <HintPath>packages\MaterialDesignColors.3.0.0\lib\net462\MaterialDesignColors.dll</HintPath>
     </Reference>
@@ -65,6 +71,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xml" />
@@ -117,6 +124,7 @@
     <Compile Include="Models\Services\Movie.cs">
       <DependentUpon>CinemaManagementModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Services\OverviewStatisticService.cs" />
     <Compile Include="Models\Services\Product.cs">
       <DependentUpon>CinemaManagementModel.tt</DependentUpon>
     </Compile>
@@ -145,6 +153,7 @@
       <DependentUpon>CinemaManagementModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Services\StaffService.cs" />
+    <Compile Include="Models\Services\StatisticalService.cs" />
     <Compile Include="Models\Services\Ticket.cs">
       <DependentUpon>CinemaManagementModel.tt</DependentUpon>
     </Compile>
@@ -164,6 +173,11 @@
     <Compile Include="ViewModel\AdminVM\StaffManagementVM\ChangePasswordViewModel.cs" />
     <Compile Include="ViewModel\AdminVM\StaffManagementVM\EditStaffViewModel.cs" />
     <Compile Include="ViewModel\AdminVM\StaffManagementVM\StaffManagementViewModel.cs" />
+    <Compile Include="ViewModel\AdminVM\StatisticalManagementVM\BestSelling.cs" />
+    <Compile Include="ViewModel\AdminVM\StatisticalManagementVM\Income.cs" />
+    <Compile Include="ViewModel\AdminVM\StatisticalManagementVM\IndexConverter.cs" />
+    <Compile Include="ViewModel\AdminVM\StatisticalManagementVM\Ranking.cs" />
+    <Compile Include="ViewModel\AdminVM\StatisticalManagementVM\StatisticalManagementViewModel.cs" />
     <Compile Include="ViewModel\BaseViewModel.cs" />
     <Compile Include="ViewModel\LoginVM\ForgotPassViewModel.cs" />
     <Compile Include="ViewModel\LoginVM\LoginViewModel.cs" />
@@ -193,6 +207,18 @@
     </Compile>
     <Compile Include="Views\Admin\StaffManagement\StaffManagementPage.xaml.cs">
       <DependentUpon>StaffManagementPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\StatisticalManagement\BestSellingStatistical.xaml.cs">
+      <DependentUpon>BestSellingStatistical.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\StatisticalManagement\IncomeStatistical.xaml.cs">
+      <DependentUpon>IncomeStatistical.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\StatisticalManagement\RankingStatistical.xaml.cs">
+      <DependentUpon>RankingStatistical.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\StatisticalManagement\StatisticalManagement.xaml.cs">
+      <DependentUpon>StatisticalManagement.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\LoginWindow\ChangePasswordPage.xaml.cs">
       <DependentUpon>ChangePasswordPage.xaml</DependentUpon>
@@ -267,6 +293,22 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Admin\StaffManagement\StaffManagementPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\StatisticalManagement\BestSellingStatistical.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\StatisticalManagement\IncomeStatistical.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\StatisticalManagement\RankingStatistical.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\StatisticalManagement\StatisticalManagement.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

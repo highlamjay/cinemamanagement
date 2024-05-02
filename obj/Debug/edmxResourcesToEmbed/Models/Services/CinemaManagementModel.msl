@@ -9,6 +9,7 @@
           <ScalarProperty Name="StaffID" ColumnName="StaffID" />
           <ScalarProperty Name="BillTime" ColumnName="BillTime" />
           <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="DiscountPrice" ColumnName="DiscountPrice" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

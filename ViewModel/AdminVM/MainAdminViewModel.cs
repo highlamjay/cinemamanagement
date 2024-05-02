@@ -15,6 +15,7 @@ using cinema_management.Views.Admin.StaffManagement;
 using cinema_management.Models.Services;
 using cinema_management.ViewModel.AdminVM.ErrorVM;
 using cinema_management.Views.Admin.ErrorManagement;
+using cinema_management.Views.Admin.StatisticalManagement;
 
 namespace cinema_management.ViewModel.AdminVM
 {
@@ -71,6 +72,14 @@ namespace cinema_management.ViewModel.AdminVM
                 SelectedFuncName = "Quản lý nhân sự";
                 if (p != null)
                     p.Content = new StaffManagementPage();
+            });
+            LoadTKPageCM = new RelayCommand<Frame>((p) => { return p != null; }, (p) =>
+            {
+                if (MainAdminWindow.Slidebtn != null)
+                    MainAdminWindow.Slidebtn.IsChecked = false;
+                SelectedFuncName = "Thống kê";
+                if (p != null)
+                    p.Content = new StatisticalManagement();
             });
             LoadErrorPage = new RelayCommand<Frame>((p) => { return p != null; }, (p) =>
             {

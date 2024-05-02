@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Release\
+C:\Users\Nguyen\cinemamanagement\obj\Release\
 cinema_management
 none
 false
 TRACE
-C:\Users\Nguyen\source\repos\cinemamanagement\App.xaml
-17-618156933
+C:\Users\Nguyen\cinemamanagement\App.xaml
+211570464317
 2-1520821729
-691453340927
-25-980274504
-Resources\Scrollbar\Scrollbar.xaml;ResourceXAML\MainResource.xaml;Views\Admin\ErrorManagement\DoneError.xaml;Views\Admin\ErrorManagement\ErrorManagement.xaml;Views\Admin\ErrorManagement\ProcessingError.xaml;Views\Admin\ErrorManagement\WaitingError.xaml;Views\Admin\MainAdminWindow.xaml;Views\Admin\StaffManagement\AddStaffWindow.xaml;Views\Admin\StaffManagement\ChangePasswordWindow.xaml;Views\Admin\StaffManagement\EditStaffWindow.xaml;Views\Admin\StaffManagement\StaffManagementPage.xaml;Views\LoginWindow\ChangePasswordPage.xaml;Views\LoginWindow\ForgotPasswordPage.xaml;Views\LoginWindow\LoginPage.xaml;Views\LoginWindow\LoginWindow.xaml;Views\LoginWindow\RolePage.xaml;Views\MessageBoxCustom.xaml;
+801848312039
+282118100164
+Resources\Scrollbar\Scrollbar.xaml;ResourceXAML\MainResource.xaml;Views\Admin\ErrorManagement\DoneError.xaml;Views\Admin\ErrorManagement\ErrorManagement.xaml;Views\Admin\ErrorManagement\ProcessingError.xaml;Views\Admin\ErrorManagement\WaitingError.xaml;Views\Admin\MainAdminWindow.xaml;Views\Admin\StaffManagement\AddStaffWindow.xaml;Views\Admin\StaffManagement\ChangePasswordWindow.xaml;Views\Admin\StaffManagement\EditStaffWindow.xaml;Views\Admin\StaffManagement\StaffManagementPage.xaml;Views\Admin\StatisticalManagement\BestSellingStatistical.xaml;Views\Admin\StatisticalManagement\IncomeStatistical.xaml;Views\Admin\StatisticalManagement\RankingStatistical.xaml;Views\Admin\StatisticalManagement\StatisticalManagement.xaml;Views\LoginWindow\ChangePasswordPage.xaml;Views\LoginWindow\ForgotPasswordPage.xaml;Views\LoginWindow\LoginPage.xaml;Views\LoginWindow\LoginWindow.xaml;Views\LoginWindow\RolePage.xaml;Views\MessageBoxCustom.xaml;
 
 True
 

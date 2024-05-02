@@ -9,6 +9,7 @@
     <Property Name="StaffID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="BillTime" Type="DateTime" Nullable="false" Precision="0" />
     <Property Name="TotalPrice" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="DiscountPrice" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
     <NavigationProperty Name="Tickets" Relationship="Self.fk_Bill" FromRole="Bill" ToRole="Ticket" />
     <NavigationProperty Name="ProductBillInfoes" Relationship="Self.fk_Bill_ID" FromRole="Bill" ToRole="ProductBillInfo" />
     <NavigationProperty Name="Customer" Relationship="Self.fk_Customer_ID" FromRole="Bill" ToRole="Customer" />

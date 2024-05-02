@@ -10,6 +10,6 @@
     "\\Views\\Admin",
     "\\Views\\Admin\\StaffManagement"
   ],
-  "SelectedNode": "\\ViewModel\\AdminVM\\MainAdminViewModel.cs",
+  "SelectedNode": "\\Views\\Admin\\StaffManagement\\StaffManagementPage.xaml",
   "PreviewInSolutionExplorer": false
 }
