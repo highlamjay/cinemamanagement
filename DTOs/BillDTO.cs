@@ -7,7 +7,7 @@ using cinema_management.Utils;
 
 namespace cinema_management.DTOs
 {
-    internal class BillDTO
+    public partial class BillDTO
     {
         public BillDTO()
         {
@@ -85,12 +85,13 @@ namespace cinema_management.DTOs
                 return Helper.FormatVNMoney(DiscountPrice);
             }
         }
-        public DateTime CreatedAt { get; set; }
+        public DateTime BillTime { get; set; }
         public List<int> VoucherIdList { get; set; }
 
 
         //Use 2 list when show details Bill
         public List<ProductBillInfoDTO> ProductBillInfoes { get; set; }
+        public TicketBillInfoDTO TicketInfo { get; set; }
     }
 }
 

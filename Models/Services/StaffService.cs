@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using cinema_management.Models.Services;
+using cinema_management.Models;
 using System.Web;
 using System.Security.Cryptography;
 

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Nguyen\cinemamanagement\obj\Debug\
+C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\
 cinema_management
 none
 false
 DEBUG;TRACE
-C:\Users\Nguyen\cinemamanagement\App.xaml
-211570464317
-2-1520821729
-801848312039
-282118100164
-Resources\Scrollbar\Scrollbar.xaml;ResourceXAML\MainResource.xaml;Views\Admin\ErrorManagement\DoneError.xaml;Views\Admin\ErrorManagement\ErrorManagement.xaml;Views\Admin\ErrorManagement\ProcessingError.xaml;Views\Admin\ErrorManagement\WaitingError.xaml;Views\Admin\MainAdminWindow.xaml;Views\Admin\StaffManagement\AddStaffWindow.xaml;Views\Admin\StaffManagement\ChangePasswordWindow.xaml;Views\Admin\StaffManagement\EditStaffWindow.xaml;Views\Admin\StaffManagement\StaffManagementPage.xaml;Views\Admin\StatisticalManagement\BestSellingStatistical.xaml;Views\Admin\StatisticalManagement\IncomeStatistical.xaml;Views\Admin\StatisticalManagement\RankingStatistical.xaml;Views\Admin\StatisticalManagement\StatisticalManagement.xaml;Views\LoginWindow\ChangePasswordPage.xaml;Views\LoginWindow\ForgotPasswordPage.xaml;Views\LoginWindow\LoginPage.xaml;Views\LoginWindow\LoginWindow.xaml;Views\LoginWindow\RolePage.xaml;Views\MessageBoxCustom.xaml;
+C:\Users\Nguyen\source\repos\cinemamanagement\App.xaml
+33529148994
+51631046026
+107796531056
+30-1211218528
+Resources\Scrollbar\Scrollbar.xaml;ResourceXAML\MainResource.xaml;Views\Admin\CustomerManagement\CustomerManagement.xaml;Views\Admin\CustomerManagement\EditCustomer.xaml;Views\Admin\ErrorManagement\DoneError.xaml;Views\Admin\ErrorManagement\ErrorManagement.xaml;Views\Admin\ErrorManagement\ProcessingError.xaml;Views\Admin\ErrorManagement\WaitingError.xaml;Views\Admin\MainAdminWindow.xaml;Views\Admin\StaffManagement\AddStaffWindow.xaml;Views\Admin\StaffManagement\ChangePasswordWindow.xaml;Views\Admin\StaffManagement\EditStaffWindow.xaml;Views\Admin\StaffManagement\StaffManagementPage.xaml;Views\Admin\StatisticalManagement\BestSellingStatistical.xaml;Views\Admin\StatisticalManagement\IncomeStatistical.xaml;Views\Admin\StatisticalManagement\RankingStatistical.xaml;Views\Admin\StatisticalManagement\StatisticalManagement.xaml;Views\Admin\VoucherManagement\AddWindow\AddInfor.xaml;Views\Admin\VoucherManagement\AddWindow\AddListMiniVoucher.xaml;Views\Admin\VoucherManagement\AddWindow\AddMiniVoucher.xaml;Views\Admin\VoucherManagement\AddWindow\AddVoucher.xaml;Views\Admin\VoucherManagement\AddWindow\AddWindow.xaml;Views\Admin\VoucherManagement\AddWindow\ReleaseVoucher.xaml;Views\Admin\VoucherManagement\Infor_EditWindow\Edit_Infor.xaml;Views\Admin\VoucherManagement\Infor_EditWindow\Infor_Edit.xaml;Views\Admin\VoucherManagement\VoucherManagement.xaml;Views\LoginWindow\ChangePasswordPage.xaml;Views\LoginWindow\ForgotPasswordPage.xaml;Views\LoginWindow\LoginPage.xaml;Views\LoginWindow\LoginWindow.xaml;Views\LoginWindow\RolePage.xaml;Views\MessageBoxCustom.xaml;Views\Staff\MainStaffWindow.xaml;
 
 False
 

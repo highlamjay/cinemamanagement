@@ -3,13 +3,15 @@
     "",
     "\\Models",
     "\\Models\\Services",
+    "\\Properties",
+    "\\ResourceXAML",
     "\\ViewModel",
     "\\ViewModel\\AdminVM",
     "\\ViewModel\\AdminVM\\StaffManagementVM",
     "\\Views",
     "\\Views\\Admin",
-    "\\Views\\Admin\\StaffManagement"
+    "\\Views\\Staff"
   ],
-  "SelectedNode": "\\Views\\Admin\\StaffManagement\\StaffManagementPage.xaml",
+  "SelectedNode": "\\Models\\Services\\CustomerServicecs.cs",
   "PreviewInSolutionExplorer": false
 }

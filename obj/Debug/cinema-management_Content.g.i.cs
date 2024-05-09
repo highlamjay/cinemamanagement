@@ -8,7 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("models/services/cinemamanagementmodel.context.tt")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("models/services/cinemamanagementmodel.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("models/cinemamanagementmodel.context.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("models/cinemamanagementmodel.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/templateofemail/common_template.html")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/templateofemail/new_customer.html")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/templateofemail/top5_customer_gratitude.html")]
 
 
