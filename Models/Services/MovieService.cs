@@ -36,18 +36,18 @@ namespace cinema_management.Models.Services
 
                 try
                 {
-                    using (var context = new CinemaManagementEntities7())
+                    using (var context = new CinemaManagementEntities8())
                     {
                         movies = await (from movie in context.Movies
                                         where movie.IsDeleted == false
                                         select new MovieDTO
                                         {
-                                            Id = movie.MovieId,
-                                            DisplayName = movie.DisplayName,
+                                            Id = (int)movie.MovieId,
+                                            DisplayName = (string)movie.DisplayName,
                                             RunningTime = (int)movie.RunningTime,
-                                            Country = movie.Country,
+                                            Country = (string)movie.Country,
                                             Description = movie.Description,
-                                            ReleaseYear = movie.ReleaseYear,
+                                            ReleaseYear = (int)movie.ReleaseYear,
                                             MovieType = movie.MovieType,
                                             Director = movie.Director,
                                             Image = movie.Image,
@@ -76,7 +76,7 @@ namespace cinema_management.Models.Services
                 List<MovieDTO> movieList = new List<MovieDTO>();
                 try
                 {
-                    using (var context = new CinemaManagementEntities7())
+                    using (var context = new CinemaManagementEntities8())
                     {
                         var MovieIDList = await (from showSet in context.ShowtimeSettings
                                                  where DbFunctions.TruncateTime(showSet.ShowDate) == date.Date
@@ -119,7 +119,7 @@ namespace cinema_management.Models.Services
                                         RunningTime = (int)movie.RunningTime,
                                         Country = movie.Country,
                                         Description = movie.Description,
-                                        ReleaseYear = movie.ReleaseYear,
+                                        ReleaseYear = (int)movie.ReleaseYear,
                                         MovieType = movie.MovieType,
                                         Director = movie.Director,
                                         Image = movie.Image,
@@ -153,7 +153,7 @@ namespace cinema_management.Models.Services
                 List<MovieDTO> movieList = new List<MovieDTO>();
                 try
                 {
-                    using (var context = new CinemaManagementEntities7())
+                    using (var context = new CinemaManagementEntities8())
                     {
                         var MovieIDList = await (from showSet in context.ShowtimeSettings
                                                  where DbFunctions.TruncateTime(showSet.ShowDate) == date.Date && showSet.RoomId == roomId
@@ -196,7 +196,7 @@ namespace cinema_management.Models.Services
                                         RunningTime = (int)movie.RunningTime,
                                         Country = movie.Country,
                                         Description = movie.Description,
-                                        ReleaseYear = movie.ReleaseYear,
+                                        ReleaseYear = (int)movie.ReleaseYear,
                                         MovieType = movie.MovieType,
                                         Director = movie.Director,
                                         Image = movie.Image,
@@ -222,7 +222,7 @@ namespace cinema_management.Models.Services
             {
                 try
                 {
-                    using (var context = new CinemaManagementEntities7())
+                    using (var context = new CinemaManagementEntities8())
                     {
                         Movie m = context.Movies.Where((Movie mov) => mov.DisplayName == newMovie.DisplayName).FirstOrDefault();
 
@@ -238,8 +238,8 @@ namespace cinema_management.Models.Services
                             m.RunningTime = newMovie.RunningTime;
                             m.Country = newMovie.Country;
                             m.Description = newMovie.Description;
-                            m.ReleaseYear = newMovie.ReleaseYear;
-                            m.MovieType = newMovie?.MovieType;
+                            m.ReleaseYear = (int)newMovie.ReleaseYear;
+                            m.MovieType = newMovie.MovieType;
                             m.Director = newMovie.Director;
                             m.Image = newMovie.Image;
                             foreach (var g in newMovie.Genres)
@@ -259,8 +259,8 @@ namespace cinema_management.Models.Services
                                 RunningTime = newMovie.RunningTime,
                                 Country = newMovie.Country,
                                 Description = newMovie.Description,
-                                ReleaseYear = newMovie.ReleaseYear,
-                                MovieType = newMovie?.MovieType,
+                                ReleaseYear = (int)newMovie.ReleaseYear,
+                                MovieType = newMovie.MovieType,
                                 Director = newMovie.Director,
                                 Image = newMovie.Image,
                             };
@@ -270,8 +270,9 @@ namespace cinema_management.Models.Services
                                 mov.Genres.Add(genre);
                             }
                             context.Movies.Add(mov);
-                            await context.SaveChangesAsync();
                             newMovie.Id = mov.MovieId;
+                            await context.SaveChangesAsync();
+                            
                         }
                     }
 
@@ -303,7 +304,7 @@ namespace cinema_management.Models.Services
             {
                 try
                 {
-                    using (var context = new CinemaManagementEntities7())
+                    using (var context = new CinemaManagementEntities8())
                     {
                         Movie movie = context.Movies.Find(updatedMovie.Id);
 
@@ -323,8 +324,8 @@ namespace cinema_management.Models.Services
                         movie.RunningTime = updatedMovie.RunningTime;
                         movie.Country = updatedMovie.Country;
                         movie.Description = updatedMovie.Description;
-                        movie.ReleaseYear = updatedMovie.ReleaseYear;
-                        movie.MovieType = updatedMovie?.MovieType;
+                        movie.ReleaseYear = (int)updatedMovie.ReleaseYear;
+                        movie.MovieType = updatedMovie.MovieType;
                         movie.Director = updatedMovie.Director;
                         movie.Image = updatedMovie.Image;
 
@@ -350,7 +351,7 @@ namespace cinema_management.Models.Services
             {
                 try
                 {
-                    using (var context = new CinemaManagementEntities7())
+                    using (var context = new CinemaManagementEntities8())
                     {
                         Movie movie = await (from p in context.Movies
                                              where p.MovieId == Id && !p.IsDeleted
@@ -362,7 +363,7 @@ namespace cinema_management.Models.Services
 
                         if (movie.Image != null)
                         {
-                            //CloudinaryService.Ins.DeleteImage(movie.Image);
+                            CloudinaryService.Ins.DeleteImage(movie.Image);
                             movie.Image = null;
                         }
                         movie.IsDeleted = true;

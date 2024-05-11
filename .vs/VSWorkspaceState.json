@@ -1,11 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Models",
-    "\\Models\\Services",
+    "\\Resources",
+    "\\Resources\\Icon",
+    "\\ResourceXAML",
     "\\ViewModel",
     "\\ViewModel\\AdminVM",
-    "\\ViewModel\\AdminVM\\MovieManagementVM"
+    "\\ViewModel\\AdminVM\\MovieManagementVM",
+    "\\Views",
+    "\\Views\\Admin",
+    "\\Views\\Admin\\MovieManagement"
   ],
+  "SelectedNode": "\\ViewModel\\AdminVM\\MovieManagementVM\\MovieManagementViewModel.cs",
   "PreviewInSolutionExplorer": false
 }

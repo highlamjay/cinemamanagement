@@ -37,8 +37,10 @@ namespace cinema_management.ViewModel.AdminVM.MovieManagementVM
         {
             if (movieID != null && IsValidData())
             {
-                List<GenreDTO> temp = new List<GenreDTO>();
-                temp.Add(movieGenre);
+                List<GenreDTO> temp = new List<GenreDTO>
+                {
+                    movieGenre
+                };
 
                 MovieDTO movie = new MovieDTO
                 {

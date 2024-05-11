@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="CinemaManagementModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="CinemaManagement3Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Bill">
           <Key>
             <PropertyRef Name="BillID" />
@@ -38,14 +38,14 @@
           <Key>
             <PropertyRef Name="MovieId" />
           </Key>
-          <Property Name="MovieId" Type="int" Nullable="false" />
+          <Property Name="MovieId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="DisplayName" Type="nvarchar" MaxLength="50" />
           <Property Name="RunningTime" Type="int" />
           <Property Name="Country" Type="nvarchar" MaxLength="50" />
           <Property Name="Description" Type="nvarchar" MaxLength="50" />
           <Property Name="ReleaseYear" Type="int" />
           <Property Name="MovieType" Type="nvarchar" MaxLength="50" />
-          <Property Name="Image" Type="varchar" MaxLength="50" />
+          <Property Name="Image" Type="varchar" MaxLength="250" />
           <Property Name="Director" Type="nvarchar" MaxLength="50" />
           <Property Name="IsDeleted" Type="bit" Nullable="false" />
         </EntityType>
@@ -70,7 +70,7 @@
           <Property Name="IsDeleted" Type="bit" Nullable="false" />
         </EntityType>
         <!--Errors Found During Generation:
-warning 6013: The table/view 'CinemaManagement2.dbo.ProductBillInfo' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+warning 6013: The table/view 'CinemaManagement3.dbo.ProductBillInfo' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
         <EntityType Name="ProductBillInfo">
           <Property Name="BillID" Type="varchar" MaxLength="50" />
           <Property Name="ProductID" Type="int" />
@@ -105,7 +105,7 @@ warning 6013: The table/view 'CinemaManagement2.dbo.ProductBillInfo' does not ha
           <Property Name="RoomID" Type="int" />
         </EntityType>
         <!--Errors Found During Generation:
-warning 6002: The table/view 'CinemaManagement2.dbo.SeatSetting' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'CinemaManagement3.dbo.SeatSetting' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="SeatSetting">
           <Key>
             <PropertyRef Name="Status" />
@@ -171,7 +171,7 @@ warning 6002: The table/view 'CinemaManagement2.dbo.SeatSetting' does not have a
           </ReferentialConstraint>
         </Association>
         <!--Errors Found During Generation:
-error 6004: The table 'CinemaManagement2.dbo.ProductBillInfo' is referenced by a relationship, but cannot be found.
+error 6004: The table 'CinemaManagement3.dbo.ProductBillInfo' is referenced by a relationship, but cannot be found.
         <Association Name="fk_Bill_ID" />-->
         <Association Name="fk_Customer_ID">
           <End Role="Customer" Type="Self.Customer" Multiplicity="0..1" />
@@ -234,7 +234,7 @@ error 6004: The table 'CinemaManagement2.dbo.ProductBillInfo' is referenced by a
           </ReferentialConstraint>
         </Association>
         <!--Errors Found During Generation:
-error 6004: The table 'CinemaManagement2.dbo.ProductBillInfo' is referenced by a relationship, but cannot be found.
+error 6004: The table 'CinemaManagement3.dbo.ProductBillInfo' is referenced by a relationship, but cannot be found.
         <Association Name="fk_Product_ID" />-->
         <Association Name="fk_Room">
           <End Role="Room" Type="Self.Room" Multiplicity="0..1" />
@@ -344,7 +344,7 @@ error 6004: The table 'CinemaManagement2.dbo.ProductBillInfo' is referenced by a
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="CinemaManagementModelStoreContainer">
+        <EntityContainer Name="CinemaManagement3ModelStoreContainer">
           <EntitySet Name="Bill" EntityType="Self.Bill" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Genre" EntityType="Self.Genre" Schema="dbo" store:Type="Tables" />
@@ -430,7 +430,7 @@ error 6004: The table 'CinemaManagement2.dbo.ProductBillInfo' is referenced by a
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="CinemaManagementModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="CinemaManagement3Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="Bill">
           <Key>
             <PropertyRef Name="BillID" />
@@ -469,14 +469,14 @@ error 6004: The table 'CinemaManagement2.dbo.ProductBillInfo' is referenced by a
           <Key>
             <PropertyRef Name="MovieId" />
           </Key>
-          <Property Name="MovieId" Type="Int32" Nullable="false" />
+          <Property Name="MovieId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="DisplayName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="RunningTime" Type="Int32" />
           <Property Name="Country" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="ReleaseYear" Type="Int32" />
           <Property Name="MovieType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Image" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Image" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
           <Property Name="Director" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="ShowTimes" Relationship="Self.fk_Movie" FromRole="Movie" ToRole="ShowTime" />
@@ -754,7 +754,7 @@ error 6004: The table 'CinemaManagement2.dbo.ProductBillInfo' is referenced by a
           <End Role="Genre" Type="Self.Genre" Multiplicity="*" />
           <End Role="Movie" Type="Self.Movie" Multiplicity="*" />
         </Association>
-        <EntityContainer Name="CinemaManagementEntities7" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="CinemaManagementEntities8" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Bills" EntityType="Self.Bill" />
           <EntitySet Name="Customers" EntityType="Self.Customer" />
           <EntitySet Name="Genres" EntityType="Self.Genre" />
@@ -830,9 +830,9 @@ error 6004: The table 'CinemaManagement2.dbo.ProductBillInfo' is referenced by a
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="CinemaManagementModelStoreContainer" CdmEntityContainer="CinemaManagementEntities7">
+        <EntityContainerMapping StorageEntityContainer="CinemaManagement3ModelStoreContainer" CdmEntityContainer="CinemaManagementEntities8">
           <EntitySetMapping Name="Bills">
-            <EntityTypeMapping TypeName="CinemaManagementModel.Bill">
+            <EntityTypeMapping TypeName="CinemaManagement3Model.Bill">
               <MappingFragment StoreEntitySet="Bill">
                 <ScalarProperty Name="BillID" ColumnName="BillID" />
                 <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
@@ -843,7 +843,7 @@ error 6004: The table 'CinemaManagement2.dbo.ProductBillInfo' is referenced by a
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Customers">
-            <EntityTypeMapping TypeName="CinemaManagementModel.Customer">
+            <EntityTypeMapping TypeName="CinemaManagement3Model.Customer">
               <MappingFragment StoreEntitySet="Customer">
                 <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
                 <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
@@ -856,7 +856,7 @@ error 6004: The table 'CinemaManagement2.dbo.ProductBillInfo' is referenced by a
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Genres">
-            <EntityTypeMapping TypeName="CinemaManagementModel.Genre">
+            <EntityTypeMapping TypeName="CinemaManagement3Model.Genre">
               <MappingFragment StoreEntitySet="Genre">
                 <ScalarProperty Name="GenreID" ColumnName="GenreID" />
                 <ScalarProperty Name="GenreDisplayName" ColumnName="GenreDisplayName" />
@@ -864,7 +864,7 @@ error 6004: The table 'CinemaManagement2.dbo.ProductBillInfo' is referenced by a
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Movies">
-            <EntityTypeMapping TypeName="CinemaManagementModel.Movie">
+            <EntityTypeMapping TypeName="CinemaManagement3Model.Movie">
               <MappingFragment StoreEntitySet="Movie">
                 <ScalarProperty Name="MovieId" ColumnName="MovieId" />
                 <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
@@ -880,7 +880,7 @@ error 6004: The table 'CinemaManagement2.dbo.ProductBillInfo' is referenced by a
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Products">
-            <EntityTypeMapping TypeName="CinemaManagementModel.Product">
+            <EntityTypeMapping TypeName="CinemaManagement3Model.Product">
               <MappingFragment StoreEntitySet="Product">
                 <ScalarProperty Name="ProductID" ColumnName="ProductID" />
                 <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
@@ -893,7 +893,7 @@ error 6004: The table 'CinemaManagement2.dbo.ProductBillInfo' is referenced by a
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ProductReceipts">
-            <EntityTypeMapping TypeName="CinemaManagementModel.ProductReceipt">
+            <EntityTypeMapping TypeName="CinemaManagement3Model.ProductReceipt">
               <MappingFragment StoreEntitySet="ProductReceipt">
                 <ScalarProperty Name="ProductReciptID" ColumnName="ProductReciptID" />
                 <ScalarProperty Name="ProductID" ColumnName="ProductID" />
@@ -905,7 +905,7 @@ error 6004: The table 'CinemaManagement2.dbo.ProductBillInfo' is referenced by a
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Rooms">
-            <EntityTypeMapping TypeName="CinemaManagementModel.Room">
+            <EntityTypeMapping TypeName="CinemaManagement3Model.Room">
               <MappingFragment StoreEntitySet="Room">
                 <ScalarProperty Name="RoomID" ColumnName="RoomID" />
                 <ScalarProperty Name="SeatQuantity" ColumnName="SeatQuantity" />
@@ -913,7 +913,7 @@ error 6004: The table 'CinemaManagement2.dbo.ProductBillInfo' is referenced by a
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Seats">
-            <EntityTypeMapping TypeName="CinemaManagementModel.Seat">
+            <EntityTypeMapping TypeName="CinemaManagement3Model.Seat">
               <MappingFragment StoreEntitySet="Seat">
                 <ScalarProperty Name="SeatID" ColumnName="SeatID" />
                 <ScalarProperty Name="SeatNumber" ColumnName="SeatNumber" />
@@ -923,7 +923,7 @@ error 6004: The table 'CinemaManagement2.dbo.ProductBillInfo' is referenced by a
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ShowTimes">
-            <EntityTypeMapping TypeName="CinemaManagementModel.ShowTime">
+            <EntityTypeMapping TypeName="CinemaManagement3Model.ShowTime">
               <MappingFragment StoreEntitySet="ShowTime">
                 <ScalarProperty Name="ShowTimeID" ColumnName="ShowTimeID" />
                 <ScalarProperty Name="ShowTimeSettingID" ColumnName="ShowTimeSettingID" />
@@ -934,7 +934,7 @@ error 6004: The table 'CinemaManagement2.dbo.ProductBillInfo' is referenced by a
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ShowtimeSettings">
-            <EntityTypeMapping TypeName="CinemaManagementModel.ShowtimeSetting">
+            <EntityTypeMapping TypeName="CinemaManagement3Model.ShowtimeSetting">
               <MappingFragment StoreEntitySet="ShowtimeSetting">
                 <ScalarProperty Name="ShowtimeSettingId" ColumnName="ShowtimeSettingId" />
                 <ScalarProperty Name="ShowDate" ColumnName="ShowDate" />
@@ -943,7 +943,7 @@ error 6004: The table 'CinemaManagement2.dbo.ProductBillInfo' is referenced by a
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Staffs">
-            <EntityTypeMapping TypeName="CinemaManagementModel.Staff">
+            <EntityTypeMapping TypeName="CinemaManagement3Model.Staff">
               <MappingFragment StoreEntitySet="Staff">
                 <ScalarProperty Name="StaffID" ColumnName="StaffID" />
                 <ScalarProperty Name="StaffName" ColumnName="StaffName" />
@@ -960,7 +960,7 @@ error 6004: The table 'CinemaManagement2.dbo.ProductBillInfo' is referenced by a
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Tickets">
-            <EntityTypeMapping TypeName="CinemaManagementModel.Ticket">
+            <EntityTypeMapping TypeName="CinemaManagement3Model.Ticket">
               <MappingFragment StoreEntitySet="Ticket">
                 <ScalarProperty Name="TicketID" ColumnName="TicketID" />
                 <ScalarProperty Name="BillID" ColumnName="BillID" />
@@ -971,7 +971,7 @@ error 6004: The table 'CinemaManagement2.dbo.ProductBillInfo' is referenced by a
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="SeatSettings">
-            <EntityTypeMapping TypeName="CinemaManagementModel.SeatSetting">
+            <EntityTypeMapping TypeName="CinemaManagement3Model.SeatSetting">
               <MappingFragment StoreEntitySet="SeatSetting">
                 <ScalarProperty Name="SeatID" ColumnName="SeatID" />
                 <ScalarProperty Name="ShowTimeID" ColumnName="ShowTimeID" />
@@ -979,7 +979,7 @@ error 6004: The table 'CinemaManagement2.dbo.ProductBillInfo' is referenced by a
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <AssociationSetMapping Name="MovieGenre" TypeName="CinemaManagementModel.MovieGenre" StoreEntitySet="MovieGenre">
+          <AssociationSetMapping Name="MovieGenre" TypeName="CinemaManagement3Model.MovieGenre" StoreEntitySet="MovieGenre">
             <EndProperty Name="Genre">
               <ScalarProperty Name="GenreID" ColumnName="GenreID" />
             </EndProperty>

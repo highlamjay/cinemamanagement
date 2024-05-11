@@ -19,8 +19,10 @@ namespace cinema_management.ViewModel.AdminVM.MovieManagementVM
         {
             if (filepath != null && IsValidData())
             {
-                List<GenreDTO> temp = new List<GenreDTO>();
-                temp.Add(movieGenre);
+                List<GenreDTO> temp = new List<GenreDTO>
+                {
+                    movieGenre
+                };
 
                 string movieImage = await CloudinaryService.Ins.UploadImage(filepath);
 

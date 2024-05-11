@@ -70,5 +70,5 @@ namespace cinema_management.DTOs
                 return Helper.FormatVNMoney(TotalPriceTicket);
             }
         }
-        }
+    }
 }

@@ -68,5 +68,10 @@ namespace cinema_management.Views.Admin
         {
 
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

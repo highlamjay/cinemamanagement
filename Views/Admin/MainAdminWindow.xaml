@@ -218,7 +218,7 @@
                                         BorderBrush="Transparent"
                                         Width="240"
                                         Command="{Binding LoadQLPPageCM}"
-                                        CommandParameter="{Binding ElementName=MainFrame}" />
+                                        CommandParameter="{Binding ElementName=MainFrame}" Click="Button_Click_1" />
                             </StackPanel>
 
                             <StackPanel  Orientation="Horizontal">
