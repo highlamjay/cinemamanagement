@@ -1,18 +1,13 @@
 ﻿
-FC:\Users\Nguyen\source\repos\cinemamanagement\App.xaml;;
-FC:\Users\Nguyen\source\repos\cinemamanagement\ResourceXAML\MainResource.xaml;;
-FC:\Users\Nguyen\source\repos\cinemamanagement\Views\Admin\MovieManagement\AddMovieWindow.xaml;;
-FC:\Users\Nguyen\source\repos\cinemamanagement\Views\Admin\MovieManagement\EditMovie.xaml;;
-FC:\Users\Nguyen\source\repos\cinemamanagement\Views\Admin\MovieManagement\InforMovieWindow.xaml;;
-FC:\Users\Nguyen\source\repos\cinemamanagement\Views\Admin\MovieManagement\MovieManagement.xaml;;
-FC:\Users\Nguyen\source\repos\cinemamanagement\Views\Admin\ShowtimeManagement\AddShowtimeWindow.xaml;;
-FC:\Users\Nguyen\source\repos\cinemamanagement\Views\Admin\StaffManagement\ChangePasswordWindow.xaml;;
-FC:\Users\Nguyen\source\repos\cinemamanagement\Views\Admin\StaffManagement\EditStaffWindow.xaml;;
-FC:\Users\Nguyen\source\repos\cinemamanagement\Views\Admin\StaffManagement\StaffManagementPage.xaml;;
-FC:\Users\Nguyen\source\repos\cinemamanagement\Views\LoginWindow\ChangePasswordPage.xaml;;
-FC:\Users\Nguyen\source\repos\cinemamanagement\Views\LoginWindow\ForgotPasswordPage.xaml;;
-FC:\Users\Nguyen\source\repos\cinemamanagement\Views\LoginWindow\LoginPage.xaml;;
-FC:\Users\Nguyen\source\repos\cinemamanagement\Views\LoginWindow\LoginWindow.xaml;;
-FC:\Users\Nguyen\source\repos\cinemamanagement\Views\LoginWindow\RolePage.xaml;;
-FC:\Users\Nguyen\source\repos\cinemamanagement\Views\MessageBoxCustom.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\App.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\ResourceXAML\MainResource.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\Views\Admin\ShowtimeManagement\AddShowtimeWindow.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\Views\Admin\ShowtimeManagement\Infor_EditShowtimeWindow.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\Views\Admin\ShowtimeManagement\ShowtimeManagement.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\Views\LoginWindow\ChangePasswordPage.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\Views\LoginWindow\ForgotPasswordPage.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\Views\LoginWindow\LoginPage.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\Views\LoginWindow\LoginWindow.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\Views\LoginWindow\RolePage.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\Views\MessageBoxCustom.xaml;;
 

@@ -1,0 +1,23 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/bin/Debug/Azure.Core.dll
+/bin/Debug/Azure.Identity.dll
+/bin/Debug/Azure.Storage.Blobs.dll
+/.vs/cinema-management/FileContentIndex/12bb3fe2-5a03-4fe4-af98-67960796fcb5.vsidx
+/.vs/cinema-management/FileContentIndex/merges/fec885eb-1dff-4c01-b83d-f11519390af6.vsidx
+/.vs/cinema-management/FileContentIndex/1dc65c6d-3046-42ce-a585-98663dfd6e0b.vsidx
+/.vs/cinema-management/FileContentIndex/b45ac533-f818-43c3-a9f3-d7e8b50a5904.vsidx
+/.vs/cinema-management/FileContentIndex/bc4cb63f-b0f0-4f48-b487-92ca5cfb8028.vsidx
+/.vs/cinema-management/FileContentIndex/read.lock
+/.vs/cinema-management/FileContentIndex/merges/fec885eb-1dff-4c01-b83d-f11519390af6.vsidx
+/.vs/cinema-management/FileContentIndex/merges/fec885eb-1dff-4c01-b83d-f11519390af6.vsidx
+/.vs/cinema-management/FileContentIndex/merges/fec885eb-1dff-4c01-b83d-f11519390af6.vsidx
+/.vs/cinema-management/FileContentIndex/12bb3fe2-5a03-4fe4-af98-67960796fcb5.vsidx
+/.vs/cinema-management/FileContentIndex/1a16a5ee-ed7b-4e89-b0fb-389a1878cf90.vsidx
+/.vs/cinema-management/FileContentIndex/732c5f59-39a4-4384-89f5-e777b4f36c7d.vsidx
+/.vs/cinema-management/FileContentIndex/741b9c2a-fb63-4c76-a8d8-569abac3976d.vsidx
+/.vs/cinema-management/FileContentIndex/c1aa4165-3102-41c1-a6a9-923375098c0c.vsidx
+/.vs/cinema-management/FileContentIndex/d7dadb5e-8a62-4634-8ccd-645bc0bcdab8.vsidx
+*.vsidx

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\cinema-management\obj\Debug\
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\
 cinema_management
 none
 false
 DEBUG;TRACE
-D:\cinema-management\App.xaml
-221340260676
-2-1520821729
-64-886515444
-25-1892601726
-Resources\Scrollbar\Scrollbar.xaml;ResourceXAML\MainResource.xaml;Views\Admin\CustomerManagement\CustomerManagement.xaml;Views\Admin\CustomerManagement\EditCustomer.xaml;Views\Admin\MainAdminWindow.xaml;Views\Admin\MovieManagement\AddMovieWindow.xaml;Views\Admin\MovieManagement\EditMovie.xaml;Views\Admin\MovieManagement\InforMovieWindow.xaml;Views\Admin\MovieManagement\MovieManagement.xaml;Views\Admin\ShowtimeManagement\AddShowtimeWindow.xaml;Views\Admin\ShowtimeManagement\Infor_EditShowtimeWindow.xaml;Views\Admin\ShowtimeManagement\ShowtimeManagement.xaml;Views\Admin\StaffManagement\AddStaffWindow.xaml;Views\Admin\StaffManagement\ChangePasswordWindow.xaml;Views\Admin\StaffManagement\EditStaffWindow.xaml;Views\Admin\StaffManagement\StaffManagementPage.xaml;Views\LoginWindow\ChangePasswordPage.xaml;Views\LoginWindow\ForgotPasswordPage.xaml;Views\LoginWindow\LoginPage.xaml;Views\LoginWindow\LoginWindow.xaml;Views\LoginWindow\RolePage.xaml;Views\MessageBoxCustom.xaml;
+D:\Đồ án NM CNPM\cinemamanagement\App.xaml
+141210252318
+5-1456820431
+72910944394
+1501377737445
+Resources\Scrollbar\Scrollbar.xaml;ResourceXAML\MainResource.xaml;Views\Admin\CustomerManagement\CustomerManagement.xaml;Views\Admin\CustomerManagement\EditCustomer.xaml;Views\Admin\MainAdminWindow.xaml;Views\Admin\ShowtimeManagement\AddShowtimeWindow.xaml;Views\Admin\ShowtimeManagement\Infor_EditShowtimeWindow.xaml;Views\Admin\ShowtimeManagement\ShowtimeManagement.xaml;Views\LoginWindow\ChangePasswordPage.xaml;Views\LoginWindow\ForgotPasswordPage.xaml;Views\LoginWindow\LoginPage.xaml;Views\LoginWindow\LoginWindow.xaml;Views\LoginWindow\RolePage.xaml;Views\MessageBoxCustom.xaml;
 
 False
 
