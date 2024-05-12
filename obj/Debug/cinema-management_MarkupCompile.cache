@@ -12,9 +12,9 @@ DEBUG;TRACE
 D:\Đồ án NM CNPM\cinemamanagement\App.xaml
 141210252318
 5-1456820431
-71-1301934284
+72910944394
 1501377737445
 Resources\Scrollbar\Scrollbar.xaml;ResourceXAML\MainResource.xaml;Views\Admin\CustomerManagement\CustomerManagement.xaml;Views\Admin\CustomerManagement\EditCustomer.xaml;Views\Admin\MainAdminWindow.xaml;Views\Admin\ShowtimeManagement\AddShowtimeWindow.xaml;Views\Admin\ShowtimeManagement\Infor_EditShowtimeWindow.xaml;Views\Admin\ShowtimeManagement\ShowtimeManagement.xaml;Views\LoginWindow\ChangePasswordPage.xaml;Views\LoginWindow\ForgotPasswordPage.xaml;Views\LoginWindow\LoginPage.xaml;Views\LoginWindow\LoginWindow.xaml;Views\LoginWindow\RolePage.xaml;Views\MessageBoxCustom.xaml;
 
-False
+True
 

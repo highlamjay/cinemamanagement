@@ -257,8 +257,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Infor_EditShowtimeWindow.xaml",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\ShowtimeManagement\\Infor_EditShowtimeWindow.xaml",
+              "RelativeDocumentMoniker": "Views\\Admin\\ShowtimeManagement\\Infor_EditShowtimeWindow.xaml",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\ShowtimeManagement\\Infor_EditShowtimeWindow.xaml",
+              "RelativeToolTip": "Views\\Admin\\ShowtimeManagement\\Infor_EditShowtimeWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-20T14:39:47.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 6,
@@ -318,18 +334,6 @@
               "ViewState": "AQIAAAMBAAAAAAAAAAAswBYBAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-18T15:22:34.295Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Infor_EditShowtimeWindow.xaml",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\ShowtimeManagement\\Infor_EditShowtimeWindow.xaml",
-              "RelativeDocumentMoniker": "Views\\Admin\\ShowtimeManagement\\Infor_EditShowtimeWindow.xaml",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\ShowtimeManagement\\Infor_EditShowtimeWindow.xaml",
-              "RelativeToolTip": "Views\\Admin\\ShowtimeManagement\\Infor_EditShowtimeWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-20T14:39:47.165Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
