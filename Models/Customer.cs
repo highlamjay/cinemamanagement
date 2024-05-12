@@ -18,6 +18,7 @@ namespace cinema_management.Models
         public Customer()
         {
             this.Bills = new HashSet<Bill>();
+            this.Vouchers = new HashSet<Voucher>();
         }
     
         public string CustomerID { get; set; }
@@ -30,5 +31,7 @@ namespace cinema_management.Models
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Bill> Bills { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Voucher> Vouchers { get; set; }
     }
 }

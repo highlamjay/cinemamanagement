@@ -4,11 +4,26 @@
                     xmlns:viewmodelLogin="clr-namespace:cinema_management.ViewModel.LoginVM"
                     xmlns:viewmodelMainAdmin="clr-namespace:cinema_management.ViewModel.AdminVM"
                     xmlns:viewmodelForgotPass="clr-namespace:cinema_management.ViewModel.LoginVM"
+                    xmlns:viewmodelStaffManagement="clr-namespace:cinema_management.ViewModel.AdminVM.StaffManagementVM"
+                    xmlns:viewmodelStatisticalManagement="clr-namespace:cinema_management.ViewModel.AdminVM.StatisticalManagementVM"
+                    xmlns:viewmodelCustomerManagement="clr-namespace:cinema_management.ViewModel.AdminVM.CustomerManagementVM"
+                    xmlns:viewmodelVoucherManagement="clr-namespace:cinema_management.ViewModel.AdminVM.VoucherManagementVM">
+    
+    
+
+    <viewmodelLogin:LoginViewModel x:Key="LoginVM"/>
+    <viewmodelMainAdmin:MainAdminViewModel x:Key="MainAdminVM"/>
+                    xmlns:viewmodelForgotPass="clr-namespace:cinema_management.ViewModel.LoginVM"
                     xmlns:viewmodelCustomerManagement="clr-namespace:cinema_management.ViewModel.AdminVM.CustomerManagementVM"
                     xmlns:viewmodelShowtimeManagement="clr-namespace:cinema_management.ViewModel.AdminVM.ShowtimeManagementVM">
                     
 
     <viewmodelForgotPass:ForgotPassViewModel x:Key="ForgotPassVM"/>
+    <viewmodelStaffManagement:StaffManagementViewModel x:Key="StaffManagementVM"/>
+    <viewmodelStatisticalManagement:StatisticalManagementViewModel x:Key="StatisticalManagementVM"/>
+    <viewmodelCustomerManagement:CustomerManagementViewModel x:Key="CustomerManagementVM"/>
+    <viewmodelVoucherManagement:VoucherViewModel x:Key="VoucherVM"/>
+
     <viewmodelLogin:LoginViewModel x:Key="LoginVM"/>
     <viewmodelMainAdmin:MainAdminViewModel x:Key="MainAdminVM"></viewmodelMainAdmin:MainAdminViewModel>
     <viewmodelCustomerManagement:CustomerManagementViewModel x:Key="CustomerManagementVM"/>

@@ -1,6 +1,17 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Models",
+    "\\Models\\Services",
+    "\\Properties",
+    "\\ResourceXAML",
+    "\\ViewModel",
+    "\\ViewModel\\AdminVM",
+    "\\ViewModel\\AdminVM\\StaffManagementVM",
+    "\\Views",
+    "\\Views\\Admin",
+    "\\Views\\Staff"
   ],
+  "SelectedNode": "\\Models\\Services\\CustomerServicecs.cs",
   "PreviewInSolutionExplorer": false
 }

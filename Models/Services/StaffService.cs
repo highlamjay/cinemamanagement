@@ -1,14 +1,17 @@
 ﻿using cinema_management.DTOs;
 using cinema_management.Utils;
 using System;
+using System.Data.Entity;
 using System.Collections;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using cinema_management.Models;
+using System.Web;
+using System.Security.Cryptography;
 
-namespace cinema_management.Models.Services
+namespace cinema_management.Model.Service
 {
     public class StaffService
     {
@@ -44,21 +47,21 @@ namespace cinema_management.Models.Services
                                   StartingDate = s.StartingDate,
                                   StaffPassword = s.StaffPassword,
                                   Email = s.Email
-                              }).ToListAsync();
+                              }).ToListAsync();               
                 return await staffs;
             }
         }
         public async Task<(bool, string, StaffDTO)> Login(string username, string password)
         {
 
-            //string hassPass = Helper.MD5Hash(password);
+            string hassPass = Helper.MD5Hash(password);
 
             try
             {
                 using (var context = new CinemaManagementEntities())
-                {
+                {                    
                     var staff = await (from s in context.Staffs
-                                       where s.UserName == username && s.StaffPassword == password
+                                       where s.UserName == username && s.StaffPassword == hassPass
                                        select new StaffDTO
                                        {
                                            StaffId = s.StaffID,
@@ -69,7 +72,6 @@ namespace cinema_management.Models.Services
                                            StaffRole = s.StaffRole,
                                            PhoneNumber = s.PhoneNumber,
                                            StartingDate = s.StartingDate,
-                                           StaffPassword = s.StaffPassword,
                                            Email = s.Email
                                        }).FirstOrDefaultAsync();
 
@@ -128,9 +130,10 @@ namespace cinema_management.Models.Services
                     }
 
                     var maxId = await context.Staffs.MaxAsync(s => s.StaffID);
-                    Staff st = Copy(newStaff);
+                    Staff st = Copy(newStaff);                    
                     st.StaffID = CreateNextStaffId(maxId);
-                    newStaff.StaffId = st.StaffID;
+                    st.IsDeleted = false;
+                    newStaff.StaffId = st.StaffID;           
                     st.StaffPassword = Helper.MD5Hash(newStaff.StaffPassword);
 
                     context.Staffs.Add(st);
@@ -151,13 +154,13 @@ namespace cinema_management.Models.Services
         {
             return new Staff
             {
-                StaffBirthDay = (DateTime)s.StaffBirthDay,
+                StaffBirthDay = s.StaffBirthDay,
                 Sex = s.Sex,
                 UserName = s.Username,
                 StaffName = s.StaffName,
                 StaffRole = s.StaffRole,
                 PhoneNumber = s.PhoneNumber,
-                StartingDate = (DateTime)s.StartingDate,
+                StartingDate = s.StartingDate,
                 Email = s.Email
             };
         }
@@ -197,13 +200,13 @@ namespace cinema_management.Models.Services
                         return (false, "Nhân viên không tồn tại");
                     }
 
-                    staff.StaffBirthDay = (DateTime)updatedStaff.StaffBirthDay;
+                    staff.StaffBirthDay = updatedStaff.StaffBirthDay;
                     staff.Sex = updatedStaff.Sex;
                     staff.UserName = updatedStaff.Username;
                     staff.StaffName = updatedStaff.StaffName;
                     staff.StaffRole = updatedStaff.StaffRole;
                     staff.PhoneNumber = updatedStaff.PhoneNumber;
-                    staff.StartingDate = (DateTime)updatedStaff.StartingDate;
+                    staff.StartingDate = updatedStaff.StartingDate;
                     staff.Email = updatedStaff.Email;
 
                     await context.SaveChangesAsync();
@@ -257,7 +260,7 @@ namespace cinema_management.Models.Services
                 using (var context = new CinemaManagementEntities())
                 {
                     Staff staff = await (from p in context.Staffs
-                                         where p.StaffID == Id && p.IsDeleted == false
+                                         where p.StaffID.ToString() == Id && p.IsDeleted == false
                                          select p).FirstOrDefaultAsync();
                     if (staff is null || staff?.IsDeleted == true)
                     {
@@ -305,7 +308,7 @@ namespace cinema_management.Models.Services
                         return ("Tài khoản chưa đăng kí email. Vui lòng liên hệ quản lý để được hỗ trợ", null, null);
                     }
 
-                    return (null, staff.Email, staff.StaffID);
+                    return (null, staff.Email, staff.StaffID.ToString());
                 }
             }
             catch (Exception)
@@ -313,5 +316,6 @@ namespace cinema_management.Models.Services
                 return ($"Lỗi hệ thống.", null, null);
             }
         }
+
     }
 }

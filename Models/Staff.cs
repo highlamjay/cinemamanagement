@@ -19,6 +19,8 @@ namespace cinema_management.Models
         {
             this.Bills = new HashSet<Bill>();
             this.ProductReceipts = new HashSet<ProductReceipt>();
+            this.Troubles = new HashSet<Trouble>();
+            this.VoucherReleases = new HashSet<VoucherRelease>();
         }
     
         public string StaffID { get; set; }
@@ -28,8 +30,8 @@ namespace cinema_management.Models
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
         public string Sex { get; set; }
-        public System.DateTime StaffBirthDay { get; set; }
-        public System.DateTime StartingDate { get; set; }
+        public Nullable<System.DateTime> StaffBirthDay { get; set; }
+        public Nullable<System.DateTime> StartingDate { get; set; }
         public string StaffRole { get; set; }
         public bool IsDeleted { get; set; }
     
@@ -37,5 +39,9 @@ namespace cinema_management.Models
         public virtual ICollection<Bill> Bills { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ProductReceipt> ProductReceipts { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Trouble> Troubles { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<VoucherRelease> VoucherReleases { get; set; }
     }
 }
