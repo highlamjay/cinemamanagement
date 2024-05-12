@@ -454,7 +454,7 @@
     <Resource Include="Resources\Icon\iconApp.ico" />
     <Resource Include="Resources\Icon\info.png" />
     <Resource Include="Resources\Icon\Money.jpg" />
-    <Resource Include="Resources\Icon\pencil %281%29.png" />
+    <Resource Include="Resources\Icon\pencil.png" />
     <Resource Include="Resources\Icon\succes.png" />
     <Resource Include="Resources\Icon\warning.png" />
     <Resource Include="Resources\ImageStaff\pencil.png" />
