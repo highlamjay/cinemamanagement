@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\test\\cinemamanagement\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|D:\\test\\cinemamanagement\\views\\admin\\mainadminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:views\\admin\\mainadminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|d:\\test\\cinemamanagement\\models\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:models\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -97,10 +101,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|D:\\test\\cinemamanagement\\resourcexaml\\mainresource.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:resourcexaml\\mainresource.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|D:\\test\\cinemamanagement\\views\\admin\\mainadminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:views\\admin\\mainadminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|D:\\test\\cinemamanagement\\viewmodel\\adminvm\\mainadminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -495,27 +495,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CinemaManagementModel.edmx [Diagram1]",
-              "DocumentMoniker": "D:\\test\\cinemamanagement\\Models\\CinemaManagementModel.edmx",
-              "RelativeDocumentMoniker": "Models\\CinemaManagementModel.edmx",
-              "ToolTip": "D:\\test\\cinemamanagement\\Models\\CinemaManagementModel.edmx [Diagram1]",
-              "RelativeToolTip": "Models\\CinemaManagementModel.edmx [Diagram1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2024-05-14T07:49:44.961Z",
-              "EditorCaption": " [Diagram1]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "CustomerService.cs",
               "DocumentMoniker": "D:\\test\\cinemamanagement\\Models\\Services\\CustomerService.cs",
               "RelativeDocumentMoniker": "Models\\Services\\CustomerService.cs",
@@ -528,7 +512,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "App.config",
               "DocumentMoniker": "D:\\test\\cinemamanagement\\App.config",
               "RelativeDocumentMoniker": "App.config",
@@ -571,6 +555,94 @@
               "RelativeToolTip": "..\\..\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\ResourceXAML\\ResourceMain.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-04-06T09:19:48.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainAdminWindow.xaml",
+              "DocumentMoniker": "D:\\test\\cinemamanagement\\Views\\Admin\\MainAdminWindow.xaml",
+              "RelativeDocumentMoniker": "Views\\Admin\\MainAdminWindow.xaml",
+              "ToolTip": "D:\\test\\cinemamanagement\\Views\\Admin\\MainAdminWindow.xaml",
+              "RelativeToolTip": "Views\\Admin\\MainAdminWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-06T12:17:03.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CinemaManagementModel.edmx [Diagram1]",
+              "DocumentMoniker": "D:\\test\\cinemamanagement\\Models\\CinemaManagementModel.edmx",
+              "RelativeDocumentMoniker": "Models\\CinemaManagementModel.edmx",
+              "ToolTip": "D:\\test\\cinemamanagement\\Models\\CinemaManagementModel.edmx [Diagram1]",
+              "RelativeToolTip": "Models\\CinemaManagementModel.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-05-14T07:49:44.961Z",
+              "EditorCaption": " [Diagram1]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "MovieManagement.xaml.cs",
+              "DocumentMoniker": "D:\\test\\cinemamanagement\\Views\\Admin\\MovieManagement\\MovieManagement.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\Admin\\MovieManagement\\MovieManagement.xaml.cs",
+              "ToolTip": "D:\\test\\cinemamanagement\\Views\\Admin\\MovieManagement\\MovieManagement.xaml.cs",
+              "RelativeToolTip": "Views\\Admin\\MovieManagement\\MovieManagement.xaml.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwCgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T15:13:38.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "MainResource.xaml",
+              "DocumentMoniker": "D:\\test\\cinemamanagement\\ResourceXAML\\MainResource.xaml",
+              "RelativeDocumentMoniker": "ResourceXAML\\MainResource.xaml",
+              "ToolTip": "D:\\test\\cinemamanagement\\ResourceXAML\\MainResource.xaml",
+              "RelativeToolTip": "ResourceXAML\\MainResource.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-12T14:07:48.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AddStaffViewModel.cs",
+              "DocumentMoniker": "D:\\test\\cinemamanagement\\ViewModel\\AdminVM\\StaffManagementVM\\AddStaffViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\AdminVM\\StaffManagementVM\\AddStaffViewModel.cs",
+              "ToolTip": "D:\\test\\cinemamanagement\\ViewModel\\AdminVM\\StaffManagementVM\\AddStaffViewModel.cs",
+              "RelativeToolTip": "ViewModel\\AdminVM\\StaffManagementVM\\AddStaffViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAB/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T14:56:24.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ChangePasswordPage.xaml.cs",
+              "DocumentMoniker": "D:\\test\\cinemamanagement\\Views\\LoginWindow\\ChangePasswordPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\LoginWindow\\ChangePasswordPage.xaml.cs",
+              "ToolTip": "D:\\test\\cinemamanagement\\Views\\LoginWindow\\ChangePasswordPage.xaml.cs",
+              "RelativeToolTip": "Views\\LoginWindow\\ChangePasswordPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T15:55:37.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MovieService.cs",
+              "DocumentMoniker": "D:\\test\\cinemamanagement\\Models\\Services\\MovieService.cs",
+              "RelativeDocumentMoniker": "Models\\Services\\MovieService.cs",
+              "ToolTip": "D:\\test\\cinemamanagement\\Models\\Services\\MovieService.cs",
+              "RelativeToolTip": "Models\\Services\\MovieService.cs",
+              "ViewState": "AQIAAGUBAAAAAAAAAADwv2oBAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T13:37:03.229Z"
             },
             {
               "$type": "Document",
@@ -1015,7 +1087,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "RolePage.xaml.cs",
               "DocumentMoniker": "D:\\test\\cinemamanagement\\Views\\LoginWindow\\RolePage.xaml.cs",
               "RelativeDocumentMoniker": "Views\\LoginWindow\\RolePage.xaml.cs",
@@ -1027,7 +1099,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ForgotPasswordPage.xaml.cs",
               "DocumentMoniker": "D:\\test\\cinemamanagement\\Views\\LoginWindow\\ForgotPasswordPage.xaml.cs",
               "RelativeDocumentMoniker": "Views\\LoginWindow\\ForgotPasswordPage.xaml.cs",
@@ -1039,7 +1111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "SeatService.cs",
               "DocumentMoniker": "D:\\test\\cinemamanagement\\Models\\Services\\SeatService.cs",
               "RelativeDocumentMoniker": "Models\\Services\\SeatService.cs",
@@ -1051,7 +1123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "StaffService.cs",
               "DocumentMoniker": "D:\\test\\cinemamanagement\\Models\\Services\\StaffService.cs",
               "RelativeDocumentMoniker": "Models\\Services\\StaffService.cs",
@@ -1063,7 +1135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "CustomerManagement.xaml",
               "DocumentMoniker": "D:\\test\\cinemamanagement\\Views\\Admin\\CustomerManagement\\CustomerManagement.xaml",
               "RelativeDocumentMoniker": "Views\\Admin\\CustomerManagement\\CustomerManagement.xaml",
@@ -1074,18 +1146,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "App.xaml",
               "DocumentMoniker": "D:\\test\\cinemamanagement\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
               "ToolTip": "D:\\test\\cinemamanagement\\App.xaml",
               "RelativeToolTip": "App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-06T08:32:29.591Z"
+              "WhenOpened": "2024-04-06T08:32:29.591Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "LoginWindow.xaml.cs",
               "DocumentMoniker": "D:\\test\\cinemamanagement\\Views\\LoginWindow\\LoginWindow.xaml.cs",
               "RelativeDocumentMoniker": "Views\\LoginWindow\\LoginWindow.xaml.cs",
@@ -1141,7 +1214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "EditStaffViewModel.cs",
               "DocumentMoniker": "D:\\test\\cinemamanagement\\ViewModel\\AdminVM\\StaffManagementVM\\EditStaffViewModel.cs",
               "RelativeDocumentMoniker": "ViewModel\\AdminVM\\StaffManagementVM\\EditStaffViewModel.cs",
@@ -1153,7 +1226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "LoginPage.xaml.cs",
               "DocumentMoniker": "D:\\test\\cinemamanagement\\Views\\LoginWindow\\LoginPage.xaml.cs",
               "RelativeDocumentMoniker": "Views\\LoginWindow\\LoginPage.xaml.cs",
@@ -1165,7 +1238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "D:\\test\\cinemamanagement\\ViewModel\\LoginVM\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "ViewModel\\LoginVM\\LoginViewModel.cs",
@@ -1236,7 +1309,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "LoginPage.xaml",
               "DocumentMoniker": "D:\\test\\cinemamanagement\\Views\\LoginWindow\\LoginPage.xaml",
               "RelativeDocumentMoniker": "Views\\LoginWindow\\LoginPage.xaml",
@@ -1247,7 +1320,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "packages.config",
               "DocumentMoniker": "D:\\test\\cinemamanagement\\packages.config",
               "RelativeDocumentMoniker": "packages.config",
@@ -1259,7 +1332,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "ForgotPassViewModel.cs",
               "DocumentMoniker": "D:\\test\\cinemamanagement\\ViewModel\\LoginVM\\ForgotPassViewModel.cs",
               "RelativeDocumentMoniker": "ViewModel\\LoginVM\\ForgotPassViewModel.cs",
@@ -1271,7 +1344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "StaffManagementViewModel.cs",
               "DocumentMoniker": "D:\\test\\cinemamanagement\\ViewModel\\AdminVM\\StaffManagementVM\\StaffManagementViewModel.cs",
               "RelativeDocumentMoniker": "ViewModel\\AdminVM\\StaffManagementVM\\StaffManagementViewModel.cs",
@@ -1283,7 +1356,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Resources.Designer.cs",
               "DocumentMoniker": "D:\\test\\cinemamanagement\\Properties\\Resources.Designer.cs",
               "RelativeDocumentMoniker": "Properties\\Resources.Designer.cs",
@@ -1295,7 +1368,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "D:\\test\\cinemamanagement\\Properties\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "Properties\\AssemblyInfo.cs",
@@ -1318,7 +1391,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "ChangePasswordViewModel.cs",
               "DocumentMoniker": "D:\\test\\cinemamanagement\\ViewModel\\AdminVM\\StaffManagementVM\\ChangePasswordViewModel.cs",
               "RelativeDocumentMoniker": "ViewModel\\AdminVM\\StaffManagementVM\\ChangePasswordViewModel.cs",
@@ -1339,76 +1412,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAiwBsAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-12T15:13:47.945Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "MovieManagement.xaml.cs",
-              "DocumentMoniker": "D:\\test\\cinemamanagement\\Views\\Admin\\MovieManagement\\MovieManagement.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\Admin\\MovieManagement\\MovieManagement.xaml.cs",
-              "ToolTip": "D:\\test\\cinemamanagement\\Views\\Admin\\MovieManagement\\MovieManagement.xaml.cs",
-              "RelativeToolTip": "Views\\Admin\\MovieManagement\\MovieManagement.xaml.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwCgAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T15:13:38.902Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "MainResource.xaml",
-              "DocumentMoniker": "D:\\test\\cinemamanagement\\ResourceXAML\\MainResource.xaml",
-              "RelativeDocumentMoniker": "ResourceXAML\\MainResource.xaml",
-              "ToolTip": "D:\\test\\cinemamanagement\\ResourceXAML\\MainResource.xaml",
-              "RelativeToolTip": "ResourceXAML\\MainResource.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-12T14:07:48.786Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "AddStaffViewModel.cs",
-              "DocumentMoniker": "D:\\test\\cinemamanagement\\ViewModel\\AdminVM\\StaffManagementVM\\AddStaffViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModel\\AdminVM\\StaffManagementVM\\AddStaffViewModel.cs",
-              "ToolTip": "D:\\test\\cinemamanagement\\ViewModel\\AdminVM\\StaffManagementVM\\AddStaffViewModel.cs",
-              "RelativeToolTip": "ViewModel\\AdminVM\\StaffManagementVM\\AddStaffViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAB/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T14:56:24.055Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "ChangePasswordPage.xaml.cs",
-              "DocumentMoniker": "D:\\test\\cinemamanagement\\Views\\LoginWindow\\ChangePasswordPage.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\LoginWindow\\ChangePasswordPage.xaml.cs",
-              "ToolTip": "D:\\test\\cinemamanagement\\Views\\LoginWindow\\ChangePasswordPage.xaml.cs",
-              "RelativeToolTip": "Views\\LoginWindow\\ChangePasswordPage.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T15:55:37.105Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "MovieService.cs",
-              "DocumentMoniker": "D:\\test\\cinemamanagement\\Models\\Services\\MovieService.cs",
-              "RelativeDocumentMoniker": "Models\\Services\\MovieService.cs",
-              "ToolTip": "D:\\test\\cinemamanagement\\Models\\Services\\MovieService.cs",
-              "RelativeToolTip": "Models\\Services\\MovieService.cs",
-              "ViewState": "AQIAAGUBAAAAAAAAAADwv2oBAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T13:37:03.229Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "MainAdminWindow.xaml",
-              "DocumentMoniker": "D:\\test\\cinemamanagement\\Views\\Admin\\MainAdminWindow.xaml",
-              "RelativeDocumentMoniker": "Views\\Admin\\MainAdminWindow.xaml",
-              "ToolTip": "D:\\test\\cinemamanagement\\Views\\Admin\\MainAdminWindow.xaml",
-              "RelativeToolTip": "Views\\Admin\\MainAdminWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-06T12:17:03.486Z"
             },
             {
               "$type": "Document",
