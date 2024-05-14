@@ -1,4 +1,4 @@
-﻿using cinema_management.Models.Services;
+﻿using cinema_management.Model.Service;
 using cinema_management.Utils;
 using cinema_management.Views;
 using System;
@@ -15,7 +15,7 @@ namespace cinema_management.ViewModel.AdminVM.StaffManagementVM
         public async Task ChangePass(Window p)
         {
 
-            (bool isValid, string error) = IsValidPassword(Operation.UPDATE_PASSWORD);
+            (bool isValid, string error) = IsValidPassword(Utils.Operation.UPDATE_PASSWORD);
 
             if (isValid)
             {

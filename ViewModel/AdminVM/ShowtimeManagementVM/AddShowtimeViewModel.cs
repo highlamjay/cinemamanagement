@@ -1,4 +1,5 @@
 ﻿using cinema_management.DTOs;
+using cinema_management.Models.Services;
 using cinema_management.Models;
 using cinema_management.Views;
 using System;
@@ -8,21 +9,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using System.Windows;
-using cinema_management.Models.Services;
 
 namespace cinema_management.ViewModel.AdminVM.ShowtimeManagementVM
 {
     public partial class ShowtimeManagementViewModel : BaseViewModel
     {
-
         private DateTime _EndTime;
         public DateTime EndTime
         {
             get { return _EndTime; }
             set { _EndTime = value; OnPropertyChanged(); }
         }
-
-
         public ICommand LoadAddShowtimeCM { get; set; }
         public ICommand SaveCM { get; set; }
 
@@ -33,14 +30,12 @@ namespace cinema_management.ViewModel.AdminVM.ShowtimeManagementVM
             set { isSaving = value; OnPropertyChanged(); }
         }
 
-
-
         public async Task SaveShowtimeFunc(Window p)
         {
             if (IsValidData())
             {
 
-                ShowtimeDTO temp = new ShowtimeDTO
+                ShowTimeDTO temp = new ShowTimeDTO
                 {
                     MovieId = movieSelected.Id,
                     RoomId = ShowtimeRoom.Id,

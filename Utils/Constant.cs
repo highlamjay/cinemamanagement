@@ -34,7 +34,7 @@ namespace cinema_management.Utils
         public static readonly string WAITING = "Chờ tiếp nhận";
         public static readonly string IN_PROGRESS = "Đang giải quyết";
         public static readonly string DONE = "Đã giải quyết";
-        public static readonly string CANCLE = "Đã hủy";
+        public static readonly string CANCEL = "Đã hủy";
     }
     public class VOUCHER_OBJECT_TYPE
     {

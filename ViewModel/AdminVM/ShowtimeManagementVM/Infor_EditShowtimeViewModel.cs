@@ -1,4 +1,5 @@
 ﻿using cinema_management.DTOs;
+using cinema_management.Models.Services;
 using cinema_management.Views.Admin.ShowtimeManagement;
 using cinema_management.Views;
 using System;
@@ -8,7 +9,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using cinema_management.Models.Services;
 
 namespace cinema_management.ViewModel.AdminVM.ShowtimeManagementVM
 {
@@ -40,8 +40,8 @@ namespace cinema_management.ViewModel.AdminVM.ShowtimeManagementVM
             set { _EditShowtimeWindow = value; }
         }
 
-        private ObservableCollection<ShowtimeDTO> _ListShowtimeofMovie;
-        public ObservableCollection<ShowtimeDTO> ListShowtimeofMovie
+        private ObservableCollection<ShowTimeDTO> _ListShowtimeofMovie;
+        public ObservableCollection<ShowTimeDTO> ListShowtimeofMovie
         {
             get { return _ListShowtimeofMovie; }
             set { _ListShowtimeofMovie = value; OnPropertyChanged(); }
@@ -70,8 +70,8 @@ namespace cinema_management.ViewModel.AdminVM.ShowtimeManagementVM
         public ICommand EditPriceCM { get; set; }
 
 
-        private ShowtimeDTO _selectedShowtime; //the showtime being selected
-        public ShowtimeDTO SelectedShowtime
+        private ShowTimeDTO _selectedShowtime; //the showtime being selected
+        public ShowTimeDTO SelectedShowtime
         {
             get { return _selectedShowtime; }
             set
@@ -107,7 +107,7 @@ namespace cinema_management.ViewModel.AdminVM.ShowtimeManagementVM
             if (SelectedRoomId != -1)
                 p._ShowtimeRoom.Text = SelectedRoomId.ToString();
 
-            ListShowtimeofMovie = new ObservableCollection<ShowtimeDTO>(SelectedItem.ShowTimes);
+            ListShowtimeofMovie = new ObservableCollection<ShowTimeDTO>(SelectedItem.ShowTimes);
 
             moviePrice = 0;
         }

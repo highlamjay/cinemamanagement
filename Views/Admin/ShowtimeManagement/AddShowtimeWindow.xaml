@@ -3,8 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:cinema_management.Views.Admin.ShowtimeManagement"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:cinema_management.Views.Admin.ShowtimeManagement"
         xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
@@ -17,7 +17,7 @@
         PreviewKeyUp="AddSuatChieu_PreviewKeyUp"
         x:Name="AddSuatChieu"
         MouseLeftButtonDown="AddSuatChieu_MouseLeftButtonDown"
-        >
+        DataContext="{StaticResource ShowtimeManagementVM}">
 
     <Window.Triggers>
         <EventTrigger RoutedEvent="Window.Loaded">

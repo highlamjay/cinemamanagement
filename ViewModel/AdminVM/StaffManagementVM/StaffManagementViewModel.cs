@@ -1,5 +1,5 @@
 ﻿using cinema_management.DTOs;
-using cinema_management.Models.Services;
+using cinema_management.Model.Service;
 using cinema_management.Utils;
 using cinema_management.Views;
 using System;
@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows;
+using cinema_management.Views.LoginWindow;
 using cinema_management.Views.Admin.StaffManagement;
 
 namespace cinema_management.ViewModel.AdminVM.StaffManagementVM
@@ -28,11 +29,11 @@ namespace cinema_management.ViewModel.AdminVM.StaffManagementVM
             set { _Fullname = value; OnPropertyChanged(); }
         }
 
-        private ComboBoxItem _Gender;
-        public ComboBoxItem Gender
+        private ComboBoxItem _Sex;
+        public ComboBoxItem Sex
         {
-            get { return _Gender; }
-            set { _Gender = value; OnPropertyChanged(); }
+            get { return _Sex; }
+            set { _Sex = value; OnPropertyChanged(); }
         }
 
         private Nullable<System.DateTime> _Born;
@@ -246,11 +247,11 @@ namespace cinema_management.ViewModel.AdminVM.StaffManagementVM
                     string x = SelectedItem.Sex;
                     if (x == "Nam")
                     {
-                        wd.Gender.Text = SelectedItem.Sex;
+                        wd.Sex.Text = SelectedItem.Sex;
                     }
                     else
                     {
-                        wd.Gender.Text = "Nữ";
+                        wd.Sex.Text = "Nữ";
                     }
                     wd.Date.Text = SelectedItem.StaffBirthDay.ToString();
                     wd._Phone.Text = SelectedItem.PhoneNumber.ToString();
@@ -340,7 +341,7 @@ namespace cinema_management.ViewModel.AdminVM.StaffManagementVM
         {
             StartDate = null;
             Fullname = null;
-            Gender = null;
+            Sex = null;
             Born = null;
             Role = null;
             Phone = null;
@@ -362,7 +363,7 @@ namespace cinema_management.ViewModel.AdminVM.StaffManagementVM
         private (bool valid, string error) IsValidData(Operation oper)
         {
 
-            if (string.IsNullOrEmpty(Fullname) || Gender is null || StartDate is null || Born is null || Role is null || string.IsNullOrEmpty(TaiKhoan))
+            if (string.IsNullOrEmpty(Fullname) || Sex is null || StartDate is null || Born is null || Role is null || string.IsNullOrEmpty(TaiKhoan))
             {
                 return (false, "Thông tin nhân viên thiếu! Vui lòng bổ sung");
             }

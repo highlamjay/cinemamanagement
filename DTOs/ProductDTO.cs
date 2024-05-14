@@ -19,22 +19,22 @@ namespace cinema_management.DTOs
                           string image,
                           int quantity)
         {
-            this.Id = id;
-            this.DisplayName = displayname;
-            this.Category = category;
-            this.Price = price;
+            this.ProductId = id;
+            this.ProductDisplayName = displayname;
+            this.ProductCategory = category;
+            this.ProductPrice = price;
             this.Image = image;
             this.Quantity = quantity;
         }
-        public int Id { get; set; }
-        public string DisplayName { get; set; }
-        public string Category { get; set; }
-        public decimal Price { get; set; }
+        public int ProductId { get; set; }
+        public string ProductDisplayName { get; set; }
+        public string ProductCategory { get; set; }
+        public decimal ProductPrice { get; set; }
         public string PriceStr
         {
             get
             {
-                return Helper.FormatVNMoney(Price);
+                return Helper.FormatVNMoney(ProductPrice);
             }
         }
         public int Quantity { get; set; }

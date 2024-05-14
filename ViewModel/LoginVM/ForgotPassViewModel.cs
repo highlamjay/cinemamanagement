@@ -125,7 +125,7 @@ namespace cinema_management.ViewModel.LoginVM
                 RandomCode = rd.Next(MIN_VALUE, MAX_VALUE);
                 try
                 {
-                    await SendEmailForStaff(ForgotPasswordEmail, RandomCode);
+                    await SendEmailForStaff(ForgotPasswordEmail,RandomCode);
                 }
                 catch (Exception)
                 {
@@ -179,10 +179,11 @@ namespace cinema_management.ViewModel.LoginVM
 
             //SMTP CONFIG
             SmtpClient smtp = new SmtpClient("smtp.gmail.com");
-            smtp.EnableSsl = true;
+            smtp.EnableSsl = true;           
             smtp.Port = 587;
             smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
             smtp.UseDefaultCredentials = false;
+            
             smtp.Credentials = new NetworkCredential(APP_EMAIL, APP_PASSWORD);
 
             MailMessage mail = new MailMessage();
@@ -193,7 +194,7 @@ namespace cinema_management.ViewModel.LoginVM
             //Add view to the Email Message
             mail.AlternateViews.Add(htmlView);
 
-            mail.From = new MailAddress(APP_EMAIL, "Squadin Cinema");
+            mail.From = new MailAddress(APP_EMAIL, "VMN Cinema");
             mail.To.Add(customerEmail);
             mail.Subject = "Lấy lại mật khẩu đăng nhập";
 
