@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows;
 using cinema_management.Views.Admin.MovieManagement;
 using cinema_management.Views.Admin.CustomerManagement;
+using cinema_management.Views.Admin.StaffManagement;
 
 namespace cinema_management.ViewModel.AdminVM
 {
@@ -63,6 +64,14 @@ namespace cinema_management.ViewModel.AdminVM
                     MainAdminWindow.Slidebtn.IsChecked = false;
                 if (p != null)
                     p.Content = new CustomerManagement();
+            });
+            LoadQLNVPageCM = new RelayCommand<Frame>((p) => { return p != null; }, (p) =>
+            {
+                SelectedFuncName = "Quản lý nhân sự";
+                if (MainAdminWindow.Slidebtn != null)
+                    MainAdminWindow.Slidebtn.IsChecked = false;
+                if (p != null)
+                    p.Content = new StaffManagement();
             });
         }
     }

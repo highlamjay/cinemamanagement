@@ -229,6 +229,10 @@
     <Compile Include="ViewModel\AdminVM\MovieManagementVM\Edit.MovieViewModel.cs" />
     <Compile Include="ViewModel\AdminVM\MovieManagementVM\Infor.MovieWindowViewModel.cs" />
     <Compile Include="ViewModel\AdminVM\MovieManagementVM\MovieManagementViewModel.cs" />
+    <Compile Include="ViewModel\AdminVM\StaffManagementVM\AddStaffViewModel.cs" />
+    <Compile Include="ViewModel\AdminVM\StaffManagementVM\ChangePasswordViewModel.cs" />
+    <Compile Include="ViewModel\AdminVM\StaffManagementVM\EditStaffViewModel.cs" />
+    <Compile Include="ViewModel\AdminVM\StaffManagementVM\StaffManagementViewModel.cs" />
     <Compile Include="ViewModel\BaseViewModel.cs" />
     <Compile Include="ViewModel\LoginVM\ForgotPassViewModel.cs" />
     <Compile Include="ViewModel\LoginVM\LoginViewModel.cs" />
@@ -252,6 +256,18 @@
     </Compile>
     <Compile Include="Views\Admin\MovieManagement\MovieManagement.xaml.cs">
       <DependentUpon>MovieManagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\StaffManagement\AddStaffWindow.xaml.cs">
+      <DependentUpon>AddStaffWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\StaffManagement\ChangePasswordWindow.xaml.cs">
+      <DependentUpon>ChangePasswordWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\StaffManagement\EditStaffWindow.xaml.cs">
+      <DependentUpon>EditStaffWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\StaffManagement\StaffManagement.xaml.cs">
+      <DependentUpon>StaffManagement.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\LoginWindow\ChangePasswordPage.xaml.cs">
       <DependentUpon>ChangePasswordPage.xaml</DependentUpon>
@@ -318,6 +334,22 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Admin\MovieManagement\MovieManagement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\StaffManagement\AddStaffWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\StaffManagement\ChangePasswordWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\StaffManagement\EditStaffWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\StaffManagement\StaffManagement.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

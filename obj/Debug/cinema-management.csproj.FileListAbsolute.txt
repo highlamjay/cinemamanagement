@@ -124,3 +124,11 @@ D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\CustomerManagement\C
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\CustomerManagement\EditCustomer.g.cs
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\CustomerManagement\CustomerManagement.baml
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\CustomerManagement\EditCustomer.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\AddStaffWindow.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\ChangePasswordWindow.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\EditStaffWindow.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\StaffManagement.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\AddStaffWindow.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\ChangePasswordWindow.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\EditStaffWindow.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\StaffManagement.baml
