@@ -31,7 +31,7 @@ namespace cinema_management.Models.Services
                 List<GenreDTO> genres;
                 try
                 {
-                    using (var context = new CinemaManagementEntities8())
+                    using (var context = new CinemaManagementEntities())
                     {
                         genres = (from s in context.Genres
                                   select new GenreDTO { Id = s.GenreID, DisplayName = s.GenreDisplayName }).ToList();
@@ -49,7 +49,7 @@ namespace cinema_management.Models.Services
             {
                 try
                 {
-                    using (var context = new CinemaManagementEntities8())
+                    using (var context = new CinemaManagementEntities())
                     {
                         var genreInDB = context.Genres.Where(g => g.GenreDisplayName == genre.DisplayName).FirstOrDefault();
                         if (genreInDB != null)
@@ -90,7 +90,7 @@ namespace cinema_management.Models.Services
             {
                 try
                 {
-                    using (var context = new CinemaManagementEntities8())
+                    using (var context = new CinemaManagementEntities())
                     {
                         var genre = context.Genres.Where(g => g.GenreID == GenreId).FirstOrDefault();
                         if (genre == null)

@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace cinema_management.Models.Services
+namespace cinema_management.Models
 {
     using System;
     using System.Collections.Generic;
@@ -20,9 +20,9 @@ namespace cinema_management.Models.Services
             this.ShowTimes = new HashSet<ShowTime>();
         }
     
-        public int ShowtimeSettingId { get; set; }
-        public Nullable<System.DateTime> ShowDate { get; set; }
-        public Nullable<int> RoomId { get; set; }
+        public int ShowtimeSettingID { get; set; }
+        public System.DateTime ShowDate { get; set; }
+        public int RoomID { get; set; }
     
         public virtual Room Room { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using cinema_management.Models.Services;
 using System.Web;
+using cinema_management.Models;
 
 namespace cinema_management.Model.Service
 {
@@ -30,14 +31,14 @@ namespace cinema_management.Model.Service
         }
         public async Task<List<StaffDTO>> GetAllStaff()
         {
-            using (var context = new CinemaManagementEntities8())
+            using (var context = new CinemaManagementEntities())
             {
                 var staffs = (from s in context.Staffs
                               where s.IsDeleted == false
                               select new StaffDTO
                               {
                                   StaffId = s.StaffID,
-                                  StaffBirthDay = s.StaffBirthday,
+                                  StaffBirthDay = s.StaffBirthDay,
                                   Sex = s.Sex,
                                   Username = s.UserName,
                                   StaffName = s.StaffName,
@@ -57,14 +58,14 @@ namespace cinema_management.Model.Service
 
             try
             {
-                using (var context = new CinemaManagementEntities8())
+                using (var context = new CinemaManagementEntities())
                 {
                     var staff = await (from s in context.Staffs
                                        where s.UserName == username && s.StaffPassword == password
                                        select new StaffDTO
                                        {
                                            StaffId = s.StaffID,
-                                           StaffBirthDay = s.StaffBirthday,
+                                           StaffBirthDay = s.StaffBirthDay,
                                            Sex = s.Sex,
                                            Username = s.UserName,
                                            StaffName = s.StaffName,
@@ -105,7 +106,7 @@ namespace cinema_management.Model.Service
         {
             try
             {
-                using (var context = new CinemaManagementEntities8())
+                using (var context = new CinemaManagementEntities())
                 {
                     bool usernameIsExist = await context.Staffs.AnyAsync(s => s.UserName == newStaff.Username);
                     bool PhoneNumberIsExist = await context.Staffs.AnyAsync(s => s.PhoneNumber == newStaff.PhoneNumber);
@@ -152,13 +153,13 @@ namespace cinema_management.Model.Service
         {
             return new Staff
             {
-                StaffBirthday = s.StaffBirthDay,
+                StaffBirthDay = (DateTime)s.StaffBirthDay,
                 Sex = s.Sex,
                 UserName = s.Username,
                 StaffName = s.StaffName,
                 StaffRole = s.StaffRole,
                 PhoneNumber = s.PhoneNumber,
-                StartingDate = s.StartingDate,
+                StartingDate = (DateTime)s.StartingDate,
                 Email = s.Email
             };
         }
@@ -167,7 +168,7 @@ namespace cinema_management.Model.Service
         {
             try
             {
-                using (var context = new CinemaManagementEntities8())
+                using (var context = new CinemaManagementEntities())
                 {
                     bool usernameIsExist = await context.Staffs.AnyAsync(s => s.UserName == updatedStaff.Username && s.StaffID != updatedStaff.StaffId);
 
@@ -198,13 +199,13 @@ namespace cinema_management.Model.Service
                         return (false, "Nhân viên không tồn tại");
                     }
 
-                    staff.StaffBirthday = updatedStaff.StaffBirthDay;
+                    staff.StaffBirthDay = (DateTime)updatedStaff.StaffBirthDay;
                     staff.Sex = updatedStaff.Sex;
                     staff.UserName = updatedStaff.Username;
                     staff.StaffName = updatedStaff.StaffName;
                     staff.StaffRole = updatedStaff.StaffRole;
                     staff.PhoneNumber = updatedStaff.PhoneNumber;
-                    staff.StartingDate = updatedStaff.StartingDate;
+                    staff.StartingDate = (DateTime)updatedStaff.StartingDate;
                     staff.Email = updatedStaff.Email;
 
                     await context.SaveChangesAsync();
@@ -227,7 +228,7 @@ namespace cinema_management.Model.Service
         {
             try
             {
-                using (var context = new CinemaManagementEntities8())
+                using (var context = new CinemaManagementEntities())
                 {
                     Staff staff = await context.Staffs.FindAsync(StaffId);
                     if (staff is null)
@@ -255,7 +256,7 @@ namespace cinema_management.Model.Service
         {
             try
             {
-                using (var context = new CinemaManagementEntities8())
+                using (var context = new CinemaManagementEntities())
                 {
                     Staff staff = await (from p in context.Staffs
                                          where p.StaffID.ToString() == Id && p.IsDeleted == false
@@ -291,7 +292,7 @@ namespace cinema_management.Model.Service
         {
             try
             {
-                using (var context = new CinemaManagementEntities8())
+                using (var context = new CinemaManagementEntities())
                 {
                     Staff staff = (from p in context.Staffs
                                    where p.UserName == username && p.IsDeleted == false

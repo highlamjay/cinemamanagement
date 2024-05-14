@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\minhk\source\repos\cinemamanagement2\Models\Services\CinemaManagementModel.edmx'. 
+﻿// T4 code generation is enabled for model 'D:\Đồ án NM CNPM\cinemamanagement\Models\CinemaManagementModel.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

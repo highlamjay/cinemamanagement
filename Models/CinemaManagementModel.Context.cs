@@ -7,16 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace cinema_management.Models.Services
+namespace cinema_management.Models
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class CinemaManagementEntities8 : DbContext
+    public partial class CinemaManagementEntities : DbContext
     {
-        public CinemaManagementEntities8()
-            : base("name=CinemaManagementEntities8")
+        public CinemaManagementEntities()
+            : base("name=CinemaManagementEntities")
         {
         }
     
@@ -37,6 +37,10 @@ namespace cinema_management.Models.Services
         public virtual DbSet<ShowtimeSetting> ShowtimeSettings { get; set; }
         public virtual DbSet<Staff> Staffs { get; set; }
         public virtual DbSet<Ticket> Tickets { get; set; }
+        public virtual DbSet<Trouble> Troubles { get; set; }
+        public virtual DbSet<Voucher> Vouchers { get; set; }
+        public virtual DbSet<VoucherRelease> VoucherReleases { get; set; }
+        public virtual DbSet<ProductBillInfo> ProductBillInfoes { get; set; }
         public virtual DbSet<SeatSetting> SeatSettings { get; set; }
     }
 }

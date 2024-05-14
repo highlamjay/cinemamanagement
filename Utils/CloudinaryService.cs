@@ -26,7 +26,7 @@ namespace cinema_management.Utils
         private Cloudinary cloudinary;
         private CloudinaryService()
         {
-            account = new Account("ddman0dck", "386233794129197", "TDjnqk7hIC1tmZwk6CK6P55jM6Y");
+            account = new Account("dqnnjoooh", "563547112355979", "frcO22YIAzU9yDiLcoNh7bqxVag");
             cloudinary = new Cloudinary(account);
             cloudinary.Api.Secure = true;
         }
@@ -40,7 +40,7 @@ namespace cinema_management.Utils
                 var uploadParams = new ImageUploadParams()
                 {
                     File = new FileDescription(filePath),
-                    Folder = "image"
+                    Folder = "Image"
                 };
                 var uploadResult = await cloudinary.UploadAsync(uploadParams);
 
@@ -100,9 +100,9 @@ namespace cinema_management.Utils
         }
         private string GetPublicIdFromURL(string url)
         {
-            string strStart = "image";
+            string strStart = "Image";
             string strEnd = ".";
-            if (url.Contains("image") && url.Contains("."))
+            if (url.Contains("Image") && url.Contains("."))
             {
                 int Start, End;
                 Start = url.IndexOf(strStart, 0);

@@ -7,15 +7,15 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace cinema_management.Models.Services
+namespace cinema_management.Models
 {
     using System;
     using System.Collections.Generic;
     
     public partial class SeatSetting
     {
-        public Nullable<int> SeatID { get; set; }
-        public Nullable<int> ShowTimeID { get; set; }
+        public int SeatID { get; set; }
+        public int ShowTimeID { get; set; }
         public bool Status { get; set; }
     
         public virtual Seat Seat { get; set; }

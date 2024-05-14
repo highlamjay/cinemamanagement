@@ -7,35 +7,31 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace cinema_management.Models.Services
+namespace cinema_management.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Staff
+    public partial class Product
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Staff()
+        public Product()
         {
-            this.Bills = new HashSet<Bill>();
             this.ProductReceipts = new HashSet<ProductReceipt>();
+            this.ProductBillInfoes = new HashSet<ProductBillInfo>();
         }
     
-        public string StaffID { get; set; }
-        public string StaffName { get; set; }
-        public string UserName { get; set; }
-        public string StaffPassword { get; set; }
-        public string PhoneNumber { get; set; }
-        public string Email { get; set; }
-        public string Sex { get; set; }
-        public Nullable<System.DateTime> StaffBirthday { get; set; }
-        public Nullable<System.DateTime> StartingDate { get; set; }
-        public string StaffRole { get; set; }
+        public int ProductID { get; set; }
+        public string DisplayName { get; set; }
+        public string Categorylog { get; set; }
+        public int Quantity { get; set; }
+        public decimal Price { get; set; }
+        public string Image { get; set; }
         public bool IsDeleted { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Bill> Bills { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ProductReceipt> ProductReceipts { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ProductBillInfo> ProductBillInfoes { get; set; }
     }
 }

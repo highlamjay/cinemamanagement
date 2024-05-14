@@ -7,34 +7,31 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace cinema_management.Models.Services
+namespace cinema_management.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Movie
+    public partial class ShowTime
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Movie()
+        public ShowTime()
         {
-            this.ShowTimes = new HashSet<ShowTime>();
-            this.Genres = new HashSet<Genre>();
+            this.SeatSettings = new HashSet<SeatSetting>();
+            this.Tickets = new HashSet<Ticket>();
         }
     
-        public int MovieId { get; set; }
-        public string DisplayName { get; set; }
-        public Nullable<int> RunningTime { get; set; }
-        public string Country { get; set; }
-        public string Description { get; set; }
-        public Nullable<int> ReleaseYear { get; set; }
-        public string MovieType { get; set; }
-        public string Image { get; set; }
-        public string Director { get; set; }
-        public bool IsDeleted { get; set; }
+        public int ShowTimeID { get; set; }
+        public int ShowTimeSettingID { get; set; }
+        public int MovieID { get; set; }
+        public decimal TicketPrice { get; set; }
+        public System.TimeSpan StartTime { get; set; }
     
+        public virtual Movie Movie { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ShowTime> ShowTimes { get; set; }
+        public virtual ICollection<SeatSetting> SeatSettings { get; set; }
+        public virtual ShowtimeSetting ShowtimeSetting { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Genre> Genres { get; set; }
+        public virtual ICollection<Ticket> Tickets { get; set; }
     }
 }
