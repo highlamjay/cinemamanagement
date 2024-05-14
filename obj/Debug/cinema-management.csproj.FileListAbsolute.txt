@@ -120,3 +120,7 @@ D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\cinema-management.csproj.CoreCom
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\cinema-m.8A93E643.Up2Date
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\cinema-management.exe
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\cinema-management.pdb
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\CustomerManagement\CustomerManagement.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\CustomerManagement\EditCustomer.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\CustomerManagement\CustomerManagement.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\CustomerManagement\EditCustomer.baml

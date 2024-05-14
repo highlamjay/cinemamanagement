@@ -11,6 +11,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows;
 using cinema_management.Views.Admin.MovieManagement;
+using cinema_management.Views.Admin.CustomerManagement;
 
 namespace cinema_management.ViewModel.AdminVM
 {
@@ -54,6 +55,14 @@ namespace cinema_management.ViewModel.AdminVM
                     MainAdminWindow.Slidebtn.IsChecked = false;
                 if (p != null)
                     p.Content = new MovieManagement();
+            });
+            LoadQLKHPageCM = new RelayCommand<Frame>((p) => { return p != null; }, (p) =>
+            {
+                SelectedFuncName = "Quản lý khách hàng";
+                if (MainAdminWindow.Slidebtn != null)
+                    MainAdminWindow.Slidebtn.IsChecked = false;
+                if (p != null)
+                    p.Content = new CustomerManagement();
             });
         }
     }
