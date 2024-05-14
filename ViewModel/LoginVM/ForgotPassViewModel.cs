@@ -1,4 +1,4 @@
-﻿using cinema_management.Model.Service;
+﻿using cinema_management.Models.Services;
 using cinema_management.Utils;
 using cinema_management.Views.LoginWindow;
 using cinema_management.Views;
@@ -64,6 +64,7 @@ namespace cinema_management.ViewModel.LoginVM
         public ICommand NewPassChanged { get; set; }
         public ICommand SaveSendmailBtnCM { get; set; }
 
+        [Obsolete]
         public ForgotPassViewModel()
         {
             CancelCM = new RelayCommand<object>((p) => { return p == null ? false : true; }, (p) =>

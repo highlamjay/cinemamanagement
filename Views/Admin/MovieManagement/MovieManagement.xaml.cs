@@ -1,4 +1,5 @@
-﻿using System;
+﻿using cinema_management.DTOs;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,20 @@ namespace cinema_management.Views.Admin.MovieManagement
         public MovieManagement()
         {
             InitializeComponent();
+        }
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            CollectionView view = (CollectionView)CollectionViewSource.GetDefaultView(MovieListView.ItemsSource);
+            view.Filter = Filter;
+            result.Content = MovieListView.Items.Count;
+            CollectionViewSource.GetDefaultView(MovieListView.ItemsSource).Refresh();
+        }
+        private bool Filter(object item)
+        {
+            if (String.IsNullOrEmpty(FilterBox.Text))
+                return true;
+            else
+                return ((item as MovieDTO).DisplayName.IndexOf(FilterBox.Text, StringComparison.OrdinalIgnoreCase) >= 0);
         }
     }
 }

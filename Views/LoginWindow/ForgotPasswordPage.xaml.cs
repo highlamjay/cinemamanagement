@@ -1,4 +1,4 @@
-﻿using cinema_management.Model.Service;
+﻿using cinema_management.Models.Services;
 using cinema_management.ViewModel.LoginVM;
 using cinema_management.Utils;
 using System;

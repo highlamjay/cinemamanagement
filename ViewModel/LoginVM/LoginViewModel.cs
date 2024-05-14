@@ -7,7 +7,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows;
 using cinema_management.DTOs;
-using cinema_management.Model.Service;
+using cinema_management.Models.Services;
 using cinema_management.Views.LoginWindow;
 using cinema_management.Views.Admin;
 using cinema_management.ViewModel.AdminVM;
@@ -76,7 +76,7 @@ namespace cinema_management.ViewModel.LoginVM
             catch (InvalidOperationException)
             {
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 MessageBox.Show($"Mất kết nối cơ sở dữ liệu! Vui lòng kiểm tra lại", "Lỗi hệ thống", MessageBoxButton.OK, MessageBoxImage.Error);
             }
@@ -166,7 +166,6 @@ namespace cinema_management.ViewModel.LoginVM
                 //TicketBillViewModel.Staff = staff;
                 if (staff.StaffRole == "Quản lý")
                 {
-
                     MainFrame.Content = new RolePage();
                 }
                 else

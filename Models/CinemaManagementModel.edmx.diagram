@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b5ae82ac8d64490aa22469c667a07883" Name="Diagram1">
+        <EntityTypeShape EntityType="CinemaManagementModel.Bill" Width="1.5" PointX="3" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaManagementModel.Customer" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaManagementModel.Genre" Width="1.5" PointX="1.5" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaManagementModel.Movie" Width="1.5" PointX="3.75" PointY="22.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaManagementModel.Product" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaManagementModel.ProductReceipt" Width="1.5" PointX="6" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaManagementModel.Room" Width="1.5" PointX="3.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaManagementModel.Seat" Width="1.5" PointX="6" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaManagementModel.ShowTime" Width="1.5" PointX="6" PointY="24.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaManagementModel.ShowtimeSetting" Width="1.5" PointX="3.75" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaManagementModel.Staff" Width="1.5" PointX="0.75" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaManagementModel.Ticket" Width="1.5" PointX="8.25" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaManagementModel.Trouble" Width="1.5" PointX="3" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaManagementModel.Voucher" Width="1.5" PointX="5.25" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaManagementModel.VoucherRelease" Width="1.5" PointX="3" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaManagementModel.ProductBillInfo" Width="1.5" PointX="5.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaManagementModel.SeatSetting" Width="1.5" PointX="8.25" PointY="13.25" IsExpanded="true" />
+        <AssociationConnector Association="CinemaManagementModel.fk_Bill" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaManagementModel.fk_Bill_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaManagementModel.fk_Customer_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaManagementModel.fk_Staff_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaManagementModel.fk_voucher1" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaManagementModel.fk_Movie" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaManagementModel.fk_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaManagementModel.fk_Product_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaManagementModel.fk_Staff" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaManagementModel.fk_Room" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaManagementModel.fk_Room_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaManagementModel.fk_Seat" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaManagementModel.fk_Seat_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaManagementModel.fk_Show_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaManagementModel.fk_Show_Setting" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaManagementModel.fk_Shown" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaManagementModel.fk_trouble" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaManagementModel.fk_VcRelease" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaManagementModel.fk_voucher" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaManagementModel.MovieGenre" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -22,6 +22,7 @@ namespace cinema_management.Views.Admin.StaffManagement
         public ChangePasswordWindow()
         {
             InitializeComponent();
+            this.Owner = App.Current.MainWindow;
         }
     }
 }
