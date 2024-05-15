@@ -14,7 +14,7 @@ using cinema_management.Models.Services;
 
 namespace cinema_management.ViewModel.AdminVM.VoucherManagementVM
 {
-    public partial class VoucherViewModel : BaseViewModel
+    public partial class VoucherManagementViewModel : BaseViewModel
     {
         public static bool Unlock = false;
         public Button Unlockbtn { get; set; }

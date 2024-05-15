@@ -16,6 +16,7 @@ using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using cinema_management.Model.Service;
 
 namespace cinema_management.Views.LoginWindow
 {

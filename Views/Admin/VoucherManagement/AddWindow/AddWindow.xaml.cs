@@ -39,9 +39,9 @@ namespace cinema_management.Views.Admin.VoucherManagement.AddWindow
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            VoucherViewModel.ShadowMask.Visibility = Visibility.Collapsed;
+            VoucherManagementViewModel.ShadowMask.Visibility = Visibility.Collapsed;
             this.Close();
-            VoucherViewModel.Unlock = false;
+            VoucherManagementViewModel.Unlock = false;
         }
 
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)

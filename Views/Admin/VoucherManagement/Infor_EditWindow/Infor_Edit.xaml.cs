@@ -39,7 +39,7 @@ namespace cinema_management.Views.Admin.VoucherManagement.Infor_EditWindow
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            VoucherViewModel.ShadowMask.Visibility = Visibility.Collapsed;
+            VoucherManagementViewModel.ShadowMask.Visibility = Visibility.Collapsed;
             this.Close();
         }
 

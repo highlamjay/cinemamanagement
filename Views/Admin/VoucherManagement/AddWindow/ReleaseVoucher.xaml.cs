@@ -40,7 +40,7 @@ namespace cinema_management.Views.Admin.VoucherManagement.AddWindow
         {
             AddVoucher.topcheck.IsChecked = false;
 
-            VoucherViewModel.WaitingMiniVoucher.Clear();
+            VoucherManagementViewModel.WaitingMiniVoucher.Clear();
             this.Close();
         }
 
@@ -58,7 +58,7 @@ namespace cinema_management.Views.Admin.VoucherManagement.AddWindow
             {
                 case "Top 5 khách hàng trong tháng":
                     {
-                        VoucherViewModel.NumberCustomer = 5;
+                        VoucherManagementViewModel.NumberCustomer = 5;
                         if (maillistbox != null)
                         {
                             addnewemail.IsEnabled = false;
@@ -67,13 +67,13 @@ namespace cinema_management.Views.Admin.VoucherManagement.AddWindow
                     }
                 case "Khách hàng mới trong tháng":
                     {
-                        VoucherViewModel.NumberCustomer = 0;
+                        VoucherManagementViewModel.NumberCustomer = 0;
                         addnewemail.IsEnabled = false;
                         return;
                     }
                 case "Khác":
                     {
-                        VoucherViewModel.NumberCustomer = -1;
+                        VoucherManagementViewModel.NumberCustomer = -1;
                         addnewemail.IsEnabled = true;
                         return;
                     }

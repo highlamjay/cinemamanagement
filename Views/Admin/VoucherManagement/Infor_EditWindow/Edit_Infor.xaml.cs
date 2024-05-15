@@ -46,12 +46,12 @@ namespace cinema_management.Views.Admin.VoucherManagement.Infor_EditWindow
 
         private void yes_Checked(object sender, RoutedEventArgs e)
         {
-            VoucherViewModel.Status2 = true;
+            VoucherManagementViewModel.Status2 = true;
         }
 
         private void no_Checked(object sender, RoutedEventArgs e)
         {
-            VoucherViewModel.Status2 = false;
+            VoucherManagementViewModel.Status2 = false;
         }
     }
 }

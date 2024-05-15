@@ -14,6 +14,7 @@ using System.Windows.Input;
 using System.Windows;
 using System.Configuration;
 using System.IO;
+using cinema_management.Model.Service;
 
 namespace cinema_management.ViewModel.LoginVM
 {

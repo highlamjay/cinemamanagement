@@ -22,7 +22,7 @@ using SaveFileDialog = System.Windows.Forms.SaveFileDialog;
 
 namespace cinema_management.ViewModel.AdminVM.VoucherManagementVM
 {
-    public partial class VoucherViewModel : BaseViewModel
+    public partial class VoucherManagementViewModel : BaseViewModel
     {
         public static int NumberCustomer;
 

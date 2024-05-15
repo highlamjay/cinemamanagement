@@ -7,7 +7,6 @@
                     xmlns:viewmodelMovieManagement="clr-namespace:cinema_management.ViewModel.AdminVM.MovieManagementVM"
                     xmlns:viewmodelCustomerManagement="clr-namespace:cinema_management.ViewModel.AdminVM.CustomerManagementVM"
                     xmlns:viewmodelStaffManagement="clr-namespace:cinema_management.ViewModel.AdminVM.StaffManagementVM"
-                    xmlns:viewmodelStatiscalManagement="clr-namespace:cinema_management.ViewModel.AdminVM.StatisticalManagementVM"
                     xmlns:viewmodelVoucherManagement="clr-namespace:cinema_management.ViewModel.AdminVM.VoucherManagementVM">
 
 
@@ -17,7 +16,6 @@
     <viewmodelMovieManagement:MovieManagementViewModel x:Key="MovieManagementVM"/>
     <viewmodelCustomerManagement:CustomerManagementViewModel x:Key="CustomerManagementVM"/>
     <viewmodelStaffManagement:StaffManagementViewModel x:Key="StaffManagementVM"/>
-    <viewmodelStatiscalManagement:StatisticalManagementViewModel x:Key="StatiscalManagementVM"/>
-    <viewmodelVoucherManagement:VoucherViewModel x:Key="VoucherManagementVM"/>
+    <viewmodelVoucherManagement:VoucherManagementViewModel x:Key="VoucherVM"/>
 
 </ResourceDictionary>

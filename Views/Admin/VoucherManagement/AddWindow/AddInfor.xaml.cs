@@ -47,12 +47,12 @@ namespace cinema_management.Views.Admin.VoucherManagement.AddWindow
 
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
-            VoucherViewModel.Status = true;
+            VoucherManagementViewModel.Status = true;
         }
 
         private void RadioButton_Checked_1(object sender, RoutedEventArgs e)
         {
-            VoucherViewModel.Status = false;
+            VoucherManagementViewModel.Status = false;
         }
     }
 }
