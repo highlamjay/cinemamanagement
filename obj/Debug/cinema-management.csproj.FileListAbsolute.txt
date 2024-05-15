@@ -142,3 +142,9 @@ D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ProductManagement\Ad
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ProductManagement\EditProduct.baml
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ProductManagement\ImportProduct.baml
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ProductManagement\ProductManagement.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\AddShowtime.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\Infor_EditShowtime.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\ShowtimeManagement.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\AddShowtime.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\Infor_EditShowtime.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\ShowtimeManagement.baml

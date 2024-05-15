@@ -14,6 +14,7 @@ using cinema_management.Views.Admin.MovieManagement;
 using cinema_management.Views.Admin.CustomerManagement;
 using cinema_management.Views.Admin.StaffManagement;
 using cinema_management.Views.Admin.ProductManagement;
+using cinema_management.Views.Admin.ShowtimeManagement;
 
 namespace cinema_management.ViewModel.AdminVM
 {
@@ -57,6 +58,14 @@ namespace cinema_management.ViewModel.AdminVM
                     MainAdminWindow.Slidebtn.IsChecked = false;
                 if (p != null)
                     p.Content = new MovieManagement();
+            });
+            LoadSuatChieuPageCM = new RelayCommand<Frame>((p) => { return p != null; }, (p) =>
+            {
+                SelectedFuncName = "Quản lý suất chiếu";
+                if (MainAdminWindow.Slidebtn != null)
+                    MainAdminWindow.Slidebtn.IsChecked = false;
+                if (p != null)
+                    p.Content = new ShowtimeManagement();
             });
             LoadFoodPageCM = new RelayCommand<Frame>((p) => { return p != null; }, (p) =>
             {

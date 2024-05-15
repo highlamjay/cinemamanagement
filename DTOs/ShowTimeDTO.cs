@@ -7,9 +7,9 @@ using cinema_management.Utils;
 
 namespace cinema_management.DTOs
 {
-    public class ShowTimeDTO
+    public class ShowtimeDTO
     {
-        public ShowTimeDTO()
+        public ShowtimeDTO()
         {
         }
         public int Id { get; set; }

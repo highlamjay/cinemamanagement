@@ -91,11 +91,11 @@ namespace cinema_management.Models.Services
                         {
                             int id = (int)MovieIDList[i].Key;
 
-                            List<ShowTimeDTO> showtimeDTOsList = new List<ShowTimeDTO>();
+                            List<ShowtimeDTO> showtimeDTOsList = new List<ShowtimeDTO>();
                             MovieDTO mov = null;
                             foreach (var m in MovieIDList[i])
                             {
-                                showtimeDTOsList.Add(new ShowTimeDTO
+                                showtimeDTOsList.Add(new ShowtimeDTO
                                 {
                                     Id = (int)m.ShowTime.MovieID,
                                     MovieId = (int)m.ShowTime.MovieID,
@@ -168,11 +168,11 @@ namespace cinema_management.Models.Services
                         {
                             int id = (int)MovieIDList[i].Key;
 
-                            List<ShowTimeDTO> showtimeDTOsList = new List<ShowTimeDTO>();
+                            List<ShowtimeDTO> showtimeDTOsList = new List<ShowtimeDTO>();
                             MovieDTO mov = null;
                             foreach (var m in MovieIDList[i])
                             {
-                                showtimeDTOsList.Add(new ShowTimeDTO
+                                showtimeDTOsList.Add(new ShowtimeDTO
                                 {
                                     Id = (int)m.ShowTime.MovieID,
                                     MovieId = (int)m.ShowTime.MovieID,

@@ -27,7 +27,7 @@ namespace cinema_management.Models.Services
         private ShowtimeService() { }
 
 
-        public async Task<(bool IsSuccess, string message)> AddShowtime(ShowTimeDTO newShowtime)
+        public async Task<(bool IsSuccess, string message)> AddShowtime(ShowtimeDTO newShowtime)
         {
             try
             {

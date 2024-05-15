@@ -144,7 +144,7 @@
     </ApplicationDefinition>
     <Compile Include="DTOs\ProductBillInfoDTO.cs" />
     <Compile Include="DTOs\SeatSettingDTO.cs" />
-    <Compile Include="DTOs\ShowTimeDTO.cs" />
+    <Compile Include="DTOs\ShowtimeDTO.cs" />
     <Compile Include="DTOs\TicketBillInfoDTO.cs" />
     <Compile Include="DTOs\TroubleDTO.cs" />
     <Compile Include="DTOs\VoucherDTO.cs" />
@@ -243,6 +243,10 @@
     <Compile Include="ViewModel\AdminVM\ProductManagementVM\EditProductViewModel.cs" />
     <Compile Include="ViewModel\AdminVM\ProductManagementVM\ImportProductViewModel.cs" />
     <Compile Include="ViewModel\AdminVM\ProductManagementVM\ProductManagementViewModel.cs" />
+    <Compile Include="ViewModel\AdminVM\ShowtimeManagementVM\AddShowtimeViewModel.cs" />
+    <Compile Include="ViewModel\AdminVM\ShowtimeManagementVM\Infor_EditShowtimeViewModel.cs" />
+    <Compile Include="ViewModel\AdminVM\ShowtimeManagementVM\SeatStatusConverter.cs" />
+    <Compile Include="ViewModel\AdminVM\ShowtimeManagementVM\ShowtimeManagementViewModel.cs" />
     <Compile Include="ViewModel\AdminVM\StaffManagementVM\AddStaffViewModel.cs" />
     <Compile Include="ViewModel\AdminVM\StaffManagementVM\ChangePasswordViewModel.cs" />
     <Compile Include="ViewModel\AdminVM\StaffManagementVM\EditStaffViewModel.cs" />
@@ -282,6 +286,15 @@
     </Compile>
     <Compile Include="Views\Admin\ProductManagement\ProductManagement.xaml.cs">
       <DependentUpon>ProductManagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\ShowtimeManagement\AddShowtime.xaml.cs">
+      <DependentUpon>AddShowtime.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\ShowtimeManagement\Infor_EditShowtime.xaml.cs">
+      <DependentUpon>Infor_EditShowtime.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\ShowtimeManagement\ShowtimeManagement.xaml.cs">
+      <DependentUpon>ShowtimeManagement.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Admin\StaffManagement\AddStaffWindow.xaml.cs">
       <DependentUpon>AddStaffWindow.xaml</DependentUpon>
@@ -376,6 +389,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Admin\ProductManagement\ProductManagement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\ShowtimeManagement\AddShowtime.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\ShowtimeManagement\Infor_EditShowtime.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\ShowtimeManagement\ShowtimeManagement.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
