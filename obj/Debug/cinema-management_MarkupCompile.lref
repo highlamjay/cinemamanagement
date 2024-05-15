@@ -1,4 +1,4 @@
-﻿D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\GeneratedInternalTypeHelper.g.cs
+﻿
 FD:\Đồ án NM CNPM\cinemamanagement\App.xaml;;
 FD:\Đồ án NM CNPM\cinemamanagement\ResourceXAML\MainResource.xaml;;
 FD:\Đồ án NM CNPM\cinemamanagement\Views\Admin\CustomerManagement\CustomerManagement.xaml;;
@@ -7,6 +7,12 @@ FD:\Đồ án NM CNPM\cinemamanagement\Views\Admin\ErrorManagement\DoneError.xam
 FD:\Đồ án NM CNPM\cinemamanagement\Views\Admin\ErrorManagement\ErrorManagement.xaml;;
 FD:\Đồ án NM CNPM\cinemamanagement\Views\Admin\ErrorManagement\InprogressError.xaml;;
 FD:\Đồ án NM CNPM\cinemamanagement\Views\Admin\ErrorManagement\WaitingError.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\Views\Admin\Import_ExportManagement\ExportDetail.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\Views\Admin\Import_ExportManagement\ExportManagement.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\Views\Admin\Import_ExportManagement\ImportManagement.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\Views\Admin\Import_ExportManagement\Import_ExportManagement.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\Views\Admin\Import_ExportManagement\ProductDetail.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\Views\Admin\Import_ExportManagement\TicketDetail.xaml;;
 FD:\Đồ án NM CNPM\cinemamanagement\Views\Admin\ProductManagement\AddProduct.xaml;;
 FD:\Đồ án NM CNPM\cinemamanagement\Views\Admin\ProductManagement\EditProduct.xaml;;
 FD:\Đồ án NM CNPM\cinemamanagement\Views\Admin\ProductManagement\ImportProduct.xaml;;

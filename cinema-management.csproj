@@ -65,6 +65,10 @@
     <Reference Include="MaterialDesignThemes.Wpf, Version=5.0.0.0, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
       <HintPath>packages\MaterialDesignThemes.5.0.0\lib\net462\MaterialDesignThemes.Wpf.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="Microsoft.Xaml.Behaviors, Version=1.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Xaml.Behaviors.Wpf.1.1.77\lib\net462\Microsoft.Xaml.Behaviors.dll</HintPath>
     </Reference>
@@ -237,6 +241,7 @@
     <Compile Include="ViewModel\AdminVM\ErrorManagementVM\ErrorViewModel.cs" />
     <Compile Include="ViewModel\AdminVM\ErrorManagementVM\HintLevelConverter.cs" />
     <Compile Include="ViewModel\AdminVM\ErrorManagementVM\StatusBrushConverter.cs" />
+    <Compile Include="ViewModel\AdminVM\Import_ExportManagementVM\Import_ExportManagementViewModel.cs" />
     <Compile Include="ViewModel\AdminVM\MainAdminViewModel.cs" />
     <Compile Include="ViewModel\AdminVM\MovieManagementVM\Add.MovieViewModel.cs" />
     <Compile Include="ViewModel\AdminVM\MovieManagementVM\Edit.MovieViewModel.cs" />
@@ -274,6 +279,24 @@
     </Compile>
     <Compile Include="Views\Admin\ErrorManagement\WaitingError.xaml.cs">
       <DependentUpon>WaitingError.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Import_ExportManagement\ExportDetail.xaml.cs">
+      <DependentUpon>ExportDetail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Import_ExportManagement\ExportManagement.xaml.cs">
+      <DependentUpon>ExportManagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Import_ExportManagement\ImportManagement.xaml.cs">
+      <DependentUpon>ImportManagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Import_ExportManagement\Import_ExportManagement.xaml.cs">
+      <DependentUpon>Import_ExportManagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Import_ExportManagement\ProductDetail.xaml.cs">
+      <DependentUpon>ProductDetail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Import_ExportManagement\TicketDetail.xaml.cs">
+      <DependentUpon>TicketDetail.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Admin\MainAdminWindow.xaml.cs">
       <DependentUpon>MainAdminWindow.xaml</DependentUpon>
@@ -384,6 +407,30 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Admin\ErrorManagement\WaitingError.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\Import_ExportManagement\ExportDetail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\Import_ExportManagement\ExportManagement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\Import_ExportManagement\ImportManagement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\Import_ExportManagement\Import_ExportManagement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\Import_ExportManagement\ProductDetail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\Import_ExportManagement\TicketDetail.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

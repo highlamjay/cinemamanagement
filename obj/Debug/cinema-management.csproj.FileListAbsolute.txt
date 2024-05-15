@@ -156,3 +156,15 @@ D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\Done
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\ErrorManagement.baml
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\InprogressError.baml
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\WaitingError.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\ExportDetail.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\ExportManagement.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\ImportManagement.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\Import_ExportManagement.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\ProductDetail.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\TicketDetail.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\ExportDetail.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\ExportManagement.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\ImportManagement.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\Import_ExportManagement.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\ProductDetail.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\TicketDetail.baml

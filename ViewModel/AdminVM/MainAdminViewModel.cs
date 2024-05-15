@@ -17,6 +17,7 @@ using cinema_management.Views.Admin.ProductManagement;
 using cinema_management.Views.Admin.ShowtimeManagement;
 using cinema_management.Views.Admin.ErrorManagement;
 using cinema_management.Models.Services;
+using cinema_management.Views.Admin.Import_ExportManagement;
 
 namespace cinema_management.ViewModel
 {
@@ -92,6 +93,14 @@ namespace cinema_management.ViewModel
                     MainAdminWindow.Slidebtn.IsChecked = false;
                 if (p != null)
                     p.Content = new CustomerManagement();
+            });
+            LoadLSPage = new RelayCommand<Frame>((p) => { return p != null; }, (p) =>
+            {
+                SelectedFuncName = "Lịch sử";
+                if (MainAdminWindow.Slidebtn != null)
+                    MainAdminWindow.Slidebtn.IsChecked = false;
+                if (p != null)
+                    p.Content = new Import_ExportManagement();
             });
             LoadErrorPage = new RelayCommand<Frame>((p) => { return p != null; }, (p) =>
             {
