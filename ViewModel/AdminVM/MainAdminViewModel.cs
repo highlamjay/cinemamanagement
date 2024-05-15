@@ -13,6 +13,7 @@ using System.Windows;
 using cinema_management.Views.Admin.MovieManagement;
 using cinema_management.Views.Admin.CustomerManagement;
 using cinema_management.Views.Admin.StaffManagement;
+using cinema_management.Views.Admin.ProductManagement;
 
 namespace cinema_management.ViewModel.AdminVM
 {
@@ -57,13 +58,13 @@ namespace cinema_management.ViewModel.AdminVM
                 if (p != null)
                     p.Content = new MovieManagement();
             });
-            LoadQLKHPageCM = new RelayCommand<Frame>((p) => { return p != null; }, (p) =>
+            LoadFoodPageCM = new RelayCommand<Frame>((p) => { return p != null; }, (p) =>
             {
-                SelectedFuncName = "Quản lý khách hàng";
+                SelectedFuncName = "Quản lý sản phẩm";
                 if (MainAdminWindow.Slidebtn != null)
                     MainAdminWindow.Slidebtn.IsChecked = false;
                 if (p != null)
-                    p.Content = new CustomerManagement();
+                    p.Content = new ProductManagement();
             });
             LoadQLNVPageCM = new RelayCommand<Frame>((p) => { return p != null; }, (p) =>
             {
@@ -73,6 +74,16 @@ namespace cinema_management.ViewModel.AdminVM
                 if (p != null)
                     p.Content = new StaffManagement();
             });
+            LoadQLKHPageCM = new RelayCommand<Frame>((p) => { return p != null; }, (p) =>
+            {
+                SelectedFuncName = "Quản lý khách hàng";
+                if (MainAdminWindow.Slidebtn != null)
+                    MainAdminWindow.Slidebtn.IsChecked = false;
+                if (p != null)
+                    p.Content = new CustomerManagement();
+            });
+            
+
         }
     }
 }

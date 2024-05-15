@@ -132,3 +132,13 @@ D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\AddS
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\ChangePasswordWindow.baml
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\EditStaffWindow.baml
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\StaffManagement.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ProductManagement\AddProduct.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ProductManagement\EditProduct.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ProductManagement\ImportProduct.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ProductManagement\ProductManagement.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Interop.Accessibility.dll
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\cinema-management.csproj.ResolveComReference.cache
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ProductManagement\AddProduct.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ProductManagement\EditProduct.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ProductManagement\ImportProduct.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ProductManagement\ProductManagement.baml

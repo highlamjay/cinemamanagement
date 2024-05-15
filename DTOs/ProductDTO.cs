@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace cinema_management.DTOs
 {
-    internal class ProductDTO
+    public class ProductDTO
     {
 
         public ProductDTO()

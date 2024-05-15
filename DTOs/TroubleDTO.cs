@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace cinema_management.DTOs
 {
-    internal class Trouble
+    public class TroubleDTO
     {
         public string Id { get; set; }
         public string Title { get; set; }

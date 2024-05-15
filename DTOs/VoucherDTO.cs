@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace cinema_management.DTOs
 {
-    internal class VoucherDTO
+    public class VoucherDTO
     {
 
         public event PropertyChangedEventHandler PropertyChanged;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace cinema_management.DTOs
 {
-    internal class RoomDTO
+    public class RoomDTO
     {
         public RoomDTO()
         {

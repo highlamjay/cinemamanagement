@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\Đồ án NM CNPM\cinemamanagement\App.xaml
-191979315532
+23-1470819743
 2-2106707411
-79-1440491948
-134-1457670895
-Resources\Scrollbar\Scrollbar.xaml;ResourceXAML\MainResource.xaml;Views\Admin\CustomerManagement\CustomerManagement.xaml;Views\Admin\CustomerManagement\EditCustomer.xaml;Views\Admin\MainAdminWindow.xaml;Views\Admin\MovieManagement\AddMovieWindow.xaml;Views\Admin\MovieManagement\EditMovie.xaml;Views\Admin\MovieManagement\InforMovieWindow.xaml;Views\Admin\MovieManagement\MovieManagement.xaml;Views\Admin\StaffManagement\AddStaffWindow.xaml;Views\Admin\StaffManagement\ChangePasswordWindow.xaml;Views\Admin\StaffManagement\EditStaffWindow.xaml;Views\Admin\StaffManagement\StaffManagement.xaml;Views\LoginWindow\ChangePasswordPage.xaml;Views\LoginWindow\ForgotPasswordPage.xaml;Views\LoginWindow\LoginPage.xaml;Views\LoginWindow\LoginWindow.xaml;Views\LoginWindow\RolePage.xaml;Views\MessageBoxCustom.xaml;
+97-513421891
+135-1175151752
+Resources\Scrollbar\Scrollbar.xaml;ResourceXAML\MainResource.xaml;Views\Admin\CustomerManagement\CustomerManagement.xaml;Views\Admin\CustomerManagement\EditCustomer.xaml;Views\Admin\MainAdminWindow.xaml;Views\Admin\MovieManagement\AddMovieWindow.xaml;Views\Admin\MovieManagement\EditMovie.xaml;Views\Admin\MovieManagement\InforMovieWindow.xaml;Views\Admin\MovieManagement\MovieManagement.xaml;Views\Admin\ProductManagement\AddProduct.xaml;Views\Admin\ProductManagement\EditProduct.xaml;Views\Admin\ProductManagement\ImportProduct.xaml;Views\Admin\ProductManagement\ProductManagement.xaml;Views\Admin\StaffManagement\AddStaffWindow.xaml;Views\Admin\StaffManagement\ChangePasswordWindow.xaml;Views\Admin\StaffManagement\EditStaffWindow.xaml;Views\Admin\StaffManagement\StaffManagement.xaml;Views\LoginWindow\ChangePasswordPage.xaml;Views\LoginWindow\ForgotPasswordPage.xaml;Views\LoginWindow\LoginPage.xaml;Views\LoginWindow\LoginWindow.xaml;Views\LoginWindow\RolePage.xaml;Views\MessageBoxCustom.xaml;
 
 False
 

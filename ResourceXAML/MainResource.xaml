@@ -6,6 +6,7 @@
                     xmlns:viewmodelForgotPass="clr-namespace:cinema_management.ViewModel.LoginVM"
                     xmlns:viewmodelMoviewManagement="clr-namespace:cinema_management.ViewModel.AdminVM.MovieManagementVM"
                     xmlns:viewmodelCustomerManagement="clr-namespace:cinema_management.ViewModel.AdminVM.CustomerManagementVM"
+                    xmlns:viewmodelProductManagement="clr-namespace:cinema_management.ViewModel.AdminVM.ProductManagementVM"
                     xmlns:viewmodelStaffManagement="clr-namespace:cinema_management.ViewModel.AdminVM.StaffManagementVM">
     <viewmodelForgotPass:ForgotPassViewModel x:Key="ForgotPassVM"/>
     <viewmodelLogin:LoginViewModel x:Key="LoginVM"/>
@@ -13,4 +14,5 @@
     <viewmodelMoviewManagement:MovieManagementViewModel x:Key="MovieManagementVM" />
     <viewmodelCustomerManagement:CustomerManagementViewModel x:Key="CustomerManagementVM"/>
     <viewmodelStaffManagement:StaffManagementViewModel x:Key="StaffManagementVM"/>
+    <viewmodelProductManagement:ProductManagementViewModel x:Key="ProductManagementVM"/>
 </ResourceDictionary>

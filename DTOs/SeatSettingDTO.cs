@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace cinema_management.DTOs
 {
-    internal class SeatSettingDTO
+    public class SeatSettingDTO
     {
-
         public SeatSettingDTO()
         {
         }

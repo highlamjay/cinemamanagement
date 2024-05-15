@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace cinema_management.DTOs
 {
-    internal class TicketBillInfo
+    public class TicketBillInfoDTO
     {
-
         public string movieName;
         private string _showtimeInfo;
 
@@ -70,5 +69,6 @@ namespace cinema_management.DTOs
                 return Helper.FormatVNMoney(TotalPriceTicket);
             }
         }
+
     }
 }

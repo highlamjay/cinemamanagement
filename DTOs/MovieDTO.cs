@@ -24,7 +24,6 @@ namespace cinema_management.DTOs
         public string Director { get; set; }
         public IList<ShowTimeDTO> Showtimes { get; set; }
         public IList<GenreDTO> Genres { get; set; }
-
         public string Image
         {
             get; set;
@@ -37,7 +36,6 @@ namespace cinema_management.DTOs
                 return Helper.FormatVNMoney(Revenue);
             }
         }
-
         public int TicketCount { get; set; }
 
     }

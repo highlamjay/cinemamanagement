@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace cinema_management.DTOs
 {
-    internal class VoucherReleaseDTO
+    public class VoucherReleaseDTO
     {
 
         public string Id { get; set; }

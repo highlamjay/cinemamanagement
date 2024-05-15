@@ -7,7 +7,7 @@ using cinema_management.Utils;
 
 namespace cinema_management.DTOs
 {
-    internal class BillDTO
+    public class BillDTO
     {
         public BillDTO()
         {
@@ -91,6 +91,7 @@ namespace cinema_management.DTOs
 
         //Use 2 list when show details Bill
         public List<ProductBillInfoDTO> ProductBillInfoes { get; set; }
+        public TicketBillInfoDTO TicketInfo { get; set; }
     }
 }
 

@@ -145,8 +145,8 @@
     <Compile Include="DTOs\ProductBillInfoDTO.cs" />
     <Compile Include="DTOs\SeatSettingDTO.cs" />
     <Compile Include="DTOs\ShowTimeDTO.cs" />
-    <Compile Include="DTOs\TicketBillInfo.cs" />
-    <Compile Include="DTOs\Trouble.cs" />
+    <Compile Include="DTOs\TicketBillInfoDTO.cs" />
+    <Compile Include="DTOs\TroubleDTO.cs" />
     <Compile Include="DTOs\VoucherDTO.cs" />
     <Compile Include="DTOs\VoucherReleaseDTO.cs" />
     <Compile Include="Models\Bill.cs">
@@ -194,10 +194,20 @@
     <Compile Include="Models\SeatSetting.cs">
       <DependentUpon>CinemaManagementModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Services\BillService.cs" />
+    <Compile Include="Models\Services\BookingService.cs" />
     <Compile Include="Models\Services\CustomerService.cs" />
     <Compile Include="Models\Services\GenreService.cs" />
     <Compile Include="Models\Services\MovieService.cs" />
+    <Compile Include="Models\Services\OverviewStatisticService.cs" />
+    <Compile Include="Models\Services\ProductReceiptService.cs" />
+    <Compile Include="Models\Services\ProductService.cs" />
+    <Compile Include="Models\Services\SeatService.cs" />
+    <Compile Include="Models\Services\ShowtimeService.cs" />
     <Compile Include="Models\Services\StaffService.cs" />
+    <Compile Include="Models\Services\StatisticService.cs" />
+    <Compile Include="Models\Services\TroubleService.cs" />
+    <Compile Include="Models\Services\VoucherService.cs" />
     <Compile Include="Models\ShowTime.cs">
       <DependentUpon>CinemaManagementModel.tt</DependentUpon>
     </Compile>
@@ -229,6 +239,10 @@
     <Compile Include="ViewModel\AdminVM\MovieManagementVM\Edit.MovieViewModel.cs" />
     <Compile Include="ViewModel\AdminVM\MovieManagementVM\Infor.MovieWindowViewModel.cs" />
     <Compile Include="ViewModel\AdminVM\MovieManagementVM\MovieManagementViewModel.cs" />
+    <Compile Include="ViewModel\AdminVM\ProductManagementVM\AddProductViewModel.cs" />
+    <Compile Include="ViewModel\AdminVM\ProductManagementVM\EditProductViewModel.cs" />
+    <Compile Include="ViewModel\AdminVM\ProductManagementVM\ImportProductViewModel.cs" />
+    <Compile Include="ViewModel\AdminVM\ProductManagementVM\ProductManagementViewModel.cs" />
     <Compile Include="ViewModel\AdminVM\StaffManagementVM\AddStaffViewModel.cs" />
     <Compile Include="ViewModel\AdminVM\StaffManagementVM\ChangePasswordViewModel.cs" />
     <Compile Include="ViewModel\AdminVM\StaffManagementVM\EditStaffViewModel.cs" />
@@ -256,6 +270,18 @@
     </Compile>
     <Compile Include="Views\Admin\MovieManagement\MovieManagement.xaml.cs">
       <DependentUpon>MovieManagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\ProductManagement\AddProduct.xaml.cs">
+      <DependentUpon>AddProduct.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\ProductManagement\EditProduct.xaml.cs">
+      <DependentUpon>EditProduct.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\ProductManagement\ImportProduct.xaml.cs">
+      <DependentUpon>ImportProduct.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\ProductManagement\ProductManagement.xaml.cs">
+      <DependentUpon>ProductManagement.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Admin\StaffManagement\AddStaffWindow.xaml.cs">
       <DependentUpon>AddStaffWindow.xaml</DependentUpon>
@@ -337,6 +363,22 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Admin\ProductManagement\AddProduct.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\ProductManagement\EditProduct.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\ProductManagement\ImportProduct.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\ProductManagement\ProductManagement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Admin\StaffManagement\AddStaffWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -414,7 +456,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Fonts\" />
-    <Folder Include="ViewModel\AdminVM\ShowtimeManagementVM\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\ImageFilm\1.jpg" />
@@ -426,10 +467,6 @@
     <Resource Include="Resources\ImageFilm\7.jpg" />
   </ItemGroup>
   <ItemGroup Condition="$(VisualStudioVersion) == '17.0'">
-    <Reference Include="Microsoft.Data.Tools.Schema.Sql, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>$(SSDTPath)\Microsoft.Data.Tools.Schema.Sql.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Microsoft.Data.Tools.Schema.Sql.UnitTesting, Version=17.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>$(SSDTUnitTestPath)\Microsoft.Data.Tools.Schema.Sql.UnitTesting.dll</HintPath>
       <Private>True</Private>
@@ -463,6 +500,17 @@
       <DependentUpon>CinemaManagementModel.edmx</DependentUpon>
       <LastGenOutput>CinemaManagementModel.cs</LastGenOutput>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Accessibility">
+      <Guid>{1EA4DBF0-3C3B-11CF-810C-00AA00389B71}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
