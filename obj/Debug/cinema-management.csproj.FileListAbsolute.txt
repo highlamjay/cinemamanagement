@@ -148,3 +148,11 @@ D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\S
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\AddShowtime.baml
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\Infor_EditShowtime.baml
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\ShowtimeManagement.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\DoneError.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\ErrorManagement.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\InprogressError.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\WaitingError.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\DoneError.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\ErrorManagement.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\InprogressError.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\WaitingError.baml

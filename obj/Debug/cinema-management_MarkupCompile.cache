@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\Đồ án NM CNPM\cinemamanagement\App.xaml
-26-614474560
+30298108542
 2-2106707411
-104795598884
+1111281107229
 135-1175151752
-Resources\Scrollbar\Scrollbar.xaml;ResourceXAML\MainResource.xaml;Views\Admin\CustomerManagement\CustomerManagement.xaml;Views\Admin\CustomerManagement\EditCustomer.xaml;Views\Admin\MainAdminWindow.xaml;Views\Admin\MovieManagement\AddMovieWindow.xaml;Views\Admin\MovieManagement\EditMovie.xaml;Views\Admin\MovieManagement\InforMovieWindow.xaml;Views\Admin\MovieManagement\MovieManagement.xaml;Views\Admin\ProductManagement\AddProduct.xaml;Views\Admin\ProductManagement\EditProduct.xaml;Views\Admin\ProductManagement\ImportProduct.xaml;Views\Admin\ProductManagement\ProductManagement.xaml;Views\Admin\ShowtimeManagement\AddShowtime.xaml;Views\Admin\ShowtimeManagement\Infor_EditShowtime.xaml;Views\Admin\ShowtimeManagement\ShowtimeManagement.xaml;Views\Admin\StaffManagement\AddStaffWindow.xaml;Views\Admin\StaffManagement\ChangePasswordWindow.xaml;Views\Admin\StaffManagement\EditStaffWindow.xaml;Views\Admin\StaffManagement\StaffManagement.xaml;Views\LoginWindow\ChangePasswordPage.xaml;Views\LoginWindow\ForgotPasswordPage.xaml;Views\LoginWindow\LoginPage.xaml;Views\LoginWindow\LoginWindow.xaml;Views\LoginWindow\RolePage.xaml;Views\MessageBoxCustom.xaml;
+Resources\Scrollbar\Scrollbar.xaml;ResourceXAML\MainResource.xaml;Views\Admin\CustomerManagement\CustomerManagement.xaml;Views\Admin\CustomerManagement\EditCustomer.xaml;Views\Admin\ErrorManagement\DoneError.xaml;Views\Admin\ErrorManagement\ErrorManagement.xaml;Views\Admin\ErrorManagement\InprogressError.xaml;Views\Admin\ErrorManagement\WaitingError.xaml;Views\Admin\MainAdminWindow.xaml;Views\Admin\MovieManagement\AddMovieWindow.xaml;Views\Admin\MovieManagement\EditMovie.xaml;Views\Admin\MovieManagement\InforMovieWindow.xaml;Views\Admin\MovieManagement\MovieManagement.xaml;Views\Admin\ProductManagement\AddProduct.xaml;Views\Admin\ProductManagement\EditProduct.xaml;Views\Admin\ProductManagement\ImportProduct.xaml;Views\Admin\ProductManagement\ProductManagement.xaml;Views\Admin\ShowtimeManagement\AddShowtime.xaml;Views\Admin\ShowtimeManagement\Infor_EditShowtime.xaml;Views\Admin\ShowtimeManagement\ShowtimeManagement.xaml;Views\Admin\StaffManagement\AddStaffWindow.xaml;Views\Admin\StaffManagement\ChangePasswordWindow.xaml;Views\Admin\StaffManagement\EditStaffWindow.xaml;Views\Admin\StaffManagement\StaffManagement.xaml;Views\LoginWindow\ChangePasswordPage.xaml;Views\LoginWindow\ForgotPasswordPage.xaml;Views\LoginWindow\LoginPage.xaml;Views\LoginWindow\LoginWindow.xaml;Views\LoginWindow\RolePage.xaml;Views\MessageBoxCustom.xaml;
 
 False
 

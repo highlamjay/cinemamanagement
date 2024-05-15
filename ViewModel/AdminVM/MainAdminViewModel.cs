@@ -15,8 +15,10 @@ using cinema_management.Views.Admin.CustomerManagement;
 using cinema_management.Views.Admin.StaffManagement;
 using cinema_management.Views.Admin.ProductManagement;
 using cinema_management.Views.Admin.ShowtimeManagement;
+using cinema_management.Views.Admin.ErrorManagement;
+using cinema_management.Models.Services;
 
-namespace cinema_management.ViewModel.AdminVM
+namespace cinema_management.ViewModel
 {
     public partial class MainAdminViewModel : BaseViewModel
     {
@@ -91,8 +93,48 @@ namespace cinema_management.ViewModel.AdminVM
                 if (p != null)
                     p.Content = new CustomerManagement();
             });
-            
+            LoadErrorPage = new RelayCommand<Frame>((p) => { return p != null; }, (p) =>
+            {
+                SelectedFuncName = "Quản lý sự cố";
+                if (MainAdminWindow.Slidebtn != null)
+                    MainAdminWindow.Slidebtn.IsChecked = false;
+                if (p != null)
+                    p.Content = new ErrorManagement();
+            });
 
+            LoadDetailErrorCM = new RelayCommand<object>((p) => { return true; }, (p) =>
+            {
+                ChoseWindow();
+            });
+            UpdateErrorCM = new RelayCommand<Window>((p) => { if (IsSaving) return false; return true; }, async (p) =>
+            {
+                if (SelectedStatus is null)
+                {
+                    MessageBoxCustom mb = new MessageBoxCustom("Cảnh báo", "Không hợp lệ!", MessageType.Warning, MessageButtons.OK);
+                    mb.ShowDialog();
+                    return;
+                }
+                IsSaving = true;
+                await UpdateErrorFunc(p);
+                IsSaving = false;
+            });
+            ReloadErrorListCM = new RelayCommand<ComboBox>((p) => { return true; }, async (p) =>
+            {
+                ListError = new System.Collections.ObjectModel.ObservableCollection<TroubleDTO>();
+                IsGettingSource = true;
+
+                await ReloadErrorList();
+
+                IsGettingSource = false;
+            });
+            SelectedDate = DateTime.Today;
+            SelectedFinishDate = DateTime.Today;
+
+        }
+        public async Task CountErrorFunc()
+        {
+            int counttemp = await TroubleService.Ins.GetWaitingTroubleCount();
+            ErrorCount = counttemp.ToString();
         }
     }
 }
