@@ -1,7 +1,7 @@
 ﻿using cinema_management.DTOs;
-using cinema_management.Models.Services;
+using cinema_management.Models;
 using cinema_management.Utils;
-using cinema_management.Views.Admin.MovieManagement;
+using cinema_management.Views.Admin.MovieManangement;
 using cinema_management.Views;
 using System;
 using System.Collections.Generic;
@@ -9,7 +9,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using System.Windows.Media;
 using System.Windows;
+using cinema_management.Models.Services;
 
 namespace cinema_management.ViewModel.AdminVM.MovieManagementVM
 {

@@ -1,12 +1,5 @@
 ﻿using CloudinaryDotNet;
 using CloudinaryDotNet.Actions;
-using Microsoft.VisualStudio.Services.Account;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.AccessControl;
-using System.Security.Principal;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
 using Account = CloudinaryDotNet.Account;

@@ -1,6 +1,6 @@
 ﻿using cinema_management.DTOs;
-using cinema_management.Models.Services;
-using cinema_management.Views.Admin.MovieManagement;
+using cinema_management.Utils;
+using cinema_management.Views.Admin.MovieManangement;
 using cinema_management.Views;
 using System;
 using System.Collections.Generic;
@@ -15,7 +15,7 @@ using System.Windows.Input;
 using System.Windows.Media.Imaging;
 using System.Windows.Media;
 using System.Windows;
-using cinema_management.Utils;
+using cinema_management.Models.Services;
 
 namespace cinema_management.ViewModel.AdminVM.MovieManagementVM
 {
@@ -208,7 +208,7 @@ namespace cinema_management.ViewModel.AdminVM.MovieManagementVM
             LoadAddMovieCM = new RelayCommand<Window>((p) => { return true; }, (p) =>
             {
                 RenewWindowData();
-                Window w1 = new AddMovieWindow();
+                Window w1 = new AddMovie();
 
                 MaskName.Visibility = Visibility.Visible;
                 w1.ShowDialog();
@@ -218,7 +218,7 @@ namespace cinema_management.ViewModel.AdminVM.MovieManagementVM
             {
                 if (SelectedItem == null) return;
                 RenewWindowData();
-                InforMovieWindow w1 = new InforMovieWindow();
+                InforMovie w1 = new InforMovie();
                 LoadInforMovie(w1);
                 MaskName.Visibility = Visibility.Visible;
                 w1.ShowDialog();
@@ -378,5 +378,4 @@ namespace cinema_management.ViewModel.AdminVM.MovieManagementVM
                 && !string.IsNullOrEmpty(movieDuration);
         }
     }
-
 }

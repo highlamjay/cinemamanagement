@@ -1,18 +1,19 @@
-﻿D:\test\cinemamanagement\obj\Debug\GeneratedInternalTypeHelper.g.i.cs
-FD:\test\cinemamanagement\App.xaml;;
-FD:\test\cinemamanagement\ResourceXAML\MainResource.xaml;;
-FD:\test\cinemamanagement\Views\Admin\MovieManagement\AddMovieWindow.xaml;;
-FD:\test\cinemamanagement\Views\Admin\MovieManagement\EditMovie.xaml;;
-FD:\test\cinemamanagement\Views\Admin\MovieManagement\InforMovieWindow.xaml;;
-FD:\test\cinemamanagement\Views\Admin\MovieManagement\MovieManagement.xaml;;
-FD:\test\cinemamanagement\Views\Admin\ShowtimeManagement\AddShowtimeWindow.xaml;;
-FD:\test\cinemamanagement\Views\Admin\StaffManagement\ChangePasswordWindow.xaml;;
-FD:\test\cinemamanagement\Views\Admin\StaffManagement\EditStaffWindow.xaml;;
-FD:\test\cinemamanagement\Views\Admin\StaffManagement\StaffManagementPage.xaml;;
-FD:\test\cinemamanagement\Views\LoginWindow\ChangePasswordPage.xaml;;
-FD:\test\cinemamanagement\Views\LoginWindow\ForgotPasswordPage.xaml;;
-FD:\test\cinemamanagement\Views\LoginWindow\LoginPage.xaml;;
-FD:\test\cinemamanagement\Views\LoginWindow\LoginWindow.xaml;;
-FD:\test\cinemamanagement\Views\LoginWindow\RolePage.xaml;;
-FD:\test\cinemamanagement\Views\MessageBoxCustom.xaml;;
+﻿D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\GeneratedInternalTypeHelper.g.i.cs
+FD:\Đồ án NM CNPM\cinemamanagement\App.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\ResourceXAML\MainResource.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\Views\Admin\ErrorManagement\ErrorManagement.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\Views\Admin\MovieManangement\AddMovie.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\Views\Admin\MovieManangement\EditMovie.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\Views\Admin\MovieManangement\InforMovie.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\Views\Admin\MovieManangement\MovieManagement.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\Views\Admin\StatisticalManagement\BestSellingStatistical.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\Views\Admin\StatisticalManagement\RankingStatistical.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\Views\Admin\VoucherManagement\AddWindow\AddVoucher.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\Views\LoginWindow\ChangePasswordPage.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\Views\LoginWindow\ForgotPasswordPage.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\Views\LoginWindow\LoginPage.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\Views\LoginWindow\LoginWindow.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\Views\LoginWindow\RolePage.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\Views\MessageBoxCustom.xaml;;
+FD:\Đồ án NM CNPM\cinemamanagement\Views\Staff\MainStaffWindow.xaml;;
 

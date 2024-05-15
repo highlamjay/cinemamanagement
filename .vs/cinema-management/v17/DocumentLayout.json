@@ -3,24 +3,156 @@
   "WorkspaceRootPath": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|d:\\\u0111\u1ED3 \u00E1n nm cnpm\\cinemamanagement\\views\\admin\\showtimemanagement\\infor_editshowtimewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:views\\admin\\showtimemanagement\\infor_editshowtimewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\resourcexaml\\mainresource.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:resourcexaml\\mainresource.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\viewmodel\\adminvm\\mainadminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:viewmodel\\adminvm\\mainadminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|d:\\\u0111\u1ED3 \u00E1n nm cnpm\\cinemamanagement\\models\\services\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:models\\services\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|d:\\\u0111\u1ED3 \u00E1n nm cnpm\\cinemamanagement\\views\\admin\\statisticalmanagement\\statisticalmanagement.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:views\\admin\\statisticalmanagement\\statisticalmanagement.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|d:\\\u0111\u1ED3 \u00E1n nm cnpm\\cinemamanagement\\views\\admin\\statisticalmanagement\\rankingstatistical.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:views\\admin\\statisticalmanagement\\rankingstatistical.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|d:\\\u0111\u1ED3 \u00E1n nm cnpm\\cinemamanagement\\views\\admin\\statisticalmanagement\\incomestatistical.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:views\\admin\\statisticalmanagement\\incomestatistical.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|d:\\\u0111\u1ED3 \u00E1n nm cnpm\\cinemamanagement\\views\\admin\\statisticalmanagement\\bestsellingstatistical.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:views\\admin\\statisticalmanagement\\bestsellingstatistical.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|d:\\\u0111\u1ED3 \u00E1n nm cnpm\\cinemamanagement\\views\\admin\\statisticalmanagement\\bestsellingstatistical.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:views\\admin\\statisticalmanagement\\bestsellingstatistical.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\viewmodel\\loginvm\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:viewmodel\\loginvm\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\models\\services\\staffservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:models\\services\\staffservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|d:\\\u0111\u1ED3 \u00E1n nm cnpm\\cinemamanagement\\models\\services\\showtimeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:models\\services\\showtimeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|d:\\\u0111\u1ED3 \u00E1n nm cnpm\\cinemamanagement\\viewmodel\\adminvm\\moviemanagementvm\\moviemanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:viewmodel\\adminvm\\moviemanagementvm\\moviemanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|d:\\\u0111\u1ED3 \u00E1n nm cnpm\\cinemamanagement\\viewmodel\\adminvm\\moviemanagementvm\\informoviwviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:viewmodel\\adminvm\\moviemanagementvm\\informoviwviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|d:\\\u0111\u1ED3 \u00E1n nm cnpm\\cinemamanagement\\viewmodel\\adminvm\\moviemanagementvm\\editmovieviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:viewmodel\\adminvm\\moviemanagementvm\\editmovieviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|d:\\\u0111\u1ED3 \u00E1n nm cnpm\\cinemamanagement\\viewmodel\\adminvm\\moviemanagementvm\\addmovieviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:viewmodel\\adminvm\\moviemanagementvm\\addmovieviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|d:\\\u0111\u1ED3 \u00E1n nm cnpm\\cinemamanagement\\views\\admin\\moviemanangement\\addmovie.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:views\\admin\\moviemanangement\\addmovie.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|d:\\\u0111\u1ED3 \u00E1n nm cnpm\\cinemamanagement\\views\\admin\\moviemanangement\\editmovie.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:views\\admin\\moviemanangement\\editmovie.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|d:\\\u0111\u1ED3 \u00E1n nm cnpm\\cinemamanagement\\views\\admin\\moviemanangement\\informovie.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:views\\admin\\moviemanangement\\informovie.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|d:\\\u0111\u1ED3 \u00E1n nm cnpm\\cinemamanagement\\views\\admin\\moviemanangement\\moviemanagement.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:views\\admin\\moviemanangement\\moviemanagement.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|d:\\\u0111\u1ED3 \u00E1n nm cnpm\\cinemamanagement\\views\\admin\\moviemanangement\\moviemanagement.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:views\\admin\\moviemanangement\\moviemanagement.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|d:\\\u0111\u1ED3 \u00E1n nm cnpm\\cinemamanagement\\views\\admin\\moviemanangement\\addmovie.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:views\\admin\\moviemanangement\\addmovie.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|d:\\\u0111\u1ED3 \u00E1n nm cnpm\\cinemamanagement\\models\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:models\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|d:\\\u0111\u1ED3 \u00E1n nm cnpm\\cinemamanagement\\models\\services\\genreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:models\\services\\genreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|d:\\\u0111\u1ED3 \u00E1n nm cnpm\\cinemamanagement\\models\\services\\voucherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:models\\services\\voucherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|d:\\\u0111\u1ED3 \u00E1n nm cnpm\\cinemamanagement\\models\\services\\troubleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:models\\services\\troubleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|d:\\\u0111\u1ED3 \u00E1n nm cnpm\\cinemamanagement\\models\\services\\statisticalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:models\\services\\statisticalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|d:\\\u0111\u1ED3 \u00E1n nm cnpm\\cinemamanagement\\models\\services\\seatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:models\\services\\seatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|d:\\\u0111\u1ED3 \u00E1n nm cnpm\\cinemamanagement\\models\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:models\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|d:\\\u0111\u1ED3 \u00E1n nm cnpm\\cinemamanagement\\models\\services\\productreceiptservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:models\\services\\productreceiptservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|d:\\\u0111\u1ED3 \u00E1n nm cnpm\\cinemamanagement\\models\\services\\overviewstatisticservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:models\\services\\overviewstatisticservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|d:\\\u0111\u1ED3 \u00E1n nm cnpm\\cinemamanagement\\models\\services\\movieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:models\\services\\movieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\models\\services\\billservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:models\\services\\billservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\resourcexaml\\mainresource.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:resourcexaml\\mainresource.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|d:\\\u0111\u1ED3 \u00E1n nm cnpm\\cinemamanagement\\views\\admin\\moviemanangement\\informovie.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:views\\admin\\moviemanangement\\informovie.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\views\\admin\\showtimemanagement\\addshowtimewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:views\\admin\\showtimemanagement\\addshowtimewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|d:\\\u0111\u1ED3 \u00E1n nm cnpm\\cinemamanagement\\views\\admin\\moviemanangement\\editmovie.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:views\\admin\\moviemanangement\\editmovie.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\viewmodel\\adminvm\\mainadminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:viewmodel\\adminvm\\mainadminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|d:\\\u0111\u1ED3 \u00E1n nm cnpm\\cinemamanagement\\utils\\cloudinaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:utils\\cloudinaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|d:\\\u0111\u1ED3 \u00E1n nm cnpm\\cinemamanagement\\views\\staff\\mainstaffwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:views\\staff\\mainstaffwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\views\\admin\\mainadminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:views\\admin\\mainadminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\ShowtimeManagement\\Infor_EditShowtimeWindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Admin\\ShowtimeManagement\\Infor_EditShowtimeWindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\dtos\\billdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,60 +163,8 @@
       "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:dtos\\ticketbillinfodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\models\\services\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:models\\services\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\views\\admin\\showtimemanagement\\showtimemanagement.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:views\\admin\\showtimemanagement\\showtimemanagement.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\views\\admin\\showtimemanagement\\showtimemanagement.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:views\\admin\\showtimemanagement\\showtimemanagement.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\viewmodel\\adminvm\\showtimemanagementvm\\addshowtimeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:viewmodel\\adminvm\\showtimemanagementvm\\addshowtimeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\models\\services\\showtimeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:models\\services\\showtimeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\viewmodel\\adminvm\\showtimemanagementvm\\infor_editshowtimeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:viewmodel\\adminvm\\showtimemanagementvm\\infor_editshowtimeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\viewmodel\\adminvm\\showtimemanagementvm\\seatstatusconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:viewmodel\\adminvm\\showtimemanagementvm\\seatstatusconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\viewmodel\\adminvm\\showtimemanagementvm\\showtimemanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:viewmodel\\adminvm\\showtimemanagementvm\\showtimemanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\views\\admin\\mainadminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:views\\admin\\mainadminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\models\\services\\genreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:models\\services\\genreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\models\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:models\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\models\\services\\staffservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:models\\services\\staffservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\viewmodel\\adminvm\\customermanagementvm\\customermanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:viewmodel\\adminvm\\customermanagementvm\\customermanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\viewmodel\\loginvm\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|solutionrelative:viewmodel\\loginvm\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7E5013A-9376-4FE6-B4CD-70A6AE4A89D8}|cinema-management.csproj|D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\views\\loginwindow\\forgotpasswordpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -248,6 +328,34 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\DTOs\\TicketBillInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DTOs\\TicketBillInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\ShowtimeManagement\\AddShowtimeWindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Admin\\ShowtimeManagement\\AddShowtimeWindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\ShowtimeManagement\\ShowtimeManagement.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Admin\\ShowtimeManagement\\ShowtimeManagement.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\ShowtimeManagement\\ShowtimeManagement.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Admin\\ShowtimeManagement\\ShowtimeManagement.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\ViewModel\\AdminVM\\ShowtimeManagementVM\\AddShowtimeViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ViewModel\\AdminVM\\ShowtimeManagementVM\\AddShowtimeViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\ViewModel\\AdminVM\\ShowtimeManagementVM\\Infor_EditShowtimeViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ViewModel\\AdminVM\\ShowtimeManagementVM\\Infor_EditShowtimeViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\ViewModel\\AdminVM\\ShowtimeManagementVM\\SeatStatusConverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ViewModel\\AdminVM\\ShowtimeManagementVM\\SeatStatusConverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\ViewModel\\AdminVM\\ShowtimeManagementVM\\ShowtimeManagementViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ViewModel\\AdminVM\\ShowtimeManagementVM\\ShowtimeManagementViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -257,39 +365,486 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RankingStatistical.xaml.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\StatisticalManagement\\RankingStatistical.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\Admin\\StatisticalManagement\\RankingStatistical.xaml.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\StatisticalManagement\\RankingStatistical.xaml.cs",
+              "RelativeToolTip": "Views\\Admin\\StatisticalManagement\\RankingStatistical.xaml.cs",
+              "ViewState": "AQIAAGoAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T01:47:04.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IncomeStatistical.xaml.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\StatisticalManagement\\IncomeStatistical.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\Admin\\StatisticalManagement\\IncomeStatistical.xaml.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\StatisticalManagement\\IncomeStatistical.xaml.cs",
+              "RelativeToolTip": "Views\\Admin\\StatisticalManagement\\IncomeStatistical.xaml.cs",
+              "ViewState": "AQIAAIIAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T01:46:59.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BestSellingStatistical.xaml.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\StatisticalManagement\\BestSellingStatistical.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\Admin\\StatisticalManagement\\BestSellingStatistical.xaml.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\StatisticalManagement\\BestSellingStatistical.xaml.cs",
+              "RelativeToolTip": "Views\\Admin\\StatisticalManagement\\BestSellingStatistical.xaml.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T01:46:52.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StatisticalManagement.xaml.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\StatisticalManagement\\StatisticalManagement.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\Admin\\StatisticalManagement\\StatisticalManagement.xaml.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\StatisticalManagement\\StatisticalManagement.xaml.cs",
+              "RelativeToolTip": "Views\\Admin\\StatisticalManagement\\StatisticalManagement.xaml.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAABsAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T01:45:49.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookingService.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\BookingService.cs",
+              "RelativeDocumentMoniker": "Models\\Services\\BookingService.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\BookingService.cs",
+              "RelativeToolTip": "Models\\Services\\BookingService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUBAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T15:22:34.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MainResource.xaml",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\ResourceXAML\\MainResource.xaml",
+              "RelativeDocumentMoniker": "ResourceXAML\\MainResource.xaml",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\ResourceXAML\\MainResource.xaml*",
+              "RelativeToolTip": "ResourceXAML\\MainResource.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-15T05:38:12.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BestSellingStatistical.xaml",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\StatisticalManagement\\BestSellingStatistical.xaml",
+              "RelativeDocumentMoniker": "Views\\Admin\\StatisticalManagement\\BestSellingStatistical.xaml",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\StatisticalManagement\\BestSellingStatistical.xaml",
+              "RelativeToolTip": "Views\\Admin\\StatisticalManagement\\BestSellingStatistical.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-15T01:46:48.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "InforMovie.xaml",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\MovieManangement\\InforMovie.xaml",
+              "RelativeDocumentMoniker": "Views\\Admin\\MovieManangement\\InforMovie.xaml",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\MovieManangement\\InforMovie.xaml",
+              "RelativeToolTip": "Views\\Admin\\MovieManangement\\InforMovie.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-15T01:34:28.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "EditMovie.xaml",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\MovieManangement\\EditMovie.xaml",
+              "RelativeDocumentMoniker": "Views\\Admin\\MovieManangement\\EditMovie.xaml",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\MovieManangement\\EditMovie.xaml",
+              "RelativeToolTip": "Views\\Admin\\MovieManangement\\EditMovie.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-15T01:33:22.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "CloudinaryService.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Utils\\CloudinaryService.cs",
+              "RelativeDocumentMoniker": "Utils\\CloudinaryService.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Utils\\CloudinaryService.cs",
+              "RelativeToolTip": "Utils\\CloudinaryService.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T01:30:10.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "MainStaffWindow.xaml.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Staff\\MainStaffWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\Staff\\MainStaffWindow.xaml.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Staff\\MainStaffWindow.xaml.cs",
+              "RelativeToolTip": "Views\\Staff\\MainStaffWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T01:29:59.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
               "Title": "Infor_EditShowtimeWindow.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\ShowtimeManagement\\Infor_EditShowtimeWindow.xaml",
               "RelativeDocumentMoniker": "Views\\Admin\\ShowtimeManagement\\Infor_EditShowtimeWindow.xaml",
               "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\ShowtimeManagement\\Infor_EditShowtimeWindow.xaml",
               "RelativeToolTip": "Views\\Admin\\ShowtimeManagement\\Infor_EditShowtimeWindow.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-04-20T14:39:47.165Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EditMovieViewModel.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\ViewModel\\AdminVM\\MovieManagementVM\\EditMovieViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\AdminVM\\MovieManagementVM\\EditMovieViewModel.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\ViewModel\\AdminVM\\MovieManagementVM\\EditMovieViewModel.cs",
+              "RelativeToolTip": "ViewModel\\AdminVM\\MovieManagementVM\\EditMovieViewModel.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAAAFIAAABdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T01:37:47.518Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TicketBillInfoDTO.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\DTOs\\TicketBillInfoDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\TicketBillInfoDTO.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\DTOs\\TicketBillInfoDTO.cs",
-              "RelativeToolTip": "DTOs\\TicketBillInfoDTO.cs",
+              "DocumentIndex": 11,
+              "Title": "InforMoviwViewModel.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\ViewModel\\AdminVM\\MovieManagementVM\\InforMoviwViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\AdminVM\\MovieManagementVM\\InforMoviwViewModel.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\ViewModel\\AdminVM\\MovieManagementVM\\InforMoviwViewModel.cs",
+              "RelativeToolTip": "ViewModel\\AdminVM\\MovieManagementVM\\InforMoviwViewModel.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAABgAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T01:38:07.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MovieManagementViewModel.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\ViewModel\\AdminVM\\MovieManagementVM\\MovieManagementViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\AdminVM\\MovieManagementVM\\MovieManagementViewModel.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\ViewModel\\AdminVM\\MovieManagementVM\\MovieManagementViewModel.cs",
+              "RelativeToolTip": "ViewModel\\AdminVM\\MovieManagementVM\\MovieManagementViewModel.cs",
+              "ViewState": "AQIAAPIAAAAAAAAAAAAAANwAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T01:39:03.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ShowtimeService.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\ShowtimeService.cs",
+              "RelativeDocumentMoniker": "Models\\Services\\ShowtimeService.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\ShowtimeService.cs",
+              "RelativeToolTip": "Models\\Services\\ShowtimeService.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAQwB0AAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T14:05:29.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StaffService.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\StaffService.cs",
+              "RelativeDocumentMoniker": "Models\\Services\\StaffService.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\StaffService.cs",
+              "RelativeToolTip": "Models\\Services\\StaffService.cs",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAqwKIAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T08:57:12.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\ViewModel\\LoginVM\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\LoginVM\\LoginViewModel.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\ViewModel\\LoginVM\\LoginViewModel.cs",
+              "RelativeToolTip": "ViewModel\\LoginVM\\LoginViewModel.cs",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAgwEoAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T16:31:12.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AddMovieViewModel.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\ViewModel\\AdminVM\\MovieManagementVM\\AddMovieViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\AdminVM\\MovieManagementVM\\AddMovieViewModel.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\ViewModel\\AdminVM\\MovieManagementVM\\AddMovieViewModel.cs",
+              "RelativeToolTip": "ViewModel\\AdminVM\\MovieManagementVM\\AddMovieViewModel.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAAAEYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T01:37:25.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AddMovie.xaml.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\MovieManangement\\AddMovie.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\Admin\\MovieManangement\\AddMovie.xaml.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\MovieManangement\\AddMovie.xaml.cs",
+              "RelativeToolTip": "Views\\Admin\\MovieManangement\\AddMovie.xaml.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAC0AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T01:32:47.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "EditMovie.xaml.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\MovieManangement\\EditMovie.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\Admin\\MovieManangement\\EditMovie.xaml.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\MovieManangement\\EditMovie.xaml.cs",
+              "RelativeToolTip": "Views\\Admin\\MovieManangement\\EditMovie.xaml.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAAAFMAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T01:33:54.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "InforMovie.xaml.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\MovieManangement\\InforMovie.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\Admin\\MovieManangement\\InforMovie.xaml.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\MovieManangement\\InforMovie.xaml.cs",
+              "RelativeToolTip": "Views\\Admin\\MovieManangement\\InforMovie.xaml.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAADQAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T01:35:18.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MovieManagement.xaml.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\MovieManangement\\MovieManagement.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\Admin\\MovieManangement\\MovieManagement.xaml.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\MovieManangement\\MovieManagement.xaml.cs",
+              "RelativeToolTip": "Views\\Admin\\MovieManangement\\MovieManagement.xaml.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T01:36:29.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MovieManagement.xaml",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\MovieManangement\\MovieManagement.xaml",
+              "RelativeDocumentMoniker": "Views\\Admin\\MovieManangement\\MovieManagement.xaml",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\MovieManangement\\MovieManagement.xaml",
+              "RelativeToolTip": "Views\\Admin\\MovieManangement\\MovieManagement.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-15T01:35:49.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AddMovie.xaml",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\MovieManangement\\AddMovie.xaml",
+              "RelativeDocumentMoniker": "Views\\Admin\\MovieManangement\\AddMovie.xaml",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\MovieManangement\\AddMovie.xaml",
+              "RelativeToolTip": "Views\\Admin\\MovieManangement\\AddMovie.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-15T01:32:00.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\CustomerService.cs",
+              "RelativeDocumentMoniker": "Models\\Services\\CustomerService.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\CustomerService.cs",
+              "RelativeToolTip": "Models\\Services\\CustomerService.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T01:40:14.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "GenreService.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\GenreService.cs",
+              "RelativeDocumentMoniker": "Models\\Services\\GenreService.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\GenreService.cs",
+              "RelativeToolTip": "Models\\Services\\GenreService.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAkwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T13:10:49.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "VoucherService.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\VoucherService.cs",
+              "RelativeDocumentMoniker": "Models\\Services\\VoucherService.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\VoucherService.cs",
+              "RelativeToolTip": "Models\\Services\\VoucherService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T04:36:15.585Z"
+              "WhenOpened": "2024-05-15T01:42:28.718Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 23,
+              "Title": "TroubleService.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\TroubleService.cs",
+              "RelativeDocumentMoniker": "Models\\Services\\TroubleService.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\TroubleService.cs",
+              "RelativeToolTip": "Models\\Services\\TroubleService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T01:42:27.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "StatisticalService.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\StatisticalService.cs",
+              "RelativeDocumentMoniker": "Models\\Services\\StatisticalService.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\StatisticalService.cs",
+              "RelativeToolTip": "Models\\Services\\StatisticalService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T01:42:26.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "SeatService.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\SeatService.cs",
+              "RelativeDocumentMoniker": "Models\\Services\\SeatService.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\SeatService.cs",
+              "RelativeToolTip": "Models\\Services\\SeatService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T01:42:23.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ProductReceiptService.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\ProductReceiptService.cs",
+              "RelativeDocumentMoniker": "Models\\Services\\ProductReceiptService.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\ProductReceiptService.cs",
+              "RelativeToolTip": "Models\\Services\\ProductReceiptService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T01:40:32.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "OverviewStatisticService.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\OverviewStatisticService.cs",
+              "RelativeDocumentMoniker": "Models\\Services\\OverviewStatisticService.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\OverviewStatisticService.cs",
+              "RelativeToolTip": "Models\\Services\\OverviewStatisticService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T01:40:31.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "MovieService.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\MovieService.cs",
+              "RelativeDocumentMoniker": "Models\\Services\\MovieService.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\MovieService.cs",
+              "RelativeToolTip": "Models\\Services\\MovieService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T01:40:30.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "Models\\Services\\ProductService.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\ProductService.cs",
+              "RelativeToolTip": "Models\\Services\\ProductService.cs",
+              "ViewState": "AQIAAJkAAAAAAAAAAAAgwKcAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T16:17:38.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "BillService.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\BillService.cs",
+              "RelativeDocumentMoniker": "Models\\Services\\BillService.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\BillService.cs",
+              "RelativeToolTip": "Models\\Services\\BillService.cs",
+              "ViewState": "AQIAAGsAAAAAAAAAAAAowMYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T13:47:14.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "MainAdminViewModel.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\ViewModel\\AdminVM\\MainAdminViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\AdminVM\\MainAdminViewModel.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\ViewModel\\AdminVM\\MainAdminViewModel.cs",
+              "RelativeToolTip": "ViewModel\\AdminVM\\MainAdminViewModel.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T05:38:33.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
               "Title": "BillDTO.cs",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\DTOs\\BillDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\BillDTO.cs",
@@ -301,90 +856,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainResource.xaml",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\ResourceXAML\\MainResource.xaml",
-              "RelativeDocumentMoniker": "ResourceXAML\\MainResource.xaml",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\ResourceXAML\\MainResource.xaml",
-              "RelativeToolTip": "ResourceXAML\\MainResource.xaml",
+              "DocumentIndex": 39,
+              "Title": "TicketBillInfoDTO.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\DTOs\\TicketBillInfoDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\TicketBillInfoDTO.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\DTOs\\TicketBillInfoDTO.cs",
+              "RelativeToolTip": "DTOs\\TicketBillInfoDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T04:36:15.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "MainAdminWindow.xaml",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\MainAdminWindow.xaml",
+              "RelativeDocumentMoniker": "Views\\Admin\\MainAdminWindow.xaml",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\MainAdminWindow.xaml",
+              "RelativeToolTip": "Views\\Admin\\MainAdminWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-15T05:38:12.704Z",
+              "WhenOpened": "2024-04-06T12:17:03.486Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BillService.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\BillService.cs",
-              "RelativeDocumentMoniker": "Models\\Services\\BillService.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\BillService.cs",
-              "RelativeToolTip": "Models\\Services\\BillService.cs",
-              "ViewState": "AQIAAKwAAAAAAAAAAAAswMYAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T13:47:14.549Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BookingService.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\BookingService.cs",
-              "RelativeDocumentMoniker": "Models\\Services\\BookingService.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\BookingService.cs",
-              "RelativeToolTip": "Models\\Services\\BookingService.cs",
-              "ViewState": "AQIAAAMBAAAAAAAAAAAswBYBAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T15:22:34.295Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainAdminViewModel.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\ViewModel\\AdminVM\\MainAdminViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModel\\AdminVM\\MainAdminViewModel.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\ViewModel\\AdminVM\\MainAdminViewModel.cs",
-              "RelativeToolTip": "ViewModel\\AdminVM\\MainAdminViewModel.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAswEIAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T05:38:33.132Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AddShowtimeWindow.xaml.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\ShowtimeManagement\\AddShowtimeWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\Admin\\ShowtimeManagement\\AddShowtimeWindow.xaml.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\ShowtimeManagement\\AddShowtimeWindow.xaml.cs",
-              "RelativeToolTip": "Views\\Admin\\ShowtimeManagement\\AddShowtimeWindow.xaml.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAYwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T04:40:19.134Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ShowtimeManagement.xaml",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\ShowtimeManagement\\ShowtimeManagement.xaml",
-              "RelativeDocumentMoniker": "Views\\Admin\\ShowtimeManagement\\ShowtimeManagement.xaml",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\ShowtimeManagement\\ShowtimeManagement.xaml",
-              "RelativeToolTip": "Views\\Admin\\ShowtimeManagement\\ShowtimeManagement.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-17T09:30:35.744Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ShowtimeManagement.xaml.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\ShowtimeManagement\\ShowtimeManagement.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\Admin\\ShowtimeManagement\\ShowtimeManagement.xaml.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\ShowtimeManagement\\ShowtimeManagement.xaml.cs",
-              "RelativeToolTip": "Views\\Admin\\ShowtimeManagement\\ShowtimeManagement.xaml.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAQwDMAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T14:35:47.519Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 94,
               "Title": "AddShowtimeViewModel.cs",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\ViewModel\\AdminVM\\ShowtimeManagementVM\\AddShowtimeViewModel.cs",
               "RelativeDocumentMoniker": "ViewModel\\AdminVM\\ShowtimeManagementVM\\AddShowtimeViewModel.cs",
@@ -396,19 +896,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ShowtimeService.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\ShowtimeService.cs",
-              "RelativeDocumentMoniker": "Models\\Services\\ShowtimeService.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\ShowtimeService.cs",
-              "RelativeToolTip": "Models\\Services\\ShowtimeService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAALoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T14:05:29.147Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 95,
               "Title": "Infor_EditShowtimeViewModel.cs",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\ViewModel\\AdminVM\\ShowtimeManagementVM\\Infor_EditShowtimeViewModel.cs",
               "RelativeDocumentMoniker": "ViewModel\\AdminVM\\ShowtimeManagementVM\\Infor_EditShowtimeViewModel.cs",
@@ -420,7 +908,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 96,
               "Title": "SeatStatusConverter.cs",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\ViewModel\\AdminVM\\ShowtimeManagementVM\\SeatStatusConverter.cs",
               "RelativeDocumentMoniker": "ViewModel\\AdminVM\\ShowtimeManagementVM\\SeatStatusConverter.cs",
@@ -432,7 +920,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 97,
               "Title": "ShowtimeManagementViewModel.cs",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\ViewModel\\AdminVM\\ShowtimeManagementVM\\ShowtimeManagementViewModel.cs",
               "RelativeDocumentMoniker": "ViewModel\\AdminVM\\ShowtimeManagementVM\\ShowtimeManagementViewModel.cs",
@@ -444,18 +932,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "MainAdminWindow.xaml",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\MainAdminWindow.xaml",
-              "RelativeDocumentMoniker": "Views\\Admin\\MainAdminWindow.xaml",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\MainAdminWindow.xaml",
-              "RelativeToolTip": "Views\\Admin\\MainAdminWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-06T12:17:03.486Z"
+              "DocumentIndex": 91,
+              "Title": "AddShowtimeWindow.xaml.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\ShowtimeManagement\\AddShowtimeWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\Admin\\ShowtimeManagement\\AddShowtimeWindow.xaml.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\ShowtimeManagement\\AddShowtimeWindow.xaml.cs",
+              "RelativeToolTip": "Views\\Admin\\ShowtimeManagement\\AddShowtimeWindow.xaml.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T04:40:19.134Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 92,
+              "Title": "ShowtimeManagement.xaml",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\ShowtimeManagement\\ShowtimeManagement.xaml",
+              "RelativeDocumentMoniker": "Views\\Admin\\ShowtimeManagement\\ShowtimeManagement.xaml",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\ShowtimeManagement\\ShowtimeManagement.xaml",
+              "RelativeToolTip": "Views\\Admin\\ShowtimeManagement\\ShowtimeManagement.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-17T09:30:35.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 93,
+              "Title": "ShowtimeManagement.xaml.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\ShowtimeManagement\\ShowtimeManagement.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\Admin\\ShowtimeManagement\\ShowtimeManagement.xaml.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\ShowtimeManagement\\ShowtimeManagement.xaml.cs",
+              "RelativeToolTip": "Views\\Admin\\ShowtimeManagement\\ShowtimeManagement.xaml.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAQwDMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T14:35:47.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
               "Title": "LoginWindow.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\LoginWindow\\LoginWindow.xaml",
               "RelativeDocumentMoniker": "Views\\LoginWindow\\LoginWindow.xaml",
@@ -466,7 +978,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 40,
               "Title": "CustomerManagementViewModel.cs",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\ViewModel\\AdminVM\\CustomerManagementVM\\CustomerManagementViewModel.cs",
               "RelativeDocumentMoniker": "ViewModel\\AdminVM\\CustomerManagementVM\\CustomerManagementViewModel.cs",
@@ -478,7 +990,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 90,
               "Title": "TicketBillInfo.cs",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\DTOs\\TicketBillInfo.cs",
               "RelativeDocumentMoniker": "DTOs\\TicketBillInfo.cs",
@@ -490,7 +1002,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 41,
               "Title": "ForgotPasswordPage.xaml.cs",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\LoginWindow\\ForgotPasswordPage.xaml.cs",
               "RelativeDocumentMoniker": "Views\\LoginWindow\\ForgotPasswordPage.xaml.cs",
@@ -502,55 +1014,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "GenreService.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\GenreService.cs",
-              "RelativeDocumentMoniker": "Models\\Services\\GenreService.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\GenreService.cs",
-              "RelativeToolTip": "Models\\Services\\GenreService.cs",
-              "ViewState": "AQIAAEwAAAAAAAAAAAAkwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T13:10:49.57Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\ProductService.cs",
-              "RelativeDocumentMoniker": "Models\\Services\\ProductService.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\ProductService.cs",
-              "RelativeToolTip": "Models\\Services\\ProductService.cs",
-              "ViewState": "AQIAAJMAAAAAAAAAAAAowJ4AAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T16:17:38.047Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "StaffService.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\StaffService.cs",
-              "RelativeDocumentMoniker": "Models\\Services\\StaffService.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Models\\Services\\StaffService.cs",
-              "RelativeToolTip": "Models\\Services\\StaffService.cs",
-              "ViewState": "AQIAAM0AAAAAAAAAAAAAAM0AAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T08:57:12.169Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\ViewModel\\LoginVM\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModel\\LoginVM\\LoginViewModel.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\ViewModel\\LoginVM\\LoginViewModel.cs",
-              "RelativeToolTip": "ViewModel\\LoginVM\\LoginViewModel.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAvwJcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T16:31:12.556Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 51,
               "Title": "LoginWindow.xaml.cs",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\LoginWindow\\LoginWindow.xaml.cs",
               "RelativeDocumentMoniker": "Views\\LoginWindow\\LoginWindow.xaml.cs",
@@ -562,7 +1026,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 52,
               "Title": "LoginPage.xaml.cs",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\LoginWindow\\LoginPage.xaml.cs",
               "RelativeDocumentMoniker": "Views\\LoginWindow\\LoginPage.xaml.cs",
@@ -574,7 +1038,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 42,
               "Title": "ForgotPassViewModel.cs",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\ViewModel\\LoginVM\\ForgotPassViewModel.cs",
               "RelativeDocumentMoniker": "ViewModel\\LoginVM\\ForgotPassViewModel.cs",
@@ -586,7 +1050,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 73,
               "Title": "AddFoodWindow.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\Views\\Admin\\FoodManagementPage\\AddFoodWindow.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\Views\\Admin\\FoodManagementPage\\AddFoodWindow.xaml",
@@ -597,7 +1061,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 87,
               "Title": "ResourceMain.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\ResourceXAML\\ResourceMain.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\ResourceXAML\\ResourceMain.xaml",
@@ -608,7 +1072,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 43,
               "Title": "RolePage.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\LoginWindow\\RolePage.xaml",
               "RelativeDocumentMoniker": "Views\\LoginWindow\\RolePage.xaml",
@@ -619,7 +1083,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 70,
               "Title": "ImportFoodWindow.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\Views\\Admin\\FoodManagementPage\\ImportFoodWindow.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\Views\\Admin\\FoodManagementPage\\ImportFoodWindow.xaml",
@@ -630,7 +1094,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 71,
               "Title": "FoodPage.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\Views\\Admin\\FoodManagementPage\\FoodPage.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\Views\\Admin\\FoodManagementPage\\FoodPage.xaml",
@@ -641,7 +1105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 72,
               "Title": "EditFoodWindow.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\Views\\Admin\\FoodManagementPage\\EditFoodWindow.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\Views\\Admin\\FoodManagementPage\\EditFoodWindow.xaml",
@@ -652,7 +1116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 55,
               "Title": "ReleaseVoucher.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\Views\\Admin\\VoucherManagement\\AddWindow\\ReleaseVoucher.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\Views\\Admin\\VoucherManagement\\AddWindow\\ReleaseVoucher.xaml",
@@ -663,7 +1127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 44,
               "Title": "CustomerManagement.xaml.cs",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\Admin\\CustomerManagement\\CustomerManagement.xaml.cs",
               "RelativeDocumentMoniker": "Views\\Admin\\CustomerManagement\\CustomerManagement.xaml.cs",
@@ -675,7 +1139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 54,
               "Title": "EditWindow.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\Views\\Admin\\VoucherManagement\\Infor_EditWindow\\EditWindow.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\Views\\Admin\\VoucherManagement\\Infor_EditWindow\\EditWindow.xaml",
@@ -686,7 +1150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 61,
               "Title": "StatisticalManagement.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\Views\\Admin\\StatisticalManagement\\StatisticalManagement.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\Views\\Admin\\StatisticalManagement\\StatisticalManagement.xaml",
@@ -697,7 +1161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 62,
               "Title": "RankingStatistical.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\Views\\Admin\\StatisticalManagement\\RankingStatistical.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\Views\\Admin\\StatisticalManagement\\RankingStatistical.xaml",
@@ -708,7 +1172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 63,
               "Title": "IncomeStatistical.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\Views\\Admin\\StatisticalManagement\\IncomeStatistical.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\Views\\Admin\\StatisticalManagement\\IncomeStatistical.xaml",
@@ -719,7 +1183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 64,
               "Title": "BestSellingStatistical.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\Views\\Admin\\StatisticalManagement\\BestSellingStatistical.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\Views\\Admin\\StatisticalManagement\\BestSellingStatistical.xaml",
@@ -730,7 +1194,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 56,
               "Title": "AddWindow.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\Views\\Admin\\VoucherManagement\\AddWindow\\AddWindow.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\Views\\Admin\\VoucherManagement\\AddWindow\\AddWindow.xaml",
@@ -741,7 +1205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 53,
               "Title": "VoucherManagement.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\Views\\Admin\\VoucherManagement\\VoucherManagement.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\Views\\Admin\\VoucherManagement\\VoucherManagement.xaml",
@@ -752,7 +1216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 47,
               "Title": "MessageBoxCustom.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\MessageBoxCustom.xaml",
               "RelativeDocumentMoniker": "Views\\MessageBoxCustom.xaml",
@@ -763,7 +1227,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 57,
               "Title": "AddVoucher.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\Views\\Admin\\VoucherManagement\\AddWindow\\AddVoucher.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\Views\\Admin\\VoucherManagement\\AddWindow\\AddVoucher.xaml",
@@ -774,7 +1238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 58,
               "Title": "AddMiniVoucher.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\Views\\Admin\\VoucherManagement\\AddWindow\\AddMiniVoucher.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\Views\\Admin\\VoucherManagement\\AddWindow\\AddMiniVoucher.xaml",
@@ -785,7 +1249,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 59,
               "Title": "AddListMiniVoucher.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\Views\\Admin\\VoucherManagement\\AddWindow\\AddListMiniVoucher.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\Views\\Admin\\VoucherManagement\\AddWindow\\AddListMiniVoucher.xaml",
@@ -796,7 +1260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 60,
               "Title": "AddInfor.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\Views\\Admin\\VoucherManagement\\AddWindow\\AddInfor.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\Views\\Admin\\VoucherManagement\\AddWindow\\AddInfor.xaml",
@@ -807,7 +1271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 65,
               "Title": "TicketDetail.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\Views\\Admin\\Import_ExportManagement\\TicketDetail.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\Views\\Admin\\Import_ExportManagement\\TicketDetail.xaml",
@@ -818,7 +1282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 66,
               "Title": "ProductDetail.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\Views\\Admin\\Import_ExportManagement\\ProductDetail.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\Views\\Admin\\Import_ExportManagement\\ProductDetail.xaml",
@@ -829,7 +1293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 67,
               "Title": "Import_Export.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\Views\\Admin\\Import_ExportManagement\\Import_Export.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\Views\\Admin\\Import_ExportManagement\\Import_Export.xaml",
@@ -840,7 +1304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 68,
               "Title": "ImportPage.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\Views\\Admin\\Import_ExportManagement\\ImportPage.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\Views\\Admin\\Import_ExportManagement\\ImportPage.xaml",
@@ -851,7 +1315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 69,
               "Title": "ExportPage.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\Views\\Admin\\Import_ExportManagement\\ExportPage.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\Views\\Admin\\Import_ExportManagement\\ExportPage.xaml",
@@ -862,7 +1326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 74,
               "Title": "ViewError.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\Views\\Staff\\TroubleWindow\\ViewError.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\Views\\Staff\\TroubleWindow\\ViewError.xaml",
@@ -873,7 +1337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 75,
               "Title": "TroublePage.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\Views\\Staff\\TroubleWindow\\TroublePage.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\Views\\Staff\\TroubleWindow\\TroublePage.xaml",
@@ -884,7 +1348,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 76,
               "Title": "EditError.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\Views\\Staff\\TroubleWindow\\EditError.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\Views\\Staff\\TroubleWindow\\EditError.xaml",
@@ -895,7 +1359,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 77,
               "Title": "AddError.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\Views\\Staff\\TroubleWindow\\AddError.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\Views\\Staff\\TroubleWindow\\AddError.xaml",
@@ -906,7 +1370,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 78,
               "Title": "TicketWindow.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\Views\\Staff\\TicketWindow\\TicketWindow.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\Views\\Staff\\TicketWindow\\TicketWindow.xaml",
@@ -917,7 +1381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 79,
               "Title": "TicketBookingPage.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\Views\\Staff\\TicketWindow\\TicketBookingPage.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\Views\\Staff\\TicketWindow\\TicketBookingPage.xaml",
@@ -928,7 +1392,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 80,
               "Title": "TicketBillPage.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\Views\\Staff\\TicketBill\\TicketBillPage.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\Views\\Staff\\TicketBill\\TicketBillPage.xaml",
@@ -939,7 +1403,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 81,
               "Title": "TicketBillOnlyFoodPage.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\Views\\Staff\\TicketBill\\TicketBillOnlyFoodPage.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\Views\\Staff\\TicketBill\\TicketBillOnlyFoodPage.xaml",
@@ -950,7 +1414,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 82,
               "Title": "TicketBillNoFoodPage.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\Views\\Staff\\TicketBill\\TicketBillNoFoodPage.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\Views\\Staff\\TicketBill\\TicketBillNoFoodPage.xaml",
@@ -961,7 +1425,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 83,
               "Title": "ShowtimePage.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\Views\\Staff\\ShowtimePage\\ShowtimePage.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\Views\\Staff\\ShowtimePage\\ShowtimePage.xaml",
@@ -972,7 +1436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 84,
               "Title": "MainStaffWindow.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\Views\\Staff\\MainStaffWindow.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\Views\\Staff\\MainStaffWindow.xaml",
@@ -983,7 +1447,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 46,
               "Title": "packages.config",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\packages.config",
               "RelativeDocumentMoniker": "packages.config",
@@ -995,7 +1459,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 85,
               "Title": "FoodPage.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\Views\\Staff\\OrderFoodWindow\\FoodPage.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\Views\\Staff\\OrderFoodWindow\\FoodPage.xaml",
@@ -1006,7 +1470,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 86,
               "Title": "MovieScheduleWindow.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\Views\\Staff\\MovieScheduleWindow\\MovieScheduleWindow.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\Views\\Staff\\MovieScheduleWindow\\MovieScheduleWindow.xaml",
@@ -1017,7 +1481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 45,
               "Title": "ChangePasswordPage.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\LoginWindow\\ChangePasswordPage.xaml",
               "RelativeDocumentMoniker": "Views\\LoginWindow\\ChangePasswordPage.xaml",
@@ -1028,7 +1492,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 50,
               "Title": "ForgotPasswordPage.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\LoginWindow\\ForgotPasswordPage.xaml",
               "RelativeDocumentMoniker": "Views\\LoginWindow\\ForgotPasswordPage.xaml",
@@ -1039,7 +1503,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 49,
               "Title": "LoginPage.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinemamanagement\\Views\\LoginWindow\\LoginPage.xaml",
               "RelativeDocumentMoniker": "Views\\LoginWindow\\LoginPage.xaml",
@@ -1050,7 +1514,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 88,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\MainWindow.xaml",
               "RelativeDocumentMoniker": "..\\cinema-management\\MainWindow.xaml",
@@ -1061,7 +1525,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 89,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n NM CNPM\\cinema-management\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "..\\cinema-management\\MainWindow.xaml.cs",

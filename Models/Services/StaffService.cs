@@ -154,13 +154,13 @@ namespace cinema_management.Model.Service
         {
             return new Staff
             {
-                StaffBirthDay = s.StaffBirthDay,
+                StaffBirthDay = (DateTime)s.StaffBirthDay,
                 Sex = s.Sex,
                 UserName = s.Username,
                 StaffName = s.StaffName,
                 StaffRole = s.StaffRole,
                 PhoneNumber = s.PhoneNumber,
-                StartingDate = s.StartingDate,
+                StartingDate = (DateTime)s.StartingDate,
                 Email = s.Email
             };
         }
@@ -200,13 +200,13 @@ namespace cinema_management.Model.Service
                         return (false, "Nhân viên không tồn tại");
                     }
 
-                    staff.StaffBirthDay = updatedStaff.StaffBirthDay;
+                    staff.StaffBirthDay = (DateTime)updatedStaff.StaffBirthDay;
                     staff.Sex = updatedStaff.Sex;
                     staff.UserName = updatedStaff.Username;
                     staff.StaffName = updatedStaff.StaffName;
                     staff.StaffRole = updatedStaff.StaffRole;
                     staff.PhoneNumber = updatedStaff.PhoneNumber;
-                    staff.StartingDate = updatedStaff.StartingDate;
+                    staff.StartingDate = (DateTime)updatedStaff.StartingDate;
                     staff.Email = updatedStaff.Email;
 
                     await context.SaveChangesAsync();

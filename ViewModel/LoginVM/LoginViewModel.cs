@@ -11,6 +11,7 @@ using cinema_management.Models.Services;
 using cinema_management.Views.LoginWindow;
 using cinema_management.Views.Admin;
 using cinema_management.ViewModel.AdminVM;
+using cinema_management.Model.Service;
 namespace cinema_management.ViewModel.LoginVM
 {
     public class LoginViewModel : BaseViewModel
