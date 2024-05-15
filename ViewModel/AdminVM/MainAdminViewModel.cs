@@ -18,6 +18,7 @@ using cinema_management.Views.Admin.ShowtimeManagement;
 using cinema_management.Views.Admin.ErrorManagement;
 using cinema_management.Models.Services;
 using cinema_management.Views.Admin.Import_ExportManagement;
+using cinema_management.Views.Admin.StatisticManagement;
 
 namespace cinema_management.ViewModel
 {
@@ -86,13 +87,21 @@ namespace cinema_management.ViewModel
                 if (p != null)
                     p.Content = new StaffManagement();
             });
-            LoadQLKHPageCM = new RelayCommand<Frame>((p) => { return p != null; }, (p) =>
+            LoadTKPageCM = new RelayCommand<Frame>((p) => { return p != null; }, (p) =>
             {
-                SelectedFuncName = "Quản lý khách hàng";
+                SelectedFuncName = "Thống kê";
                 if (MainAdminWindow.Slidebtn != null)
                     MainAdminWindow.Slidebtn.IsChecked = false;
                 if (p != null)
-                    p.Content = new CustomerManagement();
+                    p.Content = new StatisticalManagement();
+            });
+            LoadLSPage = new RelayCommand<Frame>((p) => { return p != null; }, (p) =>
+            {
+                SelectedFuncName = "Lịch sử";
+                if (MainAdminWindow.Slidebtn != null)
+                    MainAdminWindow.Slidebtn.IsChecked = false;
+                if (p != null)
+                    p.Content = new Import_ExportManagement();
             });
             LoadLSPage = new RelayCommand<Frame>((p) => { return p != null; }, (p) =>
             {

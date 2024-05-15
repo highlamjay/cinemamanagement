@@ -168,3 +168,17 @@ D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagem
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\Import_ExportManagement.baml
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\ProductDetail.baml
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\TicketDetail.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StatisticalManagement\BestSellingStatistical.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StatisticalManagement\IncomeStatistical.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StatisticalManagement\RankingStatistical.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StatisticalManagement\StatisticalManagement.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StatisticalManagement\IncomeStatistical.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StatisticalManagement\StatisticalManagement.baml
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\LiveCharts.dll
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\LiveCharts.Wpf.dll
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\LiveCharts.pdb
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\LiveCharts.xml
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\LiveCharts.Wpf.pdb
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\LiveCharts.Wpf.xml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StatisticalManagement\BestSellingStatistical.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StatisticalManagement\RankingStatistical.baml

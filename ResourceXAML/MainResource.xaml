@@ -9,7 +9,8 @@
                     xmlns:viewmodelCustomerManagement="clr-namespace:cinema_management.ViewModel.AdminVM.CustomerManagementVM"
                     xmlns:viewmodelProductManagement="clr-namespace:cinema_management.ViewModel.AdminVM.ProductManagementVM"
                     xmlns:viewmodelStaffManagement="clr-namespace:cinema_management.ViewModel.AdminVM.StaffManagementVM"
-                    xmlns:viewmodelImport_ExportManagement="clr-namespace:cinema_management.ViewModel.AdminVM.Import_ExportManagementVM">
+                    xmlns:viewmodelImport_ExportManagement="clr-namespace:cinema_management.ViewModel.AdminVM.Import_ExportManagementVM"
+                    xmlns:viewmodelStatisticalManagement="clr-namespace:cinema_management.ViewModel.AdminVM.StatisticalManagementVM">
     <viewmodelForgotPass:ForgotPassViewModel x:Key="ForgotPassVM"/>
     <viewmodelLogin:LoginViewModel x:Key="LoginVM"/>
     <viewmodelMainAdmin:MainAdminViewModel x:Key="MainAdminVM"/>
@@ -19,4 +20,5 @@
     <viewmodelStaffManagement:StaffManagementViewModel x:Key="StaffManagementVM"/>
     <viewmodelProductManagement:ProductManagementViewModel x:Key="ProductManagementVM"/>
     <viewmodelImport_ExportManagement:Import_ExportManagementViewModel x:Key="Import_ExportManagementVM"/>
+    <viewmodelStatisticalManagement:StatisticalManagementViewModel x:Key="StatisticalManagementVM"/>
 </ResourceDictionary>
