@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Resources",
-    "\\Resources\\Icon",
+    "\\Models",
     "\\ResourceXAML",
     "\\ViewModel",
     "\\ViewModel\\AdminVM",
     "\\ViewModel\\AdminVM\\MovieManagementVM",
+    "\\ViewModel\\AdminVM\\ShowtimeManagementVM",
     "\\Views",
     "\\Views\\Admin",
     "\\Views\\Admin\\MovieManagement"
   ],
-  "SelectedNode": "\\ViewModel\\AdminVM\\MovieManagementVM\\MovieManagementViewModel.cs",
+  "SelectedNode": "\\ViewModel\\AdminVM\\ShowtimeManagementVM\\AddShowtimeViewModel.cs",
   "PreviewInSolutionExplorer": false
 }

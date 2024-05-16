@@ -36,7 +36,7 @@ namespace cinema_management.Models.Services
                                           where s.ShowTimeID == showtimeId
                                           select new SeatSettingDTO
                                           {
-                                              SeatId = s.SeatID,
+                                              SeatId = s.SeatID.Value,
                                               ShowtimeId = s.ShowTimeID,
                                               Status = s.Status,
                                               Seat = new SeatDTO

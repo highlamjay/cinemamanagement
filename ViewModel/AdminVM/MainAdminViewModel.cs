@@ -56,6 +56,28 @@ namespace cinema_management.ViewModel
 
         public MainAdminViewModel()
         {
+            SignoutCM = new RelayCommand<FrameworkElement>((p) => { return p == null ? false : true; }, (p) =>
+            {
+                FrameworkElement window = GetParentWindow(p);
+                var w = window as Window;
+                if (w != null)
+                {
+                    w.Hide();
+                    LoginWindow w1 = new LoginWindow();
+                    w1.ShowDialog();
+                    w.Close();
+                }
+            });
+            FrameworkElement GetParentWindow(FrameworkElement p)
+            {
+                FrameworkElement parent = p;
+
+                while (parent.Parent != null)
+                {
+                    parent = parent.Parent as FrameworkElement;
+                }
+                return parent;
+            }
             LoadQLPPageCM = new RelayCommand<Frame>((p) => { return p != null; }, (p) =>
             {
                 SelectedFuncName = "Quản lý phim";

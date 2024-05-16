@@ -54,14 +54,14 @@ namespace cinema_management.Model.Service
         public async Task<(bool, string, StaffDTO)> Login(string username, string password)
         {
 
-            //string hassPass = Helper.MD5Hash(password);
+            string hassPass = Helper.MD5Hash(password);
 
             try
             {
                 using (var context = new CinemaManagementEntities())
                 {
                     var staff = await (from s in context.Staffs
-                                       where s.UserName == username && s.StaffPassword == password
+                                       where s.UserName == username && s.StaffPassword == hassPass
                                        select new StaffDTO
                                        {
                                            StaffId = s.StaffID,
