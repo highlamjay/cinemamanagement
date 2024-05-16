@@ -19,6 +19,7 @@ using cinema_management.Views.Admin.ErrorManagement;
 using cinema_management.Models.Services;
 using cinema_management.Views.Admin.Import_ExportManagement;
 using cinema_management.Views.Admin.StatisticManagement;
+using cinema_management.Views.Admin.VoucherManagement;
 
 namespace cinema_management.ViewModel
 {
@@ -87,6 +88,14 @@ namespace cinema_management.ViewModel
                 if (p != null)
                     p.Content = new StaffManagement();
             });
+            LoadQLKHPageCM = new RelayCommand<Frame>((p) => { return p != null; }, (p) =>
+            {
+                SelectedFuncName = "Quản lý khách hàng";
+                if (MainAdminWindow.Slidebtn != null)
+                    MainAdminWindow.Slidebtn.IsChecked = false;
+                if (p != null)
+                    p.Content = new CustomerManagement();
+            });
             LoadTKPageCM = new RelayCommand<Frame>((p) => { return p != null; }, (p) =>
             {
                 SelectedFuncName = "Thống kê";
@@ -103,13 +112,13 @@ namespace cinema_management.ViewModel
                 if (p != null)
                     p.Content = new Import_ExportManagement();
             });
-            LoadLSPage = new RelayCommand<Frame>((p) => { return p != null; }, (p) =>
+            LoadVCPageCM = new RelayCommand<Frame>((p) => { return p != null; }, (p) =>
             {
-                SelectedFuncName = "Lịch sử";
+                SelectedFuncName = "Voucher";
                 if (MainAdminWindow.Slidebtn != null)
                     MainAdminWindow.Slidebtn.IsChecked = false;
                 if (p != null)
-                    p.Content = new Import_ExportManagement();
+                    p.Content = new VoucherManagement();
             });
             LoadErrorPage = new RelayCommand<Frame>((p) => { return p != null; }, (p) =>
             {
