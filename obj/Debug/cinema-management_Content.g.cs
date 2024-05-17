@@ -10,8 +10,5 @@
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("models/cinemamanagementmodel.context.tt")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("models/cinemamanagementmodel.tt")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/emailtemplate/common_template.html")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/emailtemplate/new_customer.html")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/emailtemplate/top5_customer_gratitude.html")]
 
 
