@@ -378,7 +378,7 @@ namespace cinema_management.Models.Services
                 string idList = string.Join(",", ListCodeId);
                 using (var context = new CinemaManagementEntities())
                 {
-                    var sql = $@"Update [Voucher] SET Status = '{VOUCHER_STATUS.REALEASED}', ReleaseAt = GETDATE()  WHERE Id IN ({idList})";
+                    var sql = $@"Update [Voucher] SET Status = '{VOUCHER_STATUS.REALEASED}', ReleaseAt = GETDATE()  WHERE VoucherId IN ({idList})";
                     await context.Database.ExecuteSqlCommandAsync(sql);
                 }
                 return (true, "Phát hành thành công");

@@ -354,7 +354,7 @@ namespace cinema_management.ViewModel.AdminVM.VoucherManagemenetVM
             //Add view to the Email Message
             mail.AlternateViews.Add(GetAlternateViews(type, customerEmail.Name, listCode));
 
-            mail.From = new MailAddress(APP_EMAIL, "Squadin Cinema");
+            mail.From = new MailAddress(APP_EMAIL, "VMN Cinema");
             mail.To.Add(customerEmail.Email);
             if (type == EMAIL_TYPE.NEW_CUSTOMER)
             {

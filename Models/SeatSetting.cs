@@ -14,7 +14,7 @@ namespace cinema_management.Models
     
     public partial class SeatSetting
     {
-        public int SeatID { get; set; }
+        public Nullable<int> SeatID { get; set; }
         public int ShowTimeID { get; set; }
         public bool Status { get; set; }
     

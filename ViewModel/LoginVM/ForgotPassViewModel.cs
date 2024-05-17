@@ -192,7 +192,7 @@ namespace cinema_management.ViewModel.LoginVM
             //Add view to the Email Message
             mail.AlternateViews.Add(htmlView);
 
-            mail.From = new MailAddress(APP_EMAIL, "Squadin Cinema");
+            mail.From = new MailAddress(APP_EMAIL, "VMN Cinema");
             mail.To.Add(customerEmail);
             mail.Subject = "Lấy lại mật khẩu đăng nhập";
 
