@@ -370,6 +370,7 @@ namespace cinema_management.ViewModel.AdminVM.MovieManagementVM
             ListCountrySource.Add("Thái Lan");
             ListCountrySource.Add("Trung Quốc");
             ListCountrySource.Add("Việt Nam");
+            ListCountrySource.Add("Mỹ");
         }
         public bool IsValidData()
         {
