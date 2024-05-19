@@ -23,7 +23,7 @@ namespace cinema_management.Views.Staff.TroubeWindow
         public AddError()
         {
             InitializeComponent();
-            StaffName.Text = TicketBillViewModel.Staff.StaffName;
+            //StaffName.Text = TicketBillViewModel.Staff.StaffName;
         }
         private void Button_MouseEnter_1(object sender, MouseEventArgs e)
         {
