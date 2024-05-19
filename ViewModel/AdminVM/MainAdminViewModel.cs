@@ -20,6 +20,7 @@ using cinema_management.Models.Services;
 using cinema_management.Views.Admin.Import_ExportManagement;
 using cinema_management.Views.Admin.StatisticManagement;
 using cinema_management.Views.Admin.VoucherManagement;
+using cinema_management.Views.Staff;
 
 namespace cinema_management.ViewModel
 {
@@ -56,6 +57,16 @@ namespace cinema_management.ViewModel
 
         public MainAdminViewModel()
         {
+            FirstLoadCM = new RelayCommand<object>((p) => { return true; }, async (p) =>
+            {
+                SelectedFuncName = "Thống kê";
+                await CountErrorFunc();
+                var mainWindow = Application.Current.MainWindow as MainAdminWindow;
+                if (mainWindow != null)
+                {
+                    mainWindow.MainFrame.Content = new StatisticalManagement();
+                }
+            });
             SignoutCM = new RelayCommand<FrameworkElement>((p) => { return p == null ? false : true; }, (p) =>
             {
                 FrameworkElement window = GetParentWindow(p);
@@ -149,6 +160,16 @@ namespace cinema_management.ViewModel
                     MainAdminWindow.Slidebtn.IsChecked = false;
                 if (p != null)
                     p.Content = new ErrorManagement();
+            });
+
+            ChangeRoleCM = new RelayCommand<Window>((p) => { return true; }, (p) =>
+            {
+                p.Hide();
+                MainStaffWindow w1 = new MainStaffWindow();
+                MainStaffViewModel.CurrentStaff = currentStaff;
+                w1._StaffName.Text = currentStaff.StaffName;
+                w1.Show();
+                p.Close();
             });
 
             LoadDetailErrorCM = new RelayCommand<object>((p) => { return true; }, (p) =>

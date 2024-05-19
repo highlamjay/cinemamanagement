@@ -279,6 +279,18 @@
     <Compile Include="ViewModel\BaseViewModel.cs" />
     <Compile Include="ViewModel\LoginVM\ForgotPassViewModel.cs" />
     <Compile Include="ViewModel\LoginVM\LoginViewModel.cs" />
+    <Compile Include="ViewModel\StaffVM\IsAdminConverter.cs" />
+    <Compile Include="ViewModel\StaffVM\MainStaffViewModel.cs" />
+    <Compile Include="ViewModel\StaffVM\MovieScheduleWindowVM\MovieScheduleWindowViewModel.cs" />
+    <Compile Include="ViewModel\StaffVM\OrderFoodWindowVM\OrderFoodPageViewModel.cs" />
+    <Compile Include="ViewModel\StaffVM\ShowtimePageVM\ShowtimePageViewModel.cs" />
+    <Compile Include="ViewModel\StaffVM\TicketBillVM\TicketBillViewModel.cs" />
+    <Compile Include="ViewModel\StaffVM\TicketVM\TicketBookingPageViewModel.cs" />
+    <Compile Include="ViewModel\StaffVM\TicketVM\TicketWindowViewModel.cs" />
+    <Compile Include="ViewModel\StaffVM\TroubleWindowVM\AddError.cs" />
+    <Compile Include="ViewModel\StaffVM\TroubleWindowVM\EditConverter.cs" />
+    <Compile Include="ViewModel\StaffVM\TroubleWindowVM\EditError.cs" />
+    <Compile Include="ViewModel\StaffVM\TroubleWindowVM\TroublePageViewModel.cs" />
     <Compile Include="Views\Admin\CustomerManagement\CustomerManagement.xaml.cs">
       <DependentUpon>CustomerManagement.xaml</DependentUpon>
     </Compile>
@@ -434,6 +446,45 @@
     <Compile Include="DTOs\SeatDTO.cs" />
     <Compile Include="DTOs\StaffDTO.cs" />
     <Compile Include="DTOs\TicketDTO.cs" />
+    <Compile Include="Views\Staff\MainStaffWindow.xaml.cs">
+      <DependentUpon>MainStaffWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Staff\MovieScheduleWindow\MovieScheduleWindow.xaml.cs">
+      <DependentUpon>MovieScheduleWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Staff\OrderFoodWindow\FoodPage.xaml.cs">
+      <DependentUpon>FoodPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Staff\ShowtimePage\ShowtimePage.xaml.cs">
+      <DependentUpon>ShowtimePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Staff\TicketBill\TicketBillNoFoodPage.xaml.cs">
+      <DependentUpon>TicketBillNoFoodPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Staff\TicketBill\TicketBillOnlyFoodPage.xaml.cs">
+      <DependentUpon>TicketBillOnlyFoodPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Staff\TicketBill\TicketBillPage.xaml.cs">
+      <DependentUpon>TicketBillPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Staff\TicketWindow\TicketBookingPage.xaml.cs">
+      <DependentUpon>TicketBookingPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Staff\TicketWindow\TicketWindow.xaml.cs">
+      <DependentUpon>TicketWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Staff\TroubeWindow\AddError.xaml.cs">
+      <DependentUpon>AddError.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Staff\TroubeWindow\EditError.xaml.cs">
+      <DependentUpon>EditError.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Staff\TroubeWindow\TroublePage.xaml.cs">
+      <DependentUpon>TroublePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Staff\TroubeWindow\ViewError.xaml.cs">
+      <DependentUpon>ViewError.xaml</DependentUpon>
+    </Compile>
     <Page Include="Resources\Scrollbar\Scrollbar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -630,6 +681,58 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Staff\MainStaffWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Staff\MovieScheduleWindow\MovieScheduleWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Staff\OrderFoodWindow\FoodPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Staff\ShowtimePage\ShowtimePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Staff\TicketBill\TicketBillNoFoodPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Staff\TicketBill\TicketBillOnlyFoodPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Staff\TicketBill\TicketBillPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Staff\TicketWindow\TicketBookingPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Staff\TicketWindow\TicketWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Staff\TroubeWindow\AddError.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Staff\TroubeWindow\EditError.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Staff\TroubeWindow\TroublePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Staff\TroubeWindow\ViewError.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -722,6 +825,10 @@
       <DependentUpon>CinemaManagementModel.edmx</DependentUpon>
       <LastGenOutput>CinemaManagementModel.cs</LastGenOutput>
     </Content>
+    <Content Include="Resources\EmailTemplate\common_template.html" />
+    <Content Include="Resources\EmailTemplate\new_customer.html" />
+    <Resource Include="Resources\EmailTemplate\reset_password_html.txt" />
+    <Content Include="Resources\EmailTemplate\top5_customer_gratitude.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

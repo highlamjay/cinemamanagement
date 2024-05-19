@@ -342,3 +342,29 @@ C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\cinema-management.csproj.CoreComp
 C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\cinema-management.csproj.CopyComplete
 C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\cinema-management.exe
 C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\cinema-management.pdb
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\MainStaffWindow.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\MovieScheduleWindow\MovieScheduleWindow.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\OrderFoodWindow\FoodPage.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\ShowtimePage\ShowtimePage.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TicketBill\TicketBillNoFoodPage.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TicketBill\TicketBillOnlyFoodPage.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TicketBill\TicketBillPage.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TicketWindow\TicketBookingPage.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TicketWindow\TicketWindow.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TroubeWindow\AddError.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TroubeWindow\EditError.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TroubeWindow\TroublePage.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TroubeWindow\ViewError.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\MainStaffWindow.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\MovieScheduleWindow\MovieScheduleWindow.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\OrderFoodWindow\FoodPage.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\ShowtimePage\ShowtimePage.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TicketBill\TicketBillNoFoodPage.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TicketBill\TicketBillOnlyFoodPage.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TicketBill\TicketBillPage.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TicketWindow\TicketBookingPage.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TicketWindow\TicketWindow.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TroubeWindow\AddError.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TroubeWindow\EditError.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TroubeWindow\TroublePage.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TroubeWindow\ViewError.baml
