@@ -1,12 +1,10 @@
 ﻿using cinema_management.DTOs;
 using cinema_management.Models.Services;
 using cinema_management.Views;
-using LiveCharts.Wpf;
 using LiveCharts;
+using LiveCharts.Wpf;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 
@@ -91,7 +89,7 @@ namespace cinema_management.ViewModel.AdminVM.StatisticalManagementVM
             {
                 switch (SelectedRankingPeriod.Content.ToString())
                 {
-                    case "Theo năm":
+                    case "By year":
                         {
                             if (SelectedRankingTime != null)
                             {
@@ -99,7 +97,7 @@ namespace cinema_management.ViewModel.AdminVM.StatisticalManagementVM
                             }
                             return;
                         }
-                    case "Theo tháng":
+                    case "By month":
                         {
                             if (SelectedRankingTime != null)
                             {
@@ -124,12 +122,12 @@ namespace cinema_management.ViewModel.AdminVM.StatisticalManagementVM
                     new PieSeries
                     {
                         Values = new ChartValues<decimal>{TicketExpenseOfTop1 },
-                        Title = "Tiền vé",
+                        Title = "Ticket Income",
                     },
                     new PieSeries
                     {
                         Values = new ChartValues<decimal>{ProductExpenseOfTop1 },
-                        Title = "Sản phẩm",
+                        Title = "Product Income",
                     }
                 };
                 NewCusPie = new SeriesCollection
@@ -137,13 +135,13 @@ namespace cinema_management.ViewModel.AdminVM.StatisticalManagementVM
                     new PieSeries
                     {
                         Values = new ChartValues<int>{NewCustomerQuanityInYear},
-                        Title = "Khách hàng mới",
+                        Title = "New Customer",
                         DataLabels = true
                     },
                     new PieSeries
                     {
                         Values = new ChartValues<int>{TotalCustomerQuantityInYear-NewCustomerQuanityInYear},
-                        Title = "Khách hàng cũ",
+                        Title = "Old Customer",
                         DataLabels = true
                     },
                 };
@@ -152,13 +150,13 @@ namespace cinema_management.ViewModel.AdminVM.StatisticalManagementVM
             catch (System.Data.Entity.Core.EntityException e)
             {
                 Console.WriteLine(e);
-                MessageBoxCustom mb = new MessageBoxCustom("Lỗi", "Mất kết nối cơ sở dữ liệu", MessageType.Error, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Error", "Database Connection Lost", MessageType.Error, MessageButtons.OK);
                 mb.ShowDialog();
             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                MessageBoxCustom mb = new MessageBoxCustom("Lỗi", "Lỗi hệ thống", MessageType.Error, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Error", "System Error", MessageType.Error, MessageButtons.OK);
                 mb.ShowDialog();
             }
         }
@@ -177,12 +175,12 @@ namespace cinema_management.ViewModel.AdminVM.StatisticalManagementVM
                     new PieSeries
                     {
                         Values = new ChartValues<decimal>{TicketExpenseTop1Cus },
-                        Title = "Tiền vé",
+                        Title = "Ticket Income",
                     },
                     new PieSeries
                     {
                         Values = new ChartValues<decimal>{ProductExpenseTop1Cus },
-                        Title = "Sản phẩm",
+                        Title = "Product Income",
                     }
                 };
                 NewCusPie = new SeriesCollection
@@ -190,13 +188,13 @@ namespace cinema_management.ViewModel.AdminVM.StatisticalManagementVM
                     new PieSeries
                     {
                         Values = new ChartValues<int>{NewCustomerQuanity},
-                        Title = "Khách hàng mới",
+                        Title = "New Customer",
                         DataLabels = true
                     },
                     new PieSeries
                     {
                         Values = new ChartValues<int>{TotalCustomerQuantity - NewCustomerQuanity},
-                        Title = "Khách hàng cũ",
+                        Title = "Old Customer",
                         DataLabels = true
                     },
                 };
@@ -205,13 +203,13 @@ namespace cinema_management.ViewModel.AdminVM.StatisticalManagementVM
             catch (System.Data.Entity.Core.EntityException e)
             {
                 Console.WriteLine(e);
-                MessageBoxCustom mb = new MessageBoxCustom("Lỗi", "Mất kết nối cơ sở dữ liệu", MessageType.Error, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Error", "Database Connection Lost", MessageType.Error, MessageButtons.OK);
                 mb.ShowDialog();
             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                MessageBoxCustom mb = new MessageBoxCustom("Lỗi", "Lỗi hệ thống", MessageType.Error, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Error", "System Error", MessageType.Error, MessageButtons.OK);
                 mb.ShowDialog();
             }
         }
@@ -222,7 +220,7 @@ namespace cinema_management.ViewModel.AdminVM.StatisticalManagementVM
             {
                 switch (SelectedRankingPeriod2.Content.ToString())
                 {
-                    case "Theo năm":
+                    case "By year":
                         {
                             if (SelectedRankingTime2 != null)
                             {
@@ -230,7 +228,7 @@ namespace cinema_management.ViewModel.AdminVM.StatisticalManagementVM
                             }
                             return;
                         }
-                    case "Theo tháng":
+                    case "By month":
                         {
                             if (SelectedRankingTime2 != null)
                             {
@@ -266,19 +264,19 @@ namespace cinema_management.ViewModel.AdminVM.StatisticalManagementVM
                 StaffContributePie.Add(new PieSeries
                 {
                     Values = new ChartValues<decimal> { TotalBenefitByYear - totaltop5 },
-                    Title = "Các nhân viên còn lại",
+                    Title = "Remaining Staff",
                 });
             }
             catch (System.Data.Entity.Core.EntityException e)
             {
                 Console.WriteLine(e);
-                MessageBoxCustom mb = new MessageBoxCustom("Lỗi", "Mất kết nối cơ sở dữ liệu", MessageType.Error, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Error", "Database Connection Lost", MessageType.Error, MessageButtons.OK);
                 mb.ShowDialog();
             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                MessageBoxCustom mb = new MessageBoxCustom("Lỗi", "Lỗi hệ thống", MessageType.Error, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Error", "Database Connection Lost", MessageType.Error, MessageButtons.OK);
                 mb.ShowDialog();
             }
         }
@@ -307,19 +305,19 @@ namespace cinema_management.ViewModel.AdminVM.StatisticalManagementVM
                 StaffContributePie.Add(new PieSeries
                 {
                     Values = new ChartValues<decimal> { TotalBenefitByMonth - totaltop5 },
-                    Title = "Các nhân viên còn lại",
+                    Title = "Remaining Staff",
                 });
             }
             catch (System.Data.Entity.Core.EntityException e)
             {
                 Console.WriteLine(e);
-                MessageBoxCustom mb = new MessageBoxCustom("Lỗi", "Mất kết nối cơ sở dữ liệu", MessageType.Error, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Error", "Database Connection Lost", MessageType.Error, MessageButtons.OK);
                 mb.ShowDialog();
             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                MessageBoxCustom mb = new MessageBoxCustom("Lỗi", "Lỗi hệ thống", MessageType.Error, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Error", "System Error", MessageType.Error, MessageButtons.OK);
                 mb.ShowDialog();
             }
         }

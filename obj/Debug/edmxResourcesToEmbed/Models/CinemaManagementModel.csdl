@@ -8,8 +8,8 @@
     <Property Name="CustomerID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="StaffID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="BillTime" Type="DateTime" Nullable="false" Precision="0" />
-    <Property Name="DiscountPrice" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
     <Property Name="TotalPrice" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="DiscountPrice" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
     <NavigationProperty Name="Tickets" Relationship="Self.fk_Bill" FromRole="Bill" ToRole="Ticket" />
     <NavigationProperty Name="ProductBillInfoes" Relationship="Self.fk_Bill_ID" FromRole="Bill" ToRole="ProductBillInfo" />
     <NavigationProperty Name="Customer" Relationship="Self.fk_Customer_ID" FromRole="Bill" ToRole="Customer" />
@@ -33,7 +33,7 @@
     <Key>
       <PropertyRef Name="GenreID" />
     </Key>
-    <Property Name="GenreID" Type="Int32" Nullable="false" />
+    <Property Name="GenreID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="GenreDisplayName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Movies" Relationship="Self.MovieGenre" FromRole="Genre" ToRole="Movie" />
   </EntityType>
@@ -166,7 +166,7 @@
     </Key>
     <Property Name="TroubleId" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="TroubleTitle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="TroubleDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TroubleDescription" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="TroubleStatus" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
     <Property Name="TroubleSubmittedAt" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="TroubleRepairCost" Type="Decimal" Precision="19" Scale="4" Nullable="false" />

@@ -44,7 +44,7 @@
                 BorderThickness="1">
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="50" />
+                    <RowDefinition Height="60" />
                     <RowDefinition Height="40*" />
                     <RowDefinition Height="60*" />
                 </Grid.RowDefinitions>
@@ -52,10 +52,18 @@
                 <Grid Grid.Row="0">
                     <Border BorderThickness="0,0,0,1"
                             BorderBrush="Black">
-                        <Grid>
-                            <TextBlock Text="Chi tiết phim"
+                        <StackPanel Orientation="Horizontal" Margin="20,0,0,0">
+                            <materialDesign:PackIcon Kind="Eye" 
+                            VerticalAlignment="Center"
+                           Width="50" 
+                           Height="50">
+
+                            </materialDesign:PackIcon>
+                            <TextBlock Text="Movie Descripsion"
+                                       VerticalAlignment="Center"
                                        FontSize="25"
                                        Margin="20,10,0,0"
+                                       FontFamily="arial"
                                        FontWeight="Bold" />
                             <StackPanel Orientation="Horizontal"
                                         VerticalAlignment="Top"
@@ -72,10 +80,12 @@
                                         MouseLeave="Button_MouseLeave_1"
                                         materialDesign:ButtonAssist.CornerRadius="0,10,0,0">
                                     <materialDesign:PackIcon Kind="WindowClose"
+                                                             
+                                                             Margin="640,0,0,0"
                                                              Padding="0" />
                                 </Button>
                             </StackPanel>
-                        </Grid>
+                        </StackPanel>
 
                     </Border>
 
@@ -98,7 +108,7 @@
                         <StackPanel Grid.Column="0"
                                     Margin="25,0,25,0">
                             <StackPanel>
-                                <Label Content="Tên phim"
+                                <Label Content="Name"
                                        FontSize="20"
                                        Height="36" />
                                 <TextBox Padding="0"
@@ -118,14 +128,14 @@
                         <!--GENRE-->
                         <StackPanel Grid.Column="1"
                                     Margin="0,0,25,0">
-                            <Label Content="Thể loại"
+                            <Label Content="Genre"
                                    FontSize="20" />
 
                             <TextBox x:Name="Genre"
                                      Focusable="False"
                                      FontSize="25"
                                      BorderThickness="0,0,0,1"
-                                     Height="50"
+                                     Height="54"
                                      VerticalContentAlignment="Bottom" />
                         </StackPanel>
 
@@ -134,8 +144,8 @@
                     <Grid Grid.Row="1"
                           Margin="0,10,0,0">
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="292*" />
-                            <ColumnDefinition Width="110*" />
+                            <ColumnDefinition Width="296*" />
+                            <ColumnDefinition Width="106*" />
                             <ColumnDefinition Width="97*" />
                         </Grid.ColumnDefinitions>
 
@@ -143,7 +153,7 @@
                         <StackPanel Grid.Column="0"
                                     Margin="25,10,10,0">
                             <StackPanel Grid.Column="0">
-                                <Label Content="Tác giả"
+                                <Label Content="Director"
                                        FontSize="20"
                                        Margin="0,0,35,0"
                                        Height="35" />
@@ -164,7 +174,7 @@
                         <!--Country-->
                         <StackPanel Grid.Column="1"
                                     Margin="0,10,10,0">
-                            <Label Content="Quốc gia"
+                            <Label Content="Country"
                                    FontSize="20"
                                    Height="35" />
                             <StackPanel>
@@ -179,7 +189,7 @@
                         <!--Duration-->
                         <StackPanel Grid.Column="2"
                                     Margin="0,10,25,0">
-                            <Label Content="Thời lượng"
+                            <Label Content="Time"
                                    FontSize="20"
                                    Height="40" />
                             <StackPanel>
@@ -217,7 +227,7 @@
                                         Width="773">
 
                                 <StackPanel>
-                                    <Label Content="Mô tả"
+                                    <Label Content="Descripsion"
                                            FontSize="20"
                                            Foreground="Black"
                                            Margin="0,10,0,0" />
@@ -256,9 +266,9 @@
                             <!--YEAR-->
                             <Grid Grid.Row="0">
 
-                                <StackPanel Margin="0,0,25,0"
+                                <StackPanel Margin="0,0,65,0"
                                             HorizontalAlignment="Right">
-                                    <Label Content="Năm phát hành"
+                                    <Label Content="Year released"
                                            FontSize="20"
                                            Height="31"
                                            Margin="0,10,0,0" />

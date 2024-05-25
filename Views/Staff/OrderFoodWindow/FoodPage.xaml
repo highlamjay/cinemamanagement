@@ -74,9 +74,10 @@
                         </i:EventTrigger>
                     </i:Interaction.Triggers>
                 </Border>
-                <TextBlock Text="Danh mục sản phẩm"
+                <TextBlock Text="Product List"
                            FontSize="28"
-                           Margin="20,20,0,0"
+                           VerticalAlignment="Center"
+                          
                            FontWeight="Bold"
                            Grid.Column="0" />
 
@@ -89,15 +90,15 @@
                            Foreground="dimgray"
                            DockPanel.Dock="Left"
                            Margin="300,40,0,0"
-                           Text="Thanh toán" />
+                           Text="Transaction" />
                 <TextBlock HorizontalAlignment="Right"
                            FontFamily="Arial"
                            FontSize="15"
-                           Text="Xóa"
+                           Text="Delete"
                            FontWeight="Bold"
-                           Margin="180,40,0,0"
+                           Margin="160,40,0,0"
                            VerticalAlignment="Center"
-                           ToolTip="Xóa tất cả"
+                           ToolTip="Delete all"
                            Cursor="Hand">
                     <TextBlock.Style>
                         <Style TargetType="TextBlock">
@@ -149,7 +150,9 @@
                         <materialDesign:Card x:Name="all"
                                              Background="White">
                             <materialDesign:Card.Content>
-                                <TextBlock Text="Tất cả"
+                                <TextBlock Text="All"
+                                          TextOptions.TextRenderingMode="Aliased"
+           TextOptions.TextFormattingMode="Ideal" 
                                            HorizontalAlignment="Center"
                                            VerticalAlignment="Center" />
                             </materialDesign:Card.Content>
@@ -163,7 +166,7 @@
                         <materialDesign:Card Height="Auto"
                                              x:Name="food">
                             <materialDesign:Card.Content>
-                                <TextBlock Text="Đồ ăn"
+                                <TextBlock Text="Foods"
                                            HorizontalAlignment="Center"
                                            VerticalAlignment="Center" />
                             </materialDesign:Card.Content>
@@ -177,7 +180,7 @@
                         <materialDesign:Card Height="Auto"
                                              x:Name="drink">
                             <materialDesign:Card.Content>
-                                <TextBlock Text="Thức uống"
+                                <TextBlock Text="Drinks"
                                            HorizontalAlignment="Center"
                                            VerticalAlignment="Center" />
                             </materialDesign:Card.Content>
@@ -529,7 +532,7 @@
                                        FontWeight="Bold"
                                        TextAlignment="Right" />
 
-                            <TextBlock Text="Tổng:"
+                            <TextBlock Text="Total :"
                                        FontSize="30"
                                        FontFamily="Arial"
                                        VerticalAlignment="Center"
@@ -545,7 +548,7 @@
                             Grid.Row="2"
                             Height="50"
                             Width="164"
-                            Content="Xác nhận"
+                            Content="Verify"
                             FontSize="25">
                     </Button>
                 </Grid>

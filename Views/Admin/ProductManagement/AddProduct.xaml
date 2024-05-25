@@ -89,9 +89,10 @@
                                           Grid.Row="0"
                                           x:Name="HeaderAddFood">
                     <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="PlusCircleOutline" Height="30" Width="30" />
                         <TextBlock VerticalAlignment="Center"
                                    Margin="10 0 0 0"
-                                   Text="THÊM SẢN PHẨM"
+                                   Text="Add product"
                                    Foreground="Black"
                                    FontWeight="DemiBold"
                                    FontSize="20" />
@@ -102,7 +103,7 @@
                         <ColumnDefinition Width="80" />
                         <ColumnDefinition />
                     </Grid.ColumnDefinitions>
-                    <TextBlock Text="Tên" />
+                    <TextBlock Text="Name" />
                     <TextBox Grid.Column="1"
                              Text="{Binding DisplayName, Mode=TwoWay}" />
                 </Grid>
@@ -111,7 +112,7 @@
                         <ColumnDefinition Width="80" />
                         <ColumnDefinition />
                     </Grid.ColumnDefinitions>
-                    <TextBlock Text="Loại" />
+                    <TextBlock Text="Type" />
                     <ComboBox VerticalContentAlignment="Center"
                               Padding="0 12 0 0"
                               Margin="5 0 10 0"
@@ -128,7 +129,7 @@
                         <ColumnDefinition Width="80" />
                         <ColumnDefinition />
                     </Grid.ColumnDefinitions>
-                    <TextBlock Text="Giá tiền"
+                    <TextBlock Text="Price"
                                x:Name="tboxName" />
                     <TextBox Grid.Column="1"
                              Text="{Binding Price, Mode=TwoWay}"
@@ -188,7 +189,7 @@
                                HorizontalAlignment="Left"
                                Margin="20 -10 0 0"
                                VerticalAlignment="Top" />
-                    <Button Content="Hủy"
+                    <Button Content="Cancel"
                             Margin="0 0 90 10"
                             BorderBrush="Transparent"
                             materialDesign:ButtonAssist.CornerRadius="8"
@@ -196,7 +197,7 @@
                             CommandParameter="{Binding ElementName=AddFoodWd}"
                             Background="OrangeRed" />
 
-                    <Button Content="Thêm"
+                    <Button Content="Add"
                             Margin="0 0 10 10"
                             materialDesign:ButtonAssist.CornerRadius="8"
                             Command="{Binding AddFoodCommand}"

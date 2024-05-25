@@ -59,8 +59,8 @@
                                                        CommandParameter="{Binding ElementName=periodbox}" />
                             </i:EventTrigger>
                         </i:Interaction.Triggers>
-                        <ComboBoxItem>Theo năm</ComboBoxItem>
-                        <ComboBoxItem>Theo tháng</ComboBoxItem>
+                        <ComboBoxItem>By year</ComboBoxItem>
+                        <ComboBoxItem>By month</ComboBoxItem>
                     </ComboBox>
                 </StackPanel>
                 <!---TIME-->
@@ -104,7 +104,7 @@
                                              Margin="30,10,0,10">
                             <StackPanel>
                                 <StackPanel Orientation="Horizontal">
-                                    <Label Content="Thu:"
+                                    <Label Content="Income:"
                                            FontWeight="Bold"
                                            FontSize="15" />
                                     <TextBox Text="{Binding ReveRate}"
@@ -123,7 +123,7 @@
 
                                     <StackPanel Grid.Column="0"
                                                 Margin="5,0,0,0">
-                                        <Label Content="Vé"
+                                        <Label Content="Ticket"
                                                FontSize="20" />
                                         <Label Content="{Binding TicketPc}"
                                                FontSize="25"
@@ -132,7 +132,7 @@
                                     </StackPanel>
                                     <StackPanel Grid.Column="1"
                                                 HorizontalAlignment="Center">
-                                        <Label Content="Sản phẩm"
+                                        <Label Content="Product"
                                                FontSize="20" />
                                         <Label Content="{Binding ProductPc}"
                                                FontWeight="Bold"
@@ -147,7 +147,7 @@
                                              Margin="10,10,0,10">
                             <StackPanel>
                                 <StackPanel Orientation="Horizontal">
-                                    <Label Content="Chi:"
+                                    <Label Content="Outcome:"
                                            FontWeight="Bold"
                                            FontSize="15" />
                                     <TextBox Text="{Binding ExpeRate}"
@@ -164,7 +164,7 @@
                                     </Grid.ColumnDefinitions>
 
                                     <StackPanel Grid.Column="0">
-                                        <Label Content="Sản phẩm"
+                                        <Label Content="Product"
                                                FontSize="20" />
                                         <Label Content="{Binding ProductExPc}"
                                                FontSize="25"
@@ -173,7 +173,7 @@
                                     </StackPanel>
                                     <StackPanel Grid.Column="1"
                                                 HorizontalAlignment="Center">
-                                        <Label Content="Sửa chữa"
+                                        <Label Content="Repair"
                                                FontSize="20" />
                                         <Label Content="{Binding RepairPc}"
                                                FontWeight="Bold"
@@ -195,7 +195,7 @@
                                     <RowDefinition Height="75*" />
                                 </Grid.RowDefinitions>
 
-                                <Label Content="Tổng thu chi (VND)"
+                                <Label Content="Total (VND)"
                                        FontSize="15"
                                        FontWeight="Bold"
                                        Margin="10,10,0,0"
@@ -210,7 +210,7 @@
 
                                         <!---BAR 1-->
                                         <StackPanel Margin="10,0,0,0">
-                                            <Label Content="Thu"
+                                            <Label Content="Income"
                                                    FontWeight="Bold" />
                                             <StackPanel Width="250"
                                                         HorizontalAlignment="Left">
@@ -260,7 +260,7 @@
 
                                         <!---BAR 2-->
                                         <StackPanel Margin="10,20,0,0">
-                                            <Label Content="Chi"
+                                            <Label Content="Outcome"
                                                    FontWeight="Bold" />
                                             <StackPanel Width="250"
                                                         HorizontalAlignment="Left">
@@ -330,7 +330,7 @@
                     </StackPanel>
 
                     <StackPanel Grid.Row="2">
-                        <materialDesign:Card Height="225"
+                        <materialDesign:Card Height="205"
                                              Margin="30,0,0,0"
                                              UniformCornerRadius="5">
                             <StackPanel>
@@ -347,25 +347,25 @@
 
                                 <StackPanel Orientation="Horizontal"
                                             Margin="0,8,0,0">
-                                    <TextBlock Text="Chu kỳ:"
+                                    <TextBlock Text="Duration :"
                                                Width="105" />
                                     <TextBlock Text="{Binding Path=Text,ElementName=periodbox}" />
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal"
                                             Margin="0,5,0,0">
-                                    <TextBlock Text="Thời gian:"
+                                    <TextBlock Text="Time :"
                                                Width="105" />
                                     <TextBlock Text="{Binding Path=Text,ElementName=Timebox}" />
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal"
                                             Margin="0,5,0,0">
-                                    <TextBlock Text="Số hoá đơn:"
+                                    <TextBlock Text="Total bills:"
                                                Width="105" />
                                     <TextBlock Text="{Binding TotalBill}" />
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal"
                                             Margin="0,5,0,0">
-                                    <TextBlock Text="Lợi nhuận:"
+                                    <TextBlock Text="Profit :"
                                                Width="105" />
                                     <TextBlock Text="{Binding TrueIncome}" />
                                 </StackPanel>
@@ -380,9 +380,9 @@
                             Orientation="Horizontal"
                             x:Name="cardRight">
                     <materialDesign:Card Background="White"
-                                         Margin="30,10,0,0"
+                                         Margin="30,10,0,10"
                                          Width="950"
-                                         Height="573"
+                                         Height="553"
                                          HorizontalAlignment="Right"
                                          UniformCornerRadius="5"
                                          VerticalAlignment="Top">
@@ -399,7 +399,7 @@
                                 </lvc:AxesCollection>
                             </lvc:CartesianChart.AxisX>
                             <lvc:CartesianChart.AxisY>
-                                <lvc:Axis Title="Triệu đồng"
+                                <lvc:Axis Title="Millions dong"
                                           FontFamily="arial"
                                           MinValue="0" />
                             </lvc:CartesianChart.AxisY>

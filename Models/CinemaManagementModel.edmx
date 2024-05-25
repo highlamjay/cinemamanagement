@@ -13,8 +13,8 @@
           <Property Name="CustomerID" Type="varchar" MaxLength="50" />
           <Property Name="StaffID" Type="varchar" MaxLength="50" />
           <Property Name="BillTime" Type="date" Nullable="false" />
-          <Property Name="DiscountPrice" Type="decimal" Precision="19" Scale="4" Nullable="false" />
           <Property Name="TotalPrice" Type="money" Nullable="false" />
+          <Property Name="DiscountPrice" Type="decimal" Precision="19" Scale="4" Nullable="false" />
         </EntityType>
         <EntityType Name="Customer">
           <Key>
@@ -32,7 +32,7 @@
           <Key>
             <PropertyRef Name="GenreID" />
           </Key>
-          <Property Name="GenreID" Type="int" Nullable="false" />
+          <Property Name="GenreID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="GenreDisplayName" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="Movie">
@@ -173,7 +173,7 @@ warning 6002: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a 
           </Key>
           <Property Name="TroubleId" Type="varchar" MaxLength="10" Nullable="false" />
           <Property Name="TroubleTitle" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="TroubleDescription" Type="text" Nullable="false" />
+          <Property Name="TroubleDescription" Type="nvarchar" MaxLength="500" Nullable="false" />
           <Property Name="TroubleStatus" Type="nvarchar" MaxLength="30" />
           <Property Name="TroubleSubmittedAt" Type="datetime" Nullable="false" />
           <Property Name="TroubleRepairCost" Type="decimal" Precision="19" Scale="4" Nullable="false" />
@@ -592,8 +592,8 @@ warning 6002: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a 
           <Property Name="CustomerID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="StaffID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="BillTime" Type="DateTime" Nullable="false" Precision="0" />
-          <Property Name="DiscountPrice" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
           <Property Name="TotalPrice" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="DiscountPrice" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
           <NavigationProperty Name="Tickets" Relationship="Self.fk_Bill" FromRole="Bill" ToRole="Ticket" />
           <NavigationProperty Name="ProductBillInfoes" Relationship="Self.fk_Bill_ID" FromRole="Bill" ToRole="ProductBillInfo" />
           <NavigationProperty Name="Customer" Relationship="Self.fk_Customer_ID" FromRole="Bill" ToRole="Customer" />
@@ -617,7 +617,7 @@ warning 6002: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a 
           <Key>
             <PropertyRef Name="GenreID" />
           </Key>
-          <Property Name="GenreID" Type="Int32" Nullable="false" />
+          <Property Name="GenreID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="GenreDisplayName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Movies" Relationship="Self.MovieGenre" FromRole="Genre" ToRole="Movie" />
         </EntityType>
@@ -750,7 +750,7 @@ warning 6002: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a 
           </Key>
           <Property Name="TroubleId" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="TroubleTitle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="TroubleDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TroubleDescription" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="TroubleStatus" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
           <Property Name="TroubleSubmittedAt" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="TroubleRepairCost" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
@@ -1161,8 +1161,8 @@ warning 6002: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a 
                 <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
                 <ScalarProperty Name="StaffID" ColumnName="StaffID" />
                 <ScalarProperty Name="BillTime" ColumnName="BillTime" />
-                <ScalarProperty Name="DiscountPrice" ColumnName="DiscountPrice" />
                 <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+                <ScalarProperty Name="DiscountPrice" ColumnName="DiscountPrice" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

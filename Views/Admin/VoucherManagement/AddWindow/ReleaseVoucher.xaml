@@ -34,7 +34,7 @@
                     BorderBrush="Black"
                     BorderThickness="0,0,0,1">
                 <Grid>
-                    <Label Content="Phát hành voucher"
+                    <Label Content="Release voucher"
                            FontWeight="Bold"
                            FontSize="25"
                            Margin="5" />
@@ -64,7 +64,7 @@
 
                 <StackPanel Grid.Column="0">
                     <StackPanel Orientation="Horizontal">
-                        <Label  Content="Danh sách voucher đang chọn"
+                        <Label  Content="Selected Vouchers"
                                 FontWeight="Bold"
                                 Margin="10,10,0,0" />
                         <Label Margin="40,10,0,0"
@@ -121,7 +121,7 @@
                                         <ColumnDefinition Width="40*" />
                                         <ColumnDefinition Width="60*" />
                                     </Grid.ColumnDefinitions>
-                                    <Label Content="Đối tượng:"
+                                    <Label Content="Applicable user:"
                                            Grid.Column="0" />
                                     <ComboBox Grid.Column="1"
                                               SelectedIndex="0"
@@ -149,7 +149,7 @@
                                         <ColumnDefinition Width="40*" />
                                         <ColumnDefinition Width="60*" />
                                     </Grid.ColumnDefinitions>
-                                    <Label Content="Ngày phát hành:"
+                                    <Label Content="Release Date:"
                                            Grid.Column="0" />
                                     <Label Loaded="Label_Loaded"
                                            Grid.Column="1"
@@ -162,12 +162,12 @@
                                         Margin="10,20,0,0">
                                 <Grid Width="439">
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="40*" />
-                                        <ColumnDefinition Width="60*" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
                                     </Grid.ColumnDefinitions>
                                     <StackPanel Grid.Column="0"
                                                 Orientation="Horizontal">
-                                        <Label Content="Voucher/Khách:"
+                                        <Label Content="Voucher per Customer:"
                                                Grid.Column="0" />
                                         <materialDesign:PackIcon Kind="InfoCircle"
                                                                  Margin="0,3,0,0"
@@ -208,7 +208,7 @@
                                     </Grid.ColumnDefinitions>
 
                                     <StackPanel Grid.Column="0">
-                                        <Label Content="Email khách hàng:"
+                                        <Label Content="Customer Email:"
                                                Grid.Column="0" />
                                         <StackPanel Orientation="Horizontal">
                                             <Button Content="+ Thêm mới"
@@ -232,7 +232,7 @@
                                         </StackPanel>
                                         <StackPanel Orientation="Horizontal">
                                             <Label Margin="0,5,0,0"
-                                                   Content="Số Email:" />
+                                                   Content="Email Quantity:" />
                                             <Label Margin="0,5,0,0"
                                                    Content="{Binding ListCustomerEmail.Count}" />
                                         </StackPanel>

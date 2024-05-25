@@ -70,8 +70,8 @@
                                                        CommandParameter="{Binding ElementName=periodbox1}" />
                             </i:EventTrigger>
                         </i:Interaction.Triggers>
-                        <ComboBoxItem>Theo năm</ComboBoxItem>
-                        <ComboBoxItem>Theo tháng</ComboBoxItem>
+                        <ComboBoxItem>By year</ComboBoxItem>
+                        <ComboBoxItem>By month</ComboBoxItem>
                     </ComboBox>
                 </StackPanel>
                 <!---TIME-->
@@ -126,7 +126,7 @@
             </StackPanel>
 
             <Label Grid.RowSpan="3"
-                   Content="Top 5 phim doanh thu cao nhất"
+                   Content="Top 5 highest grossing movies"
                    VerticalAlignment="Center"
                    FontWeight="Bold"
                    FontSize="25"
@@ -153,7 +153,7 @@
                                     </DataTemplate>
                                 </GridViewColumn.CellTemplate>
                             </GridViewColumn>
-                            <GridViewColumn Header="Tên phim"
+                            <GridViewColumn Header="Name"
                                             Width="290">
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
@@ -163,7 +163,7 @@
                                     </DataTemplate>
                                 </GridViewColumn.CellTemplate>
                             </GridViewColumn>
-                            <GridViewColumn Header="Doanh thu"
+                            <GridViewColumn Header="Revenue"
                                             Width="180">
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
@@ -172,7 +172,7 @@
                                     </DataTemplate>
                                 </GridViewColumn.CellTemplate>
                             </GridViewColumn>
-                            <GridViewColumn Header="Số vé">
+                            <GridViewColumn Header="Quantity" Width="120">
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
                                         <TextBlock Text="{Binding TicketCount}"
@@ -219,8 +219,8 @@
                                                        CommandParameter="{Binding ElementName=periodbox2}" />
                             </i:EventTrigger>
                         </i:Interaction.Triggers>
-                        <ComboBoxItem>Theo năm</ComboBoxItem>
-                        <ComboBoxItem>Theo tháng</ComboBoxItem>
+                        <ComboBoxItem>By year</ComboBoxItem>
+                        <ComboBoxItem>By month</ComboBoxItem>
                     </ComboBox>
                 </StackPanel>
                 <!---TIME-->
@@ -261,7 +261,7 @@
                             </lvc:AxesCollection>
                         </lvc:CartesianChart.AxisX>
                         <lvc:CartesianChart.AxisY>
-                            <lvc:Axis Title="Triệu đồng"
+                            <lvc:Axis Title="Millions dong"
                                       FontFamily="arial"
                                       MinValue="0" />
                         </lvc:CartesianChart.AxisY>
@@ -272,7 +272,7 @@
 
             </StackPanel>
             <Label Grid.RowSpan="3"
-                   Content="Top 5 sản phẩm doanh thu cao nhất"
+                   Content="Top 5 highest revenue-generating products"
                    VerticalAlignment="Center"
                    FontWeight="Bold"
                    FontSize="25"
@@ -299,7 +299,7 @@
                                     </DataTemplate>
                                 </GridViewColumn.CellTemplate>
                             </GridViewColumn>
-                            <GridViewColumn Header="Tên sản phẩm"
+                            <GridViewColumn Header="Name"
                                             Width="280">
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
@@ -309,7 +309,7 @@
                                     </DataTemplate>
                                 </GridViewColumn.CellTemplate>
                             </GridViewColumn>
-                            <GridViewColumn Header="Doanh thu"
+                            <GridViewColumn Header="Revenue"
                                             Width="170">
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
@@ -318,7 +318,7 @@
                                     </DataTemplate>
                                 </GridViewColumn.CellTemplate>
                             </GridViewColumn>
-                            <GridViewColumn Header="Số lượng">
+                            <GridViewColumn Header="Quantity">
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
                                         <TextBlock Text="{Binding SalesQuantity}"

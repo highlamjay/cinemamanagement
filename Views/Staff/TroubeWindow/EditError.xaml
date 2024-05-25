@@ -34,12 +34,16 @@
             </Grid.RowDefinitions>
 
             <Grid Grid.Row="0">
-                <Border BorderThickness="0,0,0,1"
-                        BorderBrush="Black">
-                    <Grid>
-                        <TextBlock Text="Sửa sự cố thiết bị"
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon Kind="Pencil" 
+                          Height="50"
+                          Width="50"
+                          VerticalAlignment="Center"
+                          Margin="20,0,0,0"/>
+                        <TextBlock Text="Edit Issue"
                                    FontSize="25"
-                                   Margin="20,10,0,0"
+                                   VerticalAlignment="Center"
+                                   Margin="10,0,0,0"
                                    FontWeight="Bold" />
                         <Button Command="{Binding CancelCM}"
                                 CommandParameter="{Binding ElementName=Troubleshooting_Page}"
@@ -50,13 +54,14 @@
                                 Foreground="Black"
                                 BorderBrush="Transparent"
                                 MouseEnter="Button_MouseEnter_1"
+                                Margin="760,0,0,0"
                                 MouseLeave="Button_MouseLeave_1"
                                 materialDesign:ButtonAssist.CornerRadius="0,10,0,0">
                             <materialDesign:PackIcon Kind="WindowClose"
                                                      Padding="0" />
                         </Button>
-                    </Grid>
-                </Border>
+                    
+                </StackPanel>
             </Grid>
 
             <Grid  Grid.Row="1"
@@ -74,7 +79,7 @@
                     <StackPanel Grid.Column="0"
                                 Margin="25,0,25,0"
                                 Width="550">
-                        <Label Content="Tiêu đề"
+                        <Label Content="Title"
                                FontSize="20" />
                         <TextBox Text="{Binding Title,Mode=TwoWay}"
                                  TextWrapping="Wrap"
@@ -91,14 +96,15 @@
                     <StackPanel Grid.Column="1"
                                 Margin="50,0,100,0">
                         <StackPanel Grid.Column="0">
-                            <Label Content="Tên nhân viên"
+                            <Label Content="Staff Name"
                                    FontSize="20" />
                             <TextBlock FontSize="25"
                                        Height="40"
                                        Width="300"
+                                       
                                        Padding="0"
                                        x:Name="staffname"
-                                       Margin="5,10,0,0" />
+                                       Margin="5,0,0,0" />
 
                         </StackPanel>
                     </StackPanel>
@@ -112,10 +118,11 @@
                         <!--Status-->
                         <StackPanel Margin="25,0,0,0"
                                     Width="250">
-                            <Label Content="Trạng thái"
+                            <Label Content="Status"
                                    FontSize="20" />
                             <TextBlock Margin="0,10,0,0"
                                        FontSize="22"
+                                       
                                        Height="40"
                                        x:Name="cbxStatusError" />
                         </StackPanel>
@@ -123,7 +130,7 @@
                         <!--Time-->
                         <StackPanel Width="200"
                                     Margin="100,0,0,0">
-                            <Label Content="Ngày báo cáo"
+                            <Label Content="Date"
                                    FontSize="20" />
                             <StackPanel>
                                 <TextBlock Foreground="Black"
@@ -137,7 +144,7 @@
                         <!--Time-->
                         <StackPanel Width="200"
                                     Margin="80,0,0,0">
-                            <Label Content="Mức độ"
+                            <Label Content="Urgency Level"
                                    FontSize="20" />
                             <StackPanel>
                                 <ComboBox Foreground="Black"

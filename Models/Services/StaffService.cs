@@ -1,15 +1,11 @@
 ﻿using cinema_management.DTOs;
+using cinema_management.Models;
 using cinema_management.Utils;
 using System;
-using System.Data.Entity;
-using System.Collections;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using cinema_management.Models.Services;
-using System.Web;
-using cinema_management.Models;
 
 namespace cinema_management.Model.Service
 {
@@ -130,7 +126,7 @@ namespace cinema_management.Model.Service
                     }
 
                     var maxId = await context.Staffs.MaxAsync(s => s.StaffID);
-                    Staff st = Copy(newStaff);                    
+                    Staff st = Copy(newStaff);
                     st.StaffID = CreateNextStaffId(maxId);
                     newStaff.StaffId = st.StaffID;
                     st.StaffPassword = Helper.MD5Hash(newStaff.StaffPassword);

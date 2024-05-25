@@ -147,6 +147,9 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="Wpf.Ui, Version=3.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\WPF-UI.3.0.4\lib\net472\Wpf.Ui.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -489,6 +492,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Resources\Themes\Dark.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Themes\Light.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ResourceXAML\MainResource.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -827,6 +838,11 @@
     </Content>
     <Content Include="Resources\EmailTemplate\common_template.html" />
     <Content Include="Resources\EmailTemplate\new_customer.html" />
+    <Resource Include="Resources\Icon\APPLOGO.ico" />
+    <Resource Include="Resources\Icon\APPLOGO.png" />
+    <Resource Include="Resources\Icon\Changepassword.png" />
+    <Resource Include="Resources\Icon\ImportIcon.png" />
+    <Resource Include="Resources\Icon\popcorn.png" />
     <Resource Include="Resources\EmailTemplate\reset_password_html.txt" />
     <Content Include="Resources\EmailTemplate\top5_customer_gratitude.html" />
   </ItemGroup>

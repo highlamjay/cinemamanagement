@@ -50,7 +50,7 @@
                 <StackPanel Orientation="Horizontal"
                             Grid.Column="0"
                             Margin="10,0,0,0">
-                    <Label Content="Đợt phát hành:"
+                    <Label Content="Release name:"
                            FontSize="20"
                            VerticalAlignment="Bottom" />
                     <Label Content="{Binding SelectedItem.ReleaseName}"
@@ -66,7 +66,7 @@
                             Margin="0,0,-15,5"
                             Orientation="Horizontal">
                     <Grid>
-                        <Button Content="Phát hành qua Mail"
+                        <Button Content="Email Distributed "
                                 materialDesign:ButtonAssist.CornerRadius="5"
                                 Margin="0,0,10,0"
                                 FontWeight="Bold"
@@ -75,7 +75,7 @@
                                 CommandParameter="{Binding ElementName=releasebtn}" />
                     </Grid>
                     <Grid>
-                        <Button Content="Phát hành qua Excel"
+                        <Button Content="Excel Distributed"
                                 materialDesign:ButtonAssist.CornerRadius="5"
                                 Margin="0,0,10,0"
                                 FontWeight="Bold"
@@ -174,14 +174,14 @@
 
                 <StackPanel Grid.Row="0"
                             Orientation="Horizontal">
-                    <TextBox materialDesign:HintAssist.Hint="Tìm kiếm mã voucher"
+                    <TextBox materialDesign:HintAssist.Hint="Search voucher"
                              Padding="0,20,0,0"
                              Width="300"
                              x:Name="FilterBox"
                              Margin="10,0,0,0"
                              TextChanged="FilterBox_TextChanged" />
                     <Label Margin="360,0,0,0"
-                           Content="Trạng thái:"
+                           Content="Status:"
                            FontSize="18"
                            VerticalContentAlignment="Bottom" />
                     <ComboBox Width="200"
