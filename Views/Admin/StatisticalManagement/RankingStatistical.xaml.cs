@@ -105,5 +105,10 @@ namespace cinema_management.Views.Admin.StatisticManagement
             cbb.ItemsSource = l;
             cbb.SelectedIndex = DateTime.Now.Month - 1;
         }
+
+        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

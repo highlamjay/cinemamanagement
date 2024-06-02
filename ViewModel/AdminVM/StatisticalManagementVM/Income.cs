@@ -269,7 +269,7 @@ namespace cinema_management.ViewModel.AdminVM.StatisticalManagementVM
             LabelMaxValue = 30;
             try
             {
-                TotalBill = await OverviewStatisticService.Ins.GetBillQuantity(2021, int.Parse(SelectedIncomeTime.Remove(0, 6)));
+                TotalBill = await OverviewStatisticService.Ins.GetBillQuantity(2024, int.Parse(SelectedIncomeTime.Remove(0, 6)));
                 (List<decimal> dailyRevenue, decimal MonthProductReve, decimal MonthTicketReve, string MonthRateStr) = await Task.Run(() => OverviewStatisticService.Ins.GetRevenueByMonth(SelectedYear, int.Parse(SelectedIncomeTime.Remove(0, 6))));
                 (List<decimal> dailyExpense, decimal MonthProductExpense, decimal MonthRepairCost, string MonthExpenseRateStr) = await Task.Run(() => OverviewStatisticService.Ins.GetExpenseByMonth(SelectedYear, int.Parse(SelectedIncomeTime.Remove(0, 6))));
                 TicketReve = Helper.FormatVNMoney(MonthTicketReve);

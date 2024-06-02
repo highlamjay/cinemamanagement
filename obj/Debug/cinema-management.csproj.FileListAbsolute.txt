@@ -368,3 +368,29 @@ D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TroubeWindow\AddErro
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TroubeWindow\EditError.baml
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TroubeWindow\TroublePage.baml
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TroubeWindow\ViewError.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Staff\MainStaffWindow.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Staff\MovieScheduleWindow\MovieScheduleWindow.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Staff\OrderFoodWindow\FoodPage.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Staff\ShowtimePage\ShowtimePage.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Staff\TicketBill\TicketBillNoFoodPage.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Staff\TicketBill\TicketBillOnlyFoodPage.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Staff\TicketBill\TicketBillPage.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Staff\TicketWindow\TicketBookingPage.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Staff\TicketWindow\TicketWindow.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Staff\TroubeWindow\AddError.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Staff\TroubeWindow\EditError.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Staff\TroubeWindow\TroublePage.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Staff\TroubeWindow\ViewError.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Staff\MainStaffWindow.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Staff\MovieScheduleWindow\MovieScheduleWindow.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Staff\OrderFoodWindow\FoodPage.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Staff\ShowtimePage\ShowtimePage.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Staff\TicketBill\TicketBillNoFoodPage.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Staff\TicketBill\TicketBillOnlyFoodPage.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Staff\TicketBill\TicketBillPage.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Staff\TicketWindow\TicketBookingPage.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Staff\TicketWindow\TicketWindow.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Staff\TroubeWindow\AddError.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Staff\TroubeWindow\EditError.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Staff\TroubeWindow\TroublePage.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Staff\TroubeWindow\ViewError.baml

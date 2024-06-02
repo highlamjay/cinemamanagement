@@ -8,8 +8,8 @@
           <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
           <ScalarProperty Name="StaffID" ColumnName="StaffID" />
           <ScalarProperty Name="BillTime" ColumnName="BillTime" />
-          <ScalarProperty Name="DiscountPrice" ColumnName="DiscountPrice" />
           <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="DiscountPrice" ColumnName="DiscountPrice" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -61,6 +61,16 @@
           <ScalarProperty Name="Price" ColumnName="Price" />
           <ScalarProperty Name="Image" ColumnName="Image" />
           <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductBillInfoes">
+      <EntityTypeMapping TypeName="CinemaManagementModel.ProductBillInfo">
+        <MappingFragment StoreEntitySet="ProductBillInfo">
+          <ScalarProperty Name="BillID" ColumnName="BillID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="PricePerItem" ColumnName="PricePerItem" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -185,16 +195,6 @@
           <ScalarProperty Name="ObjectType" ColumnName="ObjectType" />
           <ScalarProperty Name="EnableMerge" ColumnName="EnableMerge" />
           <ScalarProperty Name="StaffID" ColumnName="StaffID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="ProductBillInfoes">
-      <EntityTypeMapping TypeName="CinemaManagementModel.ProductBillInfo">
-        <MappingFragment StoreEntitySet="ProductBillInfo">
-          <ScalarProperty Name="BillID" ColumnName="BillID" />
-          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
-          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
-          <ScalarProperty Name="PricePerItem" ColumnName="PricePerItem" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

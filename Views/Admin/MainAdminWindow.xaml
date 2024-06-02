@@ -33,7 +33,8 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="20" />
-            <RowDefinition Height="800" />
+            <RowDefinition Height="79.65" />
+            <RowDefinition Height="720.35"/>
         </Grid.RowDefinitions>
 
         <!--#FF383737-->
@@ -97,7 +98,15 @@
             </StackPanel>
         </StackPanel>
 
-        <Grid Grid.Row="1">
+        <Grid Grid.Row="1" Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="966*"/>
+                <ColumnDefinition Width="76*"/>
+                <ColumnDefinition Width="152*"/>
+                <ColumnDefinition Width="155*"/>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="41*"/>
+            </Grid.ColumnDefinitions>
 
             <!--Frame-->
             <Frame x:Name="MainFrame"
@@ -105,7 +114,7 @@
                    Width="1440"
                    NavigationUIVisibility="Hidden"
                    Panel.ZIndex="0"
-                   Margin="0,80,0,0">
+                   Margin="0,80,0,0" Grid.ColumnSpan="6">
 
                 <i:Interaction.Triggers>
                     <i:EventTrigger EventName="Loaded">
@@ -114,19 +123,19 @@
                     </i:EventTrigger>
                 </i:Interaction.Triggers>
             </Frame>
-            <Grid Grid.RowSpan="2"
+            <Grid
                   Background="Gray"
                   Opacity="0.3"
                   Visibility="Collapsed"
                   x:Name="shadow"
-                  MouseDown="MainFrame_MouseDown" />
+                  MouseDown="MainFrame_MouseDown" Grid.ColumnSpan="6" />
             <!--thanh cong cu-->
             <materialDesign:ColorZone Mode="Inverted"
                                       Padding="16"
                                       Height="80"
                                       Background="#132644"                                      
-                                      MouseLeftButtonDown="mainadminwindow_MouseLeftButtonDown" />
-            <DockPanel>
+                                      MouseLeftButtonDown="mainadminwindow_MouseLeftButtonDown" Grid.ColumnSpan="6" />
+            <DockPanel Grid.ColumnSpan="6">
                 <StackPanel Orientation="Horizontal"
                             Margin="-260,0,0,0">
                     <StackPanel.Style>
@@ -194,7 +203,7 @@
                                                materialDesign:TextBlockAssist.AutoToolTip="True"
                                                VerticalAlignment="Bottom"
                                                TextAlignment="Center"
-                                               Text="Squadin Cinema"
+                                               Text="VMN Cinema"
                                                FontFamily="Helvetica"
                                                FontWeight="Bold"
                                                Foreground="#e3e9fa"

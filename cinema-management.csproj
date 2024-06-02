@@ -827,6 +827,7 @@
     </Content>
     <Content Include="Resources\EmailTemplate\common_template.html" />
     <Content Include="Resources\EmailTemplate\new_customer.html" />
+    <Resource Include="Resources\Icon\iconApp.ico" />
     <Resource Include="Resources\EmailTemplate\reset_password_html.txt" />
     <Content Include="Resources\EmailTemplate\top5_customer_gratitude.html" />
   </ItemGroup>

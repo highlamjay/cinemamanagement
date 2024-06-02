@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Models",
-    "\\ResourceXAML",
     "\\ViewModel",
     "\\ViewModel\\AdminVM",
-    "\\ViewModel\\AdminVM\\MovieManagementVM",
     "\\ViewModel\\AdminVM\\ShowtimeManagementVM",
+    "\\ViewModel\\StaffVM",
+    "\\ViewModel\\StaffVM\\TicketBillVM",
     "\\Views",
     "\\Views\\Admin",
-    "\\Views\\Admin\\MovieManagement"
+    "\\Views\\Admin\\MovieManagement",
+    "\\Views\\Staff"
   ],
-  "SelectedNode": "\\ViewModel\\AdminVM\\ShowtimeManagementVM\\AddShowtimeViewModel.cs",
+  "SelectedNode": "\\cinema-management.sln",
   "PreviewInSolutionExplorer": false
 }

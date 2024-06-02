@@ -67,7 +67,7 @@
                                materialDesign:TextBlockAssist.AutoToolTip="True"
                                VerticalAlignment="Bottom"
                                TextAlignment="Center"
-                               Text="Squadin Cinema"
+                               Text="VMN Cinema"
                                FontFamily="Helvetica"
                                FontWeight="Bold"
                                Foreground="#e3e9fa"
@@ -238,12 +238,17 @@
                         <Grid Height="50"
                               Grid.Row="1">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="13*" />
-                                <ColumnDefinition Width="12*" />
+                                <ColumnDefinition Width="11*" />
+                                <ColumnDefinition Width="15*"/>
+                                <ColumnDefinition Width="24*" />
                             </Grid.ColumnDefinitions>
-                            <Grid Grid.Column="1">
+                            <Grid Grid.Column="2">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="179*"/>
+                                    <ColumnDefinition Width="133*"/>
+                                </Grid.ColumnDefinitions>
                                 <StackPanel Orientation="Horizontal"
-                                            HorizontalAlignment="Right">
+                                            HorizontalAlignment="Left" Grid.Column="1" Margin="184,0,0,0">
                                     <materialDesign:PackIcon Kind="AccountCircle"
                                                              Width="50"
                                                              Height="50"
@@ -264,7 +269,7 @@
                                             <Button Content="Đổi vai trò"
                                                     Command="{Binding ChangeRoleCM}"
                                                     CommandParameter="{Binding ElementName=Main_Staff}"
-                                                    Visibility="{Binding IsAdmin,Converter={StaticResource AdminConverter}}" />
+                                                    Visibility="{Binding IsAdmin, Converter={StaticResource AdminConverter}}" />
                                             <Button Content="Đăng xuất"
                                                     Command="{Binding SignoutCM}"
                                                     CommandParameter="{Binding ElementName=Main_Staff}" />
@@ -306,6 +311,11 @@
                         </Style>
                     </ProgressBar.Style>
                 </ProgressBar>
+                <Label x:Name="CurrentUserName"
+                           Content=""
+                           VerticalAlignment="Top"
+                           FontSize="25"
+                           Foreground="White" Height="60" Margin="1252,21,10,0" Grid.RowSpan="2" />
             </Grid>
 
         </Grid>
