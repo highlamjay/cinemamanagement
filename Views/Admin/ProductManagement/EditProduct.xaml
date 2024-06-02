@@ -158,6 +158,8 @@
                             <Grid Grid.Column="1">
                                 <Button Padding="0"
                                         Width="40"
+                                        Background="#0f0f2d"        
+                                        
                                         VerticalAlignment="Center"
                                         Margin="0,0,0,0"
                                         materialDesign:ButtonAssist.CornerRadius="5"
@@ -196,10 +198,11 @@
                                     materialDesign:ButtonAssist.CornerRadius="8"
                                     Command="{Binding CloseCommand}"
                                     CommandParameter="{Binding ElementName=EditFoodWd}"
-                                    Background="OrangeRed" />
+                                  Background="#FF791C1C" />
 
                             <Button Content="Save"
                                     Margin="0 0 10 10"
+                                    Background="#0f0f2d"        
                                     materialDesign:ButtonAssist.CornerRadius="8"
                                     Command="{Binding EditFoodCommand}"
                                     CommandParameter="{Binding ElementName=EditFoodWd}"

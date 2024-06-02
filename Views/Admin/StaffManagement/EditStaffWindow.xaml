@@ -289,10 +289,10 @@
                         Margin="0 0 110 10"
                         Command="{Binding CloseCommand}"
                         CommandParameter="{Binding ElementName=SuaNV}"
-                        Background="OrangeRed"
-                        BorderBrush="Transparent" />
+Background="#FF791C1C"                        BorderBrush="Transparent" />
                 <Button Content="Save"
                         Margin="0 0 10 10"
+                        Background="#0f0f2d"        
                         materialDesign:ButtonAssist.CornerRadius="8"
                         Command="{Binding EditStaffCommand}"
                         CommandParameter="{Binding ElementName=SuaNV}" />

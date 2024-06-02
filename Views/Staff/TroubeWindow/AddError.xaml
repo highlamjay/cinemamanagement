@@ -201,7 +201,7 @@
                                      Margin="5,5,0,0"
                                      Foreground="Black"
                                      materialDesign:ValidationAssist.Background="White"
-                                     Text="{Binding Description, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" />
+                                     Text="{Binding Description, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" TextChanged="TextBox_TextChanged" />
                         </StackPanel>
                     </StackPanel>
 
@@ -222,6 +222,7 @@
 
                         <Button Cursor="Hand"
                                 Width="60"
+                                Background="#0f0f2d"
                                 Height="40"
                                 HorizontalAlignment="Right"
                                 materialDesign:ButtonAssist.CornerRadius="10"
@@ -243,8 +244,8 @@
                                 Background="Transparent">
                         <!--Confirm-->
                         <Button Content="Verify"
-                                Background="#007bff"
-                                Cursor="Hand"
+
+                                Background="#0f0f2d"                                Cursor="Hand"
                                 Padding="0,0,0,3"
                                 FontSize="15"
                                 Height="40"

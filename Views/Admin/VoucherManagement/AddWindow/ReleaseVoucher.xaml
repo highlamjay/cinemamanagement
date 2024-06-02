@@ -291,6 +291,9 @@
                             <Button VerticalAlignment="Top"
                                     HorizontalAlignment="Right"
                                     Width="100"
+                                    
+          Background="#0f0f2d"        
+
                                     Height="28"
                                     Margin="0,0,10,0"
                                     Command="{Binding ReleaseVoucherCM}"

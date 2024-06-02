@@ -106,11 +106,16 @@
                               Height="570">
                     <ListView ItemsSource="{Binding StaffList}"
                               SelectedItem="{Binding SelectedItem}"
+                              
                               x:Name="_ListView">
 
                         <ListView.ItemContainerStyle>
                             <Style TargetType="ListViewItem"
                                    BasedOn="{StaticResource MaterialDesignGridViewItem}">
+                                <Setter Property="Foreground"
+                                        Value="White">
+                                    
+                                </Setter>
                             </Style>
                         </ListView.ItemContainerStyle>
 
@@ -297,7 +302,7 @@
                     <StackPanel Orientation="Horizontal"
                                 HorizontalAlignment="Right"
                                 Margin="0,0,20,0">
-                        <Label Content="Kết quả: "
+                        <Label Content="Quanity: "
                                FontSize="15" />
                         <Label Content="{Binding StaffList.Count}"
                                x:Name="result"

@@ -154,6 +154,9 @@
                                  x:Name="TboxPhoneNumber"
                                  Text="{Binding PhoneNumber, Mode=TwoWay}" />
                         <Button Grid.Column="2"
+                                
+          Background="#0f0f2d"        
+
                                 Content="{materialDesign:PackIcon PhoneCheckOutline}"
                                 VerticalAlignment="Bottom"
                                 Margin="15 0 10 0"
@@ -271,6 +274,9 @@
                           VerticalAlignment="Top"
                           Margin="0 263 0 0">
                         <Button Content="Sign up"
+                                
+          Background="#0f0f2d"        
+
                                 Width="110"
                                 VerticalAlignment="Bottom"
                                 HorizontalAlignment="Right"
@@ -365,6 +371,9 @@
                         <Button Grid.Column="2"
                                 VerticalAlignment="Bottom"
                                 Margin="10 0 10 0"
+                                
+          Background="#0f0f2d"        
+
                                 Command="{Binding AddVoucherCM}">
                             <Button.ContentTemplate>
                                 <DataTemplate>

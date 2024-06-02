@@ -211,7 +211,8 @@
                             <Grid Height="80">
                                 <StackPanel HorizontalAlignment="Center"
                                             Orientation="Horizontal"
-                                            Height="60">
+                                            Height="60"
+                                            Margin="0,20,0,0">
                                     <Image Source="/Resources/Icon/APPLOGO.ico"
                                            Width="100"
                                            Margin="10,-5,5,0" />
@@ -408,7 +409,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Grid>
-                    <Grid Margin="40,0,0,0">
+                    <Grid Margin="40,-17,0,0">
                         <ToggleButton x:Name="SlideButton"
                                       Style="{DynamicResource MaterialDesignHamburgerToggleButton}"
                                       Checked="SlideButton_Checked"
@@ -419,9 +420,10 @@
                                       Loaded="SlideButton_Loaded" />
                         <Border Background="Red"
                                 CornerRadius="100"
-                                Width="30"
+                                Width="20"
+
                                 x:Name="topnotifi"
-                                Height="30"
+                                Height="20"
                                 Margin="18,10,-11,760"                                >
                             <TextBlock Text="{Binding ErrorCount}"
                                        FontSize="20"

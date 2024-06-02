@@ -476,6 +476,9 @@
                     </Grid>
 
                     <Button Width="110"
+                            
+          Background="#0f0f2d"        
+
                             Height="32"
                             VerticalAlignment="Bottom"
                             HorizontalAlignment="Right"

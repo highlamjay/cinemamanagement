@@ -288,6 +288,7 @@
                                             Width="50"
                                             VerticalAlignment="Bottom"
                                             Margin="10,0,0,22"
+                                            Background="#0f0f2d"        
                                             materialDesign:ButtonAssist.CornerRadius="5"
                                             Command="{Binding UploadImageCM}">
                                         <Button.Content>
@@ -347,6 +348,7 @@
                                     <Button Content="Add"
                                             FontSize="20"
                                             Height="40"
+                                            Background="#0f0f2d"        
                                             Width="100"
                                             Margin="10,0,30,10"
                                             materialDesign:ButtonAssist.CornerRadius="8"

@@ -422,6 +422,9 @@
                 </Border>
                 <Button BorderThickness="1.5"
                         Margin="0 0 0 15"
+                        
+          Background="#0f0f2d"        
+
                         materialDesign:ButtonAssist.CornerRadius="10"
                         BorderBrush="Gray"
                         Grid.Row="2"

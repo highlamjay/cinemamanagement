@@ -310,10 +310,12 @@
                                 Margin="0 0 150 15"
                                 Command="{Binding CloseCommand}"
                                 CommandParameter="{Binding ElementName=ThemNV}"
-                                Background="OrangeRed"
+                                Background="#FF791C1C"
                                 BorderBrush="Transparent"
                                 materialDesign:ButtonAssist.CornerRadius="8" />
                         <Button Content="Save"
+                                
+                                Background="#0f0f2d"
                                 Margin="0 0 40 15"
                                 Command="{Binding AddStaffCommand}"
                                 CommandParameter="{Binding ElementName=ThemNV}"

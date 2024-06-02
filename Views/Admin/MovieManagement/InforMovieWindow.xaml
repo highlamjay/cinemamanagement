@@ -55,8 +55,8 @@
                         <StackPanel Orientation="Horizontal" Margin="20,0,0,0">
                             <materialDesign:PackIcon Kind="Eye" 
                             VerticalAlignment="Center"
-                           Width="50" 
-                           Height="50">
+                           Width="45" 
+                           Height="45">
 
                             </materialDesign:PackIcon>
                             <TextBlock Text="Movie Descripsion"

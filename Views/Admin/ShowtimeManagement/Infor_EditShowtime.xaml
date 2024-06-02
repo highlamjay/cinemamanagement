@@ -216,14 +216,14 @@
                                 Content="Delete"
                                 Margin="10,30,0,0"
                                 materialDesign:ButtonAssist.CornerRadius="8"
-                                Background="OrangeRed"
-                                BorderBrush="OrangeRed"
+Background="#FF791C1C"                                BorderBrush="OrangeRed"
                                 Command="{Binding LoadDeleteShowtimeCM}">
                         </Button>
 
                         <Button Width="100"
                                 Content="Exit"
                                 Margin="225,30,0,0"
+                                Background="#0f0f2d"        
                                 materialDesign:ButtonAssist.CornerRadius="8"
                                 Command="{Binding CloseEditCM}"
                                 CommandParameter="{Binding ElementName=EditWindow}" />

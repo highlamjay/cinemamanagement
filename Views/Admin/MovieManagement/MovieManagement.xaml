@@ -95,6 +95,7 @@
         </StackPanel>
 
         <Grid Grid.Row="1">
+            <Button></Button>
             <materialDesign:Card Background="White"
                                  Margin="30,20,30,20"
                                  UniformCornerRadius="5">
@@ -104,7 +105,7 @@
                               SelectedItem="{Binding SelectedItem}"
                               Focusable="True"
                               Height="578"
-                              ToolTip="Nháy đúp để xem chi tiết">
+                              ToolTip="Double click for more information">
                         <i:Interaction.Triggers>
                             <i:EventTrigger EventName="MouseDoubleClick">
                                 <i:InvokeCommandAction Command="{Binding LoadInforMovieCM}" />

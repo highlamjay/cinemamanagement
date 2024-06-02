@@ -82,6 +82,7 @@
                             Value="Transparent" />
             </Style.Setters>
         </Style>
+            
           
             <!--Style ListBoxItems-->
         <Style x:Key="styleListBoxItems"

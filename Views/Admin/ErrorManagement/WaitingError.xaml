@@ -31,7 +31,13 @@
                     BorderBrush="Black"
                     Grid.Row="0">
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="Chi tiết sự cố"
+
+                    <materialDesign:PackIcon Kind="Eye"
+                             VerticalAlignment="Center"
+                             Width="45"
+                             Margin="20,0,0,0"
+                             Height="45"/>
+                    <TextBlock Text="Error Descripsion"
                                FontSize="25"
                                FontWeight="Bold"
                                Margin="10,0,0,0" />
@@ -95,16 +101,16 @@
                         </Border>
                         <StackPanel Orientation="Horizontal">
                             <StackPanel Margin="0,10,0,0">
-                                <TextBlock Text="Ngày tiếp nhận:" />
+                                <TextBlock Text="Submit Date:" />
                                 <TextBlock Text="{Binding SelectedItem.SubmittedAt,StringFormat=dd/MM/yyyy HH:mm:ss}" />
                             </StackPanel>
                             <StackPanel Margin="100,10,0,0">
-                                <TextBlock Text="Nhân viên báo cáo:" />
+                                <TextBlock Text="Staff Name:" />
                                 <TextBlock Text="{Binding SelectedItem.StaffName}" />
                             </StackPanel>
                         </StackPanel>
                         <StackPanel Margin="0,10,0,0">
-                            <TextBlock Text="Trạng thái:" />
+                            <TextBlock Text="Status:" />
                             <ComboBox Width="180"
                                       Padding="0,5,0,5"
                                       materialDesign:HintAssist.Hint="{Binding SelectedItem.Status}"
@@ -122,7 +128,7 @@
                         <StackPanel Margin="0,10,0,0"
                                     x:Name="_startday"
                                     IsEnabled="False">
-                            <TextBlock Text="Ngày sửa:" />
+                            <TextBlock Text="Resolution begin date:" />
                             <DatePicker Width="140"
                                         HorizontalAlignment="Left"
                                         Padding="0,5,0,0"
@@ -135,7 +141,7 @@
                         <StackPanel Margin="0,10,0,0"
                                     x:Name="_Finishday"
                                     IsEnabled="False">
-                            <TextBlock Text="Ngày hoàn thành:" />
+                            <TextBlock Text="Finish date:" />
                             <DatePicker Width="140"
                                         Padding="0,5,0,0"
                                         Height="32"
@@ -148,7 +154,7 @@
                                     x:Name="_cost"
                                     Grid.RowSpan="2"
                                     IsEnabled="False">
-                            <TextBlock Text="Chi phí:" />
+                            <TextBlock Text="Cost:" />
                             <TextBox Width="140"
                                      Padding="0,-10,0,0"
                                      x:Name="costval"
@@ -161,7 +167,10 @@
                     <Button Grid.Row="1"
                             Width="100"
                             HorizontalAlignment="Right"
-                            Content="Xác nhận"
+                            Content="Confirm"
+                            
+          Background="#0f0f2d"        
+
                             materialDesign:ButtonAssist.CornerRadius="8"
                             Command="{Binding UpdateErrorCM}"
                             CommandParameter="{Binding ElementName=window}">

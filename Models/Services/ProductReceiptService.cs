@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace cinema_management.Models.Services
@@ -122,9 +121,9 @@ namespace cinema_management.Models.Services
             }
             catch (Exception e)
             {
-                return (false, "Lỗi hệ thống", null);
+                return (false, "System Error", null);
             }
-            return (true, "Lưu thông tin nhập hàng thành công", newPReceipt);
+            return (true, "Save Success", newPReceipt);
         }
     }
 }

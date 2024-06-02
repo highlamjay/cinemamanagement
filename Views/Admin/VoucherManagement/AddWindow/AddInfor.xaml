@@ -167,11 +167,11 @@
                         <ColumnDefinition Width="166*" />
                         <ColumnDefinition  Width="193*" />
                     </Grid.ColumnDefinitions>
-                    <TextBlock Text="Tổng tối thiểu(VNĐ)"
-                               VerticalAlignment="Bottom"
-                               Width="auto"
+                    <TextBlock Text="Minimum Total (VNĐ)"
+                               VerticalAlignment="Top"
+                               Width="166"
                                Grid.Column="0"
-                               Height="18" />
+                               Height="18" HorizontalAlignment="Left" Margin="0,20,0,0" />
                     <materialDesign:PackIcon Kind="InfoCircle"
                                              Margin="145,18,0,0"
                                              Cursor="Hand"
@@ -188,10 +188,11 @@
             </StackPanel>
 
 
-            <Button Content="Lưu"
+            <Button Content="Save"
                     Width="100"
                     FontSize="20"
                     Height="40"
+                    Background="#0f0f2d"        
                     VerticalAlignment="Bottom"
                     HorizontalAlignment="Right"
                     Padding="0,0,0,5"

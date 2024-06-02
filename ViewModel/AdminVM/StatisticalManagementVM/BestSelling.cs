@@ -256,7 +256,7 @@ namespace cinema_management.ViewModel.AdminVM.StatisticalManagementVM
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                MessageBoxCustom mb = new MessageBoxCustom("Lỗi", "System Error", MessageType.Error, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Error", "System Error", MessageType.Error, MessageButtons.OK);
                 mb.ShowDialog();
             }
 

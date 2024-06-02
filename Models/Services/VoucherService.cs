@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Globalization;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace cinema_management.Models.Services
@@ -83,7 +82,7 @@ namespace cinema_management.Models.Services
                 }
                 catch (System.Data.Entity.Core.EntityException)
                 {
-                    return ("Mất kết nối cơ sở dữ liệu", null);
+                    return ("Database connection lost", null);
                 }
                 catch (Exception)
                 {
@@ -199,7 +198,7 @@ namespace cinema_management.Models.Services
                         UnusedVCount = vR.Vouchers.Count(v => v.Status == VOUCHER_STATUS.UNRELEASED),
                     }).FirstOrDefaultAsync();
 
-                    
+
                 }
             }
             catch (Exception e)

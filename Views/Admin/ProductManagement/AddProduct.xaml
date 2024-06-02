@@ -159,6 +159,7 @@
                                 Width="40"
                                 VerticalAlignment="Center"
                                 Margin="0,0,0,0"
+                                Background="#0f0f2d"        
                                 materialDesign:ButtonAssist.CornerRadius="5"
                                 Command="{Binding UpLoadImageCommand}">
                             <Button.Content>
@@ -190,15 +191,15 @@
                                Margin="20 -10 0 0"
                                VerticalAlignment="Top" />
                     <Button Content="Cancel"
-                            Margin="0 0 90 10"
+                            Margin="0,0,90,8"
                             BorderBrush="Transparent"
                             materialDesign:ButtonAssist.CornerRadius="8"
                             Command="{Binding CloseCommand}"
                             CommandParameter="{Binding ElementName=AddFoodWd}"
-                            Background="OrangeRed" />
-
+Background="#FF791C1C"/>
                     <Button Content="Add"
                             Margin="0 0 10 10"
+                            Background="#0f0f2d"        
                             materialDesign:ButtonAssist.CornerRadius="8"
                             Command="{Binding AddFoodCommand}"
                             CommandParameter="{Binding ElementName=AddFoodWd}"

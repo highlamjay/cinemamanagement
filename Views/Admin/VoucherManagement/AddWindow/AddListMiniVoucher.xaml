@@ -121,6 +121,7 @@
                             materialDesign:ButtonAssist.CornerRadius="8"
                             Margin="0,0,10,0"
                             Height="30"
+                            Background="#0f0f2d"        
                             Width="80"
                             Padding="15,0,15,3"
                             x:Name="savelistbtn"

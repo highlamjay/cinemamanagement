@@ -543,6 +543,9 @@
                     <Button Command="{Binding BuyCommand}"
                             VerticalAlignment="Bottom"
                             HorizontalAlignment="Center"
+                            
+          Background="#0f0f2d"        
+
                             Margin="20,0,0,15"
                             materialDesign:ButtonAssist.CornerRadius="8"
                             Grid.Row="2"
