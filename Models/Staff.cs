@@ -30,8 +30,8 @@ namespace cinema_management.Models
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
         public string Sex { get; set; }
-        public Nullable<System.DateTime> StaffBirthDay { get; set; }
-        public Nullable<System.DateTime> StartingDate { get; set; }
+        public System.DateTime StaffBirthDay { get; set; }
+        public System.DateTime StartingDate { get; set; }
         public string StaffRole { get; set; }
         public bool IsDeleted { get; set; }
     

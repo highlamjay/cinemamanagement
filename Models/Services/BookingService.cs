@@ -157,7 +157,7 @@ namespace cinema_management.Models.Services
 
             //Make seat of showtime status = true
             int showtimeId = newTicketList[0].ShowtimeId;
-            var seatSets = await context.SeatSettings.Where(s => s.ShowTimeID == showtimeId && idSeatList.Contains(s.SeatID.Value)).ToListAsync();
+            var seatSets = await context.SeatSettings.Where(s => s.ShowTimeID == showtimeId && idSeatList.Contains(s.SeatID)).ToListAsync();
             List<string> bookedSeats = new List<string>();
             foreach (var s in seatSets)
             {

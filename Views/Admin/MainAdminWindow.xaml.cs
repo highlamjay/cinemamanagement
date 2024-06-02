@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Controls.Primitives;
+using cinema_management.ViewModel;
 
 namespace cinema_management.Views.Admin
 {
@@ -24,6 +25,7 @@ namespace cinema_management.Views.Admin
         public MainAdminWindow()
         {
             InitializeComponent();
+            DataContext = new MainAdminViewModel();
         }
 
         private void mainadminwindow_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)

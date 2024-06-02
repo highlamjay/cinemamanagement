@@ -89,7 +89,7 @@ namespace cinema_management.Model.Service
             {
                 return (false, "Mất kết nối cơ sở dữ liệu", null);
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return (false, "Lỗi hệ thống", null);
             }
