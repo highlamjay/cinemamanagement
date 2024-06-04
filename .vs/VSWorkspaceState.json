@@ -1,16 +1,17 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Models",
+    "\\Models\\Services",
     "\\ViewModel",
-    "\\ViewModel\\AdminVM",
-    "\\ViewModel\\AdminVM\\ShowtimeManagementVM",
     "\\ViewModel\\StaffVM",
     "\\ViewModel\\StaffVM\\TicketBillVM",
     "\\Views",
     "\\Views\\Admin",
     "\\Views\\Admin\\MovieManagement",
+    "\\Views\\Admin\\StatisticalManagement",
     "\\Views\\Staff"
   ],
-  "SelectedNode": "\\cinema-management.sln",
+  "SelectedNode": "\\Models\\Services\\BookingService.cs",
   "PreviewInSolutionExplorer": false
 }

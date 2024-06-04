@@ -42,10 +42,13 @@ namespace cinema_management.Models.Services
                     .Where(s => DbFunctions.TruncateTime(s.ShowDate) == newShowtime.ShowDate.Date
                     && s.RoomID == newShowtime.RoomId).FirstOrDefaultAsync();
 
+                    Random random = new Random();
+
                     if (showtimeSet == null)
                     {
                         showtimeSet = new ShowtimeSetting
                         {
+                            ShowtimeSettingID = random.Next(1000 - (100 - 1)) + 100,
                             RoomID = newShowtime.RoomId,
                             ShowDate = newShowtime.ShowDate.Date,
                         }; ;
@@ -71,9 +74,10 @@ namespace cinema_management.Models.Services
                             return (false, $"Khoảng thời gian từ {Helper.GetHourMinutes(show.StartTime)} đến {Helper.GetHourMinutes(endTime + TIME.BreakTime)} đã có phim chiếu tại phòng {showtimeSet.RoomID}");
                         }
                     }
-
+                  
                     ShowTime showtime = new ShowTime
                     {
+                        ShowTimeID = random.Next(1000 - (100 - 1)) + 100,
                         MovieID = newShowtime.MovieId,
                         ShowTimeSettingID = showtimeSet.ShowtimeSettingID,
                         StartTime = newShowtime.StartTime,

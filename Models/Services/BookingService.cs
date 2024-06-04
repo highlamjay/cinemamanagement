@@ -168,7 +168,9 @@ namespace cinema_management.Models.Services
                 }
                 else
                 {
-                    s.Status = true;
+                    bool check_booked = true;
+                    var sql = $@"Update [SeatSetting] SET Status = '{check_booked}' WHERE SeatId IN ({s.SeatID})";
+                    await context.Database.ExecuteSqlCommandAsync(sql);
                 }
             }
             if (bookedSeats.Count > 0)
@@ -216,6 +218,7 @@ namespace cinema_management.Models.Services
         {
             string maxId = await context.Bills.MaxAsync(b => b.BillID);
             string billId = CreateNextBillId(maxId);
+
             Bill newBill = new Bill
             {
                 BillID = billId,
@@ -240,11 +243,12 @@ namespace cinema_management.Models.Services
         private void AddNewTickets(CinemaManagementEntities context, string billId, List<TicketDTO> newTicketList)
         {
             List<Ticket> ticketList = new List<Ticket>();
-
+            Random random = new Random();
             for (int i = 0; i < newTicketList.Count; i++)
             {
                 ticketList.Add(new Ticket
                 {
+                    TicketID = random.Next(1000),
                     BillID = billId,
                     Price = newTicketList[i].Price,
                     SeatID = newTicketList[i].SeatId,

@@ -97,7 +97,7 @@ namespace cinema_management.Models.Services
                             {
                                 showtimeDTOsList.Add(new ShowtimeDTO
                                 {
-                                    Id = (int)m.ShowTime.MovieID,
+                                    Id = (int)m.ShowTime.ShowTimeID,
                                     MovieId = (int)m.ShowTime.MovieID,
                                     StartTime = (TimeSpan)m.ShowTime.StartTime,
                                     RoomId = (int)m.ShowTime.ShowtimeSetting.RoomID,
