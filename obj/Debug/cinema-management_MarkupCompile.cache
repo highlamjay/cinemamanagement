@@ -12,9 +12,9 @@ DEBUG;TRACE
 D:\Đồ án NM CNPM\cinemamanagement\App.xaml
 33-1919089978
 51631046026
-113-1196499805
+1141016378873
 50-1078995205
 Resources\Scrollbar\Scrollbar.xaml;ResourceXAML\MainResource.xaml;Views\Admin\CustomerManagement\CustomerManagement.xaml;Views\Admin\CustomerManagement\EditCustomer.xaml;Views\Admin\ErrorManagement\DoneError.xaml;Views\Admin\ErrorManagement\ErrorManagement.xaml;Views\Admin\ErrorManagement\ProcessingError.xaml;Views\Admin\ErrorManagement\WaitingError.xaml;Views\Admin\MainAdminWindow.xaml;Views\Admin\MovieManangement\AddMovie.xaml;Views\Admin\MovieManangement\EditMovie.xaml;Views\Admin\MovieManangement\InforMovie.xaml;Views\Admin\MovieManangement\MovieManagement.xaml;Views\Admin\StaffManagement\AddStaffWindow.xaml;Views\Admin\StaffManagement\ChangePasswordWindow.xaml;Views\Admin\StaffManagement\EditStaffWindow.xaml;Views\Admin\StaffManagement\StaffManagementPage.xaml;Views\Admin\VoucherManagement\AddWindow\AddInfor.xaml;Views\Admin\VoucherManagement\AddWindow\AddListMiniVoucher.xaml;Views\Admin\VoucherManagement\AddWindow\AddMiniVoucher.xaml;Views\Admin\VoucherManagement\AddWindow\AddVoucher.xaml;Views\Admin\VoucherManagement\AddWindow\AddWindow.xaml;Views\Admin\VoucherManagement\AddWindow\ReleaseVoucher.xaml;Views\Admin\VoucherManagement\Infor_EditWindow\Edit_Infor.xaml;Views\Admin\VoucherManagement\Infor_EditWindow\Infor_Edit.xaml;Views\Admin\VoucherManagement\VoucherManagement.xaml;Views\LoginWindow\ChangePasswordPage.xaml;Views\LoginWindow\ForgotPasswordPage.xaml;Views\LoginWindow\LoginPage.xaml;Views\LoginWindow\LoginWindow.xaml;Views\LoginWindow\RolePage.xaml;Views\MessageBoxCustom.xaml;Views\Staff\MainStaffWindow.xaml;
 
-False
+True
 
