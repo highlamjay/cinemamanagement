@@ -199,22 +199,7 @@ namespace cinema_management.Models.Services
                         UnusedVCount = vR.Vouchers.Count(v => v.Status == VOUCHER_STATUS.UNRELEASED),
                     }).FirstOrDefaultAsync();
 
-                    //return (new VoucherReleaseDTO
-                    //{
-                    //    Id = voucherRelease.Id,
-                    //    ReleaseName = voucherRelease.ReleaseName,
-                    //    StartDate = voucherRelease.StartDate,
-                    //    FinishDate = voucherRelease.FinishDate,
-                    //    EnableMerge = voucherRelease.EnableMerge,
-                    //    MinimumOrderValue = voucherRelease.MinimumOrderValue,
-                    //    ParValue = voucherRelease.ParValue,
-                    //    ObjectType = voucherRelease.ObjectType,
-                    //    Status = voucherRelease.Status,
-                    //    StaffId = voucherRelease.StaffId,
-                    //    StaffName = voucherRelease.Staff.Name,
-                    //    VCount = voucherRelease.Vouchers.Count(),
-                    //    UnusedVCount = voucherRelease.Vouchers.Count(v => v.Status == VOUCHER_STATUS.UNRELEASED),
-                    //});
+                    
                 }
             }
             catch (Exception e)
@@ -250,7 +235,7 @@ namespace cinema_management.Models.Services
                     return (true, "Thêm đợt phát hành mới thành công", newVR);
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return (false, "Lỗi hệ thống", null);
             }
@@ -279,7 +264,7 @@ namespace cinema_management.Models.Services
                     return (true, "Cập nhật đợt phát hành thành công!");
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return (false, "Lỗi hệ thống");
             }
@@ -364,7 +349,7 @@ namespace cinema_management.Models.Services
                     return (true, "Xóa danh sách voucher thành công");
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return (false, "Lỗi hệ thống");
             }
@@ -381,7 +366,7 @@ namespace cinema_management.Models.Services
                     return (true, "Xóa đợt phát hành thành công");
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return (false, "Lỗi hệ thống");
             }
@@ -398,7 +383,7 @@ namespace cinema_management.Models.Services
                 }
                 return (true, "Phát hành thành công");
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return (false, "Lỗi hệ thống");
             }

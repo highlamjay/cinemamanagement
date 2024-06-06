@@ -1,4 +1,4 @@
-﻿using cinema_management.Models.Services;
+﻿using cinema_management.Model.Service;
 using cinema_management.Utils;
 using cinema_management.Views.LoginWindow;
 using cinema_management.Views;
@@ -14,7 +14,6 @@ using System.Windows.Input;
 using System.Windows;
 using System.Configuration;
 using System.IO;
-using cinema_management.Model.Service;
 
 namespace cinema_management.ViewModel.LoginVM
 {
@@ -65,7 +64,6 @@ namespace cinema_management.ViewModel.LoginVM
         public ICommand NewPassChanged { get; set; }
         public ICommand SaveSendmailBtnCM { get; set; }
 
-        [Obsolete]
         public ForgotPassViewModel()
         {
             CancelCM = new RelayCommand<object>((p) => { return p == null ? false : true; }, (p) =>
@@ -126,7 +124,7 @@ namespace cinema_management.ViewModel.LoginVM
                 RandomCode = rd.Next(MIN_VALUE, MAX_VALUE);
                 try
                 {
-                    await SendEmailForStaff(ForgotPasswordEmail,RandomCode);
+                    await SendEmailForStaff(ForgotPasswordEmail, RandomCode);
                 }
                 catch (Exception)
                 {
@@ -180,11 +178,10 @@ namespace cinema_management.ViewModel.LoginVM
 
             //SMTP CONFIG
             SmtpClient smtp = new SmtpClient("smtp.gmail.com");
-            smtp.EnableSsl = true;           
+            smtp.EnableSsl = true;
             smtp.Port = 587;
             smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
             smtp.UseDefaultCredentials = false;
-            
             smtp.Credentials = new NetworkCredential(APP_EMAIL, APP_PASSWORD);
 
             MailMessage mail = new MailMessage();

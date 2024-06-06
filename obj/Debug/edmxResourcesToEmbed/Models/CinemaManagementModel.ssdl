@@ -8,8 +8,8 @@
     <Property Name="CustomerID" Type="varchar" MaxLength="50" />
     <Property Name="StaffID" Type="varchar" MaxLength="50" />
     <Property Name="BillTime" Type="date" Nullable="false" />
-    <Property Name="TotalPrice" Type="money" Nullable="false" />
     <Property Name="DiscountPrice" Type="decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="TotalPrice" Type="money" Nullable="false" />
   </EntityType>
   <EntityType Name="Customer">
     <Key>

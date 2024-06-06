@@ -1,27 +1,27 @@
 ﻿using cinema_management.DTOs;
+using cinema_management.Models.Services;
 using cinema_management.Utils;
-using cinema_management.Views.Admin.MovieManangement;
 using cinema_management.Views;
+using cinema_management.Views.Admin.MovieManagement;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Net.Cache;
-using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Forms;
 using System.Windows.Input;
-using System.Windows.Media.Imaging;
 using System.Windows.Media;
-using System.Windows;
-using cinema_management.Models.Services;
+using System.Windows.Media.Imaging;
 
 namespace cinema_management.ViewModel.AdminVM.MovieManagementVM
 {
     public partial class MovieManagementViewModel : BaseViewModel
     {
-
         #region   bien de luu du lieu up cho database
 
         private string _movieID;
@@ -164,6 +164,7 @@ namespace cinema_management.ViewModel.AdminVM.MovieManagementVM
         public ICommand MaskNameCM { get; set; }
         public ICommand FirstLoadCM { get; set; }
         public ICommand CloseCM { get; set; }
+        public object DialogResult { get; private set; }
 
         public MovieManagementViewModel()
         {
@@ -208,7 +209,7 @@ namespace cinema_management.ViewModel.AdminVM.MovieManagementVM
             LoadAddMovieCM = new RelayCommand<Window>((p) => { return true; }, (p) =>
             {
                 RenewWindowData();
-                Window w1 = new AddMovie();
+                Window w1 = new AddMovieWindow();
 
                 MaskName.Visibility = Visibility.Visible;
                 w1.ShowDialog();
@@ -218,7 +219,7 @@ namespace cinema_management.ViewModel.AdminVM.MovieManagementVM
             {
                 if (SelectedItem == null) return;
                 RenewWindowData();
-                InforMovie w1 = new InforMovie();
+                InforMovieWindow w1 = new InforMovieWindow();
                 LoadInforMovie(w1);
                 MaskName.Visibility = Visibility.Visible;
                 w1.ShowDialog();
@@ -268,10 +269,10 @@ namespace cinema_management.ViewModel.AdminVM.MovieManagementVM
             });
             UploadImageCM = new RelayCommand<Window>((p) => { return true; }, (p) =>
             {
-                OpenFileDialog openfile = new OpenFileDialog();
+                System.Windows.Forms.OpenFileDialog openfile = new System.Windows.Forms.OpenFileDialog();
                 openfile.Title = "Select an image";
                 openfile.Filter = "Image File (*.jpg;*.jpeg;*.png)|*.jpg;*.jpeg; *.png";
-                if (openfile.ShowDialog() == DialogResult.OK)
+                if (openfile.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
                     IsImageChanged = true;
                     filepath = openfile.FileName;
@@ -369,6 +370,7 @@ namespace cinema_management.ViewModel.AdminVM.MovieManagementVM
             ListCountrySource.Add("Thái Lan");
             ListCountrySource.Add("Trung Quốc");
             ListCountrySource.Add("Việt Nam");
+            ListCountrySource.Add("Mỹ");
         }
         public bool IsValidData()
         {

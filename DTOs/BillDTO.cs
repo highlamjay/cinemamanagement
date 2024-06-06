@@ -7,7 +7,7 @@ using cinema_management.Utils;
 
 namespace cinema_management.DTOs
 {
-    public partial class BillDTO
+    public class BillDTO
     {
         public BillDTO()
         {
@@ -85,7 +85,7 @@ namespace cinema_management.DTOs
                 return Helper.FormatVNMoney(DiscountPrice);
             }
         }
-        public DateTime BillTime { get; set; }
+        public DateTime CreatedAt { get; set; }
         public List<int> VoucherIdList { get; set; }
 
 

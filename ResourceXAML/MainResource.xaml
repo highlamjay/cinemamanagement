@@ -2,20 +2,38 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:i="http://schemas.microsoft.com/xaml/behaviors"                   
                     xmlns:viewmodelLogin="clr-namespace:cinema_management.ViewModel.LoginVM"
-                    xmlns:viewmodelMainAdmin="clr-namespace:cinema_management.ViewModel.AdminVM"
+                    xmlns:viewmodelMainAdmin="clr-namespace:cinema_management.ViewModel"
                     xmlns:viewmodelForgotPass="clr-namespace:cinema_management.ViewModel.LoginVM"
                     xmlns:viewmodelMovieManagement="clr-namespace:cinema_management.ViewModel.AdminVM.MovieManagementVM"
+                    xmlns:viewmodelShowtimeManagement="clr-namespace:cinema_management.ViewModel.AdminVM.ShowtimeManagementVM"
                     xmlns:viewmodelCustomerManagement="clr-namespace:cinema_management.ViewModel.AdminVM.CustomerManagementVM"
+                    xmlns:viewmodelProductManagement="clr-namespace:cinema_management.ViewModel.AdminVM.ProductManagementVM"
                     xmlns:viewmodelStaffManagement="clr-namespace:cinema_management.ViewModel.AdminVM.StaffManagementVM"
-                    xmlns:viewmodelVoucherManagement="clr-namespace:cinema_management.ViewModel.AdminVM.VoucherManagementVM">
-
-
+                    xmlns:viewmodelImport_ExportManagement="clr-namespace:cinema_management.ViewModel.AdminVM.Import_ExportManagementVM"
+                    xmlns:viewmodelStatisticalManagement="clr-namespace:cinema_management.ViewModel.AdminVM.StatisticalManagementVM"
+                    xmlns:viewmodelVoucherManagement="clr-namespace:cinema_management.ViewModel.AdminVM.VoucherManagemenetVM"
+                    xmlns:viewmodelMovieScheduleWindow="clr-namespace:cinema_management.ViewModel.StaffVM.MovieScheduleWindowVM"
+                    xmlns:viewmodelTicket="clr-namespace:cinema_management.ViewModel.StaffVM.TicketVM"
+                    xmlns:viewmodelOrderFoodWindow="clr-namespace:cinema_management.ViewModel.StaffVM.OrderFoodWindowVM"
+                    xmlns:viewmodelTicketBill="clr-namespace:cinema_management.ViewModel.StaffVM.TicketBillVM"
+                    xmlns:viewmodelTroubleWindow="clr-namespace:cinema_management.ViewModel.StaffVM.TroubleWindowVM">
+    
     <viewmodelForgotPass:ForgotPassViewModel x:Key="ForgotPassVM"/>
     <viewmodelLogin:LoginViewModel x:Key="LoginVM"/>
     <viewmodelMainAdmin:MainAdminViewModel x:Key="MainAdminVM"/>
-    <viewmodelMovieManagement:MovieManagementViewModel x:Key="MovieManagementVM"/>
+    <viewmodelMovieManagement:MovieManagementViewModel x:Key="MovieManagementVM" />
+    <viewmodelShowtimeManagement:ShowtimeManagementViewModel x:Key="ShowtimeManagementVM"/>
     <viewmodelCustomerManagement:CustomerManagementViewModel x:Key="CustomerManagementVM"/>
     <viewmodelStaffManagement:StaffManagementViewModel x:Key="StaffManagementVM"/>
-    <viewmodelVoucherManagement:VoucherManagementViewModel x:Key="VoucherVM"/>
+    <viewmodelProductManagement:ProductManagementViewModel x:Key="ProductManagementVM"/>
+    <viewmodelImport_ExportManagement:Import_ExportManagementViewModel x:Key="Import_ExportManagementVM"/>
+    <viewmodelStatisticalManagement:StatisticalManagementViewModel x:Key="StatisticalManagementVM"/>
+    <viewmodelVoucherManagement:VoucherManagementViewModel x:Key="VoucherManagementVM"/>
+    <viewmodelMainAdmin:MainStaffViewModel x:Key="MainStaffVM"/>
+    <viewmodelMovieScheduleWindow:MovieScheduleWindowViewModel x:Key="MovieScheduleWindowVM"/>
+    <viewmodelTicket:TicketWindowViewModel x:Key="TicketWindowVM"/>
+    <viewmodelOrderFoodWindow:OrderFoodPageViewModel x:Key="OrderFoodPageVM"/>
+    <viewmodelTicketBill:TicketBillViewModel x:Key="BillTicketVM"/>
+    <viewmodelTroubleWindow:TroublePageViewModel x:Key="TroublePageVM"/>
 
 </ResourceDictionary>

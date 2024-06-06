@@ -22,7 +22,6 @@ namespace cinema_management.Views.Admin.VoucherManagement.AddWindow
         public AddMiniVoucher()
         {
             InitializeComponent();
-
         }
         private void Button_MouseEnter_1(object sender, MouseEventArgs e)
         {

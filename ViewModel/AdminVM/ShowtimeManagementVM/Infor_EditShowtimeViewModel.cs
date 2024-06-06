@@ -1,7 +1,7 @@
 ﻿using cinema_management.DTOs;
 using cinema_management.Models.Services;
-using cinema_management.Views.Admin.ShowtimeManagement;
 using cinema_management.Views;
+using cinema_management.Views.Admin.ShowtimeManagement;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -33,15 +33,15 @@ namespace cinema_management.ViewModel.AdminVM.ShowtimeManagementVM
             set { _ListSeat2 = value; OnPropertyChanged(); }
         }
 
-        private Infor_EditShowtimeWindow _EditShowtimeWindow;
-        public Infor_EditShowtimeWindow EditShowtimeWindow
+        private Infor_EditShowtime _EditShowtimeWindow;
+        public Infor_EditShowtime EditShowtimeWindow
         {
             get { return _EditShowtimeWindow; }
             set { _EditShowtimeWindow = value; }
         }
 
-        private ObservableCollection<ShowTimeDTO> _ListShowtimeofMovie;
-        public ObservableCollection<ShowTimeDTO> ListShowtimeofMovie
+        private ObservableCollection<ShowtimeDTO> _ListShowtimeofMovie;
+        public ObservableCollection<ShowtimeDTO> ListShowtimeofMovie
         {
             get { return _ListShowtimeofMovie; }
             set { _ListShowtimeofMovie = value; OnPropertyChanged(); }
@@ -70,8 +70,8 @@ namespace cinema_management.ViewModel.AdminVM.ShowtimeManagementVM
         public ICommand EditPriceCM { get; set; }
 
 
-        private ShowTimeDTO _selectedShowtime; //the showtime being selected
-        public ShowTimeDTO SelectedShowtime
+        private ShowtimeDTO _selectedShowtime; //the showtime being selected
+        public ShowtimeDTO SelectedShowtime
         {
             get { return _selectedShowtime; }
             set
@@ -86,7 +86,7 @@ namespace cinema_management.ViewModel.AdminVM.ShowtimeManagementVM
         {
             if (SelectedItem != null)
             {
-                Infor_EditShowtimeWindow p = new Infor_EditShowtimeWindow();
+                Infor_EditShowtime p = new Infor_EditShowtime();
                 LoadDataEditWindow(p);
                 EditShowtimeWindow = p;
                 oldSelectedItem = SelectedItem;
@@ -99,7 +99,7 @@ namespace cinema_management.ViewModel.AdminVM.ShowtimeManagementVM
         }
 
 
-        public void LoadDataEditWindow(Infor_EditShowtimeWindow p)
+        public void LoadDataEditWindow(Infor_EditShowtime p)
         {
             p._movieName.Text = SelectedItem.DisplayName;
             p._ShowtimeDate.Text = SelectedDate.ToString("dd-MM-yyyy");
@@ -107,7 +107,7 @@ namespace cinema_management.ViewModel.AdminVM.ShowtimeManagementVM
             if (SelectedRoomId != -1)
                 p._ShowtimeRoom.Text = SelectedRoomId.ToString();
 
-            ListShowtimeofMovie = new ObservableCollection<ShowTimeDTO>(SelectedItem.ShowTimes);
+            ListShowtimeofMovie = new ObservableCollection<ShowtimeDTO>(SelectedItem.Showtimes);
 
             moviePrice = 0;
         }

@@ -12,9 +12,9 @@
         TextOptions.TextFormattingMode="Ideal"
         TextOptions.TextRenderingMode="Auto"
         Background="#f2f5f9"
+        DataContext="{StaticResource MainAdminVM}"
         Title="Administrator"
         Height="820"
-        DataContext="{StaticResource MainAdminVM}"
         Width="1440"
         FontFamily="arial"
         Name="mainadminwindow"
@@ -194,7 +194,7 @@
                                                materialDesign:TextBlockAssist.AutoToolTip="True"
                                                VerticalAlignment="Bottom"
                                                TextAlignment="Center"
-                                               Text="VMN Cinema"
+                                               Text="Squadin Cinema"
                                                FontFamily="Helvetica"
                                                FontWeight="Bold"
                                                Foreground="#e3e9fa"
@@ -218,7 +218,7 @@
                                         BorderBrush="Transparent"
                                         Width="240"
                                         Command="{Binding LoadQLPPageCM}"
-                                        CommandParameter="{Binding ElementName=MainFrame}" />
+                                        CommandParameter="{Binding ElementName=MainFrame}" Click="Button_Click_1" />
                             </StackPanel>
 
                             <StackPanel  Orientation="Horizontal">

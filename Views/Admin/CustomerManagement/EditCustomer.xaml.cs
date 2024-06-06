@@ -25,7 +25,6 @@ namespace cinema_management.Views.Admin.CustomerManagement
             InitializeComponent();
             this.Language = System.Windows.Markup.XmlLanguage.GetLanguage("vi-VN");
         }
-
         private void SuaKH_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             this.DragMove();

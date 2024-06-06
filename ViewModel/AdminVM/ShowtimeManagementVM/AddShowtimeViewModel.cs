@@ -14,12 +14,15 @@ namespace cinema_management.ViewModel.AdminVM.ShowtimeManagementVM
 {
     public partial class ShowtimeManagementViewModel : BaseViewModel
     {
+
         private DateTime _EndTime;
         public DateTime EndTime
         {
             get { return _EndTime; }
             set { _EndTime = value; OnPropertyChanged(); }
         }
+
+
         public ICommand LoadAddShowtimeCM { get; set; }
         public ICommand SaveCM { get; set; }
 
@@ -30,12 +33,14 @@ namespace cinema_management.ViewModel.AdminVM.ShowtimeManagementVM
             set { isSaving = value; OnPropertyChanged(); }
         }
 
+
+
         public async Task SaveShowtimeFunc(Window p)
         {
             if (IsValidData())
             {
 
-                ShowTimeDTO temp = new ShowTimeDTO
+                ShowtimeDTO temp = new ShowtimeDTO
                 {
                     MovieId = movieSelected.Id,
                     RoomId = ShowtimeRoom.Id,

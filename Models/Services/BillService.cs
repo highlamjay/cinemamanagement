@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace cinema_management.Models.Services
 {
-    public partial class BillService
+    public class BillService
     {
         private static BillService _ins;
         public static BillService Ins
@@ -40,11 +40,11 @@ namespace cinema_management.Models.Services
                                         StaffId = b.StaffID,
                                         StaffName = b.Staff.StaffName,
                                         TotalPrice = b.TotalPrice,
-                                        //DiscountPrice = b.DiscountPrice,
+                                        DiscountPrice = b.DiscountPrice,
                                         CustomerId = b.CustomerID,
                                         CustomerName = b.Customer.CustomerName,
                                         PhoneNumber = b.Customer.PhoneNumber,
-                                        BillTime = b.BillTime
+                                        CreatedAt = b.BillTime
                                     }).ToListAsync();
                     return await billList;
                 }
@@ -75,11 +75,11 @@ namespace cinema_management.Models.Services
                                         StaffId = b.StaffID,
                                         StaffName = b.Staff.StaffName,
                                         TotalPrice = b.TotalPrice,
-                                        //DiscountPrice = b.DiscountPrice,
+                                        DiscountPrice = b.DiscountPrice,
                                         CustomerId = b.CustomerID,
                                         CustomerName = b.Customer.CustomerName,
                                         PhoneNumber = b.Customer.PhoneNumber,
-                                        BillTime = b.BillTime
+                                        CreatedAt = b.BillTime
                                     }).ToListAsync();
                     return await billList;
                 }
@@ -110,11 +110,11 @@ namespace cinema_management.Models.Services
                                         StaffId = b.StaffID,
                                         StaffName = b.Staff.StaffName,
                                         TotalPrice = b.TotalPrice,
-                                        //DiscountPrice = b.DiscountPrice,
+                                        DiscountPrice = b.DiscountPrice,
                                         CustomerId = b.CustomerID,
                                         CustomerName = b.Customer.CustomerName,
                                         PhoneNumber = b.Customer.PhoneNumber,
-                                        BillTime = b.BillTime
+                                        CreatedAt = b.BillTime
                                     }).ToListAsync();
                     return await billList;
                 }
@@ -143,9 +143,9 @@ namespace cinema_management.Models.Services
                         Id = bill.BillID,
                         StaffId = bill.Staff.StaffID,
                         StaffName = bill.Staff.StaffName,
-                        //DiscountPrice = bill.DiscountPrice,
+                        DiscountPrice = bill.DiscountPrice,
                         TotalPrice = bill.TotalPrice,
-                        BillTime = bill.BillTime,
+                        CreatedAt = bill.BillTime,
                         ProductBillInfoes = (from pi in bill.ProductBillInfoes
                                              select new ProductBillInfoDTO
                                              {

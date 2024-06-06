@@ -25,7 +25,6 @@ namespace cinema_management.Views.Admin.CustomerManagement
         {
             InitializeComponent();
         }
-
         private bool Filter(object item)
         {
             if (String.IsNullOrEmpty(SearchBox.Text))
@@ -110,6 +109,5 @@ namespace cinema_management.Views.Admin.CustomerManagement
             cbb.ItemsSource = l;
             cbb.SelectedIndex = DateTime.Now.Month - 1;
         }
-
     }
 }

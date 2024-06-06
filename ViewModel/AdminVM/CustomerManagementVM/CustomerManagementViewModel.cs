@@ -1,6 +1,6 @@
 ﻿using cinema_management.DTOs;
+using cinema_management.Models.Services;
 using cinema_management.Utils;
-using cinema_management.Views.Admin.CustomerManagement;
 using cinema_management.Views;
 using System;
 using System.Collections.Generic;
@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows;
-using cinema_management.Models.Services;
+using cinema_management.Views.Admin.CustomerManagement;
 
 namespace cinema_management.ViewModel.AdminVM.CustomerManagementVM
 {

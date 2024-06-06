@@ -23,7 +23,6 @@ namespace cinema_management.Views.Admin.ErrorManagement
         {
             InitializeComponent();
         }
-
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             this.Close();

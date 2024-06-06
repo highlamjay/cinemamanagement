@@ -39,10 +39,10 @@ namespace cinema_management.Models.Services
                                                           where !p.IsDeleted
                                                           select new ProductDTO
                                                           {
-                                                              ProductId = p.ProductID,
-                                                              ProductDisplayName = p.DisplayName,
-                                                              ProductPrice = p.Price,
-                                                              ProductCategory = p.Categorylog,
+                                                              Id = p.ProductID,
+                                                              DisplayName = p.DisplayName,
+                                                              Price = p.Price,
+                                                              Category = p.Categorylog,
                                                               Quantity = p.Quantity,
                                                               Image = p.Image
                                                           }
@@ -65,7 +65,7 @@ namespace cinema_management.Models.Services
                 using (var context = new CinemaManagementEntities())
                 {
 
-                    Product prod = await context.Products.Where((p) => p.DisplayName == newProd.ProductDisplayName).FirstOrDefaultAsync();
+                    Product prod = await context.Products.Where((p) => p.DisplayName == newProd.DisplayName).FirstOrDefaultAsync();
 
                     if (prod != null)
                     {
@@ -75,26 +75,26 @@ namespace cinema_management.Models.Services
                         }
 
                         //Khi sản phẩm đã bị xóa nhưng được add lại với cùng tên 
-                        prod.DisplayName = newProd.ProductDisplayName;
-                        prod.Price = newProd.ProductPrice;
-                        prod.Categorylog = newProd.ProductCategory;
+                        prod.DisplayName = newProd.DisplayName;
+                        prod.Price = newProd.Price;
+                        prod.Categorylog = newProd.Category;
                         prod.Image = newProd.Image;
                         prod.IsDeleted = false;
                         await context.SaveChangesAsync();
-                        newProd.ProductId = prod.ProductID;
+                        newProd.Id = prod.ProductID;
                     }
                     else
                     {
                         Product product = new Product
                         {
-                            DisplayName = newProd.ProductDisplayName,
-                            Price = newProd.ProductPrice,
-                            Categorylog = newProd.ProductCategory,
+                            DisplayName = newProd.DisplayName,
+                            Price = newProd.Price,
+                            Categorylog = newProd.Category,
                             Image = newProd.Image,
                         };
                         context.Products.Add(product);
                         await context.SaveChangesAsync();
-                        newProd.ProductId = product.ProductID;
+                        newProd.Id = product.ProductID;
                     }
 
                     return (true, "Thêm sản phẩm mới thành công", newProd);
@@ -113,22 +113,22 @@ namespace cinema_management.Models.Services
             {
                 using (var context = new CinemaManagementEntities())
                 {
-                    Product prod = await context.Products.FindAsync(updatedProd.ProductId);
+                    Product prod = await context.Products.FindAsync(updatedProd.Id);
 
                     if (prod is null)
                     {
                         return (false, "Sản phẩm không tồn tại");
                     }
 
-                    bool IsExistProdName = await context.Products.AnyAsync((p) => p.ProductID != prod.ProductID && p.DisplayName == updatedProd.ProductDisplayName);
+                    bool IsExistProdName = await context.Products.AnyAsync((p) => p.ProductID != prod.ProductID && p.DisplayName == updatedProd.DisplayName);
                     if (IsExistProdName)
                     {
                         return (false, "Tên sản phẩm này đã tồn tại! Vui lòng chọn tên khác");
                     }
-                    prod.DisplayName = updatedProd.ProductDisplayName;
-                    prod.Price = updatedProd.ProductPrice;
+                    prod.DisplayName = updatedProd.DisplayName;
+                    prod.Price = updatedProd.Price;
                     prod.Image = updatedProd.Image;
-                    prod.Categorylog = updatedProd.ProductCategory;
+                    prod.Categorylog = updatedProd.Category;
 
                     await context.SaveChangesAsync();
                     return (true, "Cập nhật thành công");

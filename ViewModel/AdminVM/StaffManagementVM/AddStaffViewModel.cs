@@ -6,7 +6,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices.ComTypes;
-using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -39,7 +38,7 @@ namespace cinema_management.ViewModel.AdminVM.StaffManagementVM
             {
                 StaffDTO staff = new StaffDTO();
                 staff.StaffName = Fullname;
-                staff.Sex = Sex.Content.ToString();
+                staff.Sex = Gender.Content.ToString();
                 staff.StaffBirthDay = Born;
                 staff.PhoneNumber = Phone;
                 staff.StaffRole = Role.Content.ToString();
@@ -87,4 +86,3 @@ namespace cinema_management.ViewModel.AdminVM.StaffManagementVM
         }
     }
 }
-

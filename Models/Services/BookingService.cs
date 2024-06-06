@@ -157,7 +157,7 @@ namespace cinema_management.Models.Services
 
             //Make seat of showtime status = true
             int showtimeId = newTicketList[0].ShowtimeId;
-            var seatSets = await context.SeatSettings.Where(s => s.ShowTimeID == showtimeId && idSeatList.Contains((int)s.SeatID)).ToListAsync();
+            var seatSets = await context.SeatSettings.Where(s => s.ShowTimeID == showtimeId && idSeatList.Contains(s.SeatID)).ToListAsync();
             List<string> bookedSeats = new List<string>();
             foreach (var s in seatSets)
             {
@@ -219,7 +219,7 @@ namespace cinema_management.Models.Services
             Bill newBill = new Bill
             {
                 BillID = billId,
-                //DiscountPrice = bill.DiscountPrice,
+                DiscountPrice = bill.DiscountPrice,
                 TotalPrice = bill.TotalPrice,
                 CustomerID = bill.CustomerId == "KH0000" ? null : bill.CustomerId,
                 BillTime = DateTime.Now,
@@ -282,5 +282,6 @@ namespace cinema_management.Models.Services
             return true;
 
         }
+
     }
 }

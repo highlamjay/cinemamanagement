@@ -1,4 +1,4 @@
-﻿using cinema_management.ViewModel.AdminVM.VoucherManagementVM;
+﻿using cinema_management.ViewModel.AdminVM.VoucherManagemenetVM;
 using System;
 using System.Collections.Generic;
 using System.Linq;

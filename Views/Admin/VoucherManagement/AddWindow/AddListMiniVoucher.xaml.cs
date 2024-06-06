@@ -27,7 +27,6 @@ namespace cinema_management.Views.Admin.VoucherManagement.AddWindow
         private void Button_MouseEnter_1(object sender, MouseEventArgs e)
         {
             Button btn = sender as Button;
-
             btn.Background = (SolidColorBrush)new BrushConverter().ConvertFrom("#FFA5B9D6");
             btn.Background = new SolidColorBrush(Colors.OrangeRed);
         }

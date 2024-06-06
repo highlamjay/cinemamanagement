@@ -81,7 +81,7 @@ namespace cinema_management.Utils
 
         public static string GetEmailTemplatePath(string fileName)
         {
-            return Path.Combine(Environment.CurrentDirectory, @"..\..\Resources\TemplateOfEmail", $"{fileName}" /*SelectedItem.Image*/);
+            return Path.Combine(Environment.CurrentDirectory, @"..\..\Resources\EmailTemplate", $"{fileName}" /*SelectedItem.Image*/);
         }
 
         public static string FormatVNMoney(decimal money)

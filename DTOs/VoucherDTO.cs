@@ -8,8 +8,9 @@ using System.Threading.Tasks;
 
 namespace cinema_management.DTOs
 {
-    public class VoucherDTO : INotifyPropertyChanged
+    public class VoucherDTO
     {
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)

@@ -9,6 +9,7 @@ namespace cinema_management.DTOs
 {
     public class ProductDTO
     {
+
         public ProductDTO()
         {
         }
@@ -19,22 +20,22 @@ namespace cinema_management.DTOs
                           string image,
                           int quantity)
         {
-            this.ProductId = id;
-            this.ProductDisplayName = displayname;
-            this.ProductCategory = category;
-            this.ProductPrice = price;
+            this.Id = id;
+            this.DisplayName = displayname;
+            this.Category = category;
+            this.Price = price;
             this.Image = image;
             this.Quantity = quantity;
         }
-        public int ProductId { get; set; }
-        public string ProductDisplayName { get; set; }
-        public string ProductCategory { get; set; }
-        public decimal ProductPrice { get; set; }
+        public int Id { get; set; }
+        public string DisplayName { get; set; }
+        public string Category { get; set; }
+        public decimal Price { get; set; }
         public string PriceStr
         {
             get
             {
-                return Helper.FormatVNMoney(ProductPrice);
+                return Helper.FormatVNMoney(Price);
             }
         }
         public int Quantity { get; set; }

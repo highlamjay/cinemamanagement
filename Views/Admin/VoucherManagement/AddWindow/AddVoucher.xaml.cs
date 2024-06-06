@@ -23,14 +23,12 @@ namespace cinema_management.Views.Admin.VoucherManagement.AddWindow
     {
         public static CheckBox topcheck;
         public static ComboBox _cbb;
-
         public AddVoucher()
         {
             InitializeComponent();
             topcheck = topcheckbox;
             _cbb = cbb;
         }
-
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (topcheck is null) return;

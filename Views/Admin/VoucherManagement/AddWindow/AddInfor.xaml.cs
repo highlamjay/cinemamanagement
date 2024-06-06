@@ -1,4 +1,4 @@
-﻿using cinema_management.ViewModel.AdminVM.VoucherManagementVM;
+﻿using cinema_management.ViewModel.AdminVM.VoucherManagemenetVM;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,7 +28,6 @@ namespace cinema_management.Views.Admin.VoucherManagement.AddWindow
             InitializeComponent();
             this.Language = XmlLanguage.GetLanguage("vi-VN");
         }
-
         private void TextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
             e.Handled = !IsTextAllowed(e.Text);

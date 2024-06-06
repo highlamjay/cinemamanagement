@@ -8,6 +8,7 @@ namespace cinema_management.DTOs
 {
     public class VoucherReleaseDTO
     {
+
         public string Id { get; set; }
         public string ReleaseName { get; set; }
         public DateTime StartDate { get; set; }

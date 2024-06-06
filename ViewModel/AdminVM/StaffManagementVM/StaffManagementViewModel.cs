@@ -11,7 +11,6 @@ using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows;
-using cinema_management.Views.LoginWindow;
 using cinema_management.Views.Admin.StaffManagement;
 
 namespace cinema_management.ViewModel.AdminVM.StaffManagementVM
@@ -29,11 +28,11 @@ namespace cinema_management.ViewModel.AdminVM.StaffManagementVM
             set { _Fullname = value; OnPropertyChanged(); }
         }
 
-        private ComboBoxItem _Sex;
-        public ComboBoxItem Sex
+        private ComboBoxItem _Gender;
+        public ComboBoxItem Gender
         {
-            get { return _Sex; }
-            set { _Sex = value; OnPropertyChanged(); }
+            get { return _Gender; }
+            set { _Gender = value; OnPropertyChanged(); }
         }
 
         private Nullable<System.DateTime> _Born;
@@ -247,11 +246,11 @@ namespace cinema_management.ViewModel.AdminVM.StaffManagementVM
                     string x = SelectedItem.Sex;
                     if (x == "Nam")
                     {
-                        wd.Sex.Text = SelectedItem.Sex;
+                        wd.Gender.Text = SelectedItem.Sex;
                     }
                     else
                     {
-                        wd.Sex.Text = "Nữ";
+                        wd.Gender.Text = "Nữ";
                     }
                     wd.Date.Text = SelectedItem.StaffBirthDay.ToString();
                     wd._Phone.Text = SelectedItem.PhoneNumber.ToString();
@@ -341,7 +340,7 @@ namespace cinema_management.ViewModel.AdminVM.StaffManagementVM
         {
             StartDate = null;
             Fullname = null;
-            Sex = null;
+            Gender = null;
             Born = null;
             Role = null;
             Phone = null;
@@ -363,7 +362,7 @@ namespace cinema_management.ViewModel.AdminVM.StaffManagementVM
         private (bool valid, string error) IsValidData(Operation oper)
         {
 
-            if (string.IsNullOrEmpty(Fullname) || Sex is null || StartDate is null || Born is null || Role is null || string.IsNullOrEmpty(TaiKhoan))
+            if (string.IsNullOrEmpty(Fullname) || Gender is null || StartDate is null || Born is null || Role is null || string.IsNullOrEmpty(TaiKhoan))
             {
                 return (false, "Thông tin nhân viên thiếu! Vui lòng bổ sung");
             }

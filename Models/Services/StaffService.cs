@@ -7,9 +7,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using cinema_management.Models;
+using cinema_management.Models.Services;
 using System.Web;
-using System.Security.Cryptography;
+using cinema_management.Models;
 
 namespace cinema_management.Model.Service
 {
@@ -47,7 +47,7 @@ namespace cinema_management.Model.Service
                                   StartingDate = s.StartingDate,
                                   StaffPassword = s.StaffPassword,
                                   Email = s.Email
-                              }).ToListAsync();               
+                              }).ToListAsync();
                 return await staffs;
             }
         }
@@ -59,7 +59,7 @@ namespace cinema_management.Model.Service
             try
             {
                 using (var context = new CinemaManagementEntities())
-                {                    
+                {
                     var staff = await (from s in context.Staffs
                                        where s.UserName == username && s.StaffPassword == hassPass
                                        select new StaffDTO
@@ -89,7 +89,7 @@ namespace cinema_management.Model.Service
             {
                 return (false, "Mất kết nối cơ sở dữ liệu", null);
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return (false, "Lỗi hệ thống", null);
             }
@@ -132,8 +132,7 @@ namespace cinema_management.Model.Service
                     var maxId = await context.Staffs.MaxAsync(s => s.StaffID);
                     Staff st = Copy(newStaff);                    
                     st.StaffID = CreateNextStaffId(maxId);
-                    st.IsDeleted = false;
-                    newStaff.StaffId = st.StaffID;           
+                    newStaff.StaffId = st.StaffID;
                     st.StaffPassword = Helper.MD5Hash(newStaff.StaffPassword);
 
                     context.Staffs.Add(st);

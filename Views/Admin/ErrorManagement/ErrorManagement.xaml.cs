@@ -21,8 +21,6 @@ namespace cinema_management.Views.Admin.ErrorManagement
     /// </summary>
     public partial class ErrorManagement : Page
     {
-
-
         public ErrorManagement()
         {
             InitializeComponent();

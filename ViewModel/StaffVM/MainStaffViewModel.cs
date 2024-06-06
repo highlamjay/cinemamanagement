@@ -1,8 +1,12 @@
 ﻿using cinema_management.DTOs;
+using cinema_management.Models.Services;
 using cinema_management.Utils;
-using cinema_management.ViewModel.AdminVM;
 using cinema_management.Views.Admin;
 using cinema_management.Views.LoginWindow;
+using cinema_management.Views.Staff.MovieScheduleWindow;
+using cinema_management.Views.Staff.OrderFoodWindow;
+using cinema_management.Views.Staff.ShowtimePage;
+using cinema_management.Views.Staff.TroubeWindow;
 using cinema_management.Views;
 using System;
 using System.Collections.Generic;
@@ -14,8 +18,10 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows;
+using cinema_management.ViewModel.StaffVM.OrderFoodWindowVM;
+using cinema_management.ViewModel.StaffVM.MovieScheduleWindowVM;
 
-namespace cinema_management.ViewModel.StaffVM
+namespace cinema_management.ViewModel
 {
     public partial class MainStaffViewModel : BaseViewModel
     {
@@ -127,6 +133,18 @@ namespace cinema_management.ViewModel.StaffVM
         #endregion
         public MainStaffViewModel()
         {
+            SelectedGenreCM = new RelayCommand<object>((p) => { return true; }, async (p) =>
+            {
+                IsLoading = true;
+                await LoadMainListBox(1);
+                IsLoading = false;
+            });
+            SelectedDateCM = new RelayCommand<object>((p) => { return true; }, async (p) =>
+            {
+                IsLoading = true;
+                await LoadMainListBox(0);
+                IsLoading = false;
+            });
             FirstLoadCM = new RelayCommand<object>((p) => { return true; }, async (p) =>
             {
                 if (CurrentStaff.StaffRole == "Quản lý")
@@ -134,6 +152,10 @@ namespace cinema_management.ViewModel.StaffVM
                 else
                     IsAdmin = false;
 
+                LoadCurrentDate();
+                SelectedDate = GetCurrentDate;
+                ListMovie1 = new ObservableCollection<MovieDTO>(await MovieService.Ins.GetShowingMovieByDay(SelectedDate));
+                GenreList = new ObservableCollection<GenreDTO>(GenreService.Ins.GetAllGenre());
             });
             CloseMainStaffWindowCM = new RelayCommand<FrameworkElement>((p) => { return p == null ? false : true; }, (p) =>
             {
@@ -162,7 +184,69 @@ namespace cinema_management.ViewModel.StaffVM
                     w.DragMove();
                 }
             });
-            
+            LoadMovieScheduleWindow = new RelayCommand<Page>((p) => { return true; }, async (p) =>
+            {
+
+                MovieScheduleWindow w;
+                OrderFoodPageViewModel.checkOnlyFoodOfPage = false;
+
+                if (SelectedItem != null)
+                {
+                    try
+                    {
+                        MovieScheduleWindowViewModel.tempFilebinding = SelectedItem;
+                        w = new MovieScheduleWindow();
+
+                        if (w != null)
+                        {
+                            MaskName.Visibility = Visibility.Visible;
+                            if (SelectedItem != null)
+                            {
+                                w._ShowTimeList.ItemsSource = SelectedItem.Showtimes;
+                                w.imgframe.Source = await CloudinaryService.Ins.LoadImageFromURL(SelectedItem.Image);
+                                w._ShowDate.Text = SelectedDate.ToString("dd-MM-yyyy");
+                                w.txtframe.Text = SelectedItem?.DisplayName ?? "";
+                                w.ShowDialog();
+                            }
+                        }
+                    }
+                    catch (System.Data.Entity.Core.EntityException e)
+                    {
+                        MessageBoxCustom mess = new MessageBoxCustom("Lỗi", "Mất kết nối cơ sở dữ liệu", MessageType.Error, MessageButtons.OK);
+                        mess.ShowDialog();
+                    }
+                    catch (Exception e)
+                    {
+                        MessageBoxCustom mess = new MessageBoxCustom("Lỗi", "Lỗi hệ thống", MessageType.Error, MessageButtons.OK);
+                        mess.ShowDialog();
+                    }
+                }
+            });
+            LoadShowtimePageCM = new RelayCommand<Frame>((p) => { return true; }, (p) =>
+            {
+                OrderFoodPageViewModel.checkOnlyFoodOfPage = false;
+                p.Content = new ShowtimePage();
+
+            });
+            LoadFoodPageCM = new RelayCommand<Frame>((p) => { return true; }, (p) =>
+            {
+                if (OrderFoodPageViewModel.ListOrder != null)
+                {
+                    OrderFoodPageViewModel.ListOrder.Clear();
+                }
+                OrderFoodPageViewModel.checkOnlyFoodOfPage = true;
+                p.Content = new FoodPage();
+
+            });
+            LoadShowtimeDataCM = new RelayCommand<ComboBox>((p) => { return true; }, async (p) =>
+            {
+                p.SelectedIndex = -1;
+                await LoadShowtimeData();
+            });
+            LoadErrorPageCM = new RelayCommand<Frame>((p) => { return true; }, (p) =>
+            {
+                p.Content = new TroublePage();
+            });
             SignoutCM = new RelayCommand<Window>((p) => { return true; }, (p) =>
             {
                 p.Hide();

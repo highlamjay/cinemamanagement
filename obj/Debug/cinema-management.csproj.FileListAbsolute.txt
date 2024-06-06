@@ -1,602 +1,370 @@
-E:\học\nmcnpm\cinema-management\cinema-management\bin\Debug\cinema-management.exe.config
-E:\học\nmcnpm\cinema-management\cinema-management\bin\Debug\cinema-management.exe
-E:\học\nmcnpm\cinema-management\cinema-management\bin\Debug\cinema-management.pdb
-E:\học\nmcnpm\cinema-management\cinema-management\bin\Debug\MaterialDesignColors.dll
-E:\học\nmcnpm\cinema-management\cinema-management\bin\Debug\MaterialDesignThemes.Wpf.dll
-E:\học\nmcnpm\cinema-management\cinema-management\bin\Debug\Microsoft.Xaml.Behaviors.dll
-E:\học\nmcnpm\cinema-management\cinema-management\bin\Debug\MaterialDesignColors.pdb
-E:\học\nmcnpm\cinema-management\cinema-management\bin\Debug\MaterialDesignThemes.Wpf.pdb
-E:\học\nmcnpm\cinema-management\cinema-management\bin\Debug\MaterialDesignThemes.Wpf.xml
-E:\học\nmcnpm\cinema-management\cinema-management\bin\Debug\Microsoft.Xaml.Behaviors.pdb
-E:\học\nmcnpm\cinema-management\cinema-management\bin\Debug\Microsoft.Xaml.Behaviors.xml
-E:\học\nmcnpm\cinema-management\cinema-management\obj\Debug\cinema-management.csproj.AssemblyReference.cache
-E:\học\nmcnpm\cinema-management\cinema-management\obj\Debug\MainWindow.g.cs
-E:\học\nmcnpm\cinema-management\cinema-management\obj\Debug\App.g.cs
-E:\học\nmcnpm\cinema-management\cinema-management\obj\Debug\cinema-management_MarkupCompile.cache
-E:\học\nmcnpm\cinema-management\cinema-management\obj\Debug\cinema-management_MarkupCompile.lref
-E:\học\nmcnpm\cinema-management\cinema-management\obj\Debug\MainWindow.baml
-E:\học\nmcnpm\cinema-management\cinema-management\obj\Debug\cinema-management.g.resources
-E:\học\nmcnpm\cinema-management\cinema-management\obj\Debug\cinema_management.Properties.Resources.resources
-E:\học\nmcnpm\cinema-management\cinema-management\obj\Debug\cinema-management.csproj.GenerateResource.cache
-E:\học\nmcnpm\cinema-management\cinema-management\obj\Debug\cinema-management.csproj.CoreCompileInputs.cache
-E:\học\nmcnpm\cinema-management\cinema-management\obj\Debug\cinema-management.csproj.CopyComplete
-E:\học\nmcnpm\cinema-management\cinema-management\obj\Debug\cinema-management.exe
-E:\học\nmcnpm\cinema-management\cinema-management\obj\Debug\cinema-management.pdb
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\cinema-management.csproj.AssemblyReference.cache
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\MainWindow.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\MainAdminWindow.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Staff\MainStaffWindow.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\App.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\cinema-management_MarkupCompile.cache
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\cinema-management_MarkupCompile.lref
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\cinema-management.exe
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\cinema-management.pdb
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\LoginWindow\LoginPage.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\GeneratedInternalTypeHelper.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\LoginWindow\ForgotPasswordPage.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\LoginWindow\LoginWindow.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\LoginWindow\RolePage.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\LoginWindow\ChangePasswordPage.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Staff\MovieScheduleWindow\MovieScheduleWindow.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Staff\TicketBill\TicketBillNoFoodPage.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Staff\TicketBill\TicketBillOnlyFoodPage.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Staff\TicketBill\TicketBillPage.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Staff\TicketWindow\TicketBookingPage.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Staff\TicketWindow\TicketWindow.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Staff\TroubleWindow\TroublePage.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\CustomerManagement\CustomerManagement.baml
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\CustomerManagement\EditCustomer.baml
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\ErrorManagement\DoneError.baml
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\ErrorManagement\InprogressError.baml
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\ErrorManagement\WaitingError.baml
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\FoodManagementPage\AddFoodWindow.baml
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\CustomerManagement\CustomerManagement.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\CustomerManagement\EditCustomer.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\ErrorManagement\DoneError.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\ErrorManagement\ErrorManagement.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\ErrorManagement\InprogressError.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\ErrorManagement\WaitingError.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\FoodManagementPage\AddFoodWindow.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\FoodManagementPage\EditFoodWindow.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\FoodManagementPage\EditFoodWindow.baml
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\FoodManagementPage\FoodPage.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\ShowtimeManagement\ShowtimeManagement.baml
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\StaffManagement\AddStaffWindow.baml
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddInfor.baml
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\FoodManagementPage\ImportFoodWindow.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\Import_ExportManagement\ExportDetail.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\Import_ExportManagement\ExportPage.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\Import_ExportManagement\ImportPage.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\Import_ExportManagement\Import_Export.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\Import_ExportManagement\ProductDetail.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\Import_ExportManagement\TicketDetail.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\MovieManagement\InforMovieWindow.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\MovieManagement\MovieManagement.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\ShowtimeManagement\AddShowtimeWindow.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\ShowtimeManagement\Infor_EditShowtimeWindow.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\ShowtimeManagement\ShowtimeManagement.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\StaffManagement\AddStaffWindow.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\StaffManagement\ChangePasswordWindow.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\StaffManagement\EditStaffWindow.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\StaffManagement\StaffManagementPage.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddInfor.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddListMiniVoucher.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\VoucherManagement\Infor_EditWindow\Edit_InforPage.g.cs
-D:\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\VoucherManagement\VoucherManagement.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\cinema-management.csproj.AssemblyReference.cache
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\cinema-management.csproj.SuggestedBindingRedirects.cache
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\CustomerManagement\CustomerManagement.baml
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\CustomerManagement\EditCustomer.baml
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\ErrorManagement\DoneError.baml
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\ErrorManagement\InprogressError.baml
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\ErrorManagement\WaitingError.baml
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\FoodManagementPage\AddFoodWindow.baml
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\FoodManagementPage\EditFoodWindow.baml
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\ShowtimeManagement\ShowtimeManagement.baml
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\StaffManagement\AddStaffWindow.baml
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddInfor.baml
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\MainWindow.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\CustomerManagement\CustomerManagement.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\CustomerManagement\EditCustomer.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\ErrorManagement\DoneError.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\ErrorManagement\ErrorManagement.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\ErrorManagement\InprogressError.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\ErrorManagement\WaitingError.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\FoodManagementPage\AddFoodWindow.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\FoodManagementPage\EditFoodWindow.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\FoodManagementPage\FoodPage.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\FoodManagementPage\ImportFoodWindow.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\Import_ExportManagement\ExportDetail.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\Import_ExportManagement\ExportPage.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\Import_ExportManagement\ImportPage.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\Import_ExportManagement\Import_Export.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\Import_ExportManagement\ProductDetail.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\Import_ExportManagement\TicketDetail.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\MovieManagement\InforMovieWindow.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\MovieManagement\MovieManagement.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\ShowtimeManagement\AddShowtimeWindow.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\ShowtimeManagement\Infor_EditShowtimeWindow.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\ShowtimeManagement\ShowtimeManagement.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\StaffManagement\AddStaffWindow.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\StaffManagement\ChangePasswordWindow.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\StaffManagement\EditStaffWindow.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\StaffManagement\StaffManagementPage.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddInfor.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddListMiniVoucher.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\VoucherManagement\Infor_EditWindow\Edit_InforPage.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\VoucherManagement\VoucherManagement.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\LoginWindow\ChangePasswordPage.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\LoginWindow\ForgotPasswordPage.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\LoginWindow\LoginPage.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\LoginWindow\LoginWindow.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\LoginWindow\RolePage.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Staff\MainStaffWindow.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Staff\MovieScheduleWindow\MovieScheduleWindow.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Staff\TicketBill\TicketBillNoFoodPage.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Staff\TicketBill\TicketBillOnlyFoodPage.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Staff\TicketBill\TicketBillPage.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Staff\TicketWindow\TicketBookingPage.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Staff\TicketWindow\TicketWindow.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Staff\TroubleWindow\TroublePage.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\App.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\cinema-management_MarkupCompile.cache
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\cinema-management_MarkupCompile.lref
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\cinema-management.exe
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\cinema-management.pdb
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Staff\TroubleWindow\EditError.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddWindow.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Staff\OrderFoodWindow\FoodPage.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Staff\TroubleWindow\AddError.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\VoucherManagement\AddWindow\ReleaseVoucher.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\VoucherManagement\Infor_EditWindow\EditWindow.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\MessageBoxCustom.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Staff\ShowtimePage\ShowtimePage.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Staff\TroubleWindow\ViewError.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\StatisticalManagement\StatisticalManagement.baml
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\StatisticalManagement\StatisticalManagement.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddMiniVoucher.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\MainAdminWindow.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\MovieManagement\AddMovieWindow.g.cs
-C:\Users\Nguyen\Downloads\Đồ án NM CNPM\Đồ án NM CNPM\cinema-management\obj\Debug\Views\Admin\MovieManagement\EditMovie.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\cinema-management.csproj.AssemblyReference.cache
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\cinema-management.csproj.SuggestedBindingRedirects.cache
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\cinema-management.exe
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\cinema-management.pdb
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\CustomerManagement\CustomerManagement.baml
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\CustomerManagement\EditCustomer.baml
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\ErrorManagement\DoneError.baml
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\ErrorManagement\InprogressError.baml
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\ErrorManagement\WaitingError.baml
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\FoodManagementPage\AddFoodWindow.baml
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\FoodManagementPage\EditFoodWindow.baml
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\ShowtimeManagement\ShowtimeManagement.baml
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\StaffManagement\AddStaffWindow.baml
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddInfor.baml
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\MainWindow.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\CustomerManagement\CustomerManagement.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\CustomerManagement\EditCustomer.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\ErrorManagement\DoneError.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\ErrorManagement\InprogressError.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\ErrorManagement\WaitingError.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\FoodManagementPage\AddFoodWindow.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\FoodManagementPage\EditFoodWindow.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\FoodManagementPage\FoodPage.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\FoodManagementPage\ImportFoodWindow.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\Import_ExportManagement\ExportDetail.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\Import_ExportManagement\ExportPage.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\Import_ExportManagement\ImportPage.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\Import_ExportManagement\Import_Export.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\Import_ExportManagement\ProductDetail.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\Import_ExportManagement\TicketDetail.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\MainAdminWindow.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\MovieManagement\AddMovieWindow.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\MovieManagement\EditMovie.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\MovieManagement\InforMovieWindow.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\MovieManagement\MovieManagement.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\ShowtimeManagement\AddShowtimeWindow.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\ShowtimeManagement\Infor_EditShowtimeWindow.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\ShowtimeManagement\ShowtimeManagement.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\StaffManagement\AddStaffWindow.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\StaffManagement\ChangePasswordWindow.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\StaffManagement\EditStaffWindow.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\StaffManagement\StaffManagementPage.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddInfor.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddListMiniVoucher.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddMiniVoucher.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddWindow.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\VoucherManagement\AddWindow\ReleaseVoucher.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\VoucherManagement\Infor_EditWindow\EditWindow.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\VoucherManagement\Infor_EditWindow\Edit_InforPage.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Admin\VoucherManagement\VoucherManagement.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\LoginWindow\ChangePasswordPage.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\LoginWindow\ForgotPasswordPage.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\LoginWindow\LoginPage.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\LoginWindow\LoginWindow.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\LoginWindow\RolePage.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\MessageBoxCustom.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Staff\MainStaffWindow.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Staff\MovieScheduleWindow\MovieScheduleWindow.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Staff\OrderFoodWindow\FoodPage.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Staff\ShowtimePage\ShowtimePage.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Staff\TicketBill\TicketBillNoFoodPage.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Staff\TicketBill\TicketBillOnlyFoodPage.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Staff\TicketBill\TicketBillPage.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Staff\TicketWindow\TicketBookingPage.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Staff\TicketWindow\TicketWindow.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Staff\TroubleWindow\AddError.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Staff\TroubleWindow\EditError.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Staff\TroubleWindow\TroublePage.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\Views\Staff\TroubleWindow\ViewError.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\App.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\cinema-management_MarkupCompile.cache
-C:\Users\Nguyen\source\repos\cinema-management\obj\Debug\cinema-management_MarkupCompile.lref
-D:\cinema-management\obj\Debug\cinema-management.csproj.AssemblyReference.cache
-D:\cinema-management\obj\Debug\cinema-management.csproj.SuggestedBindingRedirects.cache
-D:\cinema-management\obj\Debug\cinema-management.exe.config
-D:\cinema-management\obj\Debug\Resources\Scrollbar\Scrollbar.baml
-D:\cinema-management\obj\Debug\Views\Admin\CustomerManagement\CustomerManagement.baml
-D:\cinema-management\obj\Debug\Views\Admin\CustomerManagement\EditCustomer.baml
-D:\cinema-management\obj\Debug\Views\Admin\MainAdminWindow.baml
-D:\cinema-management\obj\Debug\Views\Admin\ShowtimeManagement\Infor_EditShowtimeWindow.baml
-D:\cinema-management\obj\Debug\Views\Admin\ShowtimeManagement\ShowtimeManagement.baml
-D:\cinema-management\obj\Debug\Views\Admin\StaffManagement\AddStaffWindow.baml
-D:\cinema-management\obj\Debug\MainWindow.g.cs
-D:\cinema-management\obj\Debug\Views\Admin\CustomerManagement\CustomerManagement.g.cs
-D:\cinema-management\obj\Debug\Views\Admin\CustomerManagement\EditCustomer.g.cs
-D:\cinema-management\obj\Debug\Views\Admin\MainAdminWindow.g.cs
-D:\cinema-management\obj\Debug\Views\Admin\MovieManagement\AddMovieWindow.g.cs
-D:\cinema-management\obj\Debug\Views\Admin\MovieManagement\EditMovie.g.cs
-D:\cinema-management\obj\Debug\Views\Admin\MovieManagement\InforMovieWindow.g.cs
-D:\cinema-management\obj\Debug\Views\Admin\MovieManagement\MovieManagement.g.cs
-D:\cinema-management\obj\Debug\Views\Admin\ShowtimeManagement\AddShowtimeWindow.g.cs
-D:\cinema-management\obj\Debug\Views\Admin\ShowtimeManagement\Infor_EditShowtimeWindow.g.cs
-D:\cinema-management\obj\Debug\Views\Admin\ShowtimeManagement\ShowtimeManagement.g.cs
-D:\cinema-management\obj\Debug\Views\Admin\StaffManagement\AddStaffWindow.g.cs
-D:\cinema-management\obj\Debug\Views\Admin\StaffManagement\ChangePasswordWindow.g.cs
-D:\cinema-management\obj\Debug\Views\Admin\StaffManagement\EditStaffWindow.g.cs
-D:\cinema-management\obj\Debug\Views\Admin\StaffManagement\StaffManagementPage.g.cs
-D:\cinema-management\obj\Debug\Views\LoginWindow\ChangePasswordPage.g.cs
-D:\cinema-management\obj\Debug\Views\LoginWindow\ForgotPasswordPage.g.cs
-D:\cinema-management\obj\Debug\Views\LoginWindow\LoginPage.g.cs
-D:\cinema-management\obj\Debug\Views\LoginWindow\LoginWindow.g.cs
-D:\cinema-management\obj\Debug\Views\LoginWindow\RolePage.g.cs
-D:\cinema-management\obj\Debug\Views\MessageBoxCustom.g.cs
-D:\cinema-management\obj\Debug\App.g.cs
-D:\cinema-management\obj\Debug\cinema-management_Content.g.cs
-D:\cinema-management\obj\Debug\GeneratedInternalTypeHelper.g.cs
-D:\cinema-management\obj\Debug\cinema-management_MarkupCompile.cache
-D:\cinema-management\obj\Debug\cinema-management_MarkupCompile.lref
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\cinema-management.csproj.AssemblyReference.cache
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\cinema-management.csproj.SuggestedBindingRedirects.cache
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\cinema-management.exe.config
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Resources\Scrollbar\Scrollbar.baml
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\Admin\CustomerManagement\CustomerManagement.baml
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\Admin\CustomerManagement\EditCustomer.baml
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\Admin\MainAdminWindow.baml
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\Infor_EditShowtimeWindow.baml
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\ShowtimeManagement.baml
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\AddStaffWindow.baml
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\Admin\CustomerManagement\CustomerManagement.g.cs
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\Admin\CustomerManagement\EditCustomer.g.cs
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\Admin\MainAdminWindow.g.cs
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\Admin\MovieManagement\AddMovieWindow.g.cs
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\Admin\MovieManagement\EditMovie.g.cs
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\Admin\MovieManagement\InforMovieWindow.g.cs
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\Admin\MovieManagement\MovieManagement.g.cs
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\AddShowtimeWindow.g.cs
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\Infor_EditShowtimeWindow.g.cs
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\ShowtimeManagement.g.cs
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\AddStaffWindow.g.cs
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\ChangePasswordWindow.g.cs
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\EditStaffWindow.g.cs
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\StaffManagementPage.g.cs
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\LoginWindow\ChangePasswordPage.g.cs
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\LoginWindow\ForgotPasswordPage.g.cs
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\LoginWindow\LoginPage.g.cs
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\LoginWindow\LoginWindow.g.cs
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\LoginWindow\RolePage.g.cs
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\Views\MessageBoxCustom.g.cs
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\App.g.cs
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\cinema-management_Content.g.cs
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\cinema-management_MarkupCompile.cache
-C:\Users\Nguyen\source\repos\cinemamanagement\obj\Debug\cinema-management_MarkupCompile.lref
-D:\test\cinemamanagement\obj\Debug\cinema-management.csproj.AssemblyReference.cache
-D:\test\cinemamanagement\obj\Debug\Resources\Scrollbar\Scrollbar.baml
-D:\test\cinemamanagement\obj\Debug\Views\Admin\CustomerManagement\CustomerManagement.baml
-D:\test\cinemamanagement\obj\Debug\Views\Admin\CustomerManagement\EditCustomer.baml
-D:\test\cinemamanagement\obj\Debug\Views\Admin\MainAdminWindow.baml
-D:\test\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\Infor_EditShowtimeWindow.baml
-D:\test\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\ShowtimeManagement.baml
-D:\test\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\AddStaffWindow.baml
-D:\test\cinemamanagement\obj\Debug\Views\Admin\CustomerManagement\CustomerManagement.g.cs
-D:\test\cinemamanagement\obj\Debug\Views\Admin\CustomerManagement\EditCustomer.g.cs
-D:\test\cinemamanagement\obj\Debug\Views\Admin\MainAdminWindow.g.cs
-D:\test\cinemamanagement\obj\Debug\Views\Admin\MovieManagement\AddMovieWindow.g.cs
-D:\test\cinemamanagement\obj\Debug\Views\Admin\MovieManagement\EditMovie.g.cs
-D:\test\cinemamanagement\obj\Debug\Views\Admin\MovieManagement\InforMovieWindow.g.cs
-D:\test\cinemamanagement\obj\Debug\Views\Admin\MovieManagement\MovieManagement.g.cs
-D:\test\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\AddShowtimeWindow.g.cs
-D:\test\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\Infor_EditShowtimeWindow.g.cs
-D:\test\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\ShowtimeManagement.g.cs
-D:\test\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\AddStaffWindow.g.cs
-D:\test\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\ChangePasswordWindow.g.cs
-D:\test\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\EditStaffWindow.g.cs
-D:\test\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\StaffManagementPage.g.cs
-D:\test\cinemamanagement\obj\Debug\Views\LoginWindow\ChangePasswordPage.g.cs
-D:\test\cinemamanagement\obj\Debug\Views\LoginWindow\ForgotPasswordPage.g.cs
-D:\test\cinemamanagement\obj\Debug\Views\LoginWindow\LoginPage.g.cs
-D:\test\cinemamanagement\obj\Debug\Views\LoginWindow\LoginWindow.g.cs
-D:\test\cinemamanagement\obj\Debug\Views\LoginWindow\RolePage.g.cs
-D:\test\cinemamanagement\obj\Debug\Views\MessageBoxCustom.g.cs
-D:\test\cinemamanagement\obj\Debug\App.g.cs
-D:\test\cinemamanagement\obj\Debug\cinema-management_Content.g.cs
-D:\test\cinemamanagement\obj\Debug\GeneratedInternalTypeHelper.g.cs
-D:\test\cinemamanagement\obj\Debug\cinema-management_MarkupCompile.cache
-D:\test\cinemamanagement\obj\Debug\cinema-management_MarkupCompile.lref
-D:\test\cinemamanagement\obj\Debug\App.baml
-D:\test\cinemamanagement\obj\Debug\Views\Admin\MovieManagement\AddMovieWindow.baml
-D:\test\cinemamanagement\obj\Debug\Views\Admin\MovieManagement\EditMovie.baml
-D:\test\cinemamanagement\obj\Debug\Views\Admin\MovieManagement\InforMovieWindow.baml
-D:\test\cinemamanagement\obj\Debug\Views\Admin\MovieManagement\MovieManagement.baml
-D:\test\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\AddShowtimeWindow.baml
-D:\test\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\ChangePasswordWindow.baml
-D:\test\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\EditStaffWindow.baml
-D:\test\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\StaffManagementPage.baml
-D:\test\cinemamanagement\obj\Debug\Views\LoginWindow\ChangePasswordPage.baml
-D:\test\cinemamanagement\obj\Debug\Views\LoginWindow\ForgotPasswordPage.baml
-D:\test\cinemamanagement\obj\Debug\Views\LoginWindow\LoginPage.baml
-D:\test\cinemamanagement\obj\Debug\Views\LoginWindow\LoginWindow.baml
-D:\test\cinemamanagement\obj\Debug\Views\LoginWindow\RolePage.baml
-D:\test\cinemamanagement\obj\Debug\Views\MessageBoxCustom.baml
-D:\test\cinemamanagement\obj\Debug\cinema-management.exe
-D:\test\cinemamanagement\obj\Debug\cinema-management.pdb
-D:\test\cinemamanagement\bin\Debug\cinema-management.exe.config
-D:\test\cinemamanagement\bin\Debug\cinema-management.exe
-D:\test\cinemamanagement\bin\Debug\cinema-management.pdb
-D:\test\cinemamanagement\bin\Debug\CloudinaryDotNet.dll
-D:\test\cinemamanagement\bin\Debug\EntityFramework.dll
-D:\test\cinemamanagement\bin\Debug\EntityFramework.SqlServer.dll
-D:\test\cinemamanagement\bin\Debug\MaterialDesignColors.dll
-D:\test\cinemamanagement\bin\Debug\MaterialDesignThemes.Wpf.dll
-D:\test\cinemamanagement\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
-D:\test\cinemamanagement\bin\Debug\Microsoft.Data.Tools.Components.dll
-D:\test\cinemamanagement\bin\Debug\Microsoft.Data.Tools.Schema.Sql.UnitTesting.dll
-D:\test\cinemamanagement\bin\Debug\Microsoft.Data.Tools.Schema.Sql.UnitTestingAdapter.dll
-D:\test\cinemamanagement\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
-D:\test\cinemamanagement\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
-D:\test\cinemamanagement\bin\Debug\Microsoft.IdentityModel.Logging.dll
-D:\test\cinemamanagement\bin\Debug\Microsoft.IdentityModel.Tokens.dll
-D:\test\cinemamanagement\bin\Debug\Microsoft.TeamFoundation.Common.dll
-D:\test\cinemamanagement\bin\Debug\Microsoft.VisualStudio.Services.Common.dll
-D:\test\cinemamanagement\bin\Debug\Microsoft.VisualStudio.Services.WebApi.dll
-D:\test\cinemamanagement\bin\Debug\Microsoft.Xaml.Behaviors.dll
-D:\test\cinemamanagement\bin\Debug\Newtonsoft.Json.dll
-D:\test\cinemamanagement\bin\Debug\System.Buffers.dll
-D:\test\cinemamanagement\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
-D:\test\cinemamanagement\bin\Debug\System.Memory.dll
-D:\test\cinemamanagement\bin\Debug\System.Net.Http.Formatting.dll
-D:\test\cinemamanagement\bin\Debug\System.Numerics.Vectors.dll
-D:\test\cinemamanagement\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-D:\test\cinemamanagement\bin\Debug\System.Text.Encodings.Web.dll
-D:\test\cinemamanagement\bin\Debug\System.Text.Json.dll
-D:\test\cinemamanagement\bin\Debug\System.Threading.Tasks.Extensions.dll
-D:\test\cinemamanagement\bin\Debug\System.ValueTuple.dll
-D:\test\cinemamanagement\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-D:\test\cinemamanagement\bin\Debug\CloudinaryDotNet.xml
-D:\test\cinemamanagement\bin\Debug\EntityFramework.xml
-D:\test\cinemamanagement\bin\Debug\EntityFramework.SqlServer.xml
-D:\test\cinemamanagement\bin\Debug\MaterialDesignColors.pdb
-D:\test\cinemamanagement\bin\Debug\MaterialDesignThemes.Wpf.pdb
-D:\test\cinemamanagement\bin\Debug\MaterialDesignThemes.Wpf.xml
-D:\test\cinemamanagement\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
-D:\test\cinemamanagement\bin\Debug\Microsoft.IdentityModel.Abstractions.xml
-D:\test\cinemamanagement\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
-D:\test\cinemamanagement\bin\Debug\Microsoft.IdentityModel.Logging.xml
-D:\test\cinemamanagement\bin\Debug\Microsoft.IdentityModel.Tokens.xml
-D:\test\cinemamanagement\bin\Debug\Microsoft.TeamFoundation.Common.xml
-D:\test\cinemamanagement\bin\Debug\Microsoft.VisualStudio.Services.Common.xml
-D:\test\cinemamanagement\bin\Debug\Microsoft.VisualStudio.Services.WebApi.xml
-D:\test\cinemamanagement\bin\Debug\Microsoft.Xaml.Behaviors.pdb
-D:\test\cinemamanagement\bin\Debug\Microsoft.Xaml.Behaviors.xml
-D:\test\cinemamanagement\bin\Debug\Newtonsoft.Json.xml
-D:\test\cinemamanagement\bin\Debug\System.Buffers.xml
-D:\test\cinemamanagement\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
-D:\test\cinemamanagement\bin\Debug\System.Memory.xml
-D:\test\cinemamanagement\bin\Debug\System.Net.Http.Formatting.xml
-D:\test\cinemamanagement\bin\Debug\System.Numerics.Vectors.xml
-D:\test\cinemamanagement\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-D:\test\cinemamanagement\bin\Debug\System.Text.Encodings.Web.xml
-D:\test\cinemamanagement\bin\Debug\System.Text.Json.xml
-D:\test\cinemamanagement\bin\Debug\System.Threading.Tasks.Extensions.xml
-D:\test\cinemamanagement\bin\Debug\System.ValueTuple.xml
-D:\test\cinemamanagement\bin\Debug\cs\Microsoft.TeamFoundation.Common.resources.dll
-D:\test\cinemamanagement\bin\Debug\de\Microsoft.TeamFoundation.Common.resources.dll
-D:\test\cinemamanagement\bin\Debug\es\Microsoft.TeamFoundation.Common.resources.dll
-D:\test\cinemamanagement\bin\Debug\fr\Microsoft.TeamFoundation.Common.resources.dll
-D:\test\cinemamanagement\bin\Debug\it\Microsoft.TeamFoundation.Common.resources.dll
-D:\test\cinemamanagement\bin\Debug\ja\Microsoft.TeamFoundation.Common.resources.dll
-D:\test\cinemamanagement\bin\Debug\ko\Microsoft.TeamFoundation.Common.resources.dll
-D:\test\cinemamanagement\bin\Debug\pl\Microsoft.TeamFoundation.Common.resources.dll
-D:\test\cinemamanagement\bin\Debug\pt-BR\Microsoft.TeamFoundation.Common.resources.dll
-D:\test\cinemamanagement\bin\Debug\ru\Microsoft.TeamFoundation.Common.resources.dll
-D:\test\cinemamanagement\bin\Debug\tr\Microsoft.TeamFoundation.Common.resources.dll
-D:\test\cinemamanagement\bin\Debug\zh-Hans\Microsoft.TeamFoundation.Common.resources.dll
-D:\test\cinemamanagement\bin\Debug\zh-Hant\Microsoft.TeamFoundation.Common.resources.dll
-D:\test\cinemamanagement\bin\Debug\cs\Microsoft.VisualStudio.Services.Common.resources.dll
-D:\test\cinemamanagement\bin\Debug\de\Microsoft.VisualStudio.Services.Common.resources.dll
-D:\test\cinemamanagement\bin\Debug\es\Microsoft.VisualStudio.Services.Common.resources.dll
-D:\test\cinemamanagement\bin\Debug\fr\Microsoft.VisualStudio.Services.Common.resources.dll
-D:\test\cinemamanagement\bin\Debug\it\Microsoft.VisualStudio.Services.Common.resources.dll
-D:\test\cinemamanagement\bin\Debug\ja\Microsoft.VisualStudio.Services.Common.resources.dll
-D:\test\cinemamanagement\bin\Debug\ko\Microsoft.VisualStudio.Services.Common.resources.dll
-D:\test\cinemamanagement\bin\Debug\pl\Microsoft.VisualStudio.Services.Common.resources.dll
-D:\test\cinemamanagement\bin\Debug\pt-BR\Microsoft.VisualStudio.Services.Common.resources.dll
-D:\test\cinemamanagement\bin\Debug\ru\Microsoft.VisualStudio.Services.Common.resources.dll
-D:\test\cinemamanagement\bin\Debug\tr\Microsoft.VisualStudio.Services.Common.resources.dll
-D:\test\cinemamanagement\bin\Debug\zh-Hans\Microsoft.VisualStudio.Services.Common.resources.dll
-D:\test\cinemamanagement\bin\Debug\zh-Hant\Microsoft.VisualStudio.Services.Common.resources.dll
-D:\test\cinemamanagement\bin\Debug\cs\Microsoft.VisualStudio.Services.WebApi.resources.dll
-D:\test\cinemamanagement\bin\Debug\de\Microsoft.VisualStudio.Services.WebApi.resources.dll
-D:\test\cinemamanagement\bin\Debug\es\Microsoft.VisualStudio.Services.WebApi.resources.dll
-D:\test\cinemamanagement\bin\Debug\fr\Microsoft.VisualStudio.Services.WebApi.resources.dll
-D:\test\cinemamanagement\bin\Debug\it\Microsoft.VisualStudio.Services.WebApi.resources.dll
-D:\test\cinemamanagement\bin\Debug\ja\Microsoft.VisualStudio.Services.WebApi.resources.dll
-D:\test\cinemamanagement\bin\Debug\ko\Microsoft.VisualStudio.Services.WebApi.resources.dll
-D:\test\cinemamanagement\bin\Debug\pl\Microsoft.VisualStudio.Services.WebApi.resources.dll
-D:\test\cinemamanagement\bin\Debug\pt-BR\Microsoft.VisualStudio.Services.WebApi.resources.dll
-D:\test\cinemamanagement\bin\Debug\ru\Microsoft.VisualStudio.Services.WebApi.resources.dll
-D:\test\cinemamanagement\bin\Debug\tr\Microsoft.VisualStudio.Services.WebApi.resources.dll
-D:\test\cinemamanagement\bin\Debug\zh-Hans\Microsoft.VisualStudio.Services.WebApi.resources.dll
-D:\test\cinemamanagement\bin\Debug\zh-Hant\Microsoft.VisualStudio.Services.WebApi.resources.dll
-D:\test\cinemamanagement\obj\Debug\ResourceXAML\MainResource.baml
-D:\test\cinemamanagement\obj\Debug\cinema-management.g.resources
-D:\test\cinemamanagement\obj\Debug\cinema_management.Properties.Resources.resources
-D:\test\cinemamanagement\obj\Debug\cinema-management.csproj.GenerateResource.cache
-D:\test\cinemamanagement\obj\Debug\cinema-management.csproj.CoreCompileInputs.cache
-D:\test\cinemamanagement\obj\Debug\cinema-m.8A93E643.Up2Date
-D:\test\cinemamanagement\obj\Debug\Interop.Accessibility.dll
-D:\test\cinemamanagement\obj\Debug\cinema-management.csproj.ResolveComReference.cache
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\cinema-management.csproj.AssemblyReference.cache
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\Resources\Scrollbar\Scrollbar.baml
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\Views\Admin\MainAdminWindow.baml
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\Views\Admin\MovieManagement\AddMovieWindow.baml
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\Views\Admin\MovieManagement\EditMovie.baml
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\Views\Admin\MovieManagement\InforMovieWindow.baml
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\Views\Admin\MovieManagement\MovieManagement.baml
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\Views\Admin\MainAdminWindow.g.cs
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\Views\Admin\MovieManagement\AddMovieWindow.g.cs
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\Views\Admin\MovieManagement\EditMovie.g.cs
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\Views\Admin\MovieManagement\InforMovieWindow.g.cs
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\Views\Admin\MovieManagement\MovieManagement.g.cs
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\Views\LoginWindow\ChangePasswordPage.g.cs
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\Views\LoginWindow\ForgotPasswordPage.g.cs
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\Views\LoginWindow\LoginPage.g.cs
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\Views\LoginWindow\LoginWindow.g.cs
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\Views\LoginWindow\RolePage.g.cs
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\Views\MessageBoxCustom.g.cs
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\App.g.cs
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\cinema-management_Content.g.cs
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\cinema-management_MarkupCompile.cache
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\cinema-management_MarkupCompile.lref
+C:\Users\minhk\source\repos\cinemamanagement2\bin\Debug\cinema-management.exe.config
+C:\Users\minhk\source\repos\cinemamanagement2\bin\Debug\cinema-management.exe
+C:\Users\minhk\source\repos\cinemamanagement2\bin\Debug\cinema-management.pdb
+C:\Users\minhk\source\repos\cinemamanagement2\bin\Debug\CloudinaryDotNet.dll
+C:\Users\minhk\source\repos\cinemamanagement2\bin\Debug\EntityFramework.dll
+C:\Users\minhk\source\repos\cinemamanagement2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\minhk\source\repos\cinemamanagement2\bin\Debug\MaterialDesignColors.dll
+C:\Users\minhk\source\repos\cinemamanagement2\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\minhk\source\repos\cinemamanagement2\bin\Debug\Microsoft.Data.Tools.Components.dll
+C:\Users\minhk\source\repos\cinemamanagement2\bin\Debug\Microsoft.Data.Tools.Schema.Sql.UnitTesting.dll
+C:\Users\minhk\source\repos\cinemamanagement2\bin\Debug\Microsoft.Data.Tools.Schema.Sql.UnitTestingAdapter.dll
+C:\Users\minhk\source\repos\cinemamanagement2\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\minhk\source\repos\cinemamanagement2\bin\Debug\Newtonsoft.Json.dll
+C:\Users\minhk\source\repos\cinemamanagement2\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\minhk\source\repos\cinemamanagement2\bin\Debug\CloudinaryDotNet.xml
+C:\Users\minhk\source\repos\cinemamanagement2\bin\Debug\EntityFramework.xml
+C:\Users\minhk\source\repos\cinemamanagement2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\minhk\source\repos\cinemamanagement2\bin\Debug\MaterialDesignColors.pdb
+C:\Users\minhk\source\repos\cinemamanagement2\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\minhk\source\repos\cinemamanagement2\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\minhk\source\repos\cinemamanagement2\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\minhk\source\repos\cinemamanagement2\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\minhk\source\repos\cinemamanagement2\bin\Debug\Newtonsoft.Json.xml
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\App.baml
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\ResourceXAML\MainResource.baml
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\Views\LoginWindow\ChangePasswordPage.baml
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\Views\LoginWindow\ForgotPasswordPage.baml
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\Views\LoginWindow\LoginPage.baml
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\Views\LoginWindow\LoginWindow.baml
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\Views\LoginWindow\RolePage.baml
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\Views\MessageBoxCustom.baml
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\cinema-management.g.resources
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\cinema_management.Properties.Resources.resources
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\cinema-management.csproj.GenerateResource.cache
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\cinema-management.csproj.CoreCompileInputs.cache
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\cinema-management.csproj.CopyComplete
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\cinema-management.exe
+C:\Users\minhk\source\repos\cinemamanagement2\obj\Debug\cinema-management.pdb
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\cinema-management.exe.config
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\cinema-management.exe
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\cinema-management.pdb
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\CloudinaryDotNet.dll
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\EntityFramework.dll
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\EntityFramework.SqlServer.dll
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\MaterialDesignColors.dll
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\Microsoft.Data.Tools.Components.dll
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\Microsoft.Data.Tools.Schema.Sql.UnitTesting.dll
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\Microsoft.Data.Tools.Schema.Sql.UnitTestingAdapter.dll
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\Microsoft.Xaml.Behaviors.dll
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\Newtonsoft.Json.dll
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\CloudinaryDotNet.xml
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\EntityFramework.xml
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\EntityFramework.SqlServer.xml
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\MaterialDesignColors.pdb
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\Microsoft.Xaml.Behaviors.xml
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\Newtonsoft.Json.xml
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\cinema-management.csproj.AssemblyReference.cache
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Interop.Accessibility.dll
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\cinema-management.csproj.ResolveComReference.cache
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Resources\Scrollbar\Scrollbar.baml
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\CustomerManagement\CustomerManagement.baml
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\CustomerManagement\EditCustomer.baml
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\DoneError.baml
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\ProcessingError.baml
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\WaitingError.baml
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\MainAdminWindow.baml
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\AddStaffWindow.baml
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\ChangePasswordWindow.baml
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\EditStaffWindow.baml
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\StaffManagementPage.baml
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddInfor.baml
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddListMiniVoucher.baml
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddMiniVoucher.baml
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddWindow.baml
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\ReleaseVoucher.baml
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\Infor_EditWindow\Edit_Infor.baml
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\Infor_EditWindow\Infor_Edit.baml
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\VoucherManagement.baml
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\CustomerManagement\CustomerManagement.g.cs
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\CustomerManagement\EditCustomer.g.cs
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\DoneError.g.cs
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\ErrorManagement.g.cs
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\ProcessingError.g.cs
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\WaitingError.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\MovieManagement\AddMovieWindow.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\MovieManagement\EditMovie.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\MovieManagement\InforMovieWindow.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\MovieManagement\MovieManagement.baml
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\MainAdminWindow.g.cs
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\AddStaffWindow.g.cs
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\ChangePasswordWindow.g.cs
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\EditStaffWindow.g.cs
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\StaffManagementPage.g.cs
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddInfor.g.cs
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddListMiniVoucher.g.cs
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddMiniVoucher.g.cs
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddVoucher.g.cs
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddWindow.g.cs
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\ReleaseVoucher.g.cs
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\Infor_EditWindow\Edit_Infor.g.cs
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\Infor_EditWindow\Infor_Edit.g.cs
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\VoucherManagement.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\MovieManagement\AddMovieWindow.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\MovieManagement\EditMovie.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\MovieManagement\InforMovieWindow.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\MovieManagement\MovieManagement.g.cs
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\LoginWindow\ChangePasswordPage.g.cs
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\LoginWindow\ForgotPasswordPage.g.cs
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\LoginWindow\LoginPage.g.cs
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\LoginWindow\LoginWindow.g.cs
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\LoginWindow\RolePage.g.cs
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\MessageBoxCustom.g.cs
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\MainStaffWindow.g.cs
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\App.g.cs
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\cinema-management_Content.g.cs
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\GeneratedInternalTypeHelper.g.cs
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\cinema-management_MarkupCompile.cache
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\cinema-management_MarkupCompile.lref
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\cinema-management.exe
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\cinema-management.pdb
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\MovieManangement\AddMovie.g.cs
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\MovieManangement\EditMovie.g.cs
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\MovieManangement\InforMovie.g.cs
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\MovieManangement\MovieManagement.g.cs
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\cinema-management.exe.config
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\cinema-management.exe
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\cinema-management.pdb
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\BouncyCastle.Cryptography.dll
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\CloudinaryDotNet.dll
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\EntityFramework.dll
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\EntityFramework.SqlServer.dll
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\Google.Protobuf.dll
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\K4os.Compression.LZ4.dll
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\K4os.Compression.LZ4.Streams.dll
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\K4os.Hash.xxHash.dll
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\LiveCharts.dll
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\LiveCharts.Wpf.dll
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\MaterialDesignColors.dll
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\MaterialDesignThemes.Wpf.dll
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\Microsoft.Data.Tools.Components.dll
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\Microsoft.Data.Tools.Schema.Sql.UnitTesting.dll
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\Microsoft.Data.Tools.Schema.Sql.UnitTestingAdapter.dll
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\Microsoft.Xaml.Behaviors.dll
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\MySql.Data.dll
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\Newtonsoft.Json.dll
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\System.Buffers.dll
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\System.Configuration.ConfigurationManager.dll
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\System.Diagnostics.DiagnosticSource.dll
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\System.IO.Pipelines.dll
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\System.Memory.dll
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\ZstdSharp.dll
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\System.Threading.Tasks.Extensions.dll
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\System.Numerics.Vectors.dll
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\Microsoft.Data.SqlClient.dll
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\Microsoft.Identity.Client.dll
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\Microsoft.IdentityModel.Protocols.dll
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\System.ValueTuple.dll
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\BouncyCastle.Cryptography.xml
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\CloudinaryDotNet.xml
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\EntityFramework.xml
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\EntityFramework.SqlServer.xml
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\Google.Protobuf.pdb
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\Google.Protobuf.xml
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\K4os.Compression.LZ4.xml
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\K4os.Compression.LZ4.Streams.xml
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\K4os.Hash.xxHash.xml
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\LiveCharts.xml
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\MaterialDesignColors.pdb
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\MaterialDesignThemes.Wpf.pdb
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\MaterialDesignThemes.Wpf.xml
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\Microsoft.Xaml.Behaviors.pdb
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\Microsoft.Xaml.Behaviors.xml
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\MySql.Data.xml
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\Newtonsoft.Json.xml
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\System.Buffers.xml
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\System.Diagnostics.DiagnosticSource.xml
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\System.IO.Pipelines.xml
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\System.Memory.xml
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\System.ValueTuple.xml
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\App.baml
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\ResourceXAML\MainResource.baml
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\ErrorManagement.baml
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\MovieManangement\AddMovie.baml
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\MovieManangement\EditMovie.baml
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\MovieManangement\InforMovie.baml
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\MovieManangement\MovieManagement.baml
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddVoucher.baml
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\LoginWindow\ChangePasswordPage.baml
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\LoginWindow\ForgotPasswordPage.baml
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\LoginWindow\LoginPage.baml
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\LoginWindow\LoginWindow.baml
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\LoginWindow\RolePage.baml
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\MessageBoxCustom.baml
-D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\MainStaffWindow.baml
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\cinema-management.g.resources
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\cinema_management.Properties.Resources.resources
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\cinema-management.csproj.GenerateResource.cache
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\cinema-management.csproj.CoreCompileInputs.cache
 D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\cinema-m.8A93E643.Up2Date
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\cinema-management.exe
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\cinema-management.pdb
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\CustomerManagement\CustomerManagement.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\CustomerManagement\EditCustomer.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\CustomerManagement\CustomerManagement.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\CustomerManagement\EditCustomer.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\AddStaffWindow.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\ChangePasswordWindow.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\EditStaffWindow.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\StaffManagement.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\AddStaffWindow.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\ChangePasswordWindow.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\EditStaffWindow.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\StaffManagement.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ProductManagement\AddProduct.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ProductManagement\EditProduct.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ProductManagement\ImportProduct.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ProductManagement\ProductManagement.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Interop.Accessibility.dll
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\cinema-management.csproj.ResolveComReference.cache
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ProductManagement\AddProduct.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ProductManagement\EditProduct.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ProductManagement\ImportProduct.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ProductManagement\ProductManagement.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\AddShowtime.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\Infor_EditShowtime.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\ShowtimeManagement.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\AddShowtime.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\Infor_EditShowtime.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\ShowtimeManagement.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\DoneError.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\ErrorManagement.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\InprogressError.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\WaitingError.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\DoneError.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\ErrorManagement.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\InprogressError.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\WaitingError.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\ExportDetail.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\ExportManagement.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\ImportManagement.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\Import_ExportManagement.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\ProductDetail.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\TicketDetail.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\ExportDetail.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\ExportManagement.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\ImportManagement.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\Import_ExportManagement.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\ProductDetail.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\TicketDetail.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StatisticalManagement\BestSellingStatistical.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StatisticalManagement\IncomeStatistical.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StatisticalManagement\RankingStatistical.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StatisticalManagement\StatisticalManagement.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StatisticalManagement\IncomeStatistical.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StatisticalManagement\StatisticalManagement.baml
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\LiveCharts.dll
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\LiveCharts.Wpf.dll
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\LiveCharts.pdb
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\LiveCharts.xml
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\LiveCharts.Wpf.pdb
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\LiveCharts.Wpf.xml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StatisticalManagement\BestSellingStatistical.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\StatisticalManagement\RankingStatistical.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddInfor.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddListMiniVoucher.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddMiniVoucher.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddVoucher.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddWindow.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\ReleaseVoucher.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\Infor_EditWindow\Edit_InforPage.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\Infor_EditWindow\Infor_EditWindow.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\VoucherManagement.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddInfor.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddListMiniVoucher.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddMiniVoucher.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddVoucher.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddWindow.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\ReleaseVoucher.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\Infor_EditWindow\Edit_InforPage.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\Infor_EditWindow\Infor_EditWindow.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\VoucherManagement.baml
+C:\Users\Nguyen\Moi\cinemamanagement\bin\Debug\cinema-management.exe.config
+C:\Users\Nguyen\Moi\cinemamanagement\bin\Debug\cinema-management.exe
+C:\Users\Nguyen\Moi\cinemamanagement\bin\Debug\cinema-management.pdb
+C:\Users\Nguyen\Moi\cinemamanagement\bin\Debug\CloudinaryDotNet.dll
+C:\Users\Nguyen\Moi\cinemamanagement\bin\Debug\EntityFramework.dll
+C:\Users\Nguyen\Moi\cinemamanagement\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nguyen\Moi\cinemamanagement\bin\Debug\LiveCharts.dll
+C:\Users\Nguyen\Moi\cinemamanagement\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\Nguyen\Moi\cinemamanagement\bin\Debug\MaterialDesignColors.dll
+C:\Users\Nguyen\Moi\cinemamanagement\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Nguyen\Moi\cinemamanagement\bin\Debug\Microsoft.Data.Tools.Components.dll
+C:\Users\Nguyen\Moi\cinemamanagement\bin\Debug\Microsoft.Data.Tools.Schema.Sql.UnitTesting.dll
+C:\Users\Nguyen\Moi\cinemamanagement\bin\Debug\Microsoft.Data.Tools.Schema.Sql.UnitTestingAdapter.dll
+C:\Users\Nguyen\Moi\cinemamanagement\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\Nguyen\Moi\cinemamanagement\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Nguyen\Moi\cinemamanagement\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Nguyen\Moi\cinemamanagement\bin\Debug\CloudinaryDotNet.xml
+C:\Users\Nguyen\Moi\cinemamanagement\bin\Debug\EntityFramework.xml
+C:\Users\Nguyen\Moi\cinemamanagement\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nguyen\Moi\cinemamanagement\bin\Debug\LiveCharts.pdb
+C:\Users\Nguyen\Moi\cinemamanagement\bin\Debug\LiveCharts.xml
+C:\Users\Nguyen\Moi\cinemamanagement\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\Nguyen\Moi\cinemamanagement\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\Nguyen\Moi\cinemamanagement\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Nguyen\Moi\cinemamanagement\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Nguyen\Moi\cinemamanagement\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Nguyen\Moi\cinemamanagement\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\Nguyen\Moi\cinemamanagement\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\Nguyen\Moi\cinemamanagement\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\cinema-management.csproj.AssemblyReference.cache
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\cinema-management.csproj.SuggestedBindingRedirects.cache
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Interop.Accessibility.dll
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\cinema-management.csproj.ResolveComReference.cache
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Resources\Scrollbar\Scrollbar.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\MainAdminWindow.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\MovieManagement\AddMovieWindow.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\MovieManagement\EditMovie.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\MovieManagement\InforMovieWindow.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\MovieManagement\MovieManagement.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\CustomerManagement\CustomerManagement.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\CustomerManagement\EditCustomer.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\DoneError.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\ErrorManagement.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\InprogressError.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\WaitingError.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\ExportDetail.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\ExportManagement.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\ImportManagement.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\Import_ExportManagement.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\ProductDetail.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\TicketDetail.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\MainAdminWindow.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\MovieManagement\AddMovieWindow.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\MovieManagement\EditMovie.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\MovieManagement\InforMovieWindow.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\MovieManagement\MovieManagement.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\ProductManagement\AddProduct.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\ProductManagement\EditProduct.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\ProductManagement\ImportProduct.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\ProductManagement\ProductManagement.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\AddShowtime.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\Infor_EditShowtime.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\ShowtimeManagement.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\AddStaffWindow.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\ChangePasswordWindow.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\EditStaffWindow.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\StaffManagement.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\StatisticalManagement\BestSellingStatistical.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\StatisticalManagement\IncomeStatistical.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\StatisticalManagement\RankingStatistical.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\StatisticalManagement\StatisticalManagement.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddInfor.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddListMiniVoucher.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddMiniVoucher.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddVoucher.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddWindow.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\ReleaseVoucher.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\Infor_EditWindow\Edit_InforPage.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\Infor_EditWindow\Infor_EditWindow.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\VoucherManagement.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\LoginWindow\ChangePasswordPage.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\LoginWindow\ForgotPasswordPage.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\LoginWindow\LoginPage.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\LoginWindow\LoginWindow.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\LoginWindow\RolePage.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\MessageBoxCustom.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\App.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\cinema-management_Content.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\cinema-management_MarkupCompile.cache
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\cinema-management_MarkupCompile.lref
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\App.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\ResourceXAML\MainResource.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\CustomerManagement\CustomerManagement.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\CustomerManagement\EditCustomer.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\DoneError.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\ErrorManagement.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\InprogressError.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\ErrorManagement\WaitingError.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\ExportDetail.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\ExportManagement.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\ImportManagement.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\Import_ExportManagement.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\ProductDetail.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\Import_ExportManagement\TicketDetail.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\ProductManagement\AddProduct.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\ProductManagement\EditProduct.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\ProductManagement\ImportProduct.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\ProductManagement\ProductManagement.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\AddShowtime.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\Infor_EditShowtime.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\ShowtimeManagement\ShowtimeManagement.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\AddStaffWindow.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\ChangePasswordWindow.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\EditStaffWindow.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\StaffManagement\StaffManagement.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\StatisticalManagement\BestSellingStatistical.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\StatisticalManagement\IncomeStatistical.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\StatisticalManagement\RankingStatistical.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\StatisticalManagement\StatisticalManagement.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddInfor.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddListMiniVoucher.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddMiniVoucher.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddVoucher.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\AddWindow.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\AddWindow\ReleaseVoucher.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\Infor_EditWindow\Edit_InforPage.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\Infor_EditWindow\Infor_EditWindow.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\Admin\VoucherManagement\VoucherManagement.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\LoginWindow\ChangePasswordPage.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\LoginWindow\ForgotPasswordPage.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\LoginWindow\LoginPage.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\LoginWindow\LoginWindow.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\LoginWindow\RolePage.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\Views\MessageBoxCustom.baml
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\cinema-management.g.resources
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\cinema_management.Properties.Resources.resources
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\cinema-management.csproj.GenerateResource.cache
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\cinema-management.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\cinema-management.csproj.CopyComplete
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\cinema-management.exe
+C:\Users\Nguyen\Moi\cinemamanagement\obj\Debug\cinema-management.pdb
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\MainStaffWindow.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\MovieScheduleWindow\MovieScheduleWindow.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\OrderFoodWindow\FoodPage.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\ShowtimePage\ShowtimePage.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TicketBill\TicketBillNoFoodPage.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TicketBill\TicketBillOnlyFoodPage.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TicketBill\TicketBillPage.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TicketWindow\TicketBookingPage.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TicketWindow\TicketWindow.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TroubeWindow\AddError.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TroubeWindow\EditError.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TroubeWindow\TroublePage.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TroubeWindow\ViewError.g.cs
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\MainStaffWindow.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\MovieScheduleWindow\MovieScheduleWindow.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\OrderFoodWindow\FoodPage.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\ShowtimePage\ShowtimePage.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TicketBill\TicketBillNoFoodPage.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TicketBill\TicketBillOnlyFoodPage.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TicketBill\TicketBillPage.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TicketWindow\TicketBookingPage.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TicketWindow\TicketWindow.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TroubeWindow\AddError.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TroubeWindow\EditError.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TroubeWindow\TroublePage.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Views\Staff\TroubeWindow\ViewError.baml

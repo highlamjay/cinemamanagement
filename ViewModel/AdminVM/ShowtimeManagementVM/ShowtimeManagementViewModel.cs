@@ -1,6 +1,5 @@
 ﻿using cinema_management.DTOs;
 using cinema_management.Models.Services;
-using cinema_management.Views.Admin.ShowtimeManagement;
 using cinema_management.Views;
 using System;
 using System.Collections.Generic;
@@ -8,9 +7,10 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows;
+using System.Windows.Controls;
+using cinema_management.Views.Admin.ShowtimeManagement;
 
 namespace cinema_management.ViewModel.AdminVM.ShowtimeManagementVM
 {
@@ -175,7 +175,7 @@ namespace cinema_management.ViewModel.AdminVM.ShowtimeManagementVM
             {
                 GenerateListRoom();
                 RenewData();
-                AddShowtimeWindow temp = new AddShowtimeWindow();
+                AddShowtime temp = new AddShowtime();
 
                 try
                 {
@@ -384,7 +384,7 @@ namespace cinema_management.ViewModel.AdminVM.ShowtimeManagementVM
                     ShowtimeList = new ObservableCollection<MovieDTO>(listMovieAllRoom);
                     IsLoading = false;
                 }
-                catch (System.Data.Entity.Core.EntityException)
+                catch (System.Data.Entity.Core.EntityException) 
                 {
                     MessageBoxCustom mb = new MessageBoxCustom("Lỗi", "Mất kết nối cơ sở dữ liệu", MessageType.Error, MessageButtons.OK);
                     mb.ShowDialog();
@@ -405,7 +405,7 @@ namespace cinema_management.ViewModel.AdminVM.ShowtimeManagementVM
                 ResultLabel.Content = ShowtimeList.Count;
                 return;
             }
-            List<MovieDTO> listMoviesByRoom = listMovieAllRoom.Where(m => m.ShowTimes.Any(s => s.RoomId == roomId)).Select(m => new MovieDTO
+            List<MovieDTO> listMoviesByRoom = listMovieAllRoom.Where(m => m.Showtimes.Any(s => s.RoomId == roomId)).Select(m => new MovieDTO
             {
                 Id = m.Id,
                 DisplayName = m.DisplayName,
@@ -417,7 +417,7 @@ namespace cinema_management.ViewModel.AdminVM.ShowtimeManagementVM
                 Director = m.Director,
                 Image = m.Image,
                 Genres = new List<GenreDTO>(m.Genres),
-                ShowTimes = m.ShowTimes.Where(s => s.RoomId == roomId).ToList()
+                Showtimes = m.Showtimes.Where(s => s.RoomId == roomId).ToList()
             }).ToList();
             ShowtimeList = new ObservableCollection<MovieDTO>(listMoviesByRoom);
         }

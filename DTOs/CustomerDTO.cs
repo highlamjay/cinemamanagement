@@ -19,6 +19,7 @@ namespace cinema_management.DTOs
         public string Email { get; set; }
         public DateTime StartDate { get; set; }
 
+        //Expense
         public decimal Expense { get; set; }
         public string ExpenseStr
         {

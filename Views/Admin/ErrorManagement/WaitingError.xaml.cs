@@ -27,7 +27,6 @@ namespace cinema_management.Views.Admin.ErrorManagement
             this.Language = XmlLanguage.GetLanguage("vi-VN");
             costval.Text = "0";
         }
-
         private void Button_MouseEnter_1(object sender, MouseEventArgs e)
         {
             Button btn = sender as Button;

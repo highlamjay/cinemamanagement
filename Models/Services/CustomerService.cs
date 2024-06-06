@@ -158,7 +158,7 @@ namespace cinema_management.Models.Services
                     return (true, "Đăng ký thành công", newCusomer.CustomerID);
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return (false, "Lỗi hệ thống", null);
             }

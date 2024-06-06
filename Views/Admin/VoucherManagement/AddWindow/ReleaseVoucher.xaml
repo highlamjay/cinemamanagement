@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:cinema_management.Views.Admin.VoucherManagement.AddWindow"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
         mc:Ignorable="d"
@@ -16,7 +17,7 @@
         FontFamily="arial"
         x:Name="window"
         MouseLeftButtonDown="Window_MouseLeftButtonDown"
-        DataContext="{StaticResource VoucherVM}">
+        DataContext="{StaticResource VoucherManagementVM}">
 
 
     <Border BorderBrush="Black"
@@ -215,7 +216,7 @@
                                                     Background="Transparent"
                                                     Foreground="Black"
                                                     IsEnabled="False"
-                                                    BorderBrush="Black"
+                                                    BorderBrush="Black"                                 
                                                     HorizontalAlignment="Left"
                                                     Margin="4,10,0,0"
                                                     Height="25"

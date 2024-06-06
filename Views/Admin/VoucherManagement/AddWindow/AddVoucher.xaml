@@ -1,15 +1,15 @@
 ﻿<Page x:Class="cinema_management.Views.Admin.VoucherManagement.AddWindow.AddVoucher"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:cinema_management.ViewModel.AdminVM.VoucherManagemenetVM.AddWindowVM"
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
-      xmlns:local="clr-namespace:cinema_management.ViewModel.AdminVM.VoucherManagementVM.AddWindowVM"
       mc:Ignorable="d"
       Title="AddInfor"
       FontSize="15"
-      DataContext="{StaticResource VoucherVM}"
+      DataContext="{StaticResource VoucherManagementVM}"
       Height="484"
       Width="998"
       FontFamily="arial"
@@ -27,8 +27,6 @@
                                      From="0"
                                      To="1"
                                      Duration="0:0:0.5" />
-
-
                 </Storyboard>
             </BeginStoryboard>
         </EventTrigger>
@@ -319,4 +317,6 @@
 
 
     </Grid>
+
+
 </Page>

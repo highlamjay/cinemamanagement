@@ -58,16 +58,16 @@ namespace cinema_management.Models.Services
 
                         Movie m = await context.Movies.FindAsync(newShowtime.MovieId);
                         var newStartTime = newShowtime.StartTime;
-                        var newEndTime = newShowtime.StartTime + new TimeSpan(0, (int)m.RunningTime, 0);
+                        var newEndTime = newShowtime.StartTime + new TimeSpan(0, m.RunningTime, 0);
                         show = showtimeSet.ShowTimes.AsEnumerable().Where(s =>
                         {
-                            var endTime = new TimeSpan(0, (int)s.Movie.RunningTime, 0) + s.StartTime;
-                            return TimeBetwwenIn(newStartTime, newEndTime, s.StartTime,(endTime + TIME.BreakTime));
+                            var endTime = new TimeSpan(0, s.Movie.RunningTime, 0) + s.StartTime;
+                            return TimeBetwwenIn(newStartTime, newEndTime, s.StartTime, endTime + TIME.BreakTime);
                         }).FirstOrDefault();
 
                         if (show != null)
                         {
-                            var endTime = new TimeSpan(0, (int)show.Movie.RunningTime, 0) + show.StartTime;
+                            var endTime = new TimeSpan(0, show.Movie.RunningTime, 0) + show.StartTime;
                             return (false, $"Khoảng thời gian từ {Helper.GetHourMinutes(show.StartTime)} đến {Helper.GetHourMinutes(endTime + TIME.BreakTime)} đã có phim chiếu tại phòng {showtimeSet.RoomID}");
                         }
                     }
@@ -75,7 +75,7 @@ namespace cinema_management.Models.Services
                     ShowTime showtime = new ShowTime
                     {
                         MovieID = newShowtime.MovieId,
-                        ShowtimeSetting = showtimeSet,
+                        ShowTimeSettingID = showtimeSet.ShowtimeSettingID,
                         StartTime = newShowtime.StartTime,
                         TicketPrice = newShowtime.TicketPrice
                     };
@@ -160,7 +160,7 @@ namespace cinema_management.Models.Services
             {
                 using (var context = new CinemaManagementEntities())
                 {
-                    var IsExist = await context.SeatSettings.AnyAsync(s => s.ShowTimeID == showtimeId && s.Status == true);
+                    var IsExist = await context.SeatSettings.AnyAsync(s => s.ShowTimeID == showtimeId && s.Status);
                     return IsExist;
                 }
             }
@@ -182,5 +182,6 @@ namespace cinema_management.Models.Services
             // t2 > t1;
             return false;
         }
+
     }
 }

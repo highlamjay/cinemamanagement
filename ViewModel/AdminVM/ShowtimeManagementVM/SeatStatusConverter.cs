@@ -11,6 +11,7 @@ namespace cinema_management.ViewModel.AdminVM.ShowtimeManagementVM
 {
     public class SeatStatusConverter : IValueConverter
     {
+        // This converts the result object to the foreground.
         public object Convert(object value, Type targetType,
             object parameter, CultureInfo language)
         {

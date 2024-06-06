@@ -49,16 +49,16 @@ namespace cinema_management.Models.Services
                                                           orderby trou.TroubleSubmittedAt descending
                                                           select new TroubleDTO
                                                           {
-                                                              TroubleId = trou.TroubleId,
-                                                              TroubleTitle = trou.TroubleTitle,
-                                                              TroubleDescription = trou.TroubleDescription,
+                                                              Id = trou.TroubleId,
+                                                              Title = trou.TroubleTitle,
+                                                              Description = trou.TroubleDescription,
                                                               Image = trou.Image,
-                                                              TroubleLevel = trou.TroubleLevel,
-                                                              TroubleStatus = trou.TroubleStatus,
-                                                              TroubleRepairCost = trou.TroubleRepairCost,
-                                                              TroubleSubmittedAt = trou.TroubleSubmittedAt,
-                                                              TroubleStartDate = trou.TroubleStartDate,
-                                                              TroubleFinishDate = trou.TroubleFinishDate,
+                                                              Level = trou.TroubleLevel,
+                                                              Status = trou.TroubleStatus,
+                                                              RepairCost = trou.TroubleRepairCost,
+                                                              SubmittedAt = trou.TroubleSubmittedAt,
+                                                              StartDate = trou.TroubleStartDate,
+                                                              FinishDate = trou.TroubleFinishDate,
                                                               StaffId = trou.StaffId,
                                                               StaffName = trou.Staff.StaffName,
                                                           }).ToListAsync();
@@ -81,11 +81,11 @@ namespace cinema_management.Models.Services
                     Trouble tr = new Trouble()
                     {
                         TroubleId = CreateNextTroubleId(maxId),
-                        TroubleTitle = newTrouble.TroubleTitle,
-                        TroubleDescription = newTrouble.TroubleDescription,
+                        TroubleTitle = newTrouble.Title,
+                        TroubleDescription = newTrouble.Description,
                         Image = newTrouble.Image,
                         TroubleStatus = STATUS.WAITING,
-                        TroubleLevel = newTrouble.TroubleLevel ?? LEVEL.NORMAL,
+                        TroubleLevel = newTrouble.Level ?? LEVEL.NORMAL,
                         TroubleSubmittedAt = DateTime.Now,
                         StaffId = newTrouble.StaffId,
                     };
@@ -93,7 +93,7 @@ namespace cinema_management.Models.Services
 
                     await context.SaveChangesAsync();
 
-                    newTrouble.TroubleId = tr.TroubleId;
+                    newTrouble.Id = tr.TroubleId;
                     return (true, null, newTrouble);
                 }
             }
@@ -111,15 +111,14 @@ namespace cinema_management.Models.Services
                 using (var context = new CinemaManagementEntities())
                 {
 
-                    var trouble = await context.Troubles.FindAsync(updatedTrouble.TroubleId);
+                    var trouble = await context.Troubles.FindAsync(updatedTrouble.Id);
 
-                    trouble.TroubleTitle = updatedTrouble.TroubleTitle;
-                    trouble.TroubleDescription = updatedTrouble.TroubleDescription;
-
+                    trouble.TroubleTitle = updatedTrouble.Title;
+                    trouble.TroubleDescription = updatedTrouble.Description;
                     trouble.Image = updatedTrouble.Image;
                     trouble.TroubleSubmittedAt = DateTime.Now;
                     trouble.StaffId = updatedTrouble.StaffId;
-                    trouble.TroubleLevel = updatedTrouble.TroubleLevel ?? trouble.TroubleLevel;
+                    trouble.TroubleLevel = updatedTrouble.Level ?? trouble.TroubleLevel;
 
                     await context.SaveChangesAsync();
 
@@ -139,28 +138,28 @@ namespace cinema_management.Models.Services
                 using (var context = new CinemaManagementEntities())
                 {
 
-                    var trouble = await context.Troubles.FindAsync(updatedTrouble.TroubleId);
+                    var trouble = await context.Troubles.FindAsync(updatedTrouble.Id);
 
-                    if (updatedTrouble.TroubleStatus == STATUS.IN_PROGRESS)
+                    if (updatedTrouble.Status == STATUS.IN_PROGRESS)
                     {
-                        trouble.TroubleStartDate = updatedTrouble.TroubleStartDate;
+                        trouble.TroubleStartDate = updatedTrouble.StartDate;
                     }
-                    else if (updatedTrouble.TroubleStatus == STATUS.DONE)
+                    else if (updatedTrouble.Status == STATUS.DONE)
                     {
                         if (trouble.TroubleStatus == STATUS.WAITING)
                         {
                             trouble.TroubleStartDate = DateTime.Now;
                         }
-                        trouble.TroubleFinishDate = updatedTrouble.TroubleFinishDate;
-                        trouble.TroubleRepairCost = updatedTrouble.TroubleRepairCost;
+                        trouble.TroubleFinishDate = updatedTrouble.FinishDate;
+                        trouble.TroubleRepairCost = updatedTrouble.RepairCost;
                     }
-                    else if (updatedTrouble.TroubleStatus == STATUS.CANCEL)
+                    else if (updatedTrouble.Status == STATUS.CANCLE)
                     {
                         trouble.TroubleFinishDate = DateTime.Now;
                         trouble.TroubleRepairCost = 0;
                     }
 
-                    trouble.TroubleStatus = updatedTrouble.TroubleStatus;
+                    trouble.TroubleStatus = updatedTrouble.Status;
 
                     await context.SaveChangesAsync();
 

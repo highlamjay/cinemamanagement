@@ -2,11 +2,11 @@
 using CloudinaryDotNet.Actions;
 using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
-using Account = CloudinaryDotNet.Account;
-using ResourceType = CloudinaryDotNet.Actions.ResourceType;
+
 
 namespace cinema_management.Utils
 {
+
     public class CloudinaryService
     {
         private static CloudinaryService _ins;

@@ -14,27 +14,17 @@ namespace cinema_management.DTOs
         {
             StaffRole = ROLE.Staff;
         }
-
         public StaffDTO(string id, string name, string sex, DateTime birthday, string phonenumber, string role, DateTime startingdate)
         {
             StaffId = id; StaffName = name; Sex = sex; StaffBirthDay = birthday; PhoneNumber = phonenumber; StaffRole = role; StartingDate = startingdate;
         }
-
         private int GetAge(DateTime birthDate)
         {
-            // Save today's date.
             var today = DateTime.Today;
-
-            // Calculate the age.
             var age = today.Year - birthDate.Year;
-
-            // Go back to the year in which the person was born in case of a leap year
             if (birthDate.DayOfYear > today.DayOfYear) age--;
-
             return age;
         }
-
-
         public string StaffId { get; set; }
         public string StaffName { get; set; }
         public string Username { get; set; }
@@ -49,9 +39,6 @@ namespace cinema_management.DTOs
         public string StaffRole { get; set; }
         public string Email { get; set; }
         public System.DateTime CreatedAt { get; set; }
-
-
-        //Statistic
         public decimal BenefitContribution { get; set; }
         public string BenefitContributionStr
         {
@@ -60,6 +47,5 @@ namespace cinema_management.DTOs
                 return Helper.FormatVNMoney(BenefitContribution);
             }
         }
-        public bool IsDeleted { get; set; }
     }
 }
