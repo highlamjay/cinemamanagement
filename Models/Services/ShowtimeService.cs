@@ -84,7 +84,7 @@ namespace cinema_management.Models.Services
                         TicketPrice = newShowtime.TicketPrice
                     };
                     context.ShowTimes.Add(showtime);
-
+                    await context.SaveChangesAsync();
                     //setting seats in room for new showtime 
                     var seatIds = await (from s in context.Seats
                                          where s.RoomID == showtimeSet.RoomID
@@ -93,16 +93,16 @@ namespace cinema_management.Models.Services
                     List<SeatSetting> seatSetList = new List<SeatSetting>();
                     foreach (var seatId in seatIds)
                     {
-                        seatSetList.Add(new SeatSetting
-                        {
-                            SeatID = seatId,
-                            ShowTimeID = showtime.ShowTimeID
-                        });
+                        //seatSetList.Add(new SeatSetting
+                        //{
+                        //    SeatID = seatId,
+                        //    ShowTimeID = showtime.ShowTimeID
+                        //});
+                        var sql = $@"set identity_insert seatsetting on; insert into seatsetting(seatid, showtimeid, status) values({seatId}, {showtime.ShowTimeID}, '{false}'); set identity_insert seatsetting off";
+                        context.Database.ExecuteSqlCommand(sql);
                     }
-                    context.SeatSettings.AddRange(seatSetList);
-
-
-                    await context.SaveChangesAsync();
+                    //context.SeatSettings.AddRange(seatSetList);
+                    
                     newShowtime.Id = showtime.ShowTimeID;
                     return (true, "Thêm suất chiếu thành công");
                 }
@@ -125,6 +125,8 @@ namespace cinema_management.Models.Services
                     {
                         return (false, "Suất chiếu không tồn tại!");
                     }
+                    var sql = $@"delete from seatsetting where showtimeid = {showtimeId}";
+                    context.Database.ExecuteSqlCommand(sql);
                     context.ShowTimes.Remove(show);
                     await context.SaveChangesAsync();
                 }

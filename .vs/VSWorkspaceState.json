@@ -5,13 +5,13 @@
     "\\Models\\Services",
     "\\ViewModel",
     "\\ViewModel\\StaffVM",
+    "\\ViewModel\\StaffVM\\OrderFoodWindowVM",
     "\\ViewModel\\StaffVM\\TicketBillVM",
     "\\Views",
     "\\Views\\Admin",
     "\\Views\\Admin\\MovieManagement",
-    "\\Views\\Admin\\StatisticalManagement",
     "\\Views\\Staff"
   ],
-  "SelectedNode": "\\Models\\Services\\BookingService.cs",
+  "SelectedNode": "\\cinema-management.sln",
   "PreviewInSolutionExplorer": false
 }
