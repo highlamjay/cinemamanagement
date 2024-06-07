@@ -8,8 +8,8 @@
     <Property Name="CustomerID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="StaffID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="BillTime" Type="DateTime" Nullable="false" Precision="0" />
-    <Property Name="DiscountPrice" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
     <Property Name="TotalPrice" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="DiscountPrice" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
     <NavigationProperty Name="Tickets" Relationship="Self.fk_Bill" FromRole="Bill" ToRole="Ticket" />
     <NavigationProperty Name="ProductBillInfoes" Relationship="Self.fk_Bill_ID" FromRole="Bill" ToRole="ProductBillInfo" />
     <NavigationProperty Name="Customer" Relationship="Self.fk_Customer_ID" FromRole="Bill" ToRole="Customer" />
@@ -33,7 +33,7 @@
     <Key>
       <PropertyRef Name="GenreID" />
     </Key>
-    <Property Name="GenreID" Type="Int32" Nullable="false" />
+    <Property Name="GenreID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="GenreDisplayName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Movies" Relationship="Self.MovieGenre" FromRole="Genre" ToRole="Movie" />
   </EntityType>
@@ -68,6 +68,18 @@
     <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
     <NavigationProperty Name="ProductReceipts" Relationship="Self.fk_Product" FromRole="Product" ToRole="ProductReceipt" />
     <NavigationProperty Name="ProductBillInfoes" Relationship="Self.fk_Product_ID" FromRole="Product" ToRole="ProductBillInfo" />
+  </EntityType>
+  <EntityType Name="ProductBillInfo">
+    <Key>
+      <PropertyRef Name="BillID" />
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="BillID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ProductID" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="PricePerItem" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <NavigationProperty Name="Bill" Relationship="Self.fk_Bill_ID" FromRole="ProductBillInfo" ToRole="Bill" />
+    <NavigationProperty Name="Product" Relationship="Self.fk_Product_ID" FromRole="ProductBillInfo" ToRole="Product" />
   </EntityType>
   <EntityType Name="ProductReceipt">
     <Key>
@@ -152,7 +164,7 @@
       <PropertyRef Name="TicketID" />
     </Key>
     <Property Name="TicketID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="BillID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="BillID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="ShowTimeID" Type="Int32" Nullable="false" />
     <Property Name="SeatID" Type="Int32" Nullable="false" />
     <Property Name="Price" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
@@ -166,7 +178,7 @@
     </Key>
     <Property Name="TroubleId" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="TroubleTitle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="TroubleDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TroubleDescription" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="TroubleStatus" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
     <Property Name="TroubleSubmittedAt" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="TroubleRepairCost" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
@@ -208,19 +220,6 @@
     <NavigationProperty Name="Staff" Relationship="Self.fk_VcRelease" FromRole="VoucherRelease" ToRole="Staff" />
     <NavigationProperty Name="Vouchers" Relationship="Self.fk_voucher" FromRole="VoucherRelease" ToRole="Voucher" />
   </EntityType>
-  <EntityType Name="ProductBillInfo">
-    <Key>
-      <PropertyRef Name="ProductID" />
-      <PropertyRef Name="Quantity" />
-      <PropertyRef Name="PricePerItem" />
-    </Key>
-    <Property Name="BillID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="ProductID" Type="Int32" Nullable="false" />
-    <Property Name="Quantity" Type="Int32" Nullable="false" />
-    <Property Name="PricePerItem" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
-    <NavigationProperty Name="Bill" Relationship="Self.fk_Bill_ID" FromRole="ProductBillInfo" ToRole="Bill" />
-    <NavigationProperty Name="Product" Relationship="Self.fk_Product_ID" FromRole="ProductBillInfo" ToRole="Product" />
-  </EntityType>
   <EntityType Name="SeatSetting">
     <Key>
       <PropertyRef Name="SeatID" />
@@ -234,7 +233,7 @@
     <NavigationProperty Name="ShowTime" Relationship="Self.fk_Show_ID" FromRole="SeatSetting" ToRole="ShowTime" />
   </EntityType>
   <Association Name="fk_Bill">
-    <End Role="Bill" Type="Self.Bill" Multiplicity="0..1" />
+    <End Role="Bill" Type="Self.Bill" Multiplicity="1" />
     <End Role="Ticket" Type="Self.Ticket" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Bill">
@@ -246,7 +245,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="fk_Bill_ID">
-    <End Role="Bill" Type="Self.Bill" Multiplicity="0..1" />
+    <End Role="Bill" Type="Self.Bill" Multiplicity="1" />
     <End Role="ProductBillInfo" Type="Self.ProductBillInfo" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Bill">
@@ -471,6 +470,7 @@
     <EntitySet Name="Genres" EntityType="Self.Genre" />
     <EntitySet Name="Movies" EntityType="Self.Movie" />
     <EntitySet Name="Products" EntityType="Self.Product" />
+    <EntitySet Name="ProductBillInfoes" EntityType="Self.ProductBillInfo" />
     <EntitySet Name="ProductReceipts" EntityType="Self.ProductReceipt" />
     <EntitySet Name="Rooms" EntityType="Self.Room" />
     <EntitySet Name="Seats" EntityType="Self.Seat" />
@@ -481,7 +481,6 @@
     <EntitySet Name="Troubles" EntityType="Self.Trouble" />
     <EntitySet Name="Vouchers" EntityType="Self.Voucher" />
     <EntitySet Name="VoucherReleases" EntityType="Self.VoucherRelease" />
-    <EntitySet Name="ProductBillInfoes" EntityType="Self.ProductBillInfo" />
     <EntitySet Name="SeatSettings" EntityType="Self.SeatSetting" />
     <AssociationSet Name="fk_Bill" Association="Self.fk_Bill">
       <End Role="Bill" EntitySet="Bills" />

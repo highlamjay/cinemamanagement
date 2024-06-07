@@ -31,6 +31,10 @@
     </i:Interaction.Triggers>
 
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="131*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="20" />
             <RowDefinition Height="800" />
@@ -38,7 +42,7 @@
 
         <!--#FF383737-->
         <StackPanel   Background="#132644"
-                      Grid.Row="0">
+                      Grid.Row="0" Grid.ColumnSpan="2">
             <StackPanel Orientation="Horizontal"
                         VerticalAlignment="Top"
                         HorizontalAlignment="Right">
@@ -97,7 +101,11 @@
             </StackPanel>
         </StackPanel>
 
-        <Grid Grid.Row="1">
+        <Grid Grid.Row="1" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="637*"/>
+                <ColumnDefinition Width="83*"/>
+            </Grid.ColumnDefinitions>
 
             <!--Frame-->
             <Frame x:Name="MainFrame"
@@ -105,28 +113,28 @@
                    Width="1440"
                    NavigationUIVisibility="Hidden"
                    Panel.ZIndex="0"
-                   Margin="0,80,0,0">
+                   Margin="0,80,0,0" Grid.ColumnSpan="2">
 
                 <i:Interaction.Triggers>
                     <i:EventTrigger EventName="Loaded">
-                        <i:InvokeCommandAction Command="{Binding LoadQLPPageCM}"
+                        <i:InvokeCommandAction Command="{Binding LoadTKPageCM}"
                                                CommandParameter="{Binding ElementName=MainFrame}" />
                     </i:EventTrigger>
                 </i:Interaction.Triggers>
             </Frame>
-            <Grid Grid.RowSpan="2"
+            <Grid
                   Background="Gray"
                   Opacity="0.3"
                   Visibility="Collapsed"
                   x:Name="shadow"
-                  MouseDown="MainFrame_MouseDown" />
+                  MouseDown="MainFrame_MouseDown" Grid.ColumnSpan="2" />
             <!--thanh cong cu-->
             <materialDesign:ColorZone Mode="Inverted"
                                       Padding="16"
                                       Height="80"
                                       Background="#132644"                                      
-                                      MouseLeftButtonDown="mainadminwindow_MouseLeftButtonDown" />
-            <DockPanel>
+                                      MouseLeftButtonDown="mainadminwindow_MouseLeftButtonDown" Grid.ColumnSpan="2" />
+            <DockPanel Grid.ColumnSpan="2">
                 <StackPanel Orientation="Horizontal"
                             Margin="-260,0,0,0">
                     <StackPanel.Style>
@@ -187,7 +195,7 @@
                                 <StackPanel HorizontalAlignment="Center"
                                             Orientation="Horizontal"
                                             Height="60">
-                                    <Image Source="/Resources/Icon/iconApp.ico"
+                                    <Image Source="/Resources/Icon/icon_app.png"
                                            Width="60"
                                            Margin="10,-5,5,0" />
                                     <TextBlock TextWrapping="Wrap"

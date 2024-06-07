@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Controls.Primitives;
 using cinema_management.ViewModel;
+using cinema_management.Views.Admin.StatisticManagement;
 
 namespace cinema_management.Views.Admin
 {
@@ -25,7 +26,8 @@ namespace cinema_management.Views.Admin
         public MainAdminWindow()
         {
             InitializeComponent();
-            DataContext = new MainAdminViewModel();
+            this.DataContext = new MainAdminViewModel();
+            MainFrame.Content = new StatisticalManagement();
         }
 
         private void mainadminwindow_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
@@ -52,6 +54,7 @@ namespace cinema_management.Views.Admin
         {
             topnotifi.Visibility = Visibility.Collapsed;
             shadow.Visibility = Visibility.Visible;
+            
         }
 
         private void SlideButton_Unchecked(object sender, RoutedEventArgs e)

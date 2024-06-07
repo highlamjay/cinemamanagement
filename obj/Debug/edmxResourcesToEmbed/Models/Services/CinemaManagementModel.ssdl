@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="CinemaManagement3Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+<Schema Namespace="CinemaManagementModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityType Name="Bill">
     <Key>
       <PropertyRef Name="BillID" />
@@ -7,8 +7,9 @@
     <Property Name="BillID" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="CustomerID" Type="varchar" MaxLength="50" />
     <Property Name="StaffID" Type="varchar" MaxLength="50" />
-    <Property Name="BillTime" Type="date" />
-    <Property Name="TotalPrice" Type="money" />
+    <Property Name="BillTime" Type="date" Nullable="false" />
+    <Property Name="TotalPrice" Type="money" Nullable="false" />
+    <Property Name="DiscountPrice" Type="decimal" Precision="19" Scale="4" Nullable="false" />
   </EntityType>
   <EntityType Name="Customer">
     <Key>
@@ -16,8 +17,8 @@
     </Key>
     <Property Name="CustomerID" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="CustomerName" Type="nvarchar" MaxLength="50" />
-    <Property Name="PhoneNubmer" Type="varchar" MaxLength="50" />
-    <Property Name="CreateAt" Type="date" />
+    <Property Name="PhoneNumber" Type="varchar" MaxLength="50" />
+    <Property Name="CreateAt" Type="date" Nullable="false" />
     <Property Name="Email" Type="varchar" MaxLength="100" />
     <Property Name="IsDeleted" Type="bit" Nullable="false" />
     <Property Name="IsMember" Type="bit" Nullable="false" />
@@ -26,23 +27,24 @@
     <Key>
       <PropertyRef Name="GenreID" />
     </Key>
-    <Property Name="GenreID" Type="int" Nullable="false" />
+    <Property Name="GenreID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="GenreDisplayName" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="Movie">
     <Key>
-      <PropertyRef Name="MovieId" />
+      <PropertyRef Name="MovieID" />
     </Key>
-    <Property Name="MovieId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MovieID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="DisplayName" Type="nvarchar" MaxLength="50" />
-    <Property Name="RunningTime" Type="int" />
+    <Property Name="RunningTime" Type="int" Nullable="false" />
     <Property Name="Country" Type="nvarchar" MaxLength="50" />
-    <Property Name="Description" Type="nvarchar" MaxLength="50" />
-    <Property Name="ReleaseYear" Type="int" />
+    <Property Name="Description" Type="text" />
+    <Property Name="ReleaseYear" Type="int" Nullable="false" />
     <Property Name="MovieType" Type="nvarchar" MaxLength="50" />
     <Property Name="Image" Type="varchar" MaxLength="250" />
     <Property Name="Director" Type="nvarchar" MaxLength="50" />
     <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="Movie_Genre_ID" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="MovieGenre">
     <Key>
@@ -56,31 +58,33 @@
     <Key>
       <PropertyRef Name="ProductID" />
     </Key>
-    <Property Name="ProductID" Type="int" Nullable="false" />
+    <Property Name="ProductID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="DisplayName" Type="nvarchar" MaxLength="50" />
     <Property Name="Categorylog" Type="nvarchar" MaxLength="50" />
-    <Property Name="Quantity" Type="int" />
-    <Property Name="Price" Type="money" />
-    <Property Name="Image" Type="varchar" MaxLength="50" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="Price" Type="money" Nullable="false" />
+    <Property Name="Image" Type="varchar" MaxLength="250" />
     <Property Name="IsDeleted" Type="bit" Nullable="false" />
   </EntityType>
-  <!--Errors Found During Generation:
-warning 6013: The table/view 'CinemaManagement3.dbo.ProductBillInfo' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
-        <EntityType Name="ProductBillInfo">
-          <Property Name="BillID" Type="varchar" MaxLength="50" />
-          <Property Name="ProductID" Type="int" />
-          <Property Name="Quantity" Type="int" />
-          <Property Name="PricePerItem" Type="money" />
-        </EntityType>-->
+  <EntityType Name="ProductBillInfo">
+    <Key>
+      <PropertyRef Name="BillID" />
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="BillID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ProductID" Type="int" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="PricePerItem" Type="money" Nullable="false" />
+  </EntityType>
   <EntityType Name="ProductReceipt">
     <Key>
-      <PropertyRef Name="ProductReciptID" />
+      <PropertyRef Name="ProductReceiptID" />
     </Key>
-    <Property Name="ProductReciptID" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="ProductID" Type="int" />
-    <Property Name="ImportPrice" Type="money" />
-    <Property Name="Quantity" Type="int" />
-    <Property Name="TimeOfReceipt" Type="date" />
+    <Property Name="ProductReceiptID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ProductID" Type="int" Nullable="false" />
+    <Property Name="ImportPrice" Type="money" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="TimeOfReceipt" Type="date" Nullable="false" />
     <Property Name="StaffID" Type="varchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="Room">
@@ -88,44 +92,46 @@ warning 6013: The table/view 'CinemaManagement3.dbo.ProductBillInfo' does not ha
       <PropertyRef Name="RoomID" />
     </Key>
     <Property Name="RoomID" Type="int" Nullable="false" />
-    <Property Name="SeatQuantity" Type="int" />
+    <Property Name="SeatQuantity" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Seat">
     <Key>
       <PropertyRef Name="SeatID" />
     </Key>
-    <Property Name="SeatID" Type="int" Nullable="false" />
-    <Property Name="SeatNumber" Type="int" />
+    <Property Name="SeatID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SeatNumber" Type="int" Nullable="false" />
     <Property Name="RowOfSeat" Type="varchar" MaxLength="2" />
-    <Property Name="RoomID" Type="int" />
+    <Property Name="RoomID" Type="int" Nullable="false" />
   </EntityType>
   <!--Errors Found During Generation:
-warning 6002: The table/view 'CinemaManagement3.dbo.SeatSetting' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="SeatSetting">
     <Key>
+      <PropertyRef Name="SeatID" />
+      <PropertyRef Name="ShowTimeID" />
       <PropertyRef Name="Status" />
     </Key>
-    <Property Name="SeatID" Type="int" />
-    <Property Name="ShowTimeID" Type="int" />
+    <Property Name="SeatID" Type="int" Nullable="false" />
+    <Property Name="ShowTimeID" Type="int" Nullable="false" />
     <Property Name="Status" Type="bit" Nullable="false" />
   </EntityType>
   <EntityType Name="ShowTime">
     <Key>
       <PropertyRef Name="ShowTimeID" />
     </Key>
-    <Property Name="ShowTimeID" Type="int" Nullable="false" />
-    <Property Name="ShowTimeSettingID" Type="int" />
-    <Property Name="MovieID" Type="int" />
-    <Property Name="TicketPrice" Type="money" />
-    <Property Name="StartTime" Type="time" Precision="7" />
+    <Property Name="ShowTimeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ShowTimeSettingID" Type="int" Nullable="false" />
+    <Property Name="MovieID" Type="int" Nullable="false" />
+    <Property Name="TicketPrice" Type="money" Nullable="false" />
+    <Property Name="StartTime" Type="time" Precision="7" Nullable="false" />
   </EntityType>
   <EntityType Name="ShowtimeSetting">
     <Key>
-      <PropertyRef Name="ShowtimeSettingId" />
+      <PropertyRef Name="ShowtimeSettingID" />
     </Key>
-    <Property Name="ShowtimeSettingId" Type="int" Nullable="false" />
-    <Property Name="ShowDate" Type="date" />
-    <Property Name="RoomId" Type="int" />
+    <Property Name="ShowtimeSettingID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ShowDate" Type="date" Nullable="false" />
+    <Property Name="RoomID" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Staff">
     <Key>
@@ -138,8 +144,8 @@ warning 6002: The table/view 'CinemaManagement3.dbo.SeatSetting' does not have a
     <Property Name="PhoneNumber" Type="varchar" MaxLength="10" />
     <Property Name="Email" Type="varchar" MaxLength="50" />
     <Property Name="Sex" Type="varchar" MaxLength="10" />
-    <Property Name="StaffBirthday" Type="date" />
-    <Property Name="StartingDate" Type="date" />
+    <Property Name="StaffBirthDay" Type="date" Nullable="false" />
+    <Property Name="StartingDate" Type="date" Nullable="false" />
     <Property Name="StaffRole" Type="nvarchar" MaxLength="50" />
     <Property Name="IsDeleted" Type="bit" Nullable="false" />
   </EntityType>
@@ -147,14 +153,57 @@ warning 6002: The table/view 'CinemaManagement3.dbo.SeatSetting' does not have a
     <Key>
       <PropertyRef Name="TicketID" />
     </Key>
-    <Property Name="TicketID" Type="int" Nullable="false" />
-    <Property Name="BillID" Type="varchar" MaxLength="50" />
-    <Property Name="ShowTimeID" Type="int" />
-    <Property Name="SeatID" Type="int" />
-    <Property Name="Price" Type="money" />
+    <Property Name="TicketID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BillID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ShowTimeID" Type="int" Nullable="false" />
+    <Property Name="SeatID" Type="int" Nullable="false" />
+    <Property Name="Price" Type="money" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Trouble">
+    <Key>
+      <PropertyRef Name="TroubleId" />
+    </Key>
+    <Property Name="TroubleId" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="TroubleTitle" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="TroubleDescription" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="TroubleStatus" Type="nvarchar" MaxLength="30" />
+    <Property Name="TroubleSubmittedAt" Type="datetime" Nullable="false" />
+    <Property Name="TroubleRepairCost" Type="decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="TroubleStartDate" Type="datetime" />
+    <Property Name="TroubleFinishDate" Type="datetime" />
+    <Property Name="StaffId" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TroubleLevel" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Image" Type="varchar" MaxLength="1500" />
+  </EntityType>
+  <EntityType Name="Voucher">
+    <Key>
+      <PropertyRef Name="VoucherId" />
+    </Key>
+    <Property Name="VoucherId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Code" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="VoucherReleaseId" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Status" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="CustomerId" Type="varchar" MaxLength="50" />
+    <Property Name="UsedAt" Type="datetime" />
+    <Property Name="ReleaseAt" Type="datetime" />
+  </EntityType>
+  <EntityType Name="VoucherRelease">
+    <Key>
+      <PropertyRef Name="VoucherReleasesId" />
+    </Key>
+    <Property Name="VoucherReleasesId" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="ReleaseName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="StartDate" Type="datetime" Nullable="false" />
+    <Property Name="FinishDate" Type="datetime" Nullable="false" />
+    <Property Name="Status" Type="bit" Nullable="false" />
+    <Property Name="ParValue" Type="int" Nullable="false" />
+    <Property Name="MinimumOrderValue" Type="decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="ObjectType" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="EnableMerge" Type="bit" Nullable="false" />
+    <Property Name="StaffID" Type="varchar" MaxLength="50" Nullable="false" />
   </EntityType>
   <Association Name="fk_Bill">
-    <End Role="Bill" Type="Self.Bill" Multiplicity="0..1" />
+    <End Role="Bill" Type="Self.Bill" Multiplicity="1" />
     <End Role="Ticket" Type="Self.Ticket" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Bill">
@@ -165,9 +214,18 @@ warning 6002: The table/view 'CinemaManagement3.dbo.SeatSetting' does not have a
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <!--Errors Found During Generation:
-error 6004: The table 'CinemaManagement3.dbo.ProductBillInfo' is referenced by a relationship, but cannot be found.
-        <Association Name="fk_Bill_ID" />-->
+  <Association Name="fk_Bill_ID">
+    <End Role="Bill" Type="Self.Bill" Multiplicity="1" />
+    <End Role="ProductBillInfo" Type="Self.ProductBillInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Bill">
+        <PropertyRef Name="BillID" />
+      </Principal>
+      <Dependent Role="ProductBillInfo">
+        <PropertyRef Name="BillID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="fk_Customer_ID">
     <End Role="Customer" Type="Self.Customer" Multiplicity="0..1" />
     <End Role="Bill" Type="Self.Bill" Multiplicity="*" />
@@ -181,11 +239,11 @@ error 6004: The table 'CinemaManagement3.dbo.ProductBillInfo' is referenced by a
     </ReferentialConstraint>
   </Association>
   <Association Name="fk_Movie">
-    <End Role="Movie" Type="Self.Movie" Multiplicity="0..1" />
+    <End Role="Movie" Type="Self.Movie" Multiplicity="1" />
     <End Role="ShowTime" Type="Self.ShowTime" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Movie">
-        <PropertyRef Name="MovieId" />
+        <PropertyRef Name="MovieID" />
       </Principal>
       <Dependent Role="ShowTime">
         <PropertyRef Name="MovieID" />
@@ -209,7 +267,7 @@ error 6004: The table 'CinemaManagement3.dbo.ProductBillInfo' is referenced by a
     <End Role="MovieGenre" Type="Self.MovieGenre" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Movie">
-        <PropertyRef Name="MovieId" />
+        <PropertyRef Name="MovieID" />
       </Principal>
       <Dependent Role="MovieGenre">
         <PropertyRef Name="MovieID" />
@@ -217,7 +275,7 @@ error 6004: The table 'CinemaManagement3.dbo.ProductBillInfo' is referenced by a
     </ReferentialConstraint>
   </Association>
   <Association Name="fk_Product">
-    <End Role="Product" Type="Self.Product" Multiplicity="0..1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
     <End Role="ProductReceipt" Type="Self.ProductReceipt" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Product">
@@ -228,11 +286,20 @@ error 6004: The table 'CinemaManagement3.dbo.ProductBillInfo' is referenced by a
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <!--Errors Found During Generation:
-error 6004: The table 'CinemaManagement3.dbo.ProductBillInfo' is referenced by a relationship, but cannot be found.
-        <Association Name="fk_Product_ID" />-->
+  <Association Name="fk_Product_ID">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="ProductBillInfo" Type="Self.ProductBillInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="ProductBillInfo">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="fk_Room">
-    <End Role="Room" Type="Self.Room" Multiplicity="0..1" />
+    <End Role="Room" Type="Self.Room" Multiplicity="1" />
     <End Role="Seat" Type="Self.Seat" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Room">
@@ -244,19 +311,19 @@ error 6004: The table 'CinemaManagement3.dbo.ProductBillInfo' is referenced by a
     </ReferentialConstraint>
   </Association>
   <Association Name="fk_Room_ID">
-    <End Role="Room" Type="Self.Room" Multiplicity="0..1" />
+    <End Role="Room" Type="Self.Room" Multiplicity="1" />
     <End Role="ShowtimeSetting" Type="Self.ShowtimeSetting" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Room">
         <PropertyRef Name="RoomID" />
       </Principal>
       <Dependent Role="ShowtimeSetting">
-        <PropertyRef Name="RoomId" />
+        <PropertyRef Name="RoomID" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
   <Association Name="fk_Seat">
-    <End Role="Seat" Type="Self.Seat" Multiplicity="0..1" />
+    <End Role="Seat" Type="Self.Seat" Multiplicity="1" />
     <End Role="Ticket" Type="Self.Ticket" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Seat">
@@ -268,7 +335,7 @@ error 6004: The table 'CinemaManagement3.dbo.ProductBillInfo' is referenced by a
     </ReferentialConstraint>
   </Association>
   <Association Name="fk_Seat_ID">
-    <End Role="Seat" Type="Self.Seat" Multiplicity="0..1" />
+    <End Role="Seat" Type="Self.Seat" Multiplicity="1" />
     <End Role="SeatSetting" Type="Self.SeatSetting" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Seat">
@@ -280,7 +347,7 @@ error 6004: The table 'CinemaManagement3.dbo.ProductBillInfo' is referenced by a
     </ReferentialConstraint>
   </Association>
   <Association Name="fk_Show_ID">
-    <End Role="ShowTime" Type="Self.ShowTime" Multiplicity="0..1" />
+    <End Role="ShowTime" Type="Self.ShowTime" Multiplicity="1" />
     <End Role="SeatSetting" Type="Self.SeatSetting" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="ShowTime">
@@ -292,11 +359,11 @@ error 6004: The table 'CinemaManagement3.dbo.ProductBillInfo' is referenced by a
     </ReferentialConstraint>
   </Association>
   <Association Name="fk_Show_Setting">
-    <End Role="ShowtimeSetting" Type="Self.ShowtimeSetting" Multiplicity="0..1" />
+    <End Role="ShowtimeSetting" Type="Self.ShowtimeSetting" Multiplicity="1" />
     <End Role="ShowTime" Type="Self.ShowTime" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="ShowtimeSetting">
-        <PropertyRef Name="ShowtimeSettingId" />
+        <PropertyRef Name="ShowtimeSettingID" />
       </Principal>
       <Dependent Role="ShowTime">
         <PropertyRef Name="ShowTimeSettingID" />
@@ -304,7 +371,7 @@ error 6004: The table 'CinemaManagement3.dbo.ProductBillInfo' is referenced by a
     </ReferentialConstraint>
   </Association>
   <Association Name="fk_Shown">
-    <End Role="ShowTime" Type="Self.ShowTime" Multiplicity="0..1" />
+    <End Role="ShowTime" Type="Self.ShowTime" Multiplicity="1" />
     <End Role="Ticket" Type="Self.Ticket" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="ShowTime">
@@ -339,13 +406,62 @@ error 6004: The table 'CinemaManagement3.dbo.ProductBillInfo' is referenced by a
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="CinemaManagement3ModelStoreContainer">
+  <Association Name="fk_trouble">
+    <End Role="Staff" Type="Self.Staff" Multiplicity="1" />
+    <End Role="Trouble" Type="Self.Trouble" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Staff">
+        <PropertyRef Name="StaffID" />
+      </Principal>
+      <Dependent Role="Trouble">
+        <PropertyRef Name="StaffId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_VcRelease">
+    <End Role="Staff" Type="Self.Staff" Multiplicity="1" />
+    <End Role="VoucherRelease" Type="Self.VoucherRelease" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Staff">
+        <PropertyRef Name="StaffID" />
+      </Principal>
+      <Dependent Role="VoucherRelease">
+        <PropertyRef Name="StaffID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_voucher">
+    <End Role="VoucherRelease" Type="Self.VoucherRelease" Multiplicity="1" />
+    <End Role="Voucher" Type="Self.Voucher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VoucherRelease">
+        <PropertyRef Name="VoucherReleasesId" />
+      </Principal>
+      <Dependent Role="Voucher">
+        <PropertyRef Name="VoucherReleaseId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_voucher1">
+    <End Role="Customer" Type="Self.Customer" Multiplicity="0..1" />
+    <End Role="Voucher" Type="Self.Voucher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CustomerID" />
+      </Principal>
+      <Dependent Role="Voucher">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CinemaManagementModelStoreContainer">
     <EntitySet Name="Bill" EntityType="Self.Bill" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Genre" EntityType="Self.Genre" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Movie" EntityType="Self.Movie" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="MovieGenre" EntityType="Self.MovieGenre" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductBillInfo" EntityType="Self.ProductBillInfo" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="ProductReceipt" EntityType="Self.ProductReceipt" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Room" EntityType="Self.Room" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Seat" EntityType="Self.Seat" Schema="dbo" store:Type="Tables" />
@@ -353,6 +469,9 @@ error 6004: The table 'CinemaManagement3.dbo.ProductBillInfo' is referenced by a
     <EntitySet Name="ShowtimeSetting" EntityType="Self.ShowtimeSetting" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Staff" EntityType="Self.Staff" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Ticket" EntityType="Self.Ticket" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Trouble" EntityType="Self.Trouble" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Voucher" EntityType="Self.Voucher" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VoucherRelease" EntityType="Self.VoucherRelease" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="SeatSetting" EntityType="Self.SeatSetting" store:Type="Tables" store:Schema="dbo">
       <DefiningQuery>SELECT 
     [SeatSetting].[SeatID] AS [SeatID], 
@@ -363,6 +482,10 @@ error 6004: The table 'CinemaManagement3.dbo.ProductBillInfo' is referenced by a
     <AssociationSet Name="fk_Bill" Association="Self.fk_Bill">
       <End Role="Bill" EntitySet="Bill" />
       <End Role="Ticket" EntitySet="Ticket" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Bill_ID" Association="Self.fk_Bill_ID">
+      <End Role="Bill" EntitySet="Bill" />
+      <End Role="ProductBillInfo" EntitySet="ProductBillInfo" />
     </AssociationSet>
     <AssociationSet Name="fk_Customer_ID" Association="Self.fk_Customer_ID">
       <End Role="Customer" EntitySet="Customer" />
@@ -383,6 +506,10 @@ error 6004: The table 'CinemaManagement3.dbo.ProductBillInfo' is referenced by a
     <AssociationSet Name="fk_Product" Association="Self.fk_Product">
       <End Role="Product" EntitySet="Product" />
       <End Role="ProductReceipt" EntitySet="ProductReceipt" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Product_ID" Association="Self.fk_Product_ID">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="ProductBillInfo" EntitySet="ProductBillInfo" />
     </AssociationSet>
     <AssociationSet Name="fk_Room" Association="Self.fk_Room">
       <End Role="Room" EntitySet="Room" />
@@ -419,6 +546,22 @@ error 6004: The table 'CinemaManagement3.dbo.ProductBillInfo' is referenced by a
     <AssociationSet Name="fk_Staff_ID" Association="Self.fk_Staff_ID">
       <End Role="Staff" EntitySet="Staff" />
       <End Role="Bill" EntitySet="Bill" />
+    </AssociationSet>
+    <AssociationSet Name="fk_trouble" Association="Self.fk_trouble">
+      <End Role="Staff" EntitySet="Staff" />
+      <End Role="Trouble" EntitySet="Trouble" />
+    </AssociationSet>
+    <AssociationSet Name="fk_VcRelease" Association="Self.fk_VcRelease">
+      <End Role="Staff" EntitySet="Staff" />
+      <End Role="VoucherRelease" EntitySet="VoucherRelease" />
+    </AssociationSet>
+    <AssociationSet Name="fk_voucher" Association="Self.fk_voucher">
+      <End Role="VoucherRelease" EntitySet="VoucherRelease" />
+      <End Role="Voucher" EntitySet="Voucher" />
+    </AssociationSet>
+    <AssociationSet Name="fk_voucher1" Association="Self.fk_voucher1">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="Voucher" EntitySet="Voucher" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

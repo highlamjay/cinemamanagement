@@ -160,86 +160,86 @@
     <Compile Include="DTOs\TroubleDTO.cs" />
     <Compile Include="DTOs\VoucherDTO.cs" />
     <Compile Include="DTOs\VoucherReleaseDTO.cs" />
-    <Compile Include="Models\Bill.cs">
-      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\CinemaManagementModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CinemaManagementModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\CinemaManagementModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\CinemaManagementModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CinemaManagementModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Customer.cs">
-      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Genre.cs">
-      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Movie.cs">
-      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Product.cs">
-      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ProductBillInfo.cs">
-      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ProductReceipt.cs">
-      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Room.cs">
-      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Seat.cs">
-      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\SeatSetting.cs">
+    <Compile Include="Models\Services\Bill.cs">
       <DependentUpon>CinemaManagementModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Services\BillService.cs" />
     <Compile Include="Models\Services\BookingService.cs" />
+    <Compile Include="Models\Services\CinemaManagementModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CinemaManagementModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Services\CinemaManagementModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Services\CinemaManagementModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CinemaManagementModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Services\Customer.cs">
+      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Services\CustomerService.cs" />
+    <Compile Include="Models\Services\Genre.cs">
+      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Services\GenreService.cs" />
+    <Compile Include="Models\Services\Movie.cs">
+      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Services\MovieService.cs" />
     <Compile Include="Models\Services\OverviewStatisticService.cs" />
+    <Compile Include="Models\Services\Product.cs">
+      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Services\ProductBillInfo.cs">
+      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Services\ProductReceipt.cs">
+      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Services\ProductReceiptService.cs" />
     <Compile Include="Models\Services\ProductService.cs" />
+    <Compile Include="Models\Services\Room.cs">
+      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Services\Seat.cs">
+      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Services\SeatService.cs" />
+    <Compile Include="Models\Services\SeatSetting.cs">
+      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Services\ShowTime.cs">
+      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Services\ShowtimeService.cs" />
+    <Compile Include="Models\Services\ShowtimeSetting.cs">
+      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Services\Staff.cs">
+      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Services\StaffService.cs" />
     <Compile Include="Models\Services\StatisticService.cs" />
+    <Compile Include="Models\Services\Ticket.cs">
+      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Services\Trouble.cs">
+      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Services\TroubleService.cs" />
+    <Compile Include="Models\Services\Voucher.cs">
+      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Services\VoucherRelease.cs">
+      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Services\VoucherService.cs" />
-    <Compile Include="Models\ShowTime.cs">
-      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ShowtimeSetting.cs">
-      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Staff.cs">
-      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Ticket.cs">
-      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Trouble.cs">
-      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Voucher.cs">
-      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\VoucherRelease.cs">
-      <DependentUpon>CinemaManagementModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Utils\CloudinaryService.cs" />
     <Compile Include="Utils\Constant.cs" />
     <Compile Include="Utils\Helper.cs" />
@@ -752,11 +752,11 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="Models\CinemaManagementModel.edmx">
+    <EntityDeploy Include="Models\Services\CinemaManagementModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>CinemaManagementModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Models\CinemaManagementModel.edmx.diagram">
+    <None Include="Models\Services\CinemaManagementModel.edmx.diagram">
       <DependentUpon>CinemaManagementModel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
@@ -815,18 +815,19 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Models\CinemaManagementModel.Context.tt">
+    <Content Include="Models\Services\CinemaManagementModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>CinemaManagementModel.edmx</DependentUpon>
       <LastGenOutput>CinemaManagementModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\CinemaManagementModel.tt">
+    <Content Include="Models\Services\CinemaManagementModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>CinemaManagementModel.edmx</DependentUpon>
       <LastGenOutput>CinemaManagementModel.cs</LastGenOutput>
     </Content>
     <Content Include="Resources\EmailTemplate\common_template.html" />
     <Content Include="Resources\EmailTemplate\new_customer.html" />
+    <Resource Include="Resources\Icon\icon_app.png" />
     <Resource Include="Resources\EmailTemplate\reset_password_html.txt" />
     <Content Include="Resources\EmailTemplate\top5_customer_gratitude.html" />
   </ItemGroup>

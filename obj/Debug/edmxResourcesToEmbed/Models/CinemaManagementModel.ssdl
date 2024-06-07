@@ -8,8 +8,8 @@
     <Property Name="CustomerID" Type="varchar" MaxLength="50" />
     <Property Name="StaffID" Type="varchar" MaxLength="50" />
     <Property Name="BillTime" Type="date" Nullable="false" />
-    <Property Name="DiscountPrice" Type="decimal" Precision="19" Scale="4" Nullable="false" />
     <Property Name="TotalPrice" Type="money" Nullable="false" />
+    <Property Name="DiscountPrice" Type="decimal" Precision="19" Scale="4" Nullable="false" />
   </EntityType>
   <EntityType Name="Customer">
     <Key>
@@ -27,7 +27,7 @@
     <Key>
       <PropertyRef Name="GenreID" />
     </Key>
-    <Property Name="GenreID" Type="int" Nullable="false" />
+    <Property Name="GenreID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="GenreDisplayName" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="Movie">
@@ -66,15 +66,12 @@
     <Property Name="Image" Type="varchar" MaxLength="250" />
     <Property Name="IsDeleted" Type="bit" Nullable="false" />
   </EntityType>
-  <!--Errors Found During Generation:
-warning 6002: The table/view 'CinemaManagement.dbo.ProductBillInfo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="ProductBillInfo">
     <Key>
+      <PropertyRef Name="BillID" />
       <PropertyRef Name="ProductID" />
-      <PropertyRef Name="Quantity" />
-      <PropertyRef Name="PricePerItem" />
     </Key>
-    <Property Name="BillID" Type="varchar" MaxLength="50" />
+    <Property Name="BillID" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="ProductID" Type="int" Nullable="false" />
     <Property Name="Quantity" Type="int" Nullable="false" />
     <Property Name="PricePerItem" Type="money" Nullable="false" />
@@ -157,7 +154,7 @@ warning 6002: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a 
       <PropertyRef Name="TicketID" />
     </Key>
     <Property Name="TicketID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="BillID" Type="varchar" MaxLength="50" />
+    <Property Name="BillID" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="ShowTimeID" Type="int" Nullable="false" />
     <Property Name="SeatID" Type="int" Nullable="false" />
     <Property Name="Price" Type="money" Nullable="false" />
@@ -168,7 +165,7 @@ warning 6002: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a 
     </Key>
     <Property Name="TroubleId" Type="varchar" MaxLength="10" Nullable="false" />
     <Property Name="TroubleTitle" Type="nvarchar" MaxLength="50" Nullable="false" />
-    <Property Name="TroubleDescription" Type="text" Nullable="false" />
+    <Property Name="TroubleDescription" Type="nvarchar" MaxLength="500" Nullable="false" />
     <Property Name="TroubleStatus" Type="nvarchar" MaxLength="30" />
     <Property Name="TroubleSubmittedAt" Type="datetime" Nullable="false" />
     <Property Name="TroubleRepairCost" Type="decimal" Precision="19" Scale="4" Nullable="false" />
@@ -206,7 +203,7 @@ warning 6002: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a 
     <Property Name="StaffID" Type="varchar" MaxLength="50" Nullable="false" />
   </EntityType>
   <Association Name="fk_Bill">
-    <End Role="Bill" Type="Self.Bill" Multiplicity="0..1" />
+    <End Role="Bill" Type="Self.Bill" Multiplicity="1" />
     <End Role="Ticket" Type="Self.Ticket" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Bill">
@@ -218,7 +215,7 @@ warning 6002: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a 
     </ReferentialConstraint>
   </Association>
   <Association Name="fk_Bill_ID">
-    <End Role="Bill" Type="Self.Bill" Multiplicity="0..1" />
+    <End Role="Bill" Type="Self.Bill" Multiplicity="1" />
     <End Role="ProductBillInfo" Type="Self.ProductBillInfo" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Bill">
@@ -464,6 +461,7 @@ warning 6002: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a 
     <EntitySet Name="Movie" EntityType="Self.Movie" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="MovieGenre" EntityType="Self.MovieGenre" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductBillInfo" EntityType="Self.ProductBillInfo" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="ProductReceipt" EntityType="Self.ProductReceipt" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Room" EntityType="Self.Room" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Seat" EntityType="Self.Seat" Schema="dbo" store:Type="Tables" />
@@ -474,14 +472,6 @@ warning 6002: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a 
     <EntitySet Name="Trouble" EntityType="Self.Trouble" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Voucher" EntityType="Self.Voucher" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="VoucherRelease" EntityType="Self.VoucherRelease" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="ProductBillInfo" EntityType="Self.ProductBillInfo" store:Type="Tables" store:Schema="dbo">
-      <DefiningQuery>SELECT 
-    [ProductBillInfo].[BillID] AS [BillID], 
-    [ProductBillInfo].[ProductID] AS [ProductID], 
-    [ProductBillInfo].[Quantity] AS [Quantity], 
-    [ProductBillInfo].[PricePerItem] AS [PricePerItem]
-    FROM [dbo].[ProductBillInfo] AS [ProductBillInfo]</DefiningQuery>
-    </EntitySet>
     <EntitySet Name="SeatSetting" EntityType="Self.SeatSetting" store:Type="Tables" store:Schema="dbo">
       <DefiningQuery>SELECT 
     [SeatSetting].[SeatID] AS [SeatID], 

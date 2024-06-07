@@ -1,23 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="CinemaManagement3ModelStoreContainer" CdmEntityContainer="CinemaManagementEntities8">
+  <EntityContainerMapping StorageEntityContainer="CinemaManagementModelStoreContainer" CdmEntityContainer="CinemaManagementEntities">
     <EntitySetMapping Name="Bills">
-      <EntityTypeMapping TypeName="CinemaManagement3Model.Bill">
+      <EntityTypeMapping TypeName="CinemaManagementModel.Bill">
         <MappingFragment StoreEntitySet="Bill">
           <ScalarProperty Name="BillID" ColumnName="BillID" />
           <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
           <ScalarProperty Name="StaffID" ColumnName="StaffID" />
           <ScalarProperty Name="BillTime" ColumnName="BillTime" />
           <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="DiscountPrice" ColumnName="DiscountPrice" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Customers">
-      <EntityTypeMapping TypeName="CinemaManagement3Model.Customer">
+      <EntityTypeMapping TypeName="CinemaManagementModel.Customer">
         <MappingFragment StoreEntitySet="Customer">
           <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
           <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
-          <ScalarProperty Name="PhoneNubmer" ColumnName="PhoneNubmer" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
           <ScalarProperty Name="CreateAt" ColumnName="CreateAt" />
           <ScalarProperty Name="Email" ColumnName="Email" />
           <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
@@ -26,7 +27,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Genres">
-      <EntityTypeMapping TypeName="CinemaManagement3Model.Genre">
+      <EntityTypeMapping TypeName="CinemaManagementModel.Genre">
         <MappingFragment StoreEntitySet="Genre">
           <ScalarProperty Name="GenreID" ColumnName="GenreID" />
           <ScalarProperty Name="GenreDisplayName" ColumnName="GenreDisplayName" />
@@ -34,9 +35,9 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Movies">
-      <EntityTypeMapping TypeName="CinemaManagement3Model.Movie">
+      <EntityTypeMapping TypeName="CinemaManagementModel.Movie">
         <MappingFragment StoreEntitySet="Movie">
-          <ScalarProperty Name="MovieId" ColumnName="MovieId" />
+          <ScalarProperty Name="MovieID" ColumnName="MovieID" />
           <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
           <ScalarProperty Name="RunningTime" ColumnName="RunningTime" />
           <ScalarProperty Name="Country" ColumnName="Country" />
@@ -46,11 +47,12 @@
           <ScalarProperty Name="Image" ColumnName="Image" />
           <ScalarProperty Name="Director" ColumnName="Director" />
           <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Movie_Genre_ID" ColumnName="Movie_Genre_ID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Products">
-      <EntityTypeMapping TypeName="CinemaManagement3Model.Product">
+      <EntityTypeMapping TypeName="CinemaManagementModel.Product">
         <MappingFragment StoreEntitySet="Product">
           <ScalarProperty Name="ProductID" ColumnName="ProductID" />
           <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
@@ -62,10 +64,20 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="ProductBillInfoes">
+      <EntityTypeMapping TypeName="CinemaManagementModel.ProductBillInfo">
+        <MappingFragment StoreEntitySet="ProductBillInfo">
+          <ScalarProperty Name="BillID" ColumnName="BillID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="PricePerItem" ColumnName="PricePerItem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="ProductReceipts">
-      <EntityTypeMapping TypeName="CinemaManagement3Model.ProductReceipt">
+      <EntityTypeMapping TypeName="CinemaManagementModel.ProductReceipt">
         <MappingFragment StoreEntitySet="ProductReceipt">
-          <ScalarProperty Name="ProductReciptID" ColumnName="ProductReciptID" />
+          <ScalarProperty Name="ProductReceiptID" ColumnName="ProductReceiptID" />
           <ScalarProperty Name="ProductID" ColumnName="ProductID" />
           <ScalarProperty Name="ImportPrice" ColumnName="ImportPrice" />
           <ScalarProperty Name="Quantity" ColumnName="Quantity" />
@@ -75,7 +87,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Rooms">
-      <EntityTypeMapping TypeName="CinemaManagement3Model.Room">
+      <EntityTypeMapping TypeName="CinemaManagementModel.Room">
         <MappingFragment StoreEntitySet="Room">
           <ScalarProperty Name="RoomID" ColumnName="RoomID" />
           <ScalarProperty Name="SeatQuantity" ColumnName="SeatQuantity" />
@@ -83,7 +95,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Seats">
-      <EntityTypeMapping TypeName="CinemaManagement3Model.Seat">
+      <EntityTypeMapping TypeName="CinemaManagementModel.Seat">
         <MappingFragment StoreEntitySet="Seat">
           <ScalarProperty Name="SeatID" ColumnName="SeatID" />
           <ScalarProperty Name="SeatNumber" ColumnName="SeatNumber" />
@@ -93,7 +105,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="ShowTimes">
-      <EntityTypeMapping TypeName="CinemaManagement3Model.ShowTime">
+      <EntityTypeMapping TypeName="CinemaManagementModel.ShowTime">
         <MappingFragment StoreEntitySet="ShowTime">
           <ScalarProperty Name="ShowTimeID" ColumnName="ShowTimeID" />
           <ScalarProperty Name="ShowTimeSettingID" ColumnName="ShowTimeSettingID" />
@@ -104,16 +116,16 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="ShowtimeSettings">
-      <EntityTypeMapping TypeName="CinemaManagement3Model.ShowtimeSetting">
+      <EntityTypeMapping TypeName="CinemaManagementModel.ShowtimeSetting">
         <MappingFragment StoreEntitySet="ShowtimeSetting">
-          <ScalarProperty Name="ShowtimeSettingId" ColumnName="ShowtimeSettingId" />
+          <ScalarProperty Name="ShowtimeSettingID" ColumnName="ShowtimeSettingID" />
           <ScalarProperty Name="ShowDate" ColumnName="ShowDate" />
-          <ScalarProperty Name="RoomId" ColumnName="RoomId" />
+          <ScalarProperty Name="RoomID" ColumnName="RoomID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Staffs">
-      <EntityTypeMapping TypeName="CinemaManagement3Model.Staff">
+      <EntityTypeMapping TypeName="CinemaManagementModel.Staff">
         <MappingFragment StoreEntitySet="Staff">
           <ScalarProperty Name="StaffID" ColumnName="StaffID" />
           <ScalarProperty Name="StaffName" ColumnName="StaffName" />
@@ -122,7 +134,7 @@
           <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
           <ScalarProperty Name="Email" ColumnName="Email" />
           <ScalarProperty Name="Sex" ColumnName="Sex" />
-          <ScalarProperty Name="StaffBirthday" ColumnName="StaffBirthday" />
+          <ScalarProperty Name="StaffBirthDay" ColumnName="StaffBirthDay" />
           <ScalarProperty Name="StartingDate" ColumnName="StartingDate" />
           <ScalarProperty Name="StaffRole" ColumnName="StaffRole" />
           <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
@@ -130,7 +142,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Tickets">
-      <EntityTypeMapping TypeName="CinemaManagement3Model.Ticket">
+      <EntityTypeMapping TypeName="CinemaManagementModel.Ticket">
         <MappingFragment StoreEntitySet="Ticket">
           <ScalarProperty Name="TicketID" ColumnName="TicketID" />
           <ScalarProperty Name="BillID" ColumnName="BillID" />
@@ -140,8 +152,54 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Troubles">
+      <EntityTypeMapping TypeName="CinemaManagementModel.Trouble">
+        <MappingFragment StoreEntitySet="Trouble">
+          <ScalarProperty Name="TroubleId" ColumnName="TroubleId" />
+          <ScalarProperty Name="TroubleTitle" ColumnName="TroubleTitle" />
+          <ScalarProperty Name="TroubleDescription" ColumnName="TroubleDescription" />
+          <ScalarProperty Name="TroubleStatus" ColumnName="TroubleStatus" />
+          <ScalarProperty Name="TroubleSubmittedAt" ColumnName="TroubleSubmittedAt" />
+          <ScalarProperty Name="TroubleRepairCost" ColumnName="TroubleRepairCost" />
+          <ScalarProperty Name="TroubleStartDate" ColumnName="TroubleStartDate" />
+          <ScalarProperty Name="TroubleFinishDate" ColumnName="TroubleFinishDate" />
+          <ScalarProperty Name="StaffId" ColumnName="StaffId" />
+          <ScalarProperty Name="TroubleLevel" ColumnName="TroubleLevel" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vouchers">
+      <EntityTypeMapping TypeName="CinemaManagementModel.Voucher">
+        <MappingFragment StoreEntitySet="Voucher">
+          <ScalarProperty Name="VoucherId" ColumnName="VoucherId" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="VoucherReleaseId" ColumnName="VoucherReleaseId" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="UsedAt" ColumnName="UsedAt" />
+          <ScalarProperty Name="ReleaseAt" ColumnName="ReleaseAt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VoucherReleases">
+      <EntityTypeMapping TypeName="CinemaManagementModel.VoucherRelease">
+        <MappingFragment StoreEntitySet="VoucherRelease">
+          <ScalarProperty Name="VoucherReleasesId" ColumnName="VoucherReleasesId" />
+          <ScalarProperty Name="ReleaseName" ColumnName="ReleaseName" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="FinishDate" ColumnName="FinishDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ParValue" ColumnName="ParValue" />
+          <ScalarProperty Name="MinimumOrderValue" ColumnName="MinimumOrderValue" />
+          <ScalarProperty Name="ObjectType" ColumnName="ObjectType" />
+          <ScalarProperty Name="EnableMerge" ColumnName="EnableMerge" />
+          <ScalarProperty Name="StaffID" ColumnName="StaffID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="SeatSettings">
-      <EntityTypeMapping TypeName="CinemaManagement3Model.SeatSetting">
+      <EntityTypeMapping TypeName="CinemaManagementModel.SeatSetting">
         <MappingFragment StoreEntitySet="SeatSetting">
           <ScalarProperty Name="SeatID" ColumnName="SeatID" />
           <ScalarProperty Name="ShowTimeID" ColumnName="ShowTimeID" />
@@ -149,12 +207,12 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <AssociationSetMapping Name="MovieGenre" TypeName="CinemaManagement3Model.MovieGenre" StoreEntitySet="MovieGenre">
+    <AssociationSetMapping Name="MovieGenre" TypeName="CinemaManagementModel.MovieGenre" StoreEntitySet="MovieGenre">
       <EndProperty Name="Genre">
         <ScalarProperty Name="GenreID" ColumnName="GenreID" />
       </EndProperty>
       <EndProperty Name="Movie">
-        <ScalarProperty Name="MovieId" ColumnName="MovieID" />
+        <ScalarProperty Name="MovieID" ColumnName="MovieID" />
       </EndProperty>
     </AssociationSetMapping>
   </EntityContainerMapping>
