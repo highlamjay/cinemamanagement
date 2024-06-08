@@ -1,17 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Models",
-    "\\Models\\Services",
     "\\ViewModel",
     "\\ViewModel\\StaffVM",
     "\\ViewModel\\StaffVM\\OrderFoodWindowVM",
     "\\ViewModel\\StaffVM\\TicketBillVM",
     "\\Views",
     "\\Views\\Admin",
+    "\\Views\\Admin\\ErrorManagement",
     "\\Views\\Admin\\MovieManagement",
     "\\Views\\Staff"
   ],
-  "SelectedNode": "\\cinema-management.sln",
+  "SelectedNode": "\\Views\\Admin\\ErrorManagement\\InprogressError.xaml",
   "PreviewInSolutionExplorer": false
 }

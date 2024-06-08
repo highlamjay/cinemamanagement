@@ -81,7 +81,7 @@
                                Margin="20">
                     <Italic>
                         <Bold>
-                            <Run Text="Squadin Cinema" />
+                            <Run Text="VMN Cinema" />
                         </Bold>
                     </Italic>
                     </TextBlock>
