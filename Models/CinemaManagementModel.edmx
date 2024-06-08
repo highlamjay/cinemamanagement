@@ -116,7 +116,7 @@ warning 6002: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a 
             <PropertyRef Name="ShowTimeID" />
             <PropertyRef Name="Status" />
           </Key>
-          <Property Name="SeatID" Type="int" Nullable="false" />
+          <Property Name="SeatID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="ShowTimeID" Type="int" Nullable="false" />
           <Property Name="Status" Type="bit" Nullable="false" />
         </EntityType>
@@ -800,7 +800,7 @@ warning 6002: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a 
             <PropertyRef Name="ShowTimeID" />
             <PropertyRef Name="Status" />
           </Key>
-          <Property Name="SeatID" Type="Int32" Nullable="false" />
+          <Property Name="SeatID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ShowTimeID" Type="Int32" Nullable="false" />
           <Property Name="Status" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="Seat" Relationship="Self.fk_Seat_ID" FromRole="SeatSetting" ToRole="Seat" />

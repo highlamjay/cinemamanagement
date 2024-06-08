@@ -80,6 +80,7 @@ namespace cinema_management.Models.Services
                         TicketPrice = newShowtime.TicketPrice
                     };
                     context.ShowTimes.Add(showtime);
+                    context.SaveChanges();
 
                     //setting seats in room for new showtime 
                     var seatIds = await (from s in context.Seats
@@ -89,16 +90,16 @@ namespace cinema_management.Models.Services
                     List<SeatSetting> seatSetList = new List<SeatSetting>();
                     foreach (var seatId in seatIds)
                     {
-                        seatSetList.Add(new SeatSetting
-                        {
-                            SeatID = seatId,
-                            ShowTimeID = showtime.ShowTimeID
-                        });
+                        //seatSetList.Add(new SeatSetting
+                        //{
+                        //    SeatID = seatId,
+                        //    ShowTimeID = showtime.ShowTimeID
+                        //});
+                        var sql = $@"set identity_insert seatsetting on; insert into seatsetting(seatid, showtimeid, status) values({seatId}, {showtime.ShowTimeID}, '{false}'); set identity_insert seatsetting off";
+                        context.Database.ExecuteSqlCommand(sql);
                     }
-                    context.SeatSettings.AddRange(seatSetList);
+                    //context.SeatSettings.AddRange(seatSetList);
 
-
-                    await context.SaveChangesAsync();
                     newShowtime.Id = showtime.ShowTimeID;
                     return (true, "Thêm suất chiếu thành công");
                 }

@@ -7,26 +7,25 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace cinema_management.Models.Services
+namespace cinema_management.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Room
+    public partial class ShowtimeSetting
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Room()
+        public ShowtimeSetting()
         {
-            this.Seats = new HashSet<Seat>();
-            this.ShowtimeSettings = new HashSet<ShowtimeSetting>();
+            this.ShowTimes = new HashSet<ShowTime>();
         }
     
+        public int ShowtimeSettingID { get; set; }
+        public System.DateTime ShowDate { get; set; }
         public int RoomID { get; set; }
-        public int SeatQuantity { get; set; }
     
+        public virtual Room Room { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Seat> Seats { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ShowtimeSetting> ShowtimeSettings { get; set; }
+        public virtual ICollection<ShowTime> ShowTimes { get; set; }
     }
 }

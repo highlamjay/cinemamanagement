@@ -7,32 +7,32 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace cinema_management.Models.Services
+namespace cinema_management.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class VoucherRelease
+    public partial class Bill
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public VoucherRelease()
+        public Bill()
         {
-            this.Vouchers = new HashSet<Voucher>();
+            this.Tickets = new HashSet<Ticket>();
+            this.ProductBillInfoes = new HashSet<ProductBillInfo>();
         }
     
-        public string VoucherReleasesId { get; set; }
-        public string ReleaseName { get; set; }
-        public System.DateTime StartDate { get; set; }
-        public System.DateTime FinishDate { get; set; }
-        public bool Status { get; set; }
-        public int ParValue { get; set; }
-        public decimal MinimumOrderValue { get; set; }
-        public string ObjectType { get; set; }
-        public bool EnableMerge { get; set; }
+        public string BillID { get; set; }
+        public string CustomerID { get; set; }
         public string StaffID { get; set; }
+        public System.DateTime BillTime { get; set; }
+        public decimal TotalPrice { get; set; }
+        public decimal DiscountPrice { get; set; }
     
-        public virtual Staff Staff { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Voucher> Vouchers { get; set; }
+        public virtual ICollection<Ticket> Tickets { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ProductBillInfo> ProductBillInfoes { get; set; }
+        public virtual Customer Customer { get; set; }
+        public virtual Staff Staff { get; set; }
     }
 }

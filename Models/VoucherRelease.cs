@@ -7,29 +7,32 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace cinema_management.Models.Services
+namespace cinema_management.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Seat
+    public partial class VoucherRelease
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Seat()
+        public VoucherRelease()
         {
-            this.Tickets = new HashSet<Ticket>();
-            this.SeatSettings = new HashSet<SeatSetting>();
+            this.Vouchers = new HashSet<Voucher>();
         }
     
-        public int SeatID { get; set; }
-        public int SeatNumber { get; set; }
-        public string RowOfSeat { get; set; }
-        public int RoomID { get; set; }
+        public string VoucherReleasesId { get; set; }
+        public string ReleaseName { get; set; }
+        public System.DateTime StartDate { get; set; }
+        public System.DateTime FinishDate { get; set; }
+        public bool Status { get; set; }
+        public int ParValue { get; set; }
+        public decimal MinimumOrderValue { get; set; }
+        public string ObjectType { get; set; }
+        public bool EnableMerge { get; set; }
+        public string StaffID { get; set; }
     
-        public virtual Room Room { get; set; }
+        public virtual Staff Staff { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Ticket> Tickets { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<SeatSetting> SeatSettings { get; set; }
+        public virtual ICollection<Voucher> Vouchers { get; set; }
     }
 }

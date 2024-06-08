@@ -7,31 +7,31 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace cinema_management.Models.Services
+namespace cinema_management.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Product
+    public partial class ShowTime
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Product()
+        public ShowTime()
         {
-            this.ProductReceipts = new HashSet<ProductReceipt>();
-            this.ProductBillInfoes = new HashSet<ProductBillInfo>();
+            this.SeatSettings = new HashSet<SeatSetting>();
+            this.Tickets = new HashSet<Ticket>();
         }
     
-        public int ProductID { get; set; }
-        public string DisplayName { get; set; }
-        public string Categorylog { get; set; }
-        public int Quantity { get; set; }
-        public decimal Price { get; set; }
-        public string Image { get; set; }
-        public bool IsDeleted { get; set; }
+        public int ShowTimeID { get; set; }
+        public int ShowTimeSettingID { get; set; }
+        public int MovieID { get; set; }
+        public decimal TicketPrice { get; set; }
+        public System.TimeSpan StartTime { get; set; }
     
+        public virtual Movie Movie { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ProductReceipt> ProductReceipts { get; set; }
+        public virtual ICollection<SeatSetting> SeatSettings { get; set; }
+        public virtual ShowtimeSetting ShowtimeSetting { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ProductBillInfo> ProductBillInfoes { get; set; }
+        public virtual ICollection<Ticket> Tickets { get; set; }
     }
 }

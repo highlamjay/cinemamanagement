@@ -7,31 +7,23 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace cinema_management.Models.Services
+namespace cinema_management.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Customer
+    public partial class Genre
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Customer()
+        public Genre()
         {
-            this.Bills = new HashSet<Bill>();
-            this.Vouchers = new HashSet<Voucher>();
+            this.Movies = new HashSet<Movie>();
         }
     
-        public string CustomerID { get; set; }
-        public string CustomerName { get; set; }
-        public string PhoneNumber { get; set; }
-        public System.DateTime CreateAt { get; set; }
-        public string Email { get; set; }
-        public bool IsDeleted { get; set; }
-        public bool IsMember { get; set; }
+        public int GenreID { get; set; }
+        public string GenreDisplayName { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Bill> Bills { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Voucher> Vouchers { get; set; }
+        public virtual ICollection<Movie> Movies { get; set; }
     }
 }
