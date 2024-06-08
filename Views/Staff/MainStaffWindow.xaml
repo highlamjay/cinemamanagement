@@ -148,7 +148,9 @@
                 <!--thanh task bar de keo-->
                 <Border Grid.Row="0"
                         BorderThickness="0 0 0 0.5"
-                        BorderBrush="Gray">
+                        BorderBrush="White"
+                        Background="White">
+
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="20" />
@@ -156,6 +158,7 @@
                         </Grid.RowDefinitions>
                         <Grid Grid.Row="0"
                               Height="20"
+                      
                               VerticalAlignment="Top">
                             <i:Interaction.Triggers>
                                 <i:EventTrigger EventName="MouseLeftButtonDown">
@@ -238,17 +241,12 @@
                         <Grid Height="50"
                               Grid.Row="1">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="11*" />
-                                <ColumnDefinition Width="15*"/>
-                                <ColumnDefinition Width="24*" />
+                                <ColumnDefinition Width="13*" />
+                                <ColumnDefinition Width="12*" />
                             </Grid.ColumnDefinitions>
-                            <Grid Grid.Column="2">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="179*"/>
-                                    <ColumnDefinition Width="133*"/>
-                                </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="1">
                                 <StackPanel Orientation="Horizontal"
-                                            HorizontalAlignment="Left" Grid.Column="1" Margin="184,0,0,0">
+                                            HorizontalAlignment="Right">
                                     <materialDesign:PackIcon Kind="AccountCircle"
                                                              Width="50"
                                                              Height="50"
@@ -269,7 +267,7 @@
                                             <Button Content="Đổi vai trò"
                                                     Command="{Binding ChangeRoleCM}"
                                                     CommandParameter="{Binding ElementName=Main_Staff}"
-                                                    Visibility="{Binding IsAdmin, Converter={StaticResource AdminConverter}}" />
+                                                    Visibility="{Binding IsAdmin,Converter={StaticResource AdminConverter}}" />
                                             <Button Content="Đăng xuất"
                                                     Command="{Binding SignoutCM}"
                                                     CommandParameter="{Binding ElementName=Main_Staff}" />
@@ -311,11 +309,6 @@
                         </Style>
                     </ProgressBar.Style>
                 </ProgressBar>
-                <Label x:Name="CurrentUserName"
-                           Content=""
-                           VerticalAlignment="Top"
-                           FontSize="25"
-                           Foreground="White" Height="60" Margin="1252,21,10,0" Grid.RowSpan="2" />
             </Grid>
 
         </Grid>
@@ -324,3 +317,5 @@
     </Grid>
 
 </Window>
+
+
