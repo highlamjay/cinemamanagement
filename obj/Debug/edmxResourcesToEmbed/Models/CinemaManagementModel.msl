@@ -64,6 +64,16 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="ProductBillInfoes">
+      <EntityTypeMapping TypeName="CinemaManagementModel.ProductBillInfo">
+        <MappingFragment StoreEntitySet="ProductBillInfo">
+          <ScalarProperty Name="BillID" ColumnName="BillID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="PricePerItem" ColumnName="PricePerItem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="ProductReceipts">
       <EntityTypeMapping TypeName="CinemaManagementModel.ProductReceipt">
         <MappingFragment StoreEntitySet="ProductReceipt">
@@ -185,16 +195,6 @@
           <ScalarProperty Name="ObjectType" ColumnName="ObjectType" />
           <ScalarProperty Name="EnableMerge" ColumnName="EnableMerge" />
           <ScalarProperty Name="StaffID" ColumnName="StaffID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="ProductBillInfoes">
-      <EntityTypeMapping TypeName="CinemaManagementModel.ProductBillInfo">
-        <MappingFragment StoreEntitySet="ProductBillInfo">
-          <ScalarProperty Name="BillID" ColumnName="BillID" />
-          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
-          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
-          <ScalarProperty Name="PricePerItem" ColumnName="PricePerItem" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

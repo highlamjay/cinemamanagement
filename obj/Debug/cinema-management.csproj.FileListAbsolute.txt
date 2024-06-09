@@ -540,3 +540,8 @@ E:\học\clone\cinemamanagement\obj\Debug\Resources\Themes\Light.baml
 E:\học\clone\cinemamanagement\bin\Debug\Wpf.Ui.dll
 E:\học\clone\cinemamanagement\bin\Debug\Wpf.Ui.pdb
 E:\học\clone\cinemamanagement\bin\Debug\Wpf.Ui.xml
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\Wpf.Ui.dll
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\Wpf.Ui.pdb
+D:\Đồ án NM CNPM\cinemamanagement\bin\Debug\Wpf.Ui.xml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Resources\Themes\Dark.baml
+D:\Đồ án NM CNPM\cinemamanagement\obj\Debug\Resources\Themes\Light.baml
