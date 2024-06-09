@@ -33,7 +33,7 @@
     <viewmodelMovieScheduleWindow:MovieScheduleWindowViewModel x:Key="MovieScheduleWindowVM"/>
     <viewmodelTicket:TicketWindowViewModel x:Key="TicketWindowVM"/>
     <viewmodelOrderFoodWindow:OrderFoodPageViewModel x:Key="OrderFoodPageVM"/>
-    <viewmodelTicketBill:TicketBillViewModel x:Key="BillTicketVM"/>
     <viewmodelTroubleWindow:TroublePageViewModel x:Key="TroublePageVM"/>
-
+    <viewmodelTicketBill:TicketBillViewModel x:Key="BillTicketVM"/>
+    
 </ResourceDictionary>
