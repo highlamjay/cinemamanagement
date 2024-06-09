@@ -1,25 +1,21 @@
 ﻿using cinema_management.DTOs;
 using cinema_management.Models.Services;
 using cinema_management.Utils;
+using cinema_management.ViewModel.StaffVM.MovieScheduleWindowVM;
+using cinema_management.ViewModel.StaffVM.OrderFoodWindowVM;
+using cinema_management.Views;
 using cinema_management.Views.Admin;
 using cinema_management.Views.LoginWindow;
 using cinema_management.Views.Staff.MovieScheduleWindow;
 using cinema_management.Views.Staff.OrderFoodWindow;
 using cinema_management.Views.Staff.ShowtimePage;
 using cinema_management.Views.Staff.TroubeWindow;
-using cinema_management.Views;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows;
-using cinema_management.ViewModel.StaffVM.OrderFoodWindowVM;
-using cinema_management.ViewModel.StaffVM.MovieScheduleWindowVM;
 
 namespace cinema_management.ViewModel
 {
@@ -97,6 +93,7 @@ namespace cinema_management.ViewModel
         #region commands
         public ICommand CloseMainStaffWindowCM { get; set; }
         public ICommand MinimizeMainStaffWindowCM { get; set; }
+        public ICommand MaximizeMainStaffWindowCM { get; set; }
         public ICommand MouseMoveWindowCM { get; set; }
         public ICommand LoadMovieScheduleWindow { get; set; }
         public ICommand LoadFoodPageCM { get; set; }
@@ -173,6 +170,18 @@ namespace cinema_management.ViewModel
                 if (w != null)
                 {
                     w.WindowState = WindowState.Minimized;
+                }
+            });
+            MaximizeMainStaffWindowCM = new RelayCommand<FrameworkElement>((p) => { return p == null ? false : true; }, (p) =>
+            {
+                FrameworkElement window = Window.GetWindow(p);
+                var w = window as Window;
+                if (w != null)
+                {
+                    if (w.WindowState == WindowState.Normal)
+
+                        w.WindowState = WindowState.Maximized;
+                    else w.WindowState = WindowState.Normal;
                 }
             });
             MouseMoveWindowCM = new RelayCommand<FrameworkElement>((p) => { return p == null ? false : true; }, (p) =>

@@ -65,6 +65,8 @@
                 <Button VerticalAlignment="Top"
                         HorizontalAlignment="Center"
                         Width="120"
+                        
+                                Background="#0f0f2d"
                         Height="40"
                         FontSize="25"
                         FontFamily="arial"
@@ -79,6 +81,7 @@
                                                      VerticalAlignment="Center"
                                                      Margin="0,0,0,0" />
                             <TextBlock Text="Thêm"
+                                       
                                        Margin="5,0,0,0" />
                         </StackPanel>
                     </Button.Content>

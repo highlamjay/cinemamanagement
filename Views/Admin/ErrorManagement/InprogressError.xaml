@@ -31,7 +31,14 @@
                     BorderBrush="Black"
                     Grid.Row="0">
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="Chi tiết sự cố"
+
+                    <materialDesign:PackIcon Kind="Eye"
+                                             VerticalAlignment="Center"
+                                             Width="45"
+                                             Margin="20,0,0,0"
+                                             Height="45"/>
+                    <TextBlock Text="Error Descripsion"
+                               VerticalAlignment="Center"
                                FontSize="25"
                                FontWeight="Bold"
                                Margin="10,0,0,0" />
@@ -77,7 +84,7 @@
                             <TextBlock Text="{Binding SelectedItem.Title}"
                                        FontWeight="Bold"
                                        FontSize="18" />
-                            <TextBlock Text="Mức độ: "
+                            <TextBlock Text="Urgency level: "
                                        Margin="120,3,0,0"
                                        FontSize="15" />
                             <TextBlock Text="{Binding SelectedItem.Level}"
@@ -95,16 +102,16 @@
                         <StackPanel Margin="0,10,0,0"
                                     Orientation="Horizontal">
                             <StackPanel>
-                                <TextBlock Text="Ngày tiếp nhận:" />
+                                <TextBlock Text="Summit Date:" />
                                 <TextBlock Text="{Binding SelectedItem.SubmittedAt,StringFormat=dd/MM/yyyy HH:mm:ss}" />
                             </StackPanel>
                             <StackPanel Margin="100,0,0,0">
-                                <TextBlock Text="Nhân viên báo cáo:" />
+                                <TextBlock Text="Staff Name:" />
                                 <TextBlock Text="{Binding SelectedItem.StaffName}" />
                             </StackPanel>
                         </StackPanel>
                         <StackPanel Margin="0,10,0,0">
-                            <TextBlock Text="Trạng thái:" />
+                            <TextBlock Text="Status:" />
                             <ComboBox Width="180"
                                       Padding="0,5,0,-5"
                                       Height="32"
@@ -122,7 +129,7 @@
                         <StackPanel Margin="0,10,0,0"
                                     x:Name="_startday"
                                     IsEnabled="False">
-                            <TextBlock Text="Ngày sửa:" />
+                            <TextBlock Text="Resolution Begin Date:" />
                             <DatePicker Width="140"
                                         Padding="0,5,0,0"
                                         Height="32"
@@ -133,7 +140,7 @@
                         <StackPanel Margin="0,10,0,0"
                                     x:Name="_Finishday"
                                     IsEnabled="False">
-                            <TextBlock Text="Ngày hoàn thành:" />
+                            <TextBlock Text="Finish Date:" />
                             <DatePicker Width="140"
                                         Padding="0,5,0,0"
                                         Height="32"
@@ -145,7 +152,7 @@
                         <StackPanel Margin="0,10,0,0"
                                     x:Name="_cost"
                                     IsEnabled="False">
-                            <TextBlock Text="Chi phí:" />
+                            <TextBlock Text="Cost:" />
                             <TextBox Width="140"
                                      Padding="0,5,0,0"
                                      Height="32"
@@ -158,7 +165,10 @@
                     <Button Grid.Row="1"
                             Width="100"
                             HorizontalAlignment="Right"
-                            Content="Xác nhận"
+                            
+          Background="#0f0f2d"        
+
+                            Content="Confirm"
                             materialDesign:ButtonAssist.CornerRadius="8"
                             Command="{Binding UpdateErrorCM}"
                             CommandParameter="{Binding ElementName=window}">

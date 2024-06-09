@@ -4,7 +4,6 @@ using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace cinema_management.Models.Services
@@ -68,7 +67,7 @@ namespace cinema_management.Models.Services
                         if (show != null)
                         {
                             var endTime = new TimeSpan(0, show.Movie.RunningTime, 0) + show.StartTime;
-                            return (false, $"Khoảng thời gian từ {Helper.GetHourMinutes(show.StartTime)} đến {Helper.GetHourMinutes(endTime + TIME.BreakTime)} đã có phim chiếu tại phòng {showtimeSet.RoomID}");
+                            return (false, $"From {Helper.GetHourMinutes(show.StartTime)} to {Helper.GetHourMinutes(endTime + TIME.BreakTime)} has showtime at room {showtimeSet.RoomID}");
                         }
                     }
 
@@ -101,12 +100,12 @@ namespace cinema_management.Models.Services
                     //context.SeatSettings.AddRange(seatSetList);
 
                     newShowtime.Id = showtime.ShowTimeID;
-                    return (true, "Thêm suất chiếu thành công");
+                    return (true, "Add Successful");
                 }
             }
             catch (Exception e)
             {
-                return (false, "Lỗi hệ thống" + e.Message);
+                return (false, "Error System" + e.Message);
 
             }
         }
@@ -120,7 +119,7 @@ namespace cinema_management.Models.Services
                     ShowTime show = await context.ShowTimes.FindAsync(showtimeId);
                     if (show is null)
                     {
-                        return (false, "Suất chiếu không tồn tại!");
+                        return (false, "Showtime does not exist");
                     }
                     context.ShowTimes.Remove(show);
                     await context.SaveChangesAsync();
@@ -128,9 +127,9 @@ namespace cinema_management.Models.Services
             }
             catch (Exception)
             {
-                return (false, "Lỗi hệ thống");
+                return (false, "System Error");
             }
-            return (true, "Xóa suất chiếu thành công!");
+            return (true, "Delete successful!");
         }
         public async Task<(bool IsSuccess, string message)> UpdateTicketPrice(int showtimeId, decimal price)
         {
@@ -142,7 +141,7 @@ namespace cinema_management.Models.Services
                     ShowTime show = await context.ShowTimes.FindAsync(showtimeId);
                     if (show is null)
                     {
-                        return (false, "Suất chiếu không tồn tại!");
+                        return (false, "Showtime does not exist!");
                     }
                     show.TicketPrice = price;
                     await context.SaveChangesAsync();
@@ -150,9 +149,9 @@ namespace cinema_management.Models.Services
             }
             catch (Exception)
             {
-                return (false, "Lỗi hệ thống");
+                return (false, "System Error");
             }
-            return (true, "Cập nhật giá thành công!");
+            return (true, "Update Successful!");
         }
         public async Task<bool> CheckShowtimeHaveBooking(int showtimeId)
         {

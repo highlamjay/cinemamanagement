@@ -43,20 +43,24 @@
             <Grid Grid.Row="0">
                 <Border BorderThickness="0,0,0,1"
                         BorderBrush="Black">
-                    <Grid>
-                        <TextBlock Text="Thêm sự cố thiết bị"
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="PlusCircleOutline" 
+                                                 VerticalAlignment="Center"
+                                                 Margin="20,0,0,0"
+                                                 Height="50" Width="50" />
+                        <TextBlock Text="Add Issue"
+                                   VerticalAlignment="Center"
                                    FontSize="25"
-                                   Margin="20,10,0,0"
+                                   Margin="20,0,0,0"
                                    FontWeight="Bold" />
-                        <StackPanel Orientation="Horizontal"
-                                    VerticalAlignment="Top"
-                                    HorizontalAlignment="Right"
-                                    Grid.Row="0">
+                        
                             <Button Command="{Binding CancelCM}"
                                     CommandParameter="{Binding ElementName=Add_Trouble_Page}"
                                     ToolBar.OverflowMode="AsNeeded"
                                     Background="Transparent"
                                     Foreground="Black"
+                                    Margin="750,0,0,0"
+                                        VerticalAlignment="Top"
                                     BorderBrush="Transparent"
                                     MouseEnter="Button_MouseEnter_1"
                                     MouseLeave="Button_MouseLeave_1"
@@ -64,8 +68,8 @@
                                 <materialDesign:PackIcon Kind="WindowClose"
                                                          Padding="0" />
                             </Button>
-                        </StackPanel>
-                    </Grid>
+                        
+                    </StackPanel>
 
                 </Border>
             </Grid>
@@ -85,7 +89,7 @@
                     <StackPanel Grid.Column="0"
                                 Margin="25,0,25,0"
                                 Width="550">
-                        <Label Content="Tiêu đề"
+                        <Label Content="Title"
                                FontSize="20" />
                         <TextBox Text="{Binding Title,Mode=TwoWay}"
                                  TextWrapping="Wrap"
@@ -102,7 +106,7 @@
                     <StackPanel Grid.Column="1"
                                 Margin="50,0,100,0">
                         <StackPanel Grid.Column="0">
-                            <Label Content="Tên nhân viên"
+                            <Label Content="Staff name"
                                    FontSize="20" />
                             <TextBlock FontSize="25"
                                        Height="40"
@@ -123,19 +127,19 @@
                         <!--Status-->
                         <StackPanel Margin="25,0,0,0"
                                     Width="250">
-                            <Label Content="Trạng thái"
+                            <Label Content="Status"
                                    FontSize="20" />
                             <TextBlock Margin="0,10,0,0"
                                        FontSize="22"
                                        Height="40"
-                                       Text="Chờ tiếp nhận"
+                                       Text="Awaiting"
                                        x:Name="cbxStatusError" />
                         </StackPanel>
 
                         <!--Time-->
                         <StackPanel Width="200"
                                     Margin="100,0,0,0">
-                            <Label Content="Ngày báo cáo"
+                            <Label Content="Date"
                                    FontSize="20" />
                             <StackPanel>
                                 <TextBlock Foreground="Black"
@@ -148,7 +152,7 @@
                         <!--Time-->
                         <StackPanel Width="200"
                                     Margin="80,0,0,0">
-                            <Label Content="Mức độ"
+                            <Label Content="Urgency level"
                                    FontSize="20" />
                             <StackPanel>
                                 <ComboBox Foreground="Black"
@@ -179,7 +183,7 @@
 
                         <!--Description-->
                         <StackPanel>
-                            <Label Content="Mô tả"
+                            <Label Content="Descripsion"
                                    FontSize="20"
                                    Foreground="Black"
                                    Margin="0,10,0,0"
@@ -197,7 +201,7 @@
                                      Margin="5,5,0,0"
                                      Foreground="Black"
                                      materialDesign:ValidationAssist.Background="White"
-                                     Text="{Binding Description, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" />
+                                     Text="{Binding Description, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" TextChanged="TextBox_TextChanged" />
                         </StackPanel>
                     </StackPanel>
 
@@ -218,6 +222,7 @@
 
                         <Button Cursor="Hand"
                                 Width="60"
+                                Background="#0f0f2d"
                                 Height="40"
                                 HorizontalAlignment="Right"
                                 materialDesign:ButtonAssist.CornerRadius="10"
@@ -238,9 +243,9 @@
                                 Margin="10"
                                 Background="Transparent">
                         <!--Confirm-->
-                        <Button Content="Xác nhận"
-                                Background="#007bff"
-                                Cursor="Hand"
+                        <Button Content="Verify"
+
+                                Background="#0f0f2d"                                Cursor="Hand"
                                 Padding="0,0,0,3"
                                 FontSize="15"
                                 Height="40"

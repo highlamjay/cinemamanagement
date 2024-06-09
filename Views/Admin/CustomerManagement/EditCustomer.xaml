@@ -63,15 +63,17 @@
             </StackPanel.Resources>
             <Grid Margin="0,0,0,10"
                   Background="Transparent">
-                <Border BorderBrush="Black"
-                        BorderThickness="0,0,0,1">
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon Kind="Pencil"  Height="30" Width="30"
+                                             VerticalAlignment="Center"
+                                             Margin="20,0,0,0"/>
                     <TextBlock HorizontalAlignment="Left"
                                Margin="10,0,0,5"
-                               Text="Sửa thông tin khách hàng"
+                               Text="Edit Customer"
                                Foreground="Black"
                                FontWeight="Bold"
                                FontSize="20" />
-                </Border>
+                </StackPanel>
 
             </Grid>
             <!--#region Thông tin-->
@@ -80,7 +82,7 @@
                     <ColumnDefinition Width="120" />
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
-                <TextBlock Text="Họ và tên" />
+                <TextBlock Text="Full Name" />
                 <TextBox x:Name="_FullName"
                          Grid.Column="1"
                          Text="{Binding Fullname, Mode=TwoWay}" />
@@ -116,7 +118,7 @@
                         </Setter>
                     </Style>
                 </Grid.Resources>
-                <TextBlock Text="Ngày đăng ký"
+                <TextBlock Text="Sign up date"
                            Margin="0,20,9,10" />
                 <TextBox Width="358"
                          HorizontalAlignment="Left"
@@ -134,7 +136,7 @@
                     <ColumnDefinition Width="120" />
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
-                <TextBlock Text="Số điện thoại" />
+                <TextBlock Text="Phone number" />
                 <TextBox Grid.Column="1"
                          x:Name="_Phone"
                          PreviewTextInput="_Phone_PreviewTextInput"
@@ -168,15 +170,18 @@
                                 Value="30" />
                     </Style>
                 </Grid.Resources>
-                <Button Content="Hủy"
+                <Button Content="Cancel"
                         materialDesign:ButtonAssist.CornerRadius="8"
                         Margin="0 0 110 10"
                         Command="{Binding CloseCommand}"
                         CommandParameter="{Binding ElementName=SuaKH}"
                         Background="OrangeRed"
                         BorderBrush="Transparent" />
-                <Button Content="Lưu"
+                <Button Content="Save"
                         Margin="0 0 10 10"
+                        
+          Background="#0f0f2d"        
+
                         materialDesign:ButtonAssist.CornerRadius="8"
                         Command="{Binding EditCustomerCommand}"
                         CommandParameter="{Binding ElementName=SuaKH}" />

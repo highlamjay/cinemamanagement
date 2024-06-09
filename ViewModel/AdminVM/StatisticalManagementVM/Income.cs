@@ -1,13 +1,11 @@
 ﻿using cinema_management.Models.Services;
 using cinema_management.Utils;
 using cinema_management.Views;
-using LiveCharts.Wpf;
 using LiveCharts;
+using LiveCharts.Wpf;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -179,7 +177,7 @@ namespace cinema_management.ViewModel.AdminVM.StatisticalManagementVM
             {
                 switch (SelectedIncomePeriod.Content.ToString())
                 {
-                    case "Theo năm":
+                    case "By year":
                         {
                             if (SelectedIncomeTime != null)
                             {
@@ -189,7 +187,7 @@ namespace cinema_management.ViewModel.AdminVM.StatisticalManagementVM
                             }
                             return;
                         }
-                    case "Theo tháng":
+                    case "By month":
                         {
                             if (SelectedIncomeTime != null)
                             {
@@ -236,13 +234,13 @@ namespace cinema_management.ViewModel.AdminVM.StatisticalManagementVM
             {
             new LineSeries
             {
-                Title = "Thu",
+                Title = "Income",
                 Values = new ChartValues<decimal>(monthlyRevenue),
                 Fill = Brushes.Transparent
             },
             new LineSeries
             {
-                Title = "Chi",
+                Title = "Outcome",
                 Values = new ChartValues<decimal>(monthlyExpense),
                 Fill = Brushes.Transparent
             }
@@ -251,14 +249,14 @@ namespace cinema_management.ViewModel.AdminVM.StatisticalManagementVM
             catch (System.Data.Entity.Core.EntityException e)
             {
                 Console.WriteLine(e);
-                MessageBoxCustom mb = new MessageBoxCustom("Lỗi", "Mất kết nối cơ sở dữ liệu", MessageType.Error, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Error", "Database connection lost", MessageType.Error, MessageButtons.OK);
                 mb.ShowDialog();
                 throw;
             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                MessageBoxCustom mb = new MessageBoxCustom("Lỗi", "Lỗi hệ thống", MessageType.Error, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Error", "System Error", MessageType.Error, MessageButtons.OK);
                 mb.ShowDialog();
                 throw;
             }
@@ -295,13 +293,13 @@ namespace cinema_management.ViewModel.AdminVM.StatisticalManagementVM
             {
             new LineSeries
             {
-                Title = "Thu",
+                Title = "Income",
                 Values = new ChartValues<decimal>(dailyRevenue),
                 Fill = Brushes.Transparent,
             },
             new LineSeries
             {
-                Title = "Chi",
+                Title = "Outcome",
                 Values = new ChartValues<decimal>(dailyExpense),
                 Fill = Brushes.Transparent,
             }
@@ -310,13 +308,13 @@ namespace cinema_management.ViewModel.AdminVM.StatisticalManagementVM
             catch (System.Data.Entity.Core.EntityException e)
             {
                 Console.WriteLine(e);
-                MessageBoxCustom mb = new MessageBoxCustom("Lỗi", "Mất kết nối cơ sở dữ liệu", MessageType.Error, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Error", "Database connection lost", MessageType.Error, MessageButtons.OK);
                 mb.ShowDialog();
             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                MessageBoxCustom mb = new MessageBoxCustom("Lỗi", "Lỗi hệ thống", MessageType.Error, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Error", "System Error", MessageType.Error, MessageButtons.OK);
                 mb.ShowDialog();
             }
         }

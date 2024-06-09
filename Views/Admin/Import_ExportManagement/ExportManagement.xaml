@@ -43,7 +43,7 @@
 
                 <StackPanel Grid.Column="0"
                             Orientation="Horizontal">
-                    <TextBox materialDesign:HintAssist.Hint="Tìm kiếm"
+                    <TextBox materialDesign:HintAssist.Hint="Search"
                              x:Name="FilterBox"
                              FontSize="25"
                              Foreground="#DD000000"
@@ -133,6 +133,9 @@
                 <StackPanel Grid.Column="1"
                             Orientation="Horizontal">
                     <Button Height="40"
+                            
+          Background="#0f0f2d"        
+
                             Width="130"
                             FontFamily="arial"
                             FontWeight="Bold"
@@ -145,7 +148,7 @@
                                 <materialDesign:PackIcon Kind="FileExport"
                                                          Width="25"
                                                          Height="23" />
-                                <Label  Content="Xuất file Excel"
+                                <Label  Content="Export Excel file"
                                         Foreground="White"
                                         Margin="-5,0,0,0" />
                             </StackPanel>

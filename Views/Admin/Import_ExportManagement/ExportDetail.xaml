@@ -44,8 +44,14 @@
             </Grid.RowDefinitions>
 
             <!---HEADER-->
-            <Grid Grid.Row="0">
-                <Label Content="  Chi tiết hoá đơn"
+            <StackPanel Grid.Row="0" Orientation="Horizontal">
+                <materialDesign:PackIcon Kind="Eye"
+         VerticalAlignment="Center"
+         Width="45"
+         Margin="20,0,0,0"
+         Height="45"/>
+
+                <Label Content="Export detail"
                        FontSize="25"
                        FontWeight="Bold"
                        BorderThickness="0,0,0,0.5"
@@ -60,16 +66,18 @@
                             CommandParameter="{Binding ElementName=mainWin}"
                             ToolBar.OverflowMode="AsNeeded"
                             Background="Transparent"
+                            Margin="627,0,0,0"
                             Foreground="Black"
                             BorderBrush="Transparent"
                             MouseEnter="Button_MouseEnter_1"
                             MouseLeave="Button_MouseLeave_1"
                             materialDesign:ButtonAssist.CornerRadius="0,10,0,0">
                         <materialDesign:PackIcon Kind="WindowClose"
+                                                 
                                                  Padding="0" />
                     </Button>
                 </StackPanel>
-            </Grid>
+            </StackPanel>
 
             <!---BILL DETAIL-->
             <Grid Grid.Row="1"
@@ -97,7 +105,7 @@
                         <Border Grid.Row="0"
                                 BorderThickness="0,0,0,0.5"
                                 BorderBrush="Gray">
-                            <Label Content="Vé xem phim"
+                            <Label Content="Ticket"
                                    FontSize="30"
                                    FontWeight="Bold"
                                    Margin="20,0,0,0" />
@@ -114,7 +122,7 @@
                                             <ColumnDefinition Width="85*" />
                                         </Grid.ColumnDefinitions>
 
-                                        <Label Content="Phim"
+                                        <Label Content="Movie"
                                                Grid.Column="0"
                                                FontSize="18" />
                                         <Label Grid.Column="1"
@@ -131,7 +139,7 @@
                                             <ColumnDefinition />
                                         </Grid.ColumnDefinitions>
 
-                                        <Label Content="Suất chiếu"
+                                        <Label Content="Showtime"
                                                Grid.Column="0"
                                                FontSize="18" />
                                         <Label Content="{Binding BillDetail.TicketInfo.ShowtimeInfo}"
@@ -148,9 +156,9 @@
                                             <ColumnDefinition />
                                         </Grid.ColumnDefinitions>
 
-                                        <Label Content="Rạp"
+                                        <Label Content="Cinema name"
                                                Grid.Column="0"
-                                               FontSize="18" />
+                                               FontSize="18" Grid.ColumnSpan="2" Margin="0,0,214,0" />
                                         <Label Content="Squadin Cinema"
                                                Grid.Column="1"
                                                HorizontalAlignment="Right"
@@ -165,7 +173,7 @@
                                             <ColumnDefinition />
                                         </Grid.ColumnDefinitions>
 
-                                        <Label Content="Phòng chiếu"
+                                        <Label Content="Room"
                                                Grid.Column="0"
                                                FontSize="18" />
                                         <Label Content="{Binding BillDetail.TicketInfo.RoomName}"
@@ -182,7 +190,7 @@
                                             <ColumnDefinition />
                                         </Grid.ColumnDefinitions>
 
-                                        <Label Content="Ghế"
+                                        <Label Content="Seat"
                                                Grid.Column="0"
                                                FontSize="18" />
                                         <Label Content="{Binding BillDetail.TicketInfo.SeatInfo}"
@@ -199,7 +207,7 @@
                                             <ColumnDefinition />
                                         </Grid.ColumnDefinitions>
 
-                                        <Label Content="Giá vé"
+                                        <Label Content="Price"
                                                Grid.Column="0"
                                                FontSize="18" />
                                         <Label Grid.Column="1"
@@ -223,7 +231,7 @@
                                             <ColumnDefinition Width="75*" />
                                         </Grid.ColumnDefinitions>
 
-                                        <Label Content="Người đặt"
+                                        <Label Content="Cust. Name"
                                                Grid.Column="0"
                                                FontSize="18" />
                                         <Label Content="{Binding BillDetail.CustomerName}"
@@ -240,7 +248,7 @@
                                             <ColumnDefinition />
                                         </Grid.ColumnDefinitions>
 
-                                        <Label Content="Số điện thoại"
+                                        <Label Content="Phone Number"
                                                Grid.Column="0"
                                                FontSize="18" />
                                         <Label Content="{Binding BillDetail.PhoneNumber}"
@@ -257,7 +265,7 @@
                                             <ColumnDefinition />
                                         </Grid.ColumnDefinitions>
 
-                                        <Label Content="Thời gian"
+                                        <Label Content="Time"
                                                Grid.Column="0"
                                                FontSize="18" />
                                         <Label Grid.Column="1"
@@ -280,7 +288,7 @@
                                             <ColumnDefinition />
                                         </Grid.ColumnDefinitions>
 
-                                        <Label Content="Tổng"
+                                        <Label Content="Total"
                                                Grid.Column="0"
                                                FontSize="18" />
                                         <Label x:Name="_totalticket"
@@ -311,7 +319,7 @@
                             BorderBrush="Gray">
                         <Border BorderBrush="Gray"
                                 BorderThickness="0,0,0,0.5">
-                            <Label Content="Sản phẩm"
+                            <Label Content="Product"
                                    FontSize="30"
                                    FontWeight="Bold"
                                    Margin="20,0,0,0" />
@@ -383,7 +391,7 @@
                                         <ColumnDefinition />
                                     </Grid.ColumnDefinitions>
 
-                                    <Label Content="Tổng"
+                                    <Label Content="Total"
                                            Grid.Column="0"
                                            FontSize="18" />
                                     <Label x:Name="_totalproduct"
@@ -407,7 +415,7 @@
                         <ColumnDefinition Width="20*" />
                         <ColumnDefinition Width="30*" />
                     </Grid.ColumnDefinitions>
-                    <Label Content="Tổng tiền"
+                    <Label Content="Total"
                            FontSize="20"
                            Grid.Column="1" />
                     <Label Content="{Binding BillDetail.OriginalTotalPriceStr}"
@@ -421,10 +429,10 @@
                         <ColumnDefinition Width="20*" />
                         <ColumnDefinition Width="30*" />
                     </Grid.ColumnDefinitions>
-                    <Label Content="Phí giao dịch"
+                    <Label Content="Transaction fee"
                            FontSize="20"
                            Grid.Column="1" />
-                    <Label Content="Miễn phí"
+                    <Label Content="Free"
                            FontSize="20"
                            Grid.Column="2"
                            HorizontalAlignment="Right" />
@@ -435,7 +443,7 @@
                         <ColumnDefinition Width="20*" />
                         <ColumnDefinition Width="30*" />
                     </Grid.ColumnDefinitions>
-                    <Label Content="Khuyến mãi"
+                    <Label Content="Voucher amount"
                            FontSize="20"
                            Grid.Column="1" />
                     <Label Content="{Binding BillDetail.DiscountPriceStr}"
@@ -449,7 +457,7 @@
                         <ColumnDefinition Width="20*" />
                         <ColumnDefinition Width="30*" />
                     </Grid.ColumnDefinitions>
-                    <Label Content="Sau khuyến mãi"
+                    <Label Content="Total after all"
                            FontSize="20"
                            Grid.Column="1" />
                     <Label Content="{Binding BillDetail.TotalPriceStr}"

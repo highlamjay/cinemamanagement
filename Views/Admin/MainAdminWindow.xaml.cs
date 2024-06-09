@@ -1,19 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using cinema_management.ViewModel;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using System.Windows.Controls.Primitives;
-using cinema_management.ViewModel;
-using cinema_management.Views.Admin.StatisticManagement;
+using System.Windows.Input;
 
 namespace cinema_management.Views.Admin
 {
@@ -26,8 +14,7 @@ namespace cinema_management.Views.Admin
         public MainAdminWindow()
         {
             InitializeComponent();
-            this.DataContext = new MainAdminViewModel();
-            MainFrame.Content = new StatisticalManagement();
+            DataContext = new MainAdminViewModel();
         }
 
         private void mainadminwindow_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
@@ -54,7 +41,6 @@ namespace cinema_management.Views.Admin
         {
             topnotifi.Visibility = Visibility.Collapsed;
             shadow.Visibility = Visibility.Visible;
-            
         }
 
         private void SlideButton_Unchecked(object sender, RoutedEventArgs e)
@@ -77,6 +63,13 @@ namespace cinema_management.Views.Admin
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void Label_MouseLeftButtonUp_2(object sender, MouseButtonEventArgs e)
+        {
+            if (this.WindowState == WindowState.Normal)
+                this.WindowState = WindowState.Maximized;
+            else this.WindowState = WindowState.Normal;
         }
     }
 }
