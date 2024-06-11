@@ -43,7 +43,7 @@ namespace cinema_management.Models.Services
                                                  StaffId = pr.Staff.StaffID,
                                                  StaffName = pr.Staff.StaffName,
                                                  Quantity = pr.Quantity,
-                                                 ImportPrice = pr.ImportPrice,
+                                                 ImportPrice = pr.ImportPrice*pr.Quantity,
                                                  CreatedAt = pr.TimeOfReceipt,
                                              }).ToListAsync();
                 }
@@ -73,7 +73,7 @@ namespace cinema_management.Models.Services
                                                  StaffId = pr.Staff.StaffID,
                                                  StaffName = pr.Staff.StaffName,
                                                  Quantity = pr.Quantity,
-                                                 ImportPrice = pr.ImportPrice,
+                                                 ImportPrice = pr.ImportPrice * pr.Quantity,
                                                  CreatedAt = pr.TimeOfReceipt,
                                              }).ToListAsync();
                 }
