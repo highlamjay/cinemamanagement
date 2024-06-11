@@ -118,7 +118,7 @@
 
                 <i:Interaction.Triggers>
                     <i:EventTrigger EventName="Loaded">
-                        <i:InvokeCommandAction Command="{Binding LoadQLPPageCM}"
+                        <i:InvokeCommandAction Command="{Binding LoadTKPageCM}"
                                                CommandParameter="{Binding ElementName=MainFrame}" />
                     </i:EventTrigger>
                 </i:Interaction.Triggers>

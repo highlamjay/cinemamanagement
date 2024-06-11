@@ -138,7 +138,13 @@ namespace cinema_management.ViewModel.LoginVM
                 }
                 else
                 {
-                    
+                    LoginWindow.Hide();
+                    MainStaffWindow w1 = new MainStaffWindow();
+                    MainStaffViewModel.CurrentStaff = CurrentStaff;
+                    w1._StaffName.Text = CurrentStaff.StaffName;
+                    w1.Show();
+                    LoginWindow.Close();
+                    return;
                 }
             });
         }

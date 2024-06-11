@@ -37,7 +37,7 @@
                         </Style>
                     </StackPanel.Resources>
                     <TextBlock>
-                    <Bold><Italic>Squadin Cinema</Italic></Bold>
+                    <Bold><Italic>VMN Cinema</Italic></Bold>
                     </TextBlock>
                     <TextBlock Text="|"></TextBlock>
                     <TextBlock Text="{Binding showTimeRoomNumber}"
@@ -334,7 +334,7 @@
                                                 <Label Content="Rạp"
                                                        Grid.Column="0"
                                                        FontSize="14" />
-                                                <Label Content="Squadin Cinema"
+                                                <Label Content="VMN Cinema"
                                                        Grid.Column="1"
                                                        HorizontalAlignment="Right"
                                                        FontSize="16" />
