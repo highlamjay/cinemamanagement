@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Data.Entity.Infrastructure;
 using System.Data.Entity.Validation;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace cinema_management.Models.Services
 {
@@ -52,7 +54,7 @@ namespace cinema_management.Models.Services
                     var genreInDB = context.Genres.Where(g => g.GenreDisplayName == genre.DisplayName).FirstOrDefault();
                     if (genreInDB != null)
                     {
-                        return (false, "Genre already had ");
+                        return (false, "Thể loại phim này đã tồn tại");
                     }
                     context.Genres.Add(new Genre
                     {

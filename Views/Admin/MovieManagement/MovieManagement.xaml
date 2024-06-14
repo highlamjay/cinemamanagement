@@ -53,7 +53,7 @@
         <StackPanel Grid.Row="0"
                     Orientation="Horizontal"
                     Margin="30,0,0,0">
-            <TextBox materialDesign:HintAssist.Hint="Search"
+            <TextBox materialDesign:HintAssist.Hint="Tìm kiếm"
                      FontSize="25"
                      Foreground="#DD000000"
                      FontFamily="Arial"
@@ -74,7 +74,7 @@
                         Width="120"
                         Height="40"
                         FontSize="25"
-                        
+                        FontFamily="arial"
                         Padding="0"
                         materialDesign:ButtonAssist.CornerRadius="8"
                         Command="{Binding LoadAddMovieCM}">
@@ -85,8 +85,7 @@
                                                      Height="25"
                                                      VerticalAlignment="Center"
                                                      Margin="0,0,0,0" />
-                            <TextBlock Text="Add"
-                                       
+                            <TextBlock Text="Thêm"
                                        Margin="5,0,0,0" />
                         </StackPanel>
                     </Button.Content>
@@ -95,7 +94,6 @@
         </StackPanel>
 
         <Grid Grid.Row="1">
-            <Button></Button>
             <materialDesign:Card Background="White"
                                  Margin="30,20,30,20"
                                  UniformCornerRadius="5">
@@ -105,7 +103,7 @@
                               SelectedItem="{Binding SelectedItem}"
                               Focusable="True"
                               Height="578"
-                              ToolTip="Double click for more information">
+                              ToolTip="Nháy đúp để xem chi tiết">
                         <i:Interaction.Triggers>
                             <i:EventTrigger EventName="MouseDoubleClick">
                                 <i:InvokeCommandAction Command="{Binding LoadInforMovieCM}" />
@@ -113,13 +111,8 @@
                         </i:Interaction.Triggers>
                         <ListView.View>
                             <GridView>
-                               
-                                <GridViewColumn Width="450">
-                                    <GridViewColumn.HeaderTemplate>
-                                        <DataTemplate>
-                                            <TextBlock Text="Name" FontSize="20" />
-                                        </DataTemplate>
-                                    </GridViewColumn.HeaderTemplate>
+                                <GridViewColumn Header="Tên phim"
+                                                Width="450">
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBlock Text="{Binding DisplayName}"
@@ -128,12 +121,7 @@
                                     </GridViewColumn.CellTemplate>
                                 </GridViewColumn>
                                 <GridViewColumn Header="Loại phim"
-                                                Width="200">
-                                    <GridViewColumn.HeaderTemplate>
-                                        <DataTemplate>
-                                            <TextBlock Text="Loại phim" FontSize="20" />
-                                        </DataTemplate>
-                                    </GridViewColumn.HeaderTemplate>
+                                                Width="150">
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBlock Text="{Binding MovieType}"
@@ -143,12 +131,7 @@
                                     </GridViewColumn.CellTemplate>
                                 </GridViewColumn>
                                 <GridViewColumn Header="Quốc gia"
-                                                Width="200">
-                                    <GridViewColumn.HeaderTemplate>
-                                        <DataTemplate>
-                                            <TextBlock Text="Country" FontSize="20" />
-                                        </DataTemplate>
-                                    </GridViewColumn.HeaderTemplate>
+                                                Width="180">
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBlock Text="{Binding Country}"
@@ -157,13 +140,7 @@
                                         </DataTemplate>
                                     </GridViewColumn.CellTemplate>
                                 </GridViewColumn>
-                                <GridViewColumn Header="Thể loại"
-                                                Width="200">
-                                    <GridViewColumn.HeaderTemplate>
-                                        <DataTemplate>
-                                            <TextBlock Text="Thể loại" FontSize="20" />
-                                        </DataTemplate>
-                                    </GridViewColumn.HeaderTemplate>
+                                <GridViewColumn Header="Thể loại">
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBlock Text="{Binding Genres[0].DisplayName}"
@@ -174,11 +151,6 @@
                                 </GridViewColumn>
                                 <GridViewColumn Header="Thời lượng(phút)"
                                                 Width="200">
-                                    <GridViewColumn.HeaderTemplate>
-                                        <DataTemplate>
-                                            <TextBlock Text="Time" FontSize="20" />
-                                        </DataTemplate>
-                                    </GridViewColumn.HeaderTemplate>
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBlock Text="{Binding RunningTime}"
@@ -260,12 +232,11 @@
                         <StackPanel Orientation="Horizontal"
                                     HorizontalAlignment="Right"
                                     Margin="0,0,20,0">
-                            <Label Content="Movie Count: "
-                                   FontSize="25" />
+                            <Label Content="Kết quả: "
+                                   FontSize="15" />
                             <Label Content="{Binding MovieList.Count}"
                                    x:Name="result"
-                                   
-                                   FontSize="25" />
+                                   FontSize="15" />
                         </StackPanel>
                     </Grid>
                     <ProgressBar Style="{StaticResource MaterialDesignCircularProgressBar}"

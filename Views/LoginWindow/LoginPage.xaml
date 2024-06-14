@@ -31,8 +31,8 @@
         <Label FontFamily="junegull"
                FontSize="35"
                FontWeight="UltraBlack"
-                Foreground="White"        
-               Content="Squadin Cinema"
+               Foreground="#0c70b6"
+               Content="WELCOME BACK"
                VerticalAlignment="Center"
                HorizontalAlignment="Center"
                Height="50"
@@ -45,11 +45,10 @@
                     Orientation="Horizontal">
             <materialDesign:PackIcon Kind="Account"
                                      Height="20"
-                                     Foreground="White"
                                      Width="20"
                                      VerticalAlignment="Bottom" />
-            <TextBox materialDesign:HintAssist.Hint="Username"
-                     Foreground="White"
+            <TextBox materialDesign:HintAssist.Hint="Tên đăng nhập"
+                     Foreground="Black"
                      FontSize="15"
                      Width="200"
                      Margin="5,0,0,0"
@@ -63,11 +62,10 @@
             <materialDesign:PackIcon Kind="Lock"
                                      Height="20"
                                      Width="20"
-                                     Foreground="White"
                                      VerticalAlignment="Bottom" />
             <PasswordBox x:Name="FloatingPasswordBox"
-                         materialDesign:HintAssist.Hint="Password"
-                         Foreground="White"
+                         materialDesign:HintAssist.Hint="Mật khẩu"
+                         Foreground="Black"
                          FontSize="15"
                          Width="200"
                          Margin="5,0,0,0"
@@ -94,22 +92,19 @@
                        Foreground="Red" />
             </StackPanel>
             <StackPanel HorizontalAlignment="Right">
-                <Button Content="Forgor password"
-                         Foreground="White"     
-                        FontWeight="Bold"
+                <Button Content="Quên mật khẩu?"
+                        Foreground="Blue"
                         FontSize="12"
                         Margin="0,0,5,0"
-                       
+                        FontWeight="Normal"
                         Background="Transparent"
                         BorderBrush="Transparent"
                         HorizontalContentAlignment="Right"
                         Command="{Binding ForgotPassCM}" />
                 <Grid Margin="0,10,20,0">
-                    <Button Content="Sign in"
+                    <Button Content="Đăng nhập"
                             Width="120"
                             x:Name="loginbtn"
-                               Foreground="White"   
-                            Background="#272537"
                             Padding="0,0,0,5"
                             materialDesign:ButtonAssist.CornerRadius="8"
                             Command="{Binding LoginCM}"

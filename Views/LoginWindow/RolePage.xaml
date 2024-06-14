@@ -29,8 +29,8 @@
         <Label FontFamily="junegull"
                FontSize="35"
                FontWeight="UltraBlack"
-               Foreground="White"
-               Content="SQUADIN CINEMA"
+               Foreground="#0c70b6"
+               Content="WELCOME BACK"
                VerticalAlignment="Center"
                HorizontalAlignment="Center"
                Height="50"
@@ -43,11 +43,10 @@
                     Orientation="Horizontal">
             <materialDesign:PackIcon Kind="Account"
                                      Height="20"
-                                     Foreground="White"
                                      Width="20"
                                      VerticalAlignment="Bottom" />
-            <TextBox materialDesign:HintAssist.Hint="Username"
-                     Foreground="White"
+            <TextBox materialDesign:HintAssist.Hint="Tên đăng nhập"
+                     Foreground="Black"
                      FontSize="15"
                      Width="200"
                      Margin="5,0,0,0"
@@ -58,8 +57,7 @@
                      x:Name="usernameTextBox" />
         </StackPanel>
         <StackPanel>
-            <Label Content="Role"
-                   Foreground="White"
+            <Label Content="Vai trò"
                    Margin="123,5,0,-5" />
             <StackPanel HorizontalAlignment="Center"
                         Orientation="Horizontal">
@@ -67,10 +65,9 @@
                 <materialDesign:PackIcon Kind="CompareHorizontal"
                                          Height="20"
                                          Width="20"
-                                         Foreground="White"
                                          VerticalAlignment="Bottom" />
                 <ComboBox x:Name="FloatingPasswordBox"
-                          Foreground="White"
+                          Foreground="Black"
                           FontSize="15"
                           Width="200"
                           Margin="5,0,0,0"
@@ -85,7 +82,7 @@
 
 
             <Grid Margin="120,70,20,0">
-                <Button Content="Sign in"
+                <Button Content="Xác nhận"
                         Width="120"
                         x:Name="loginbtn"
                         Padding="0,0,0,5"

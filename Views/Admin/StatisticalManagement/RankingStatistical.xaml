@@ -69,8 +69,8 @@
                                                        CommandParameter="{Binding ElementName=periodbox1}" />
                             </i:EventTrigger>
                         </i:Interaction.Triggers>
-                        <ComboBoxItem>By year</ComboBoxItem>
-                        <ComboBoxItem>By month</ComboBoxItem>
+                        <ComboBoxItem>Theo năm</ComboBoxItem>
+                        <ComboBoxItem>Theo tháng</ComboBoxItem>
                     </ComboBox>
                 </StackPanel>
                 <!---TIME-->
@@ -125,7 +125,7 @@
                             <Label Content="{Binding Top5Customer[0].ExpenseStr}"
                                    HorizontalContentAlignment="Center"
                                    FontSize="15" />
-                            <Label Content="1st"
+                            <Label Content="Hạng nhất"
                                    HorizontalContentAlignment="Center" />
                         </StackPanel>
 
@@ -145,15 +145,15 @@
                         <StackPanel Orientation="Horizontal"
                                     Margin="250,150,0,0"
                                     Height="25">
-                            <Label Content="Non-member customer: "
+                            <Label Content="Khách vãng lai: "
                                    HorizontalAlignment="Right"
-                                   FontSize="13"
+                                   FontSize="15"
                                    Foreground="Black" />
                             <Label Content="{Binding WalkingGuest}"
                                    Height="25"
                                    Margin="-10,0,0,0"
                                    HorizontalAlignment="Right"
-                                   FontSize="14"
+                                   FontSize="15"
                                    Foreground="Black" />
                         </StackPanel>
                     </Grid>
@@ -163,7 +163,7 @@
 
             <StackPanel Grid.Row="2"
                         Margin="10,0,20,10">
-                <Label Content="Top 5 Customer"
+                <Label Content="Top 5 khách hàng chi tiêu nhiều nhất"
                        FontSize="25"
                        FontWeight="bold"
                        Margin="0,10,0,0" />
@@ -186,7 +186,7 @@
                                         </DataTemplate>
                                     </GridViewColumn.CellTemplate>
                                 </GridViewColumn>
-                                <GridViewColumn Header="Name"
+                                <GridViewColumn Header="Tên khách hàng"
                                                 Width="250">
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
@@ -197,7 +197,7 @@
                                         </DataTemplate>
                                     </GridViewColumn.CellTemplate>
                                 </GridViewColumn>
-                                <GridViewColumn Header="Phone number"
+                                <GridViewColumn Header="Số điện thoại"
                                                 Width="250">
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
@@ -207,7 +207,7 @@
                                         </DataTemplate>
                                     </GridViewColumn.CellTemplate>
                                 </GridViewColumn>
-                                <GridViewColumn Header="Total Expense" Width="250">
+                                <GridViewColumn Header="Chi tiêu">
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBlock Text="{Binding ExpenseStr}"
@@ -252,8 +252,8 @@
                                 <i:InvokeCommandAction Command="{Binding ChangeRankingPeriod2CM}" />
                             </i:EventTrigger>
                         </i:Interaction.Triggers>
-                        <ComboBoxItem>By year</ComboBoxItem>
-                        <ComboBoxItem>By month</ComboBoxItem>
+                        <ComboBoxItem>Theo năm</ComboBoxItem>
+                        <ComboBoxItem>Theo tháng</ComboBoxItem>
                     </ComboBox>
                 </StackPanel>
                 <!---TIME-->
@@ -298,13 +298,11 @@
                                 <Label Content="{Binding Top5Staff[0].Name}"
                                        FontWeight="Bold"
                                        HorizontalContentAlignment="Center"
-                                       FontSize="25" />
+                                       FontSize="15" />
                                 <Label Content="{Binding Top5Staff[0].BenefitContributionStr}"
                                        HorizontalContentAlignment="Center"
-                                       FontSize="25" />
-                                <Label Content="1st"
-                                       FontSize="25"
-                                       FontWeight="Bold"
+                                       FontSize="15" />
+                                <Label Content="Hạng nhất"
                                        HorizontalContentAlignment="Center" />
                             </StackPanel>
                         </Grid>
@@ -324,7 +322,7 @@
 
             <StackPanel Grid.Row="2"
                         Margin="5,0,10,10">
-                <Label Content="Top 5 Staff"
+                <Label Content="Top 5 nhân viên đóng góp nhiều nhất"
                        FontSize="25"
                        FontWeight="bold"
                        Margin="0,10,0,0" />
@@ -347,7 +345,7 @@
                                         </DataTemplate>
                                     </GridViewColumn.CellTemplate>
                                 </GridViewColumn>
-                                <GridViewColumn Header="Staff ID"
+                                <GridViewColumn Header="Mã nhân viên"
                                                 Width="145">
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
@@ -358,7 +356,7 @@
                                         </DataTemplate>
                                     </GridViewColumn.CellTemplate>
                                 </GridViewColumn>
-                                <GridViewColumn Header="Name"
+                                <GridViewColumn Header="Tên nhân viên"
                                                 Width="220">
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
@@ -368,7 +366,7 @@
                                         </DataTemplate>
                                     </GridViewColumn.CellTemplate>
                                 </GridViewColumn>
-                                <GridViewColumn Header="Total Revenue"
+                                <GridViewColumn Header="Doanh số"
                                                 Width="160">
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>

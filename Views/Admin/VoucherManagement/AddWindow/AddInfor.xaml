@@ -44,7 +44,7 @@
                         <ColumnDefinition Width="35*" />
                         <ColumnDefinition  Width="65*" />
                     </Grid.ColumnDefinitions>
-                    <TextBlock Text="Voucher Code"
+                    <TextBlock Text="Mã phát hành"
                                VerticalAlignment="Bottom"
                                Width="auto"
                                Grid.Column="0" />
@@ -57,7 +57,7 @@
                         <ColumnDefinition Width="35*" />
                         <ColumnDefinition  Width="65*" />
                     </Grid.ColumnDefinitions>
-                    <TextBlock Text="Release Name"
+                    <TextBlock Text="Tên đợt phát hành"
                                VerticalAlignment="Bottom"
                                Width="auto"
                                Grid.Column="0" />
@@ -70,7 +70,7 @@
                         <ColumnDefinition Width="35*" />
                         <ColumnDefinition  Width="65*" />
                     </Grid.ColumnDefinitions>
-                    <TextBlock Text="Value (VNĐ)"
+                    <TextBlock Text="Mệnh giá(VNĐ)"
                                VerticalAlignment="Bottom"
                                Width="auto"
                                Grid.Column="0" />
@@ -85,17 +85,17 @@
                         <ColumnDefinition Width="35*" />
                         <ColumnDefinition  Width="65*" />
                     </Grid.ColumnDefinitions>
-                    <TextBlock Text="Status"
+                    <TextBlock Text="Trạng thái"
                                VerticalAlignment="Bottom"
                                Width="auto"
                                Grid.Column="0" />
                     <StackPanel Orientation="Horizontal"
                                 Grid.Column="1"
                                 Margin="10,0,0,0">
-                        <RadioButton Content="Active"
+                        <RadioButton Content="Kích hoạt"
                                      IsChecked="True"
                                      Checked="RadioButton_Checked" />
-                        <RadioButton Content="Non-active"
+                        <RadioButton Content="Chưa áp dụng"
                                      Margin="40,0,0,0"
                                      Checked="RadioButton_Checked_1" />
                     </StackPanel>
@@ -107,7 +107,7 @@
                         <ColumnDefinition  Width="65*" />
                     </Grid.ColumnDefinitions>
 
-                    <TextBlock Text="Validity time"
+                    <TextBlock Text="Hiệu lực từ"
                                VerticalAlignment="Bottom"
                                Grid.Column="0" />
                     <StackPanel Orientation="Horizontal"
@@ -129,7 +129,7 @@
                                     DisplayDateStart="{Binding StartDate}" />
                     </StackPanel>
                 </Grid>
-                <CheckBox Content="Applying multiple vouchers to a single receipt"
+                <CheckBox Content="Áp dụng gộp nhiều voucher cho một hoá đơn"
                           Margin="0,40,0,0"
                           IsChecked="{Binding EnableMerge,Mode=OneWayToSource}" />
             </StackPanel>
@@ -145,7 +145,7 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition />
                     </Grid.ColumnDefinitions>
-                    <TextBlock Text="Object Type"
+                    <TextBlock Text="Nhóm hàng"
                                VerticalAlignment="Bottom"
                                Width="auto"
                                Grid.Column="0"
@@ -167,11 +167,11 @@
                         <ColumnDefinition Width="166*" />
                         <ColumnDefinition  Width="193*" />
                     </Grid.ColumnDefinitions>
-                    <TextBlock Text="Minimum Total (VNĐ)"
-                               VerticalAlignment="Top"
-                               Width="166"
+                    <TextBlock Text="Tổng tối thiểu(VNĐ)"
+                               VerticalAlignment="Bottom"
+                               Width="auto"
                                Grid.Column="0"
-                               Height="18" HorizontalAlignment="Left" Margin="0,20,0,0" />
+                               Height="18" />
                     <materialDesign:PackIcon Kind="InfoCircle"
                                              Margin="145,18,0,0"
                                              Cursor="Hand"
@@ -188,11 +188,10 @@
             </StackPanel>
 
 
-            <Button Content="Save"
+            <Button Content="Lưu"
                     Width="100"
                     FontSize="20"
                     Height="40"
-                    Background="#0f0f2d"        
                     VerticalAlignment="Bottom"
                     HorizontalAlignment="Right"
                     Padding="0,0,0,5"

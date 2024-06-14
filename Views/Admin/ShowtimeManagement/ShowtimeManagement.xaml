@@ -47,7 +47,7 @@
         <StackPanel Grid.Row="0"
                     Orientation="Horizontal"
                     Margin="30,0,0,0">
-            <TextBox materialDesign:HintAssist.Hint="Search"
+            <TextBox materialDesign:HintAssist.Hint="Tìm kiếm"
                      x:Name="_FilterBox"
                      FontSize="25"
                      Foreground="#DD000000"
@@ -68,7 +68,6 @@
                          Width="120"
                          Height="40"
                          FontSize="25"
-                         Background="#0f0f2d"        
                          FontFamily="arial"
                          materialDesign:ButtonAssist.CornerRadius="8"
                          Command="{Binding LoadAddShowtimeCM}">
@@ -79,7 +78,7 @@
                                                      Height="25"
                                                      VerticalAlignment="Center"
                                                      Margin="0,0,0,0" />
-                            <TextBlock Text="Add"
+                            <TextBlock Text="Thêm"
                                        Margin="5,0,0,0" />
                         </StackPanel>
                     </Button.Content>
@@ -112,13 +111,11 @@
             <!--Changing ROOM-->
             <StackPanel Orientation="Vertical"
                         Margin="5,18,0,0"
-                        
-                        Width="120"
+                        Width="100"
                         HorizontalAlignment="Left">
                 <RadioButton Style="{StaticResource MaterialDesignTabRadioButtonLeft}"
                              IsChecked="True"
-                             FontSize="20"
-                             Content="All Room"
+                             Content="Toàn bộ"
                              x:Name="all"
                              Padding="0,10,0,10"
                              BorderBrush="#0c70b6"
@@ -127,8 +124,7 @@
                              Click="all_Click" />
                 <RadioButton Style="{StaticResource MaterialDesignTabRadioButtonLeft}"
                              IsChecked="False"
-                              FontSize="20"
-                             Content="Room 1"
+                             Content="Phòng 1"
                              x:Name="r1"
                              Padding="0,10,0,10"
                              Click="all_Click"
@@ -137,9 +133,8 @@
                              CommandParameter="{Binding ElementName=r1}" />
                 <RadioButton Style="{StaticResource MaterialDesignTabRadioButtonLeft}"
                              IsChecked="False"
-                             Content="Room 2"
+                             Content="Phòng 2"
                              x:Name="r2"
-                              FontSize="20"
                              Click="all_Click"
                              Padding="0,10,0,10"
                              BorderBrush="#0c70b6"
@@ -148,9 +143,8 @@
                 <RadioButton Style="{StaticResource MaterialDesignTabRadioButtonLeft}"
                              Padding="0,10,0,10"
                              IsChecked="False"
-                             Content="Room 3"
+                             Content="Phòng 3"
                              x:Name="r3"
-                              FontSize="20"
                              Click="all_Click"
                              BorderBrush="#0c70b6"
                              Command="{Binding ChangedRoomCM}"
@@ -158,8 +152,7 @@
                 <RadioButton Style="{StaticResource MaterialDesignTabRadioButtonLeft}"
                              Padding="0,10,0,10"
                              IsChecked="False"
-                             Content="Room 4"
-                              FontSize="20"
+                             Content="Phòng 4"
                              x:Name="r4"
                              Click="all_Click"
                              BorderBrush="#0c70b6"
@@ -169,8 +162,7 @@
                              Margin="0,4,4,4"
                              Padding="0,10,0,10"
                              IsChecked="False"
-                              FontSize="20"
-                             Content="Room 5"
+                             Content="Phòng 5"
                              x:Name="r5"
                              Click="all_Click"
                              BorderBrush="#0c70b6"
@@ -181,7 +173,7 @@
 
             <!---Listview-->
             <materialDesign:Card Background="White"
-                                 Margin="120,20,30,20"
+                                 Margin="100,20,30,20"
                                  UniformCornerRadius="5">
                 <StackPanel>
                     <ListView x:Name="ShowtimeListview"
@@ -193,12 +185,8 @@
 
                         <ListView.View>
                             <GridView>
-                                <GridViewColumn Width="450">
-                                    <GridViewColumn.HeaderTemplate>
-                                        <DataTemplate>
-                                            <TextBlock Text="Name" FontSize="20" />
-                                        </DataTemplate>
-                                    </GridViewColumn.HeaderTemplate>
+                                <GridViewColumn Header="Tên phim"
+                                                Width="390">
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBlock  Text="{Binding DisplayName}"
@@ -206,13 +194,7 @@
                                         </DataTemplate>
                                     </GridViewColumn.CellTemplate>
                                 </GridViewColumn>
-                                <GridViewColumn Header="Loại phim"
-                Width="200">
-                                    <GridViewColumn.HeaderTemplate>
-                                        <DataTemplate>
-                                            <TextBlock Text="Loại phim" FontSize="20" />
-                                        </DataTemplate>
-                                    </GridViewColumn.HeaderTemplate>
+                                <GridViewColumn Header="Loại phim">
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBlock  Text="{Binding MovieType}"
@@ -221,13 +203,7 @@
                                         </DataTemplate>
                                     </GridViewColumn.CellTemplate>
                                 </GridViewColumn>
-                                <GridViewColumn Header="Loại phim"
-                Width="200">
-                                    <GridViewColumn.HeaderTemplate>
-                                        <DataTemplate>
-                                            <TextBlock Text="Time" FontSize="20" />
-                                        </DataTemplate>
-                                    </GridViewColumn.HeaderTemplate>
+                                <GridViewColumn Header="Thời lượng">
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBlock  Text="{Binding RunningTime}"
@@ -236,13 +212,7 @@
                                         </DataTemplate>
                                     </GridViewColumn.CellTemplate>
                                 </GridViewColumn>
-                                <GridViewColumn 
-                Width="200">
-                                    <GridViewColumn.HeaderTemplate>
-                                        <DataTemplate>
-                                            <TextBlock Text="Showtime" FontSize="20" />
-                                        </DataTemplate>
-                                    </GridViewColumn.HeaderTemplate>
+                                <GridViewColumn Header="Giờ chiếu">
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
                                             <ListBox ItemsSource="{Binding Showtimes}">
@@ -309,7 +279,7 @@
                         <StackPanel Orientation="Horizontal"
                                     HorizontalAlignment="Right"
                                     Margin="0,0,20,0">
-                            <Label Content="Result: "
+                            <Label Content="Kết quả: "
                                    FontSize="15" />
                             <Label Content="{Binding ShowtimeList.Count}"
                                    x:Name="result"

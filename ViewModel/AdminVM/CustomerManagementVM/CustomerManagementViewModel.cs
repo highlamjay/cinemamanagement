@@ -2,14 +2,16 @@
 using cinema_management.Models.Services;
 using cinema_management.Utils;
 using cinema_management.Views;
-using cinema_management.Views.Admin.CustomerManagement;
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
-using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+using System.Windows;
+using cinema_management.Views.Admin.CustomerManagement;
 
 namespace cinema_management.ViewModel.AdminVM.CustomerManagementVM
 {
@@ -133,7 +135,7 @@ namespace cinema_management.ViewModel.AdminVM.CustomerManagementVM
 
             DeleteCustomerCommand = new RelayCommand<Window>((p) => { return true; }, async (p) =>
             {
-                MessageBoxCustom result = new MessageBoxCustom("Warning", "Are you sure deleting this customer?", MessageType.Warning, MessageButtons.YesNo);
+                MessageBoxCustom result = new MessageBoxCustom("Cảnh báo", "Bạn có chắc muốn xoá khách hàng này không?", MessageType.Warning, MessageButtons.YesNo);
                 result.ShowDialog();
 
                 if (result.DialogResult == true)
@@ -147,12 +149,12 @@ namespace cinema_management.ViewModel.AdminVM.CustomerManagementVM
                     if (isSuccess)
                     {
                         LoadCustomerListView(Utils.Operation.DELETE);
-                        MessageBoxCustom mb = new MessageBoxCustom("Warning", messageFromUpdate, MessageType.Success, MessageButtons.OK);
+                        MessageBoxCustom mb = new MessageBoxCustom("Thông báo", messageFromUpdate, MessageType.Success, MessageButtons.OK);
                         mb.ShowDialog();
                     }
                     else
                     {
-                        MessageBoxCustom mb = new MessageBoxCustom("Error", messageFromUpdate, MessageType.Error, MessageButtons.OK);
+                        MessageBoxCustom mb = new MessageBoxCustom("Lỗi", messageFromUpdate, MessageType.Error, MessageButtons.OK);
                         mb.ShowDialog();
                     }
                 }
@@ -188,7 +190,7 @@ namespace cinema_management.ViewModel.AdminVM.CustomerManagementVM
                 {
                     switch (SelectedPeriod.Content.ToString())
                     {
-                        case "By year":
+                        case "Theo năm":
                             {
                                 if (SelectedPeriod != null)
                                 {
@@ -197,7 +199,7 @@ namespace cinema_management.ViewModel.AdminVM.CustomerManagementVM
                                 }
                                 return;
                             }
-                        case "By month":
+                        case "Theo tháng":
                             {
                                 if (SelectedPeriod != null)
                                 {
@@ -252,7 +254,7 @@ namespace cinema_management.ViewModel.AdminVM.CustomerManagementVM
             {
                 if (!Utils.RegexUtilities.IsValidEmail(Mail))
                 {
-                    MessageBoxCustom mb = new MessageBoxCustom("", "Invalid Email", MessageType.Warning, MessageButtons.OK);
+                    MessageBoxCustom mb = new MessageBoxCustom("", "Email không hợp lệ", MessageType.Warning, MessageButtons.OK);
                     mb.ShowDialog();
                     return;
                 }
@@ -275,18 +277,18 @@ namespace cinema_management.ViewModel.AdminVM.CustomerManagementVM
                     MaskName.Visibility = Visibility.Collapsed;
                     LoadCustomerListView(Utils.Operation.UPDATE, cus);
                     p.Close();
-                    MessageBoxCustom mb = new MessageBoxCustom("Notification", messageFromUpdate, MessageType.Success, MessageButtons.OK);
+                    MessageBoxCustom mb = new MessageBoxCustom("Thông báo", messageFromUpdate, MessageType.Success, MessageButtons.OK);
                     mb.ShowDialog();
                 }
                 else
                 {
-                    MessageBoxCustom mb = new MessageBoxCustom("Error", messageFromUpdate, MessageType.Error, MessageButtons.OK);
+                    MessageBoxCustom mb = new MessageBoxCustom("Lỗi", messageFromUpdate, MessageType.Error, MessageButtons.OK);
                     mb.ShowDialog();
                 }
             }
             else
             {
-                MessageBoxCustom mb = new MessageBoxCustom("Warning", error, MessageType.Warning, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Cảnh báo", error, MessageType.Warning, MessageButtons.OK);
                 mb.ShowDialog();
             }
         }
@@ -295,11 +297,11 @@ namespace cinema_management.ViewModel.AdminVM.CustomerManagementVM
         {
             if (string.IsNullOrEmpty(Fullname))
             {
-                return (false, "Cannot be left blank!");
+                return (false, "Thông tin thiếu! Vui lòng bổ sung");
             }
             if (!Helper.IsPhoneNumber(Phone))
             {
-                return (false, "Invalid Phone Number");
+                return (false, "Số điện thoại không hợp lệ");
             }
             return (true, null);
         }
@@ -316,13 +318,13 @@ namespace cinema_management.ViewModel.AdminVM.CustomerManagementVM
             catch (System.Data.Entity.Core.EntityException e)
             {
                 Console.WriteLine(e);
-                MessageBoxCustom mb = new MessageBoxCustom("Error", "Database Connection Lost", MessageType.Error, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Lỗi", "Mất kết nối cơ sở dữ liệu", MessageType.Error, MessageButtons.OK);
                 mb.ShowDialog();
             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                MessageBoxCustom mb = new MessageBoxCustom("Error", "System Error", MessageType.Error, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Lỗi", "Lỗi hệ thống", MessageType.Error, MessageButtons.OK);
                 mb.ShowDialog();
             }
             selectedyear = int.Parse(SelectedTime.ToString());
@@ -340,13 +342,13 @@ namespace cinema_management.ViewModel.AdminVM.CustomerManagementVM
             catch (System.Data.Entity.Core.EntityException e)
             {
                 Console.WriteLine(e);
-                MessageBoxCustom mb = new MessageBoxCustom("Error", "Database Connection Lost", MessageType.Error, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Lỗi", "Mất kết nối cơ sở dữ liệu", MessageType.Error, MessageButtons.OK);
                 mb.ShowDialog();
             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                MessageBoxCustom mb = new MessageBoxCustom("Error", "System Error", MessageType.Error, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Lỗi", "Lỗi hệ thống", MessageType.Error, MessageButtons.OK);
                 mb.ShowDialog();
             }
         }

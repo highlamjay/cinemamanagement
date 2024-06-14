@@ -1,10 +1,12 @@
 ﻿using cinema_management.DTOs;
 using cinema_management.Models.Services;
 using cinema_management.Views;
-using LiveCharts;
 using LiveCharts.Wpf;
+using LiveCharts;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 
@@ -77,7 +79,7 @@ namespace cinema_management.ViewModel.AdminVM.StatisticalManagementVM
             {
                 switch (SelectedBestSellPeriod.Content.ToString())
                 {
-                    case "By year":
+                    case "Theo năm":
                         {
                             if (SelectedBestSellTime != null)
                             {
@@ -85,7 +87,7 @@ namespace cinema_management.ViewModel.AdminVM.StatisticalManagementVM
                             }
                             return;
                         }
-                    case "By month":
+                    case "Theo tháng":
                         {
                             if (SelectedBestSellTime != null)
                             {
@@ -106,13 +108,13 @@ namespace cinema_management.ViewModel.AdminVM.StatisticalManagementVM
             catch (System.Data.Entity.Core.EntityException e)
             {
                 Console.WriteLine(e);
-                MessageBoxCustom mb = new MessageBoxCustom("Error", "Database Connection Lost", MessageType.Error, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Lỗi", "Mất kết nối cơ sở dữ liệu", MessageType.Error, MessageButtons.OK);
                 mb.ShowDialog();
             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                MessageBoxCustom mb = new MessageBoxCustom("Error", "System Error", MessageType.Error, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Lỗi", "Lỗi hệ thống", MessageType.Error, MessageButtons.OK);
                 mb.ShowDialog();
             }
 
@@ -130,7 +132,7 @@ namespace cinema_management.ViewModel.AdminVM.StatisticalManagementVM
                 new ColumnSeries
                 {
                     Values = new ChartValues<decimal>(chartdata),
-                    Title = "Revenue"
+                    Title = "Doanh thu"
                 },
             };
         }
@@ -144,13 +146,13 @@ namespace cinema_management.ViewModel.AdminVM.StatisticalManagementVM
             catch (System.Data.Entity.Core.EntityException e)
             {
                 Console.WriteLine(e);
-                MessageBoxCustom mb = new MessageBoxCustom("Error", "Database Connection Lost", MessageType.Error, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Lỗi", "Mất kết nối cơ sở dữ liệu", MessageType.Error, MessageButtons.OK);
                 mb.ShowDialog();
             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                MessageBoxCustom mb = new MessageBoxCustom("Error", "System Error", MessageType.Error, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Lỗi", "Lỗi hệ thống", MessageType.Error, MessageButtons.OK);
                 mb.ShowDialog();
             }
 
@@ -168,7 +170,7 @@ namespace cinema_management.ViewModel.AdminVM.StatisticalManagementVM
                 new ColumnSeries
                 {
                     Values = new ChartValues<decimal>(chartdata),
-                     Title = "Revenue"
+                     Title = "Doanh thu"
                 },
 
             };
@@ -182,7 +184,7 @@ namespace cinema_management.ViewModel.AdminVM.StatisticalManagementVM
             {
                 switch (SelectedBestSellPeriod2.Content.ToString())
                 {
-                    case "By year":
+                    case "Theo năm":
                         {
                             if (SelectedBestSellTime2 != null)
                             {
@@ -190,7 +192,7 @@ namespace cinema_management.ViewModel.AdminVM.StatisticalManagementVM
                             }
                             return;
                         }
-                    case "By month":
+                    case "Theo tháng":
                         {
                             if (SelectedBestSellTime2 != null)
                             {
@@ -211,13 +213,13 @@ namespace cinema_management.ViewModel.AdminVM.StatisticalManagementVM
             catch (System.Data.Entity.Core.EntityException e)
             {
                 Console.WriteLine(e);
-                MessageBoxCustom mb = new MessageBoxCustom("Error", "Database Connection Lost", MessageType.Error, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Lỗi", "Mất kết nối cơ sở dữ liệu", MessageType.Error, MessageButtons.OK);
                 mb.ShowDialog();
             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                MessageBoxCustom mb = new MessageBoxCustom("Error", "System Error", MessageType.Error, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Lỗi", "Lỗi hệ thống", MessageType.Error, MessageButtons.OK);
                 mb.ShowDialog();
             }
 
@@ -234,7 +236,7 @@ namespace cinema_management.ViewModel.AdminVM.StatisticalManagementVM
                 new ColumnSeries
                 {
                     Values = new ChartValues<decimal>(chartdata),
-                     Title = "Revenue"
+                     Title = "Doanh thu"
                 },
 
             };
@@ -250,13 +252,13 @@ namespace cinema_management.ViewModel.AdminVM.StatisticalManagementVM
             catch (System.Data.Entity.Core.EntityException e)
             {
                 Console.WriteLine(e);
-                MessageBoxCustom mb = new MessageBoxCustom("Error", "Database Connection Lost", MessageType.Error, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Lỗi", "Mất kết nối cơ sở dữ liệu", MessageType.Error, MessageButtons.OK);
                 mb.ShowDialog();
             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                MessageBoxCustom mb = new MessageBoxCustom("Error", "System Error", MessageType.Error, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Lỗi", "Lỗi hệ thống", MessageType.Error, MessageButtons.OK);
                 mb.ShowDialog();
             }
 
@@ -272,7 +274,7 @@ namespace cinema_management.ViewModel.AdminVM.StatisticalManagementVM
                 new ColumnSeries
                 {
                     Values = new ChartValues<decimal>(chartdata),
-                     Title = "Revenue"
+                     Title = "Doanh thu"
                 },
             };
         }

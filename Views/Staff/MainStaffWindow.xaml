@@ -34,11 +34,11 @@
     <Grid>
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="285" />
+                <ColumnDefinition Width="140" />
                 <ColumnDefinition Width="1300" />
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="0"
-                  Background="#272537">
+                  Background="#132644">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="80" />
                     <RowDefinition Height="720" />
@@ -56,17 +56,18 @@
                         </Style.Triggers>
                     </Style>
                 </Grid.Resources>
-                <StackPanel HorizontalAlignment="Center"
-            Orientation="Horizontal"
-            Height="60">
-                    <Image Source="/Resources/Icon/APPLOGO.ico"
-           Width="100"
-           Margin="10,-5,5,0" />
+                <StackPanel Grid.Row="0"
+                            Orientation="Horizontal"
+                            Grid.ColumnSpan="2"
+                            Height="40">
+                    <Image Source="/Resources/Icon/iconApp.ico"
+                           Width="40"
+                           Margin="10,-5,5,0" />
                     <TextBlock TextWrapping="Wrap"
                                materialDesign:TextBlockAssist.AutoToolTip="True"
                                VerticalAlignment="Bottom"
                                TextAlignment="Center"
-                               Text="Squadin Cinema"
+                               Text="VMN Cinema"
                                FontFamily="Helvetica"
                                FontWeight="Bold"
                                Foreground="#e3e9fa"
@@ -78,62 +79,40 @@
                         <StackPanel Tag="{Binding ElementName=btnShowing}"
                                     Orientation="Horizontal"
                                     Height="60"
-                                    Width="285" Margin="10,0,0,0">
+                                    Width="140">
                             <materialDesign:PackIcon Kind="Movie"
                                                      Width="30"
                                                      Height="32"
                                                      VerticalAlignment="Center"
                                                      Cursor="Hand"
                                                      Foreground="White" />
-                            <RadioButton 
+                            <RadioButton Style="{StaticResource MenuButtonMainStaff}"
                                          GroupName="mainOptions"
-                                         Content="Recently Movie"
-                                         FontSize="25"
+                                         Content="Phim Đang chiếu"
                                          FontWeight="Bold"
-                                Foreground="White"
                                          x:Name="btnShowing"
-                                         Width="200"
+                                         Width="auto"
                                          Command="{Binding LoadShowtimePageCM}"
                                          CommandParameter="{Binding ElementName=mainFrame}" />
                         </StackPanel>
-                        <!--<StackPanel Orientation="Horizontal">
-                            <materialDesign:PackIcon Kind="MovieEdit"
-                              Height="30"
-                              Width="30"
-                              Margin="10,0,0,0"
-                              VerticalAlignment="Center" />
-                            <Button  Content="Movie"
-             Height="50"
-             FontSize="25"
-             HorizontalContentAlignment="Left"
-             Background="Transparent"
-              Foreground="White"
-             BorderBrush="Transparent"
-             Width="240"
-             Command="{Binding LoadShowtimePageCM}"
-             CommandParameter="{Binding ElementName=mainFrame}" Click="Button_Click_1" />
-                        </StackPanel>-->
                     </Border>
                     <Border CornerRadius="5">
                         <StackPanel Tag="{Binding ElementName=btnFood}"
                                     Orientation="Horizontal"
                                     Height="60"
-                                    Margin="10,0,0,0"
-                                    Width="285">
+                                    Width="140">
                             <materialDesign:PackIcon Kind="Food"
                                                      Width="30"
                                                      Height="32"
                                                      VerticalAlignment="Center"
                                                      Cursor="Hand"
                                                      Foreground="White" />
-                            <RadioButton 
-                                         Content="Foods and Drinks"
+                            <RadioButton Style="{StaticResource MenuButtonMainStaff}"
+                                         Content="Đồ Ăn"
                                          FontWeight="Bold"
                                          GroupName="mainOptions"
                                          x:Name="btnFood"
-                                Foreground="White"
-                                FontSize="25"
-                                         Width="240"
+                                         Width="110"
                                          Command="{Binding LoadFoodPageCM}"
                                          CommandParameter="{Binding ElementName=mainFrame}" />
                         </StackPanel>
@@ -142,19 +121,16 @@
                         <StackPanel Tag="{Binding ElementName=btnError}"
                                     Orientation="Horizontal"
                                     Height="60"
-                                    Margin="10,0,0,0"
-                                    Width="285">
+                                    Width="140">
                             <materialDesign:PackIcon Kind="WarningOctagon"
                                                      Width="30"
                                                      Height="32"
                                                      VerticalAlignment="Center"
                                                      Cursor="Hand"
                                                      Foreground="White" />
-                            <RadioButton 
-                                         Content="Issue"
+                            <RadioButton Style="{StaticResource MenuButtonMainStaff}"
+                                         Content="Báo cáo sự cố"
                                          FontWeight="Bold"
-                                FontSize="25"
-                                Foreground="White"
                                          GroupName="mainOptions"
                                          x:Name="btnError"
                                          Width="110"
@@ -191,7 +167,7 @@
                                 </i:EventTrigger>
                             </i:Interaction.Triggers>
                             <StackPanel Orientation="Horizontal"
-                                        Margin="1200,0,0,0"
+                                        Margin="1230,0,0,0"
                                         VerticalAlignment="Top">
                                 <Label Cursor="Hand"
                                        ToolBar.OverflowMode="AsNeeded"
@@ -225,39 +201,6 @@
                                         </Style>
                                     </Label.Style>
                                 </Label>
-                                <Label Cursor="Hand"
-       ToolBar.OverflowMode="AsNeeded"
-       Height="20"
-       BorderThickness="0"
-       Foreground="Black"
-       BorderBrush="Transparent"
-       Width="30"
-       HorizontalAlignment="Center">
-                                    <materialDesign:PackIcon Kind="WindowMaximize"
-                             Height="15"
-                             Width="20"
-                             Foreground="Black" />
-                                    <i:Interaction.Triggers>
-                                        <i:EventTrigger EventName="MouseLeftButtonDown">
-                                            <i:InvokeCommandAction Command="{Binding MinimizeMainStaffWindowCM}"
-                                   CommandParameter="{Binding ElementName=Main_Staff}" />
-                                        </i:EventTrigger>
-                                    </i:Interaction.Triggers>
-                                    <Label.Style>
-                                        <Style TargetType="Label">
-                                            <Setter Property="Background"
-                    Value="Transparent"></Setter>
-                                            <Style.Triggers>
-                                                <Trigger Property="IsMouseOver"
-                         Value="True">
-                                                    <Setter Property="Background"
-                            Value="Gray"></Setter>
-                                                </Trigger>
-                                            </Style.Triggers>
-                                        </Style>
-                                    </Label.Style>
-                                </Label>
-
                                 <Label Cursor="Hand"
                                        Width="30"
                                        HorizontalAlignment="Center"
@@ -372,6 +315,7 @@
 
 
     </Grid>
+
 
 </Window>
 

@@ -102,7 +102,7 @@
                                          Margin="60,10,60,20">
                         <ListView ItemsSource="{Binding ListError}"
                                   SelectedItem="{Binding SelectedItem}"
-                                  ToolTip="Double Click For More Infomation"
+                                  ToolTip="Nháy đúp để xem chi tiết"
                                   x:Name="lvError">
                             <i:Interaction.Triggers>
                                 <i:EventTrigger EventName="MouseDoubleClick">
@@ -111,12 +111,8 @@
                             </i:Interaction.Triggers>
                             <ListView.View>
                                 <GridView>
-                                    <GridViewColumn Width="500">
-                                        <GridViewColumn.HeaderTemplate>
-                                            <DataTemplate>
-                                                <TextBlock Text="Issue" FontSize="20" />
-                                            </DataTemplate>
-                                        </GridViewColumn.HeaderTemplate>
+                                    <GridViewColumn Header="Sự cố"
+                                                    Width="500">
                                         <GridViewColumn.CellTemplate>
                                             <DataTemplate>
                                                 <StackPanel Orientation="Horizontal">
@@ -144,12 +140,8 @@
                                             </DataTemplate>
                                         </GridViewColumn.CellTemplate>
                                     </GridViewColumn>
-                                    <GridViewColumn Width="350">
-                                        <GridViewColumn.HeaderTemplate>
-                                            <DataTemplate>
-                                                <TextBlock Text="Date" FontSize="20" />
-                                            </DataTemplate>
-                                        </GridViewColumn.HeaderTemplate>
+                                    <GridViewColumn Header="Ngày gửi"
+                                                    Width="350">
                                         <GridViewColumn.CellTemplate>
                                             <DataTemplate>
                                                 <TextBlock Text="{Binding SubmittedAt, StringFormat='dd/MM/yyyy'}"
@@ -158,12 +150,8 @@
                                             </DataTemplate>
                                         </GridViewColumn.CellTemplate>
                                     </GridViewColumn>
-                                    <GridViewColumn Width="200">
-                                        <GridViewColumn.HeaderTemplate>
-                                            <DataTemplate>
-                                                <TextBlock Text="Status" FontSize="20" />
-                                            </DataTemplate>
-                                        </GridViewColumn.HeaderTemplate>
+                                    <GridViewColumn Header="Trạng thái"
+                                                    Width="200">
                                         <GridViewColumn.CellTemplate>
                                             <DataTemplate>
                                                 <Border BorderThickness="1"

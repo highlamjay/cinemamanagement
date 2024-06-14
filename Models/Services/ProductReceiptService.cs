@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace cinema_management.Models.Services
@@ -42,7 +43,7 @@ namespace cinema_management.Models.Services
                                                  StaffId = pr.Staff.StaffID,
                                                  StaffName = pr.Staff.StaffName,
                                                  Quantity = pr.Quantity,
-                                                 ImportPrice = pr.ImportPrice*pr.Quantity,
+                                                 ImportPrice = pr.ImportPrice * pr.Quantity,
                                                  CreatedAt = pr.TimeOfReceipt,
                                              }).ToListAsync();
                 }
@@ -121,9 +122,9 @@ namespace cinema_management.Models.Services
             }
             catch (Exception e)
             {
-                return (false, "System Error", null);
+                return (false, "Lỗi hệ thống", null);
             }
-            return (true, "Save Success", newPReceipt);
+            return (true, "Lưu thông tin nhập hàng thành công", newPReceipt);
         }
     }
 }

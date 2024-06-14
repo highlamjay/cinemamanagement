@@ -95,12 +95,8 @@
                     <ListView.View>
                         <GridView>
 
-                            <GridViewColumn Width="250">
-                                <GridViewColumn.HeaderTemplate>
-                                    <DataTemplate>
-                                        <TextBlock Text="Issue" FontSize="20" />
-                                    </DataTemplate>
-                                </GridViewColumn.HeaderTemplate>
+                            <GridViewColumn Header="Sự cố"
+                                            Width="590">
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
                                         <StackPanel Orientation="Horizontal">
@@ -136,12 +132,8 @@
                                     </DataTemplate>
                                 </GridViewColumn.CellTemplate>
                             </GridViewColumn>
-                            <GridViewColumn Width="300">
-                                <GridViewColumn.HeaderTemplate>
-                                    <DataTemplate>
-                                        <TextBlock Text="Submit date" FontSize="20" />
-                                    </DataTemplate>
-                                </GridViewColumn.HeaderTemplate>
+                            <GridViewColumn Header="Ngày nhận"
+                                            Width="340">
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
                                         <TextBlock Text="{Binding SubmittedAt}"
@@ -150,12 +142,8 @@
                                     </DataTemplate>
                                 </GridViewColumn.CellTemplate>
                             </GridViewColumn>
-                            <GridViewColumn Width="170">
-                                <GridViewColumn.HeaderTemplate>
-                                    <DataTemplate>
-                                        <TextBlock Text="Status" FontSize="20" />
-                                    </DataTemplate>
-                                </GridViewColumn.HeaderTemplate>
+                            <GridViewColumn Header="Trạng thái"
+                                            Width="170">
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
                                         <Border BorderThickness="1"

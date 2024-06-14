@@ -61,7 +61,7 @@
                 <StackPanel Grid.Column="0"
                             Orientation="Horizontal"
                             Margin="0 0 40 0">
-                    <TextBox materialDesign:HintAssist.Hint="Search"
+                    <TextBox materialDesign:HintAssist.Hint="Tìm kiếm"
                              FontSize="25"
                              Foreground="#DD000000"
                              FontFamily="Arial"
@@ -121,8 +121,8 @@
                                 </materialDesign:Card>
                             </ControlTemplate>
                         </StackPanel.Resources>
-                        <Label Tag="/Resources/Icon/popcorn.png"
-                               Content="Add product"
+                        <Label Tag="/Resources/Images/ImageFood/popcorn.png"
+                               Content="Thêm sản phẩm"
                                Template="{StaticResource Add-edit}">
                             <i:Interaction.Triggers>
                                 <i:EventTrigger EventName="MouseLeftButtonDown">
@@ -130,8 +130,8 @@
                                 </i:EventTrigger>
                             </i:Interaction.Triggers>
                         </Label>
-                        <Label Tag="/Resources/Icon/ImportIcon.png"
-                               Content="Import Product"
+                        <Label Tag="/Resources/Images/ImageFood/adding.png"
+                               Content="Nhập hàng"
                                Template="{StaticResource Add-edit}"
                                Margin="30 0 0 0">
                             <i:Interaction.Triggers>
@@ -153,9 +153,9 @@
                           VerticalContentAlignment="Center"
                           HorizontalAlignment="Right"
                           SelectedItem="{Binding Category}">
-                    <ComboBoxItem Content="All" />
-                    <ComboBoxItem Content="Foods" />
-                    <ComboBoxItem Content="Drinks" />
+                    <ComboBoxItem Content="Tất cả" />
+                    <ComboBoxItem Content="Đồ ăn" />
+                    <ComboBoxItem Content="Nước uống" />
                 </ComboBox>
             </Grid>
             <!--#endregion-->

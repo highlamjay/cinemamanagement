@@ -1,11 +1,15 @@
 ﻿using cinema_management.DTOs;
-using cinema_management.Models;
 using cinema_management.Utils;
 using System;
-using System.Collections.Generic;
 using System.Data.Entity;
+using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
+using cinema_management.Models.Services;
+using System.Web;
+using cinema_management.Models;
 
 namespace cinema_management.Model.Service
 {
@@ -75,7 +79,7 @@ namespace cinema_management.Model.Service
 
                     if (staff == null)
                     {
-                        return (false, "Wrong username or password", null);
+                        return (false, "Sai tài khoản hoặc mật khẩu", null);
                     }
                     return (true, "", staff);
                 }
@@ -83,11 +87,11 @@ namespace cinema_management.Model.Service
             }
             catch (System.Data.Entity.Core.EntityException)
             {
-                return (false, "Database lost connection", null);
+                return (false, "Mất kết nối cơ sở dữ liệu", null);
             }
             catch (Exception)
             {
-                return (false, "System Error", null);
+                return (false, "Lỗi hệ thống", null);
             }
 
 
@@ -109,11 +113,11 @@ namespace cinema_management.Model.Service
 
                     if (PhoneNumberIsExist)
                     {
-                        return (false, "Phonenumber already exist!", null);
+                        return (false, "Số điện thoại đã tồn tại!", null);
                     }
                     if (usernameIsExist)
                     {
-                        return (false, "Username already exist", null);
+                        return (false, "Tài khoản đã tồn tại!", null);
                     }
 
                     if (newStaff.Email != null)
@@ -121,7 +125,7 @@ namespace cinema_management.Model.Service
                         bool emailIsExist = await context.Staffs.AnyAsync(s => s.Email == newStaff.Email);
                         if (emailIsExist)
                         {
-                            return (false, "Email has been used!", null);
+                            return (false, "Email đã được đăng kí!", null);
                         }
                     }
 
@@ -137,13 +141,13 @@ namespace cinema_management.Model.Service
             }
             catch (System.Data.Entity.Core.EntityException)
             {
-                return (false, "Database lost connection", null);
+                return (false, "Mất kết nối cơ sở dữ liệu", null);
             }
             catch (Exception)
             {
-                return (false, "System Error", null);
+                return (false, "Lỗi hệ thống", null);
             }
-            return (true, "Add successful", newStaff);
+            return (true, "Thêm nhân viên mới thành công", newStaff);
         }
         private Staff Copy(StaffDTO s)
         {
@@ -170,7 +174,7 @@ namespace cinema_management.Model.Service
 
                     if (usernameIsExist)
                     {
-                        return (false, "Username already exist");
+                        return (false, "Tài khoản đăng nhập đã tồn tại");
                     }
 
                     if (updatedStaff.Email != null)
@@ -178,7 +182,7 @@ namespace cinema_management.Model.Service
                         bool emailIsExist = await context.Staffs.AnyAsync(s => s.Email == updatedStaff.Email && s.StaffID != updatedStaff.StaffId);
                         if (emailIsExist)
                         {
-                            return (false, "Email has been used");
+                            return (false, "Email đã được đăng kí!");
                         }
                     }
 
@@ -186,13 +190,13 @@ namespace cinema_management.Model.Service
 
                     if (PhoneNumberIsExist)
                     {
-                        return (false, "Phone number has been used");
+                        return (false, "Số điện thoại đã tồn tại!");
                     }
 
                     Staff staff = await context.Staffs.FindAsync(updatedStaff.StaffId);
                     if (staff == null)
                     {
-                        return (false, "Non-exist Staff");
+                        return (false, "Nhân viên không tồn tại");
                     }
 
                     staff.StaffBirthDay = (DateTime)updatedStaff.StaffBirthDay;
@@ -209,7 +213,7 @@ namespace cinema_management.Model.Service
             }
             catch (System.Data.Entity.Core.EntityException)
             {
-                return (false, "Database connection lost");
+                return (false, "Mất kết nối cơ sở dữ liệu");
             }
             catch (Exception e)
             {
@@ -238,7 +242,7 @@ namespace cinema_management.Model.Service
             }
             catch (System.Data.Entity.Core.EntityException)
             {
-                return (false, "Database connection lost");
+                return (false, "Mất kết nối cơ sở dữ liệu");
             }
             catch (Exception e)
             {
@@ -270,7 +274,7 @@ namespace cinema_management.Model.Service
             }
             catch (System.Data.Entity.Core.EntityException)
             {
-                return (false, "Database connection lost");
+                return (false, "Mất kết nối cơ sở dữ liệu");
             }
             catch (Exception)
             {

@@ -61,23 +61,18 @@
             <StackPanel Grid.Column="0">
                 <Grid Height="600">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="50" />
+                        <RowDefinition Height="10*" />
                         <RowDefinition Height="75*" />
                         <RowDefinition Height="15*" />
                     </Grid.RowDefinitions>
-                    <StackPanel Margin="20,0,0,0">
-                        <StackPanel Orientation="Horizontal">
-                            <materialDesign:PackIcon Kind="Eye" 
-  VerticalAlignment="Center"
- Width="50" 
- Height="50">
-
-                            </materialDesign:PackIcon>
-                            <Label Content="Showtime Descripsion"
+                    <StackPanel>
+                        <Border BorderThickness="0,0,0,1"
+                                BorderBrush="Black">
+                            <Label Content="Chi tiết suất chiếu"
                                    FontWeight="Bold"
                                    FontSize="30"
                                    Margin="20,0,0,0" />
-                        </StackPanel>
+                        </Border>
                     </StackPanel>
                     <StackPanel Grid.Row="1">
                         <StackPanel.Resources>
@@ -92,35 +87,34 @@
                         </StackPanel.Resources>
 
                         <StackPanel>
-                            <Label Content="Movie Name" />
+                            <Label Content="Tên phim" />
                             <TextBlock x:Name="_movieName"
                                        FontSize="20"
                                        Margin="10,0,0,0" />
                         </StackPanel>
                         <StackPanel>
-                            <Label Content="Date"
+                            <Label Content="Ngày chiếu"
                                    Margin="10,10,0,0" />
                             <TextBlock x:Name="_ShowtimeDate"
                                        FontSize="20"
                                        Margin="10,0,0,0" />
                         </StackPanel>
                         <StackPanel>
-                            <Label Content="Room"
-                                   Margin="10,0,0,0" />
+                            <Label Content="Phòng chiếu"
+                                   Margin="10,10,0,0" />
                             <StackPanel Orientation="Horizontal">
                                 <TextBlock FontSize="20"
-                                           Margin="20,0,0,0"
-                                           Text="Room: " />
+                                           Margin="10,0,0,0"
+                                           Text="Phòng: " />
                                 <TextBlock x:Name="_ShowtimeRoom"
                                            FontSize="20"
                                            Text="{Binding  SelectedShowtime.RoomId}" />
                             </StackPanel>
                         </StackPanel>
                         <StackPanel>
-                            <Label Content="Price"
+                            <Label Content="Giá vé"
                                    Margin="10,10,0,0" />
-                            <StackPanel Orientation="Horizontal" 
-                                        Margin="10,0,0,0">
+                            <StackPanel Orientation="Horizontal">
                                 <TextBox x:Name="_showtimePrice"
                                          FontSize="20"
                                          Margin="10,0,0,0"
@@ -138,8 +132,8 @@
                                     </TextBox.Style>
                                 </TextBox>
                                 <Label x:Name="_lblEdit"
-                                       Content="Change"
-                                      
+                                       Content="Thay đổi"
+                                       FontWeight="Light"
                                        Foreground="Blue"
                                        Margin="0,0,0,10"
                                        Cursor="Hand"
@@ -156,7 +150,7 @@
 
                         </StackPanel>
                         <StackPanel>
-                            <Label Content="Showtimes"
+                            <Label Content="Các suất chiếu"
                                    Margin="10,10,0,0" />
                             <ListBox x:Name="_Showtime"
                                      FontSize="20"
@@ -213,17 +207,17 @@
                                 Orientation="Horizontal">
 
                         <Button Width="100"
-                                Content="Delete"
+                                Content="Xoá"
                                 Margin="10,30,0,0"
                                 materialDesign:ButtonAssist.CornerRadius="8"
-Background="#FF791C1C"                                BorderBrush="OrangeRed"
+                                Background="OrangeRed"
+                                BorderBrush="OrangeRed"
                                 Command="{Binding LoadDeleteShowtimeCM}">
                         </Button>
 
                         <Button Width="100"
-                                Content="Exit"
+                                Content="Thoát"
                                 Margin="225,30,0,0"
-                                Background="#0f0f2d"        
                                 materialDesign:ButtonAssist.CornerRadius="8"
                                 Command="{Binding CloseEditCM}"
                                 CommandParameter="{Binding ElementName=EditWindow}" />
@@ -244,7 +238,7 @@ Background="#FF791C1C"                                BorderBrush="OrangeRed"
                         Height="49"
                         VerticalAlignment="Top">
                     <Label Grid.Row="0"
-                           Content="Seat list"
+                           Content="Danh sách ghế"
                            FontWeight="Bold"
                            FontSize="30"
                            Margin="20,0,0,0" />
@@ -258,7 +252,7 @@ Background="#FF791C1C"                                BorderBrush="OrangeRed"
                                 <ColumnDefinition />
                                 <ColumnDefinition />
                             </Grid.ColumnDefinitions>
-                            <Label Content="Total Seats: "
+                            <Label Content="Tổng số ghế: "
                                    FontSize="20"
                                    Grid.Column="0" />
                             <Label Content="{Binding ListSeat.Count}"
@@ -274,7 +268,7 @@ Background="#FF791C1C"                                BorderBrush="OrangeRed"
                                 <ColumnDefinition />
                                 <ColumnDefinition />
                             </Grid.ColumnDefinitions>
-                            <Label Content="Booked "
+                            <Label Content="Đã đặt: "
                                    FontSize="20"
                                    Grid.Column="0" />
                             <Label Content="{Binding IsBought}"
@@ -289,7 +283,7 @@ Background="#FF791C1C"                                BorderBrush="OrangeRed"
                                 <ColumnDefinition />
                                 <ColumnDefinition />
                             </Grid.ColumnDefinitions>
-                            <Label Content="Available : "
+                            <Label Content="Còn trống: "
                                    FontSize="20"
                                    Grid.Column="0" />
                             <Label Content="{Binding IsFree}"

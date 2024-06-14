@@ -84,22 +84,18 @@
                 </Style>
             </Grid.Resources>
             <Grid Grid.Row="0"
-                  Margin="0,0,0,0"
+                  Margin="0,0,0,10"
                   Background="Transparent">
-                <StackPanel Orientation="Horizontal">
-                    <materialDesign:PackIcon Kind="Pencil" 
-                                             Height="30"
-                                             Width="30"
-                                             VerticalAlignment="Center"
-                                             Margin="20,0,0,0"/>
+                <Border BorderBrush="Black"
+                        BorderThickness="0,0,0,1"
+                        Margin="0,4,0,0">
                     <TextBlock HorizontalAlignment="Left"
                                Margin="10,0,0,0"
-                               VerticalAlignment="Center"
-                               Text="Edit Staff Infomation"
+                               Text="SỬA THÔNG TIN NHÂN VIÊN"
                                Foreground="Black"
                                FontWeight="DemiBold"
                                FontSize="20" />
-                </StackPanel>
+                </Border>
 
             </Grid>
             <!--#region Thông tin-->
@@ -109,7 +105,7 @@
                     <ColumnDefinition Width="120" />
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
-                <TextBlock Text="Name" />
+                <TextBlock Text="Họ và tên" />
                 <TextBox x:Name="_FullName"
                          Grid.Column="1"
                          Text="{Binding Fullname, Mode=TwoWay}" />
@@ -121,7 +117,7 @@
                     <ColumnDefinition Width="120" />
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
-                <TextBlock Text="Sex" />
+                <TextBlock Text="Giới tính" />
                 <ComboBox VerticalContentAlignment="Center"
                           Padding="0 12 0 0"
                           Margin="5 5 20 10"
@@ -164,7 +160,7 @@
                         </Setter>
                     </Style>
                 </Grid.Resources>
-                <TextBlock Text="Date of Birth"
+                <TextBlock Text="Ngày sinh"
                            Margin="0,20,9,10" />
                 <DatePicker Width="358"
                             Style="{StaticResource MaterialDesignFloatingHintDatePicker}"
@@ -183,7 +179,7 @@
                     <ColumnDefinition Width="120" />
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
-                <TextBlock Text="Phone number" />
+                <TextBlock Text="Số điện thoại" />
                 <TextBox Grid.Column="1"
                          x:Name="_Phone"
                          PreviewTextInput="_Phone_PreviewTextInput"
@@ -216,7 +212,7 @@
                     <ColumnDefinition Width="120" />
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
-                <TextBlock Text="Position" />
+                <TextBlock Text="Chức vụ" />
                 <ComboBox VerticalContentAlignment="Center"
                           Padding="0 12 0 0"
                           Margin="5 5 20 10"
@@ -234,7 +230,7 @@
                     <ColumnDefinition Width="120" />
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
-                <TextBlock Text="Started Date"
+                <TextBlock Text="Ngày bắt đầu"
                            Margin="0,25,10,5" />
                 <DatePicker Width="358"
                             Style="{StaticResource MaterialDesignFloatingHintDatePicker}"
@@ -254,7 +250,7 @@
                     <ColumnDefinition Width="120" />
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
-                <TextBlock Text="Username" />
+                <TextBlock Text="Tài khoản" />
                 <TextBox Grid.Column="1"
                          x:Name="_TaiKhoan"
                          Text="{Binding TaiKhoan,Mode=TwoWay}" />
@@ -280,19 +276,19 @@
                     <TextBlock HorizontalAlignment="Left"
                                VerticalAlignment="Center"
                                Margin="50 30 0 10">
-                    <Hyperlink Command="{Binding OpenChangePassCommand}">Change Password</Hyperlink>
+                    <Hyperlink Command="{Binding OpenChangePassCommand}">Đổi mật khẩu</Hyperlink>
                     </TextBlock>
 
                 </Label>
-                <Button Content="Cancel"
+                <Button Content="Hủy"
                         materialDesign:ButtonAssist.CornerRadius="8"
                         Margin="0 0 110 10"
                         Command="{Binding CloseCommand}"
                         CommandParameter="{Binding ElementName=SuaNV}"
-Background="#FF791C1C"                        BorderBrush="Transparent" />
-                <Button Content="Save"
+                        Background="OrangeRed"
+                        BorderBrush="Transparent" />
+                <Button Content="Lưu"
                         Margin="0 0 10 10"
-                        Background="#0f0f2d"        
                         materialDesign:ButtonAssist.CornerRadius="8"
                         Command="{Binding EditStaffCommand}"
                         CommandParameter="{Binding ElementName=SuaNV}" />

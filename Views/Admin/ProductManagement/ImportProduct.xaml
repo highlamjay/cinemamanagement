@@ -84,9 +84,9 @@
                         <StackPanel Orientation="Horizontal">
                             <TextBlock VerticalAlignment="Center"
                                        Margin="10 0 0 0"
-                                       Text="Import Product"
+                                       Text="NHẬP SẢN PHẨM"
                                        Foreground="Black"
-                                       FontWeight="Bold"
+                                       FontWeight="DemiBold"
                                        FontSize="20" />
                         </StackPanel>
                     </Border>
@@ -107,7 +107,7 @@
                                     <ColumnDefinition Width="120" />
                                     <ColumnDefinition />
                                 </Grid.ColumnDefinitions>
-                                <TextBlock Text="Name" />
+                                <TextBlock Text="Tên sản phẩm" />
                                 <ComboBox VerticalContentAlignment="Center"
                                           Padding="0 12 0 0"
                                           Margin="5 0 10 0"
@@ -130,7 +130,7 @@
                                     <ColumnDefinition Width="120" />
                                     <ColumnDefinition />
                                 </Grid.ColumnDefinitions>
-                                <TextBlock Text="Quanity" />
+                                <TextBlock Text="Số lượng" />
                                 <TextBox Grid.Column="1"
                                          PreviewTextInput="_price_PreviewTextInput"
                                          TextChanged="TextBox_TextChanged"
@@ -141,7 +141,7 @@
                                     <ColumnDefinition Width="120" />
                                     <ColumnDefinition />
                                 </Grid.ColumnDefinitions>
-                                <TextBlock Text="Price"
+                                <TextBlock Text="Giá nhập"
                                            x:Name="tboxName" />
                                 <TextBox Grid.Column="1"
                                          PreviewTextInput="_price_PreviewTextInput"
@@ -182,16 +182,16 @@
                                                 Value="12" />
                                     </Style>
                                 </Grid.Resources>
-                                <Button Content="Cancel"
+                                <Button Content="Hủy"
                                         Margin="0 0 100 10"
                                         Command="{Binding CloseCommand}"
                                         CommandParameter="{Binding ElementName=ImportFoodWd}"
-Background="#FF791C1C"                                        BorderBrush="Transparent"
+                                        Background="OrangeRed"
+                                        BorderBrush="Transparent"
                                         materialDesign:ButtonAssist.CornerRadius="8" />
 
-                                <Button Content="Add"
+                                <Button Content="Thêm"
                                         Margin="0 0 10 10"
-                                        Background="#0f0f2d"        
                                         Command="{Binding ImportFoodCommand}"
                                         CommandParameter="{Binding ElementName=ImportFoodWd}"
                                         materialDesign:ButtonAssist.CornerRadius="8" />

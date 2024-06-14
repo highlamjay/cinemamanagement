@@ -89,10 +89,9 @@
                                                   Background="White"
                                                   Grid.Row="0">
                             <StackPanel Orientation="Horizontal">
-                                <materialDesign:PackIcon Kind="Pencil"  Height="30" Width="30"/>
                                 <TextBlock VerticalAlignment="Center"
                                            Margin="10 0 0 0"
-                                           Text="Edit Product"
+                                           Text="SỬA SẢN PHẨM"
                                            Foreground="Black"
                                            FontWeight="DemiBold"
                                            FontSize="20" />
@@ -103,7 +102,7 @@
                                 <ColumnDefinition Width="80" />
                                 <ColumnDefinition />
                             </Grid.ColumnDefinitions>
-                            <TextBlock Text="Name" />
+                            <TextBlock Text="Tên" />
                             <TextBox Grid.Column="1"
                                      x:Name="_displayName"
                                      Text="{Binding DisplayName, Mode=TwoWay}" />
@@ -113,7 +112,7 @@
                                 <ColumnDefinition Width="80" />
                                 <ColumnDefinition />
                             </Grid.ColumnDefinitions>
-                            <TextBlock Text="Type" />
+                            <TextBlock Text="Loại" />
                             <ComboBox VerticalContentAlignment="Center"
                                       Padding="0 12 0 0"
                                       Margin="5 0 20 0"
@@ -130,7 +129,7 @@
                                 <ColumnDefinition Width="80" />
                                 <ColumnDefinition />
                             </Grid.ColumnDefinitions>
-                            <TextBlock Text="Price" />
+                            <TextBlock Text="Giá tiền" />
                             <TextBox Grid.Column="1"
                                      x:Name="_price"
                                      PreviewTextInput="_price_PreviewTextInput"
@@ -158,8 +157,6 @@
                             <Grid Grid.Column="1">
                                 <Button Padding="0"
                                         Width="40"
-                                        Background="#0f0f2d"        
-                                        
                                         VerticalAlignment="Center"
                                         Margin="0,0,0,0"
                                         materialDesign:ButtonAssist.CornerRadius="5"
@@ -192,17 +189,16 @@
                                        HorizontalAlignment="Left"
                                        Margin="20 -10 0 0"
                                        VerticalAlignment="Top" />
-                            <Button Content="Cancel"
+                            <Button Content="Hủy"
                                     Margin="0 0 90 10"
                                     BorderBrush="Transparent"
                                     materialDesign:ButtonAssist.CornerRadius="8"
                                     Command="{Binding CloseCommand}"
                                     CommandParameter="{Binding ElementName=EditFoodWd}"
-                                  Background="#FF791C1C" />
+                                    Background="OrangeRed" />
 
-                            <Button Content="Save"
+                            <Button Content="Lưu"
                                     Margin="0 0 10 10"
-                                    Background="#0f0f2d"        
                                     materialDesign:ButtonAssist.CornerRadius="8"
                                     Command="{Binding EditFoodCommand}"
                                     CommandParameter="{Binding ElementName=EditFoodWd}"

@@ -90,26 +90,20 @@
                     </Grid.Resources>
                     <Grid Grid.Row="0">
 
-                        <StackPanel Orientation="Horizontal" 
-             Margin="20,0,0,0">
-                            <materialDesign:PackIcon Kind="PlusCircleOutline" Height="30" Width="30" VerticalAlignment="Center" />
-                            <TextBlock Text="Add Staff"
-                FontSize="25"
-                VerticalAlignment="Center"
-                Margin="10,0,0,0"
-                FontWeight="Bold" />
-                            <StackPanel Orientation="Horizontal"
-                 VerticalAlignment="Top"
-                 HorizontalAlignment="Right"
-                 Grid.Row="0">
-
-                               
-                            </StackPanel>
-                        </StackPanel>
+                        <Border BorderThickness="0,0,0,1"
+                                BorderBrush="Black">
+                            <TextBlock VerticalAlignment="Center"
+                                       Margin="20 0 0 0"
+                                       Text="THÊM NHÂN VIÊN"
+                                       FontWeight="DemiBold"
+                                       FontSize="20"
+                                       HorizontalAlignment="Left"
+                                       Foreground="Black" />
+                        </Border>
 
                     </Grid>
                     <Grid Grid.Row="1">
-                        <TextBlock Text="Basic Infomation"
+                        <TextBlock Text="Thông tin cơ bản"
                                    VerticalAlignment="Center"
                                    HorizontalAlignment="Left"
                                    FontWeight="Bold"
@@ -126,7 +120,7 @@
                             <ColumnDefinition Width="150" />
                             <ColumnDefinition />
                         </Grid.ColumnDefinitions>
-                        <TextBlock Text="Name"
+                        <TextBlock Text="Họ và tên"
                                    x:Name="tboxName" />
                         <TextBox Grid.Column="1"
                                  x:Name="_FullName"
@@ -138,7 +132,7 @@
                             <ColumnDefinition Width="150" />
                             <ColumnDefinition />
                         </Grid.ColumnDefinitions>
-                        <TextBlock Text="Sex" />
+                        <TextBlock Text="Giới tính" />
                         <ComboBox VerticalContentAlignment="Center"
                                   Padding="0 12 0 0"
                                   Margin="5 0 40 0"
@@ -156,7 +150,7 @@
                             <ColumnDefinition Width="150" />
                             <ColumnDefinition />
                         </Grid.ColumnDefinitions>
-                        <TextBlock Text="Date of birth" />
+                        <TextBlock Text="Ngày sinh" />
                         <DatePicker Margin="5 0 40 0"
                                     Style="{StaticResource MaterialDesignFloatingHintDatePicker}"
                                     Grid.Column="1"
@@ -189,7 +183,7 @@
                             <ColumnDefinition Width="150" />
                             <ColumnDefinition />
                         </Grid.ColumnDefinitions>
-                        <TextBlock Text="Phone number" />
+                        <TextBlock Text="Số điện thoại" />
                         <TextBox Grid.Column="1"
                                  x:Name="_Phone"
                                  PreviewTextInput="_Phone_PreviewTextInput"
@@ -200,7 +194,7 @@
                             <ColumnDefinition Width="150" />
                             <ColumnDefinition />
                         </Grid.ColumnDefinitions>
-                        <TextBlock Text="Position" />
+                        <TextBlock Text="Chức vụ" />
                         <ComboBox VerticalContentAlignment="Center"
                                   Padding="0 12 0 0"
                                   Margin="5 0 40 0"
@@ -217,7 +211,7 @@
                             <ColumnDefinition Width="150" />
                             <ColumnDefinition />
                         </Grid.ColumnDefinitions>
-                        <TextBlock Text="Start date" />
+                        <TextBlock Text="Ngày bắt đầu" />
                         <DatePicker Margin="5 0 40 0"
                                     Style="{StaticResource MaterialDesignFloatingHintDatePicker}"
                                     Grid.Column="1"
@@ -227,7 +221,7 @@
                     <!--#endregion-->
 
                     <Grid Grid.Row="9">
-                        <TextBlock Text="Account Information"
+                        <TextBlock Text="Tài khoản đăng nhập"
                                    VerticalAlignment="Center"
                                    HorizontalAlignment="Left"
                                    Height="30"
@@ -244,7 +238,7 @@
                             <ColumnDefinition Width="150" />
                             <ColumnDefinition />
                         </Grid.ColumnDefinitions>
-                        <TextBlock Text="Username" />
+                        <TextBlock Text="Tài khoản" />
                         <TextBox Grid.Column="1"
                                  x:Name="_TaiKhoan"
                                  Text="{Binding TaiKhoan, Mode=TwoWay}" />
@@ -255,7 +249,7 @@
                             <ColumnDefinition Width="150" />
                             <ColumnDefinition />
                         </Grid.ColumnDefinitions>
-                        <TextBlock Text="Password" />
+                        <TextBlock Text="Mật khẩu" />
                         <PasswordBox Grid.Column="1"
                                      materialDesign:TextFieldAssist.HasClearButton="True"
                                      Margin="5 0 40 0"
@@ -276,7 +270,7 @@
                             <ColumnDefinition Width="150" />
                             <ColumnDefinition />
                         </Grid.ColumnDefinitions>
-                        <TextBlock Text="Re-enter Password" />
+                        <TextBlock Text="Nhập lại" />
                         <PasswordBox Grid.Column="1"
                                      materialDesign:TextFieldAssist.HasClearButton="True"
                                      Margin="5 0 40 0"
@@ -306,16 +300,14 @@
                                         Value="30" />
                             </Style>
                         </Grid.Resources>
-                        <Button Content="Cancel"
+                        <Button Content="Hủy"
                                 Margin="0 0 150 15"
                                 Command="{Binding CloseCommand}"
                                 CommandParameter="{Binding ElementName=ThemNV}"
-                                Background="#FF791C1C"
+                                Background="OrangeRed"
                                 BorderBrush="Transparent"
                                 materialDesign:ButtonAssist.CornerRadius="8" />
-                        <Button Content="Save"
-                                
-                                Background="#0f0f2d"
+                        <Button Content="Hoàn tất"
                                 Margin="0 0 40 15"
                                 Command="{Binding AddStaffCommand}"
                                 CommandParameter="{Binding ElementName=ThemNV}"

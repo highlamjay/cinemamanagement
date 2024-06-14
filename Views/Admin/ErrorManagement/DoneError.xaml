@@ -30,13 +30,7 @@
                     BorderBrush="Black"
                     Grid.Row="0">
                 <StackPanel Orientation="Horizontal">
-
-                    <materialDesign:PackIcon Kind="Eye"
-                              VerticalAlignment="Center"
-                              Width="45"
-                              Margin="20,0,0,0"
-                              Height="45"/>
-                    <TextBlock Text="Error Descripsion"
+                    <TextBlock Text="Chi tiết sự cố"
                                FontSize="25"
                                FontWeight="Bold"
                                Margin="10,0,0,0" />
@@ -82,7 +76,7 @@
                             <TextBlock Text="{Binding SelectedItem.Title}"
                                        FontWeight="Bold"
                                        FontSize="18" />
-                            <TextBlock Text="Urgency level: "
+                            <TextBlock Text="Mức độ: "
                                        Margin="120,3,0,0"
                                        FontSize="15" />
                             <TextBlock Text="{Binding SelectedItem.Level}"
@@ -99,17 +93,17 @@
                         </Border>
                         <StackPanel Orientation="Horizontal">
                             <StackPanel Margin="0,10,0,0">
-                                <TextBlock Text="Submit date:" />
+                                <TextBlock Text="Ngày tiếp nhận:" />
                                 <TextBlock Text="{Binding SelectedItem.SubmittedAt,StringFormat=dd/MM/yyyy HH:mm:ss}" />
                             </StackPanel>
                             <StackPanel Margin="100,10,0,0">
-                                <TextBlock Text="Staff Name:" />
+                                <TextBlock Text="Nhân viên báo cáo:" />
                                 <TextBlock Text="{Binding SelectedItem.StaffName}" />
                             </StackPanel>
                         </StackPanel>
 
                         <StackPanel Margin="0,10,0,0">
-                            <TextBlock Text="Status:" />
+                            <TextBlock Text="Trạng thái:" />
                             <TextBlock Width="140"
                                        Text="{Binding SelectedItem.Status}"
                                        HorizontalAlignment="Left" />
@@ -120,7 +114,7 @@
                         <StackPanel Margin="0,10,0,0"
                                     x:Name="_startday"
                                     IsEnabled="False">
-                            <TextBlock Text="Resolution Begin Date:" />
+                            <TextBlock Text="Ngày sửa:" />
                             <TextBlock HorizontalAlignment="Left"
                                        Text="{Binding SelectedItem.StartDate,StringFormat=dd/MM/yyyy HH:mm:ss}" />
                         </StackPanel>
@@ -128,7 +122,7 @@
                         <StackPanel Margin="0,10,0,0"
                                     x:Name="_Finishday"
                                     IsEnabled="False">
-                            <TextBlock Text="Finish date:" />
+                            <TextBlock Text="Ngày hoàn thành:" />
                             <TextBlock HorizontalAlignment="Left"
                                        Text="{Binding SelectedItem.FinishDate,StringFormat=dd/MM/yyyy HH:mm:ss}" />
                         </StackPanel>
@@ -136,7 +130,7 @@
                         <StackPanel Margin="0,10,0,0"
                                     x:Name="_cost"
                                     IsEnabled="False">
-                            <TextBlock Text="Cost:" />
+                            <TextBlock Text="Chi phí:" />
                             <TextBlock HorizontalAlignment="Left"
                                        Text="{Binding SelectedItem.RepairCostStr}" />
                         </StackPanel>

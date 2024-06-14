@@ -43,7 +43,7 @@
             <Border BorderBrush="Black"
                     BorderThickness="0,0,0,1">
                 <Grid Grid.Row="0">
-                    <Label Content="Add Release Name"
+                    <Label Content="Thêm đợt phát hành"
                            FontSize="23"
                            FontWeight="Bold"
                            Margin="5" />

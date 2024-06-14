@@ -1,12 +1,13 @@
 ﻿using cinema_management.DTOs;
 using cinema_management.Models.Services;
 using cinema_management.Utils;
-using cinema_management.Views;
 using cinema_management.Views.Admin.VoucherManagement.AddWindow;
+using cinema_management.Views;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -174,19 +175,19 @@ namespace cinema_management.ViewModel.AdminVM.VoucherManagemenetVM
         {
             if (string.IsNullOrEmpty(ReleaseName))
             {
-                MessageBoxCustom mb = new MessageBoxCustom("Warning", "Please enter all required information", MessageType.Warning, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Cảnh báo", "Vui lòng nhập đủ thông tin", MessageType.Warning, MessageButtons.OK);
                 mb.ShowDialog();
                 return;
             }
             if (ParValue >= MinimumValue)
             {
-                MessageBoxCustom mb = new MessageBoxCustom("Warning", "The voucher denomination must be less than the minimum total", MessageType.Warning, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Cảnh báo", "Mệnh giá voucher phải bé hơn tổng tối thiểu", MessageType.Warning, MessageButtons.OK);
                 mb.ShowDialog();
                 return;
             }
             if (StartDate > FinishDate)
             {
-                MessageBoxCustom mb = new MessageBoxCustom("Warning", "Invalid effective date", MessageType.Warning, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Cảnh báo", "Ngày hiệu lực không hợp lệ", MessageType.Warning, MessageButtons.OK);
                 mb.ShowDialog();
                 return;
             }
@@ -208,7 +209,7 @@ namespace cinema_management.ViewModel.AdminVM.VoucherManagemenetVM
             if (isSucess)
             {
                 Unlock = true;
-                MessageBoxCustom mb = new MessageBoxCustom("Notification", addSuccess, MessageType.Success, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Thông báo", addSuccess, MessageType.Success, MessageButtons.OK);
                 mb.ShowDialog();
                 ListBigVoucher.Add(newVoucherRelease);
                 try
@@ -221,20 +222,20 @@ namespace cinema_management.ViewModel.AdminVM.VoucherManagemenetVM
                 catch (System.Data.Entity.Core.EntityException e)
                 {
                     Console.WriteLine(e);
-                    MessageBoxCustom m = new MessageBoxCustom("Error", "Database Connection Lost", MessageType.Error, MessageButtons.OK);
+                    MessageBoxCustom m = new MessageBoxCustom("Lỗi", "Mất kết nối cơ sở dữ liệu", MessageType.Error, MessageButtons.OK);
                     m.ShowDialog();
                 }
                 catch (Exception e)
                 {
                     Console.WriteLine(e);
-                    MessageBoxCustom m = new MessageBoxCustom("Error", "Database Connection Lost", MessageType.Error, MessageButtons.OK);
+                    MessageBoxCustom m = new MessageBoxCustom("Lỗi", "Lỗi hệ thống", MessageType.Error, MessageButtons.OK);
                     m.ShowDialog();
                 }
 
             }
             else
             {
-                MessageBoxCustom mb = new MessageBoxCustom("Error", addSuccess, MessageType.Error, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Lỗi", addSuccess, MessageType.Error, MessageButtons.OK);
                 mb.ShowDialog();
             }
         }
@@ -244,7 +245,7 @@ namespace cinema_management.ViewModel.AdminVM.VoucherManagemenetVM
             {
                 if (string.IsNullOrEmpty(item.Code))
                 {
-                    MessageBoxCustom mb = new MessageBoxCustom("Warning", "Cannot be left blank!", MessageType.Warning, MessageButtons.OK);
+                    MessageBoxCustom mb = new MessageBoxCustom("Cảnh báo", "Không được để trống!", MessageType.Warning, MessageButtons.OK);
                     mb.ShowDialog();
                     return;
                 }
@@ -253,7 +254,7 @@ namespace cinema_management.ViewModel.AdminVM.VoucherManagemenetVM
             {
                 if (ListMiniVoucher[ListMiniVoucher.Count - 1].Code == ListMiniVoucher[i].Code)
                 {
-                    MessageBoxCustom mb = new MessageBoxCustom("Warning", "Code is already in use!", MessageType.Warning, MessageButtons.OK);
+                    MessageBoxCustom mb = new MessageBoxCustom("Cảnh báo", "Mã đã bị trùng!", MessageType.Warning, MessageButtons.OK);
                     mb.ShowDialog();
                     return;
                 }
@@ -263,7 +264,7 @@ namespace cinema_management.ViewModel.AdminVM.VoucherManagemenetVM
 
             if (createSuccess)
             {
-                MessageBoxCustom mb = new MessageBoxCustom("Notification", createRandomSuccess, MessageType.Success, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Thông báo", createRandomSuccess, MessageType.Success, MessageButtons.OK);
                 mb.ShowDialog();
 
                 ListViewVoucher = new ObservableCollection<VoucherDTO>(ListViewVoucher.Concat(newListCode));
@@ -303,7 +304,7 @@ namespace cinema_management.ViewModel.AdminVM.VoucherManagemenetVM
             }
             else
             {
-                MessageBoxCustom mb = new MessageBoxCustom("Error", createRandomSuccess, MessageType.Error, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Lỗi", createRandomSuccess, MessageType.Error, MessageButtons.OK);
                 mb.ShowDialog();
             }
         }
@@ -311,7 +312,7 @@ namespace cinema_management.ViewModel.AdminVM.VoucherManagemenetVM
         {
             if (Quantity == 0 || Length == 0 || string.IsNullOrEmpty(FirstChar) || string.IsNullOrEmpty(LastChar))
             {
-                MessageBoxCustom mb = new MessageBoxCustom("Warning", "Cannot be left blank!", MessageType.Warning, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Cảnh báo", "Không được để trống!", MessageType.Warning, MessageButtons.OK);
                 mb.ShowDialog();
                 return;
             }
@@ -319,7 +320,7 @@ namespace cinema_management.ViewModel.AdminVM.VoucherManagemenetVM
             (string error, List<string> listCode) = await Task<(string, List<string>)>.Run(() => Helper.GetListCode(Quantity, Length, FirstChar, LastChar));
             if (error != null)
             {
-                MessageBoxCustom mb = new MessageBoxCustom("Error", error, MessageType.Error, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Lỗi", error, MessageType.Error, MessageButtons.OK);
                 mb.ShowDialog();
                 return;
             }
@@ -330,7 +331,7 @@ namespace cinema_management.ViewModel.AdminVM.VoucherManagemenetVM
 
             if (createSuccess)
             {
-                MessageBoxCustom mb = new MessageBoxCustom("Notification", createRandomSuccess, MessageType.Success, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Thông báo", createRandomSuccess, MessageType.Success, MessageButtons.OK);
                 mb.ShowDialog();
 
                 ListViewVoucher = new ObservableCollection<VoucherDTO>(ListViewVoucher.Concat(newListCode));
@@ -369,7 +370,7 @@ namespace cinema_management.ViewModel.AdminVM.VoucherManagemenetVM
             }
             else
             {
-                MessageBoxCustom mb = new MessageBoxCustom("Error", createRandomSuccess, MessageType.Error, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Lỗi", createRandomSuccess, MessageType.Error, MessageButtons.OK);
                 mb.ShowDialog();
             }
         }
@@ -384,7 +385,7 @@ namespace cinema_management.ViewModel.AdminVM.VoucherManagemenetVM
 
             ListViewVoucher = new ObservableCollection<VoucherDTO>();
 
-            if (SelectedCbbFilter.Content.ToString() == "All")
+            if (SelectedCbbFilter.Content.ToString() == "Toàn bộ")
             {
                 ListViewVoucher = new ObservableCollection<VoucherDTO>(StoreAllMini);
             }
@@ -405,13 +406,13 @@ namespace cinema_management.ViewModel.AdminVM.VoucherManagemenetVM
             catch (System.Data.Entity.Core.EntityException e)
             {
                 Console.WriteLine(e);
-                MessageBoxCustom mb = new MessageBoxCustom("Error", "Database Connection Lost", MessageType.Error, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Lỗi", "Mất kết nối cơ sở dữ liệu", MessageType.Error, MessageButtons.OK);
                 mb.ShowDialog();
             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                MessageBoxCustom mb = new MessageBoxCustom("Error", "Database Connetion Lost", MessageType.Error, MessageButtons.OK);
+                MessageBoxCustom mb = new MessageBoxCustom("Lỗi", "Lỗi hệ thống", MessageType.Error, MessageButtons.OK);
                 mb.ShowDialog();
             }
         }

@@ -94,4 +94,3 @@ namespace cinema_management.DTOs
         public TicketBillInfoDTO TicketInfo { get; set; }
     }
 }
-

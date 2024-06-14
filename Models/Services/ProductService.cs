@@ -2,10 +2,11 @@
 using cinema_management.Utils;
 using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Data.Entity.Validation;
+using System.Data.Entity;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace cinema_management.Models.Services
@@ -70,7 +71,7 @@ namespace cinema_management.Models.Services
                     {
                         if (prod.IsDeleted == false)
                         {
-                            return (false, "This product name already exists!", null);
+                            return (false, "Tên sản phầm đã tồn tại", null);
                         }
 
                         //Khi sản phẩm đã bị xóa nhưng được add lại với cùng tên 
@@ -98,13 +99,13 @@ namespace cinema_management.Models.Services
                         newProd.Id = product.ProductID;
                     }
 
-                    return (true, "Add Success", newProd);
+                    return (true, "Thêm sản phẩm mới thành công", newProd);
                 }
             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                return (false, $"System Error {e}", null);
+                return (false, $"Lỗi hệ thống {e}", null);
             }
         }
 
@@ -118,13 +119,13 @@ namespace cinema_management.Models.Services
 
                     if (prod is null)
                     {
-                        return (false, "Product does not exist");
+                        return (false, "Sản phẩm không tồn tại");
                     }
 
                     bool IsExistProdName = await context.Products.AnyAsync((p) => p.ProductID != prod.ProductID && p.DisplayName == updatedProd.DisplayName);
                     if (IsExistProdName)
                     {
-                        return (false, "This product name already exists! Please choose another name.");
+                        return (false, "Tên sản phẩm này đã tồn tại! Vui lòng chọn tên khác");
                     }
                     prod.DisplayName = updatedProd.DisplayName;
                     prod.Price = updatedProd.Price;
@@ -132,7 +133,7 @@ namespace cinema_management.Models.Services
                     prod.Categorylog = updatedProd.Category;
 
                     await context.SaveChangesAsync();
-                    return (true, "Update Successful");
+                    return (true, "Cập nhật thành công");
                 }
             }
             catch (DbEntityValidationException e)
@@ -146,7 +147,7 @@ namespace cinema_management.Models.Services
             }
             catch (Exception)
             {
-                return (false, "System error");
+                return (false, "Lỗi hệ thống");
             }
 
         }
@@ -161,7 +162,7 @@ namespace cinema_management.Models.Services
                                           select p).FirstOrDefaultAsync();
                     if (prod is null)
                     {
-                        return (false, "Product does not exist");
+                        return (false, "Sản phẩm không tồn tại!");
                     }
 
                     if (prod.Image != null)
@@ -177,9 +178,9 @@ namespace cinema_management.Models.Services
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                return (false, $"System Error {e.Message}");
+                return (false, $"Lỗi hệ thống {e.Message}");
             }
-            return (true, "Delete Successful");
+            return (true, "Xóa sản phẩm thành công");
         }
     }
 }

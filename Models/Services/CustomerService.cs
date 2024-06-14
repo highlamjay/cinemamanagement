@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace cinema_management.Models.Services
@@ -118,7 +119,7 @@ namespace cinema_management.Models.Services
                         bool isExistEmail = await context.Customers.AnyAsync(c => c.Email == newCus.Email);
                         if (isExistEmail)
                         {
-                            return (false, "Email has been used", null);
+                            return (false, "Email này đã tồn tại", null);
                         }
                     }
 
@@ -127,7 +128,7 @@ namespace cinema_management.Models.Services
                     {
                         if (!cus.IsDeleted)
                         {
-                            return (false, "Phone number has been used", null);
+                            return (false, "Số điện thoại này đã tồn tại", null);
                         }
                         else
                         {
@@ -138,7 +139,7 @@ namespace cinema_management.Models.Services
                         }
 
                         await context.SaveChangesAsync();
-                        return (true, "Sign up successful", cus.CustomerID);
+                        return (true, "Đăng ký thành công", cus.CustomerID);
                     }
 
 
@@ -154,12 +155,12 @@ namespace cinema_management.Models.Services
 
                     context.Customers.Add(newCusomer);
                     await context.SaveChangesAsync();
-                    return (true, "Sign up successful", newCusomer.CustomerID);
+                    return (true, "Đăng ký thành công", newCusomer.CustomerID);
                 }
             }
             catch (Exception)
             {
-                return (false, "System Error", null);
+                return (false, "Lỗi hệ thống", null);
             }
         }
 
@@ -173,7 +174,7 @@ namespace cinema_management.Models.Services
 
                     if (isExistPhone)
                     {
-                        return (false, "Phone number has been used");
+                        return (false, "Số điện thoại này đã tồn tại");
                     }
 
                     if (!string.IsNullOrEmpty(updatedCus.Email))
@@ -181,7 +182,7 @@ namespace cinema_management.Models.Services
                         bool isExistEmail = await context.Customers.AnyAsync(c => c.CustomerID != updatedCus.Id && c.Email == updatedCus.Email);
                         if (isExistEmail)
                         {
-                            return (false, "Email has been used");
+                            return (false, "Email này đã tồn tại");
                         }
                     }
                     var cus = await context.Customers.FindAsync(updatedCus.Id);
@@ -191,12 +192,12 @@ namespace cinema_management.Models.Services
                     cus.Email = updatedCus.Email;
 
                     await context.SaveChangesAsync();
-                    return (true, "Update successful");
+                    return (true, "Cập nhật thành công");
                 }
             }
             catch (Exception)
             {
-                return (false, "System Error");
+                return (false, "Lỗi hệ thống");
             }
         }
 
@@ -209,17 +210,17 @@ namespace cinema_management.Models.Services
                     var cus = await context.Customers.FindAsync(id);
                     if (cus is null || cus.IsDeleted)
                     {
-                        return (false, "Customer does not exist");
+                        return (false, "Khách hàng không tồn tại!");
                     }
 
                     cus.IsDeleted = true;
                     await context.SaveChangesAsync();
-                    return (true, "Delete successful");
+                    return (true, "Xóa thành công");
                 }
             }
             catch (Exception)
             {
-                return (false, "System error");
+                return (false, "Lỗi hệ thống");
             }
         }
 

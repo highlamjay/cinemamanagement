@@ -100,7 +100,7 @@
                                           Height="122"
                                           Grid.RowSpan="2">
                     <Grid>
-                        <Label Content="Currently Movie"
+                        <Label Content="Phim đang chiếu"
                                FontWeight="Bold"
                                FontSize="28"
                                Margin="20,10,10,10" />
@@ -122,7 +122,7 @@
                                                  FontSize="16"
                                                  Foreground="Black"
                                                  Padding="0 7 0 0"
-                                                 materialDesign:HintAssist.Hint="Search"
+                                                 materialDesign:HintAssist.Hint="Tìm kiếm phim"
                                                  FontWeight="DemiBold"
                                                  TextChanged="FilterBox_TextChanged" />
                                     </StackPanel>
@@ -133,7 +133,7 @@
                                                                  Height="35"
                                                                  Foreground="Black"
                                                                  VerticalAlignment="Bottom" />
-                                        <ComboBox materialDesign:HintAssist.Hint="Genre"
+                                        <ComboBox materialDesign:HintAssist.Hint="Thể loại"
                                                   VerticalContentAlignment="Bottom"
                                                   Width="175"
                                                   Height="40"
@@ -163,7 +163,7 @@
                                             </ComboBox.ItemContainerStyle>
                                         </ComboBox>
                                     </StackPanel>
-                                    <DatePicker materialDesign:HintAssist.Hint="Date"
+                                    <DatePicker materialDesign:HintAssist.Hint="Ngày chiếu"
                                                 SelectedDate="{Binding SelectedDate,UpdateSourceTrigger=PropertyChanged}"
                                                 Text="{Binding SetCurrentDate,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
                                                 Width="175"
