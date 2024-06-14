@@ -1,6 +1,7 @@
 ﻿using cinema_management.DTOs;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -39,18 +40,23 @@ namespace cinema_management.Views.Admin.Import_ExportManagement
             if (String.IsNullOrEmpty(FilterBox.Text))
                 return true;
 
-            switch (cbbFilter.SelectedValue)
+            string searchText = RemoveDiacritics(FilterBox.Text).ToLower();
+            var receipt = item as ProductReceiptDTO;
+
+            if (receipt == null)
+                return false;
+
+            switch (cbbFilter.SelectedValue as string)
             {
                 case "Mã đơn":
-                    return ((item as ProductReceiptDTO).Id.ToString().IndexOf(FilterBox.Text, StringComparison.OrdinalIgnoreCase) >= 0);
+                    return RemoveDiacritics(receipt.Id.ToString()).ToLower().IndexOf(searchText, StringComparison.OrdinalIgnoreCase) >= 0;
                 case "Nhân viên":
-                    return ((item as ProductReceiptDTO).StaffName.IndexOf(FilterBox.Text, StringComparison.OrdinalIgnoreCase) >= 0);
+                    return RemoveDiacritics(receipt.StaffName).ToLower().IndexOf(searchText, StringComparison.OrdinalIgnoreCase) >= 0;
                 case "Sản phẩm":
-                    return ((item as ProductReceiptDTO).ProductName.IndexOf(FilterBox.Text, StringComparison.OrdinalIgnoreCase) >= 0);
+                    return RemoveDiacritics(receipt.ProductName).ToLower().IndexOf(searchText, StringComparison.OrdinalIgnoreCase) >= 0;
                 default:
-                    return ((item as ProductReceiptDTO).Id.ToString().IndexOf(FilterBox.Text, StringComparison.OrdinalIgnoreCase) >= 0);
+                    return RemoveDiacritics(receipt.Id.ToString()).ToLower().IndexOf(searchText, StringComparison.OrdinalIgnoreCase) >= 0;
             }
-
         }
 
         private void ComboBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
@@ -75,6 +81,25 @@ namespace cinema_management.Views.Admin.Import_ExportManagement
                 }
             }
 
+        }
+        private string RemoveDiacritics(string text)
+        {
+            if (string.IsNullOrWhiteSpace(text))
+                return text;
+
+            var normalizedString = text.Normalize(NormalizationForm.FormD);
+            var stringBuilder = new StringBuilder();
+
+            foreach (var c in normalizedString)
+            {
+                var unicodeCategory = CharUnicodeInfo.GetUnicodeCategory(c);
+                if (unicodeCategory != UnicodeCategory.NonSpacingMark)
+                {
+                    stringBuilder.Append(c);
+                }
+            }
+
+            return stringBuilder.ToString().Normalize(NormalizationForm.FormC);
         }
     }
 }

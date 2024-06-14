@@ -1,6 +1,7 @@
 ﻿using cinema_management.DTOs;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,18 +31,25 @@ namespace cinema_management.Views.Admin.CustomerManagement
             if (String.IsNullOrEmpty(SearchBox.Text))
                 return true;
 
-            switch (cbbFilter.SelectedValue)
+            string searchText = RemoveDiacritics(SearchBox.Text).ToLower();
+            var customer = item as CustomerDTO;
+
+            if (customer == null)
+                return false;
+
+            switch (cbbFilter.SelectedValue as string)
             {
                 case "Mã khách hàng":
-                    return ((item as CustomerDTO).Id.ToString().IndexOf(SearchBox.Text, StringComparison.OrdinalIgnoreCase) >= 0);
+                    return RemoveDiacritics(customer.Id.ToString()).ToLower().IndexOf(searchText, StringComparison.OrdinalIgnoreCase) >= 0;
                 case "Tên khách hàng":
-                    return ((item as CustomerDTO).Name.IndexOf(SearchBox.Text, StringComparison.OrdinalIgnoreCase) >= 0);
+                    return RemoveDiacritics(customer.Name).ToLower().IndexOf(searchText, StringComparison.OrdinalIgnoreCase) >= 0;
                 case "Số điện thoại":
-                    return ((item as CustomerDTO).PhoneNumber.IndexOf(SearchBox.Text, StringComparison.OrdinalIgnoreCase) >= 0);
+                    return RemoveDiacritics(customer.PhoneNumber).ToLower().IndexOf(searchText, StringComparison.OrdinalIgnoreCase) >= 0;
                 default:
-                    return ((item as CustomerDTO).Id.ToString().IndexOf(SearchBox.Text, StringComparison.OrdinalIgnoreCase) >= 0);
+                    return RemoveDiacritics(customer.Id.ToString()).ToLower().IndexOf(searchText, StringComparison.OrdinalIgnoreCase) >= 0;
             }
         }
+
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -109,5 +117,25 @@ namespace cinema_management.Views.Admin.CustomerManagement
             cbb.ItemsSource = l;
             cbb.SelectedIndex = DateTime.Now.Month - 1;
         }
+        private string RemoveDiacritics(string text)
+        {
+            if (string.IsNullOrWhiteSpace(text))
+                return text;
+
+            var normalizedString = text.Normalize(NormalizationForm.FormD);
+            var stringBuilder = new StringBuilder();
+
+            foreach (var c in normalizedString)
+            {
+                var unicodeCategory = CharUnicodeInfo.GetUnicodeCategory(c);
+                if (unicodeCategory != UnicodeCategory.NonSpacingMark)
+                {
+                    stringBuilder.Append(c);
+                }
+            }
+
+            return stringBuilder.ToString().Normalize(NormalizationForm.FormC);
+        }
     }
+
 }

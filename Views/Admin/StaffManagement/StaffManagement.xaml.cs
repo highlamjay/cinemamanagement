@@ -1,6 +1,7 @@
 ﻿using cinema_management.DTOs;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,8 +37,14 @@ namespace cinema_management.Views.Admin.StaffManagement
         {
             if (String.IsNullOrEmpty(SearchBox.Text))
                 return true;
-            else
-                return ((item as StaffDTO).StaffName.IndexOf(SearchBox.Text, StringComparison.OrdinalIgnoreCase) >= 0);
+
+            string searchText = RemoveDiacritics(SearchBox.Text).ToLower();
+            var staff = item as StaffDTO;
+
+            if (staff == null)
+                return false;
+
+            return RemoveDiacritics(staff.StaffName).ToLower().IndexOf(searchText, StringComparison.OrdinalIgnoreCase) >= 0;
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -46,6 +53,25 @@ namespace cinema_management.Views.Admin.StaffManagement
             view.Filter = Filter;
             result.Content = _ListView.Items.Count;
             CollectionViewSource.GetDefaultView(_ListView.ItemsSource).Refresh();
+        }
+        private string RemoveDiacritics(string text)
+        {
+            if (string.IsNullOrWhiteSpace(text))
+                return text;
+
+            var normalizedString = text.Normalize(NormalizationForm.FormD);
+            var stringBuilder = new StringBuilder();
+
+            foreach (var c in normalizedString)
+            {
+                var unicodeCategory = CharUnicodeInfo.GetUnicodeCategory(c);
+                if (unicodeCategory != UnicodeCategory.NonSpacingMark)
+                {
+                    stringBuilder.Append(c);
+                }
+            }
+
+            return stringBuilder.ToString().Normalize(NormalizationForm.FormC);
         }
     }
 }
