@@ -43,4 +43,17 @@ FC:\Users\Nguyen\Moi\cinemamanagement\Views\LoginWindow\LoginPage.xaml;;
 FC:\Users\Nguyen\Moi\cinemamanagement\Views\LoginWindow\LoginWindow.xaml;;
 FC:\Users\Nguyen\Moi\cinemamanagement\Views\LoginWindow\RolePage.xaml;;
 FC:\Users\Nguyen\Moi\cinemamanagement\Views\MessageBoxCustom.xaml;;
+FC:\Users\Nguyen\Moi\cinemamanagement\Views\Staff\MainStaffWindow.xaml;;
+FC:\Users\Nguyen\Moi\cinemamanagement\Views\Staff\MovieScheduleWindow\MovieScheduleWindow.xaml;;
+FC:\Users\Nguyen\Moi\cinemamanagement\Views\Staff\OrderFoodWindow\FoodPage.xaml;;
+FC:\Users\Nguyen\Moi\cinemamanagement\Views\Staff\ShowtimePage\ShowtimePage.xaml;;
+FC:\Users\Nguyen\Moi\cinemamanagement\Views\Staff\TicketBill\TicketBillNoFoodPage.xaml;;
+FC:\Users\Nguyen\Moi\cinemamanagement\Views\Staff\TicketBill\TicketBillOnlyFoodPage.xaml;;
+FC:\Users\Nguyen\Moi\cinemamanagement\Views\Staff\TicketBill\TicketBillPage.xaml;;
+FC:\Users\Nguyen\Moi\cinemamanagement\Views\Staff\TicketWindow\TicketBookingPage.xaml;;
+FC:\Users\Nguyen\Moi\cinemamanagement\Views\Staff\TicketWindow\TicketWindow.xaml;;
+FC:\Users\Nguyen\Moi\cinemamanagement\Views\Staff\TroubeWindow\AddError.xaml;;
+FC:\Users\Nguyen\Moi\cinemamanagement\Views\Staff\TroubeWindow\EditError.xaml;;
+FC:\Users\Nguyen\Moi\cinemamanagement\Views\Staff\TroubeWindow\TroublePage.xaml;;
+FC:\Users\Nguyen\Moi\cinemamanagement\Views\Staff\TroubeWindow\ViewError.xaml;;
 

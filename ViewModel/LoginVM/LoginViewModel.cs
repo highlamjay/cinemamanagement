@@ -11,6 +11,8 @@ using cinema_management.Model.Service;
 using cinema_management.Views.LoginWindow;
 using cinema_management.Views.Admin;
 using cinema_management.ViewModel.AdminVM;
+using cinema_management.Views.Staff;
+
 namespace cinema_management.ViewModel.LoginVM
 {
     public class LoginViewModel : BaseViewModel
@@ -136,7 +138,13 @@ namespace cinema_management.ViewModel.LoginVM
                 }
                 else
                 {
-                    
+                    LoginWindow.Hide();
+                    MainStaffWindow w1 = new MainStaffWindow();
+                    MainStaffViewModel.CurrentStaff = CurrentStaff;
+                    w1._StaffName.Text = CurrentStaff.StaffName;
+                    w1.Show();
+                    LoginWindow.Close();
+                    return;
                 }
             });
         }
@@ -166,12 +174,17 @@ namespace cinema_management.ViewModel.LoginVM
                 //TicketBillViewModel.Staff = staff;
                 if (staff.StaffRole == "Quản lý")
                 {
-
                     MainFrame.Content = new RolePage();
                 }
                 else
                 {
-                    
+                    LoginWindow.Hide();
+                    MainStaffWindow w1 = new MainStaffWindow();
+                    MainStaffViewModel.CurrentStaff = staff;
+                    w1._StaffName.Text = staff.StaffName;
+                    w1.Show();
+                    LoginWindow.Close();
+                    return;
                 }
 
             }

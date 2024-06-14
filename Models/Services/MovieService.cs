@@ -97,7 +97,7 @@ namespace cinema_management.Models.Services
                             {
                                 showtimeDTOsList.Add(new ShowtimeDTO
                                 {
-                                    Id = (int)m.ShowTime.MovieID,
+                                    Id = (int)m.ShowTime.ShowTimeID,
                                     MovieId = (int)m.ShowTime.MovieID,
                                     StartTime = (TimeSpan)m.ShowTime.StartTime,
                                     RoomId = (int)m.ShowTime.ShowtimeSetting.RoomID,
@@ -253,8 +253,11 @@ namespace cinema_management.Models.Services
                         }
                         else
                         {
-                            Movie mov = new Movie
+                        Random random = new Random();
+                     
+                        Movie mov = new Movie
                             {
+                                MovieID = random.Next(1000 - (100 - 1)) + 100,
                                 DisplayName = newMovie.DisplayName,
                                 RunningTime = newMovie.RunningTime,
                                 Country = newMovie.Country,

@@ -29,26 +29,23 @@
             <i:InvokeCommandAction Command="{Binding FirstLoadCM}" />
         </i:EventTrigger>
     </i:Interaction.Triggers>
-    <Border CornerRadius="10" Background="#272537">
+
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="30" />
-            <RowDefinition Height="780" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="79.65" />
+            <RowDefinition Height="720.35"/>
         </Grid.RowDefinitions>
 
         <!--#FF383737-->
-        <StackPanel   Background="#272537"
+        <StackPanel   Background="#132644"
                       Grid.Row="0">
             <StackPanel Orientation="Horizontal"
-                        VerticalAlignment="Center"
-                        HorizontalAlignment="Right"
-                        Height="40"
-                        Width="120"
-                       >
+                        VerticalAlignment="Top"
+                        HorizontalAlignment="Right">
 
                 <Label ToolBar.OverflowMode="AsNeeded"
-                       Height="40" Width="40"
-                      
+                       Height="20"
                        BorderThickness="0"
                        Foreground="Black"
                        BorderBrush="Transparent"
@@ -68,39 +65,12 @@
                     </Label.Style>
                     <materialDesign:PackIcon Kind="WindowMinimize"
                                              Height="15"
-                                             Margin="5"
                                              Width="20"
                                              Foreground="White" />
                 </Label>
-                <Label ToolBar.OverflowMode="AsNeeded"
-        Height="40"
-                       Width="40"
-        BorderThickness="0"
-        Foreground="Black"
-        BorderBrush="Transparent"
-        MouseLeftButtonUp="Label_MouseLeftButtonUp_2">
-                    <Label.Style>
-                        <Style TargetType="Label">
-                            <Setter Property="Background"
-                     Value="Transparent" />
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver"
-                          Value="True">
-                                    <Setter Property="Background"
-                             Value="Gray" />
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Label.Style>
-                    <materialDesign:PackIcon Kind="WindowMaximize"
-                              Height="15"   Margin="5"
-                              Width="20"
-                              Foreground="White" />
-                </Label>
 
                 <Label ToolBar.OverflowMode="AsNeeded"
-                       Height="40"
-                       Width="40"
+                       Height="20"
                        Foreground="Black"
                        BorderBrush="Transparent"
                        materialDesign:ButtonAssist.CornerRadius="0,10,0,0"
@@ -123,12 +93,20 @@
                                              Foreground="White"
                                              Width="20"
                                              Height="15"
-                                            Margin="5" />
+                                             Margin="0,-3,0,0" />
                 </Label>
             </StackPanel>
         </StackPanel>
 
-        <Grid Grid.Row="1">
+        <Grid Grid.Row="1" Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="966*"/>
+                <ColumnDefinition Width="76*"/>
+                <ColumnDefinition Width="152*"/>
+                <ColumnDefinition Width="155*"/>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="41*"/>
+            </Grid.ColumnDefinitions>
 
             <!--Frame-->
             <Frame x:Name="MainFrame"
@@ -136,28 +114,28 @@
                    Width="1440"
                    NavigationUIVisibility="Hidden"
                    Panel.ZIndex="0"
-                   Margin="0,80,0,0">
+                   Margin="0,80,0,0" Grid.ColumnSpan="6">
 
                 <i:Interaction.Triggers>
                     <i:EventTrigger EventName="Loaded">
-                            <i:InvokeCommandAction Command="{Binding LoadTKPageCM}"
+                        <i:InvokeCommandAction Command="{Binding LoadTKPageCM}"
                                                CommandParameter="{Binding ElementName=MainFrame}" />
                     </i:EventTrigger>
                 </i:Interaction.Triggers>
             </Frame>
-            <Grid Grid.RowSpan="2"
+            <Grid
                   Background="Gray"
                   Opacity="0.3"
                   Visibility="Collapsed"
                   x:Name="shadow"
-                  MouseDown="MainFrame_MouseDown" />
+                  MouseDown="MainFrame_MouseDown" Grid.ColumnSpan="6" />
             <!--thanh cong cu-->
             <materialDesign:ColorZone Mode="Inverted"
                                       Padding="16"
-                                      Height="70"
-                                      Background="#272537"                                      
-                                      MouseLeftButtonDown="mainadminwindow_MouseLeftButtonDown" />
-            <DockPanel>
+                                      Height="80"
+                                      Background="#132644"                                      
+                                      MouseLeftButtonDown="mainadminwindow_MouseLeftButtonDown" Grid.ColumnSpan="6" />
+            <DockPanel Grid.ColumnSpan="6">
                 <StackPanel Orientation="Horizontal"
                             Margin="-260,0,0,0">
                     <StackPanel.Style>
@@ -195,12 +173,18 @@
                         <TranslateTransform />
                     </StackPanel.RenderTransform>
 
-                    <Grid Background="#272537"
+                    <Grid Background="#132644"
                           Width="285"
                           Margin="-25,0,0,0">
-                            <StackPanel >
+                        <StackPanel>
                             <StackPanel.Resources>
-                                
+                                <Style TargetType="Button"
+                                       BasedOn="{StaticResource MaterialDesignFlatMidBgButton}">
+                                    <Style.Setters>
+                                        <Setter Property="Foreground"
+                                                Value="White" />
+                                    </Style.Setters>
+                                </Style>
                                 <Style TargetType="materialDesign:PackIcon">
                                     <Style.Setters>
                                         <Setter Property="Foreground"
@@ -211,49 +195,48 @@
                             <Grid Height="80">
                                 <StackPanel HorizontalAlignment="Center"
                                             Orientation="Horizontal"
-                                            Height="60"
-                                            Margin="0,20,0,0">
-                                    <Image Source="/Resources/Icon/APPLOGO.ico"
-                                           Width="100"
+                                            Height="60">
+                                    <Image Source="/Resources/Icon/iconApp.ico"
+                                           Width="60"
                                            Margin="10,-5,5,0" />
                                     <TextBlock TextWrapping="Wrap"
                                                materialDesign:TextBlockAssist.AutoToolTip="True"
                                                VerticalAlignment="Bottom"
                                                TextAlignment="Center"
-                                               Text="Squadin Cinema"
+                                               Text="VMN Cinema"
                                                FontFamily="Helvetica"
                                                FontWeight="Bold"
-                                               Foreground="white"
+                                               Foreground="#e3e9fa"
                                                FontSize="20"
                                                Width="100"/>
                                 </StackPanel>
                             </Grid>
 
-                            <StackPanel Orientation="Horizontal" Margin="10" >
+                            <StackPanel Orientation="Horizontal">
                                 <materialDesign:PackIcon Kind="MovieEdit"
                                                          Height="30"
                                                          Width="30"
                                                          Margin="10,0,0,0"
                                                          VerticalAlignment="Center" />
-                                <Button  Content="Movie"
+                                <Button Margin="0,0,0,5"
+                                        Content="Quản lý phim"
                                         Height="50"
                                         FontSize="25"
                                         HorizontalContentAlignment="Left"
                                         Background="Transparent"
-                                         Foreground="White"
                                         BorderBrush="Transparent"
                                         Width="240"
                                         Command="{Binding LoadQLPPageCM}"
-                                        CommandParameter="{Binding ElementName=MainFrame}" Click="Button_Click_1" Opacity="0.7" />
+                                        CommandParameter="{Binding ElementName=MainFrame}" Click="Button_Click_1" />
                             </StackPanel>
 
-                                <StackPanel  Orientation="Horizontal" Margin="10">
+                            <StackPanel  Orientation="Horizontal">
                                 <materialDesign:PackIcon Kind="Filmstrip"
                                                          Height="30"
                                                          Width="30"
                                                          Margin="10,0,0,0"
                                                          VerticalAlignment="Center" />
-                                <Button Content="Showtime"
+                                <Button Content="Quản lý suất chiếu"
                                         Height="50"
                                         FontSize="25"
                                         Width="240"
@@ -261,18 +244,18 @@
                                         Background="Transparent"
                                         BorderBrush="Transparent"
                                         Command="{Binding LoadSuatChieuPageCM}"
-                                        CommandParameter="{Binding ElementName=MainFrame}" Opacity="0.7" />
+                                        CommandParameter="{Binding ElementName=MainFrame}" />
 
                             </StackPanel>
 
-                                <StackPanel Orientation="Horizontal" Margin="10" Height="50">
+                            <StackPanel Orientation="Horizontal">
                                 <materialDesign:PackIcon Kind="Food"
                                                          Height="30"
                                                          Width="30"
                                                          Margin="10,0,0,0"
                                                          VerticalAlignment="Center" />
-                                <Button Margin="0,0,0,0"
-                                        Content="Product"
+                                <Button Margin="0,0,0,5"
+                                        Content="Quản lý sản phẩm"
                                         Height="50"
                                         FontSize="25"
                                         HorizontalContentAlignment="Left"
@@ -280,17 +263,17 @@
                                         BorderBrush="Transparent"
                                         Width="240"
                                         Command="{Binding LoadFoodPageCM}"
-                                        CommandParameter="{Binding ElementName=MainFrame}" Opacity="0.7" />
+                                        CommandParameter="{Binding ElementName=MainFrame}" />
                             </StackPanel>
 
-                                <StackPanel Orientation="Horizontal" Margin="10" Height="50">
+                            <StackPanel Orientation="Horizontal">
                                 <materialDesign:PackIcon Kind="AccountMultiple"
                                                          Width="30"
                                                          Height="30"
                                                          VerticalAlignment="Center"
                                                          Margin="10,0,0,0" />
-                                <Button Margin="0,0,0,0"
-                                        Content="Staff"
+                                <Button Margin="0,0,0,5"
+                                        Content="Quản lý nhân sự"
                                         Height="50"
                                         FontSize="25"
                                         Width="240"
@@ -298,17 +281,17 @@
                                         Background="Transparent"
                                         BorderBrush="Transparent"
                                         Command="{Binding LoadQLNVPageCM}"
-                                        CommandParameter="{Binding ElementName=MainFrame}" Opacity="0.7" />
+                                        CommandParameter="{Binding ElementName=MainFrame}" />
                             </StackPanel>
 
-                                <StackPanel Orientation="Horizontal" Margin="10" Height="50">
+                            <StackPanel Orientation="Horizontal">
                                 <materialDesign:PackIcon Kind="AccountGroupOutline"
                                                          Width="30"
                                                          Height="30"
                                                          VerticalAlignment="Center"
                                                          Margin="10,0,0,0" />
-                                <Button Margin="0,0,0,0"
-                                        Content="Customer"
+                                <Button Margin="0,0,0,5"
+                                        Content="Quản lý khách hàng"
                                         Height="50"
                                         FontSize="25"
                                         Width="256"
@@ -316,17 +299,16 @@
                                         Background="Transparent"
                                         BorderBrush="Transparent"
                                         Command="{Binding LoadQLKHPageCM}"
-                                        CommandParameter="{Binding ElementName=MainFrame}" Opacity="0.7" />
+                                        CommandParameter="{Binding ElementName=MainFrame}" />
                             </StackPanel>
 
                             <StackPanel Orientation="Horizontal"
-                                        Margin="10">
+                                        Margin="10,0,0,0">
                                 <materialDesign:PackIcon Kind="Finance"
                                                          VerticalAlignment="Center"
                                                          Height="30"
-                                                         Margin="10,0,0,0"
                                                          Width="30" />
-                                    <Button Content="Dashboard" 
+                                <Button Content="Thống kê"
                                         Height="50"
                                         FontSize="25"
                                         Width="240"
@@ -334,18 +316,17 @@
                                         Background="Transparent"
                                         BorderBrush="Transparent"
                                         Command="{Binding LoadTKPageCM}"
-                                        CommandParameter="{Binding ElementName=MainFrame}" Opacity="0.7" />
+                                        CommandParameter="{Binding ElementName=MainFrame}" />
                             </StackPanel>
 
                             <StackPanel Orientation="Horizontal"
-                                        Margin="10">
+                                        Margin="10,0,0,0">
                                 <materialDesign:PackIcon Kind="SwapVerticalBold"
                                                          Height="30"
                                                          Width="30"
-                                                         VerticalAlignment="Center"
-                                                         Margin="10,0,0,0"/>
-                                <Button Margin="0,0,0,0"
-                                        Content="History"
+                                                         VerticalAlignment="Center" />
+                                <Button Margin="0,0,0,5"
+                                        Content="Lịch sử"
                                         Height="50"
                                         FontSize="25"
                                         Width="240"
@@ -353,14 +334,13 @@
                                         Background="Transparent"
                                         BorderBrush="Transparent"
                                         Command="{Binding LoadLSPage}"
-                                        CommandParameter="{Binding ElementName=MainFrame}" Opacity="0.7" />
+                                        CommandParameter="{Binding ElementName=MainFrame}" />
                             </StackPanel>
 
                             <StackPanel Orientation="Horizontal"
-                                        Margin="10">
+                                        Margin="10,0,0,0">
                                 <materialDesign:PackIcon Kind="TicketPercent"
                                                          Height="30"
-                                                         Margin="10,0,0,0"
                                                          Width="30"
                                                          VerticalAlignment="Center" />
                                 <Button Margin="0,0,0,5"
@@ -372,19 +352,18 @@
                                         Background="Transparent"
                                         BorderBrush="Transparent"
                                         Command="{Binding LoadVCPageCM}"
-                                        CommandParameter="{Binding ElementName=MainFrame}" Opacity="0.7" />
+                                        CommandParameter="{Binding ElementName=MainFrame}" />
                             </StackPanel>
 
                             <StackPanel Orientation="Horizontal"
-                                        Margin="10">
+                                        Margin="10,0,0,0">
                                 <materialDesign:PackIcon Kind="AlertCircle"
                                                          Height="30"
                                                          Width="30"
-                                                         Margin="10,0,0,0"
                                                          VerticalAlignment="Center" />
                                 <Grid>
-                                    <Button 
-                                            Content="Issue"
+                                    <Button Margin="0,0,0,5"
+                                            Content="Sự cố"
                                             Height="50"
                                             FontSize="25"
                                             Width="240"
@@ -392,7 +371,7 @@
                                             Background="Transparent"
                                             BorderBrush="Transparent"
                                             Command="{Binding LoadErrorPage}"
-                                            CommandParameter="{Binding ElementName=MainFrame}" Opacity="0.7" />
+                                            CommandParameter="{Binding ElementName=MainFrame}" />
                                     <Border Background="Red"
                                             CornerRadius="100"
                                             Width="30"
@@ -409,7 +388,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Grid>
-                    <Grid Margin="40,-17,0,0">
+                    <Grid Margin="40,0,0,0">
                         <ToggleButton x:Name="SlideButton"
                                       Style="{DynamicResource MaterialDesignHamburgerToggleButton}"
                                       Checked="SlideButton_Checked"
@@ -420,10 +399,9 @@
                                       Loaded="SlideButton_Loaded" />
                         <Border Background="Red"
                                 CornerRadius="100"
-                                Width="20"
-
+                                Width="30"
                                 x:Name="topnotifi"
-                                Height="20"
+                                Height="30"
                                 Margin="18,10,-11,760"                                >
                             <TextBlock Text="{Binding ErrorCount}"
                                        FontSize="20"
@@ -472,5 +450,4 @@
             </DockPanel>
         </Grid>
     </Grid>
-    </Border>
 </Window>

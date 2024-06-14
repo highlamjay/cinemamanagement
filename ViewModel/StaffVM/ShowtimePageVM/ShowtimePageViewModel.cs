@@ -34,7 +34,7 @@ namespace cinema_management.ViewModel
         public void LoadCurrentDate()
         {
             GetCurrentDate = DateTime.Now.Date;
-            SetCurrentDate = GetCurrentDate.ToShortDateString();
+            SetCurrentDate = GetCurrentDate.ToString("dd-mm-YYYY");
         }
 
         public async Task LoadMainListBox(int func)

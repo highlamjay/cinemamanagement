@@ -52,7 +52,9 @@ namespace cinema_management.ViewModel.StaffVM.TicketBillVM
         public static ShowtimeDTO Showtime;
         public static MovieDTO Movie;
         public static ObservableCollection<ProductDTO> ListFood;
+
         public static StaffDTO Staff;
+
         public static bool IsBacking;
         public CustomerDTO customerDTO;
         private bool isSaving;
@@ -843,7 +845,7 @@ namespace cinema_management.ViewModel.StaffVM.TicketBillVM
                         {
                             bill.CustomerId = customerDTO.Id;
                         }
-                        bill.StaffId = Staff.StaffId;
+                        bill.StaffId = MainStaffViewModel.CurrentStaff.StaffId;
                         bill.TotalPrice = LastPrice;
                         bill.DiscountPrice = Discount;
 
@@ -900,7 +902,7 @@ namespace cinema_management.ViewModel.StaffVM.TicketBillVM
                         {
                             bill.CustomerId = customerDTO.Id;
                         }
-                        bill.StaffId = Staff.StaffId;
+                        bill.StaffId = MainStaffViewModel.CurrentStaff.StaffId;
                         bill.TotalPrice = LastPrice;
                         bill.DiscountPrice = Discount;
                         bill.VoucherIdList = ListVoucher.Select(v => v.Id).ToList();
@@ -957,7 +959,7 @@ namespace cinema_management.ViewModel.StaffVM.TicketBillVM
                         {
                             bill.CustomerId = customerDTO.Id;
                         }
-                        bill.StaffId = Staff.StaffId;
+                        bill.StaffId = MainStaffViewModel.CurrentStaff.StaffId;
                         bill.TotalPrice = LastPrice;
                         bill.DiscountPrice = Discount;
                         bill.VoucherIdList = ListVoucher.Select(v => v.Id).ToList();

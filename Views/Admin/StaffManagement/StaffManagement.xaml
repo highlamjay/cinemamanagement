@@ -211,7 +211,7 @@
                                     </GridViewColumn.HeaderTemplate>
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
-                                            <TextBlock Text="{Binding Role}"
+                                            <TextBlock Text="{Binding StaffRole}"
                                                        FontSize="18"
                                                        Margin="15,0,0,0" />
                                         </DataTemplate>

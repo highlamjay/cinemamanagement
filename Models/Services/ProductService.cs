@@ -84,8 +84,10 @@ namespace cinema_management.Models.Services
                     }
                     else
                     {
+                        Random random = new Random();
                         Product product = new Product
                         {
+                            ProductID = random.Next(1000 - (100 - 1)) + 100,
                             DisplayName = newProd.DisplayName,
                             Price = newProd.Price,
                             Categorylog = newProd.Category,

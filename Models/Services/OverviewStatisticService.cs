@@ -249,7 +249,7 @@ namespace cinema_management.Models.Services
                      .Select(gr => new
                      {
                          Month = gr.Key,
-                         Outcome = gr.Sum(b => (decimal?)b.ImportPrice) ?? 0
+                         Outcome = gr.Sum(b => (decimal?)b.ImportPrice*b.Quantity) ?? 0
                      }).ToListAsync();
 
                     //Repair Cost

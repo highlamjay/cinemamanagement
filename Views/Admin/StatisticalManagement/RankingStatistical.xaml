@@ -332,7 +332,7 @@
                                      Height="340"
                                      VerticalAlignment="Bottom"
                                      Grid.Row="2">
-                    <ListView ItemsSource="{Binding Top5Staff}">
+                    <ListView ItemsSource="{Binding Top5Staff}" SelectionChanged="ListView_SelectionChanged">
                         <ListView.View>
                             <GridView>
                                 <GridViewColumn Header="STT"
@@ -351,7 +351,7 @@
                                                 Width="145">
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
-                                            <TextBlock Text="{Binding Id}"
+                                            <TextBlock Text="{Binding StaffId}"
                                                        Margin="20,5,0,0"
                                                        FontSize="18"
                                                        Height="34" />
@@ -362,7 +362,7 @@
                                                 Width="220">
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
-                                            <TextBlock Text="{Binding Name}"
+                                            <TextBlock Text="{Binding StaffName}"
                                                        Margin="20,5,0,0"
                                                        FontSize="18" />
                                         </DataTemplate>

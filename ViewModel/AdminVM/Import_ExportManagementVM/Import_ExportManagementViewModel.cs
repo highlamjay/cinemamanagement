@@ -279,7 +279,7 @@ namespace cinema_management.ViewModel.AdminVM.Import_ExportManagementVM
                                     ws.Cells[i2, 1] = item.Id;
                                     ws.Cells[i2, 2] = item.ProductName;
                                     ws.Cells[i2, 3] = item.Quantity;
-                                    ws.Cells[i2, 4] = item.ImportPrice;
+                                    ws.Cells[i2, 4] = (item.ImportPrice*item.Quantity);
                                     ws.Cells[i2, 5] = item.StaffName;
                                     ws.Cells[i2, 6] = item.CreatedAt;
 

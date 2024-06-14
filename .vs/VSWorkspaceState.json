@@ -1,16 +1,18 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Models",
-    "\\ResourceXAML",
+    "\\Resources",
+    "\\Resources\\Images",
     "\\ViewModel",
-    "\\ViewModel\\AdminVM",
-    "\\ViewModel\\AdminVM\\MovieManagementVM",
-    "\\ViewModel\\AdminVM\\ShowtimeManagementVM",
+    "\\ViewModel\\StaffVM",
+    "\\ViewModel\\StaffVM\\TicketBillVM",
     "\\Views",
     "\\Views\\Admin",
-    "\\Views\\Admin\\MovieManagement"
+    "\\Views\\Admin\\ErrorManagement",
+    "\\Views\\Admin\\MovieManagement",
+    "\\Views\\Admin\\ProductManagement",
+    "\\Views\\Staff"
   ],
-  "SelectedNode": "\\ViewModel\\AdminVM\\ShowtimeManagementVM\\AddShowtimeViewModel.cs",
+  "SelectedNode": "\\Views\\Admin\\ProductManagement\\ProductManagement.xaml",
   "PreviewInSolutionExplorer": false
 }

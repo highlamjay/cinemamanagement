@@ -632,7 +632,7 @@
                                                 <Label Content="Cinema Name"
                                                        Grid.Column="0"
                                                        FontSize="20" />
-                                                <Label Content="Squadin Cinema"
+                                                <Label Content="VMN Cinema"
                                                        Grid.Column="1"
                                                        HorizontalAlignment="Right"
                                                        FontSize="20" />

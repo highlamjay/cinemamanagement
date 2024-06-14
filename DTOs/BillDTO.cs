@@ -67,7 +67,7 @@ namespace cinema_management.DTOs
         public string StaffName { get; set; }
 
         //Price
-        public string OriginalTotalPriceStr { get => Helper.FormatVNMoney(TotalPrice - DiscountPrice); }
+        public string OriginalTotalPriceStr { get => Helper.FormatVNMoney(TotalPrice + DiscountPrice); }
 
         public decimal TotalPrice { get; set; }
         public string TotalPriceStr

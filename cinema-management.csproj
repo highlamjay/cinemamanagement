@@ -827,7 +827,17 @@
     </Content>
     <Content Include="Resources\EmailTemplate\common_template.html" />
     <Content Include="Resources\EmailTemplate\new_customer.html" />
-    <Resource Include="Resources\Icon\icon_app.png" />
+    <Resource Include="Resources\Images\ImageFood\add-image.png" />
+    <Resource Include="Resources\Images\ImageFood\adding.png" />
+    <Resource Include="Resources\Images\ImageFood\delete.png" />
+    <Resource Include="Resources\Images\ImageFood\dong.png" />
+    <Resource Include="Resources\Images\ImageFood\edit.png" />
+    <Resource Include="Resources\Images\ImageFood\pop-corn.png" />
+    <Resource Include="Resources\Images\ImageFood\popcorn.png" />
+    <Resource Include="Resources\Images\ImageStaff\add-user.png" />
+    <Resource Include="Resources\Images\ImageStaff\delete.png" />
+    <Resource Include="Resources\Images\ImageStaff\pencil.png" />
+    <Resource Include="Resources\Icon\iconApp.ico" />
     <Resource Include="Resources\EmailTemplate\reset_password_html.txt" />
     <Content Include="Resources\EmailTemplate\top5_customer_gratitude.html" />
   </ItemGroup>
