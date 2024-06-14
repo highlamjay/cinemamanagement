@@ -33,6 +33,7 @@
                     Orientation="Horizontal">
 
             <StackPanel HorizontalAlignment="Left"
+                        
                         Orientation="Horizontal"
                         Height="57"
                         Background="#f0f2f5">
@@ -40,7 +41,9 @@
                                       Background="#f0f2f5"
                                       x:Name="card1">
                     <Button Height="57"
+                            Width="480"
                             Content="Tổng thu chi"
+                           FontSize="20"
                             Background="Transparent"
                             Foreground="Black"
                             BorderBrush="Transparent"
@@ -53,7 +56,9 @@
                                      Background="#f0f2f5"
                                      BorderThickness="0"
                                      x:Name="card2">
-                    <Button Height="57"
+                    <Button Width="480"
+                            Height="57"
+                            FontSize="20"
                             Content="Bảng xếp hạng"
                             Background="Transparent"
                             Foreground="Black"
@@ -68,6 +73,8 @@
                                      BorderThickness="0"
                                      x:Name="card3">
                     <Button Height="57"
+                            Width="480"
+                            FontSize="20"
                             Content="Xu hướng"
                             Background="Transparent"
                             Foreground="Black"

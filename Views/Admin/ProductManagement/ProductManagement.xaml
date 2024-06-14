@@ -89,7 +89,8 @@
                             <ControlTemplate TargetType="Label"
                                              x:Key="Add-edit">
                                 <materialDesign:Card UniformCornerRadius="5"
-                                                     Width="110">
+                                                     Width="120"
+                                                     Height="80">
                                     <Border BorderBrush="{StaticResource PrimaryHueDarkBrush}"
                                             BorderThickness="2"
                                             CornerRadius="5">
@@ -123,6 +124,8 @@
                         </StackPanel.Resources>
                         <Label Tag="/Resources/Images/ImageFood/popcorn.png"
                                Content="Thêm sản phẩm"
+                               FontSize="14"
+                             
                                Template="{StaticResource Add-edit}">
                             <i:Interaction.Triggers>
                                 <i:EventTrigger EventName="MouseLeftButtonDown">
@@ -132,6 +135,7 @@
                         </Label>
                         <Label Tag="/Resources/Images/ImageFood/adding.png"
                                Content="Nhập hàng"
+                               FontSize="15"
                                Template="{StaticResource Add-edit}"
                                Margin="30 0 0 0">
                             <i:Interaction.Triggers>

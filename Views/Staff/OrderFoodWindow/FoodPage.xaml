@@ -14,7 +14,7 @@
       Background="#f3f5f7"
       DataContext="{StaticResource OrderFoodPageVM}"
       d:DesignHeight="720"
-      d:DesignWidth="1300"
+      d:DesignWidth="1155"
       FontFamily="Arial"
       x:Name="Food_Page"
       ShowsNavigationUI="False">
@@ -85,17 +85,18 @@
             <StackPanel Grid.Column="1"
                         Orientation="Horizontal">
                 <TextBlock FontFamily="Arial"
-                           FontSize="25"
-                           Foreground="dimgray"
+                           FontSize="26"
+                           Foreground="Black"
+                          FontWeight="bold"
                            DockPanel.Dock="Left"
-                           Margin="300,40,0,0"
+                           Margin="230,20,0,0"
                            Text="Thanh toán" />
                 <TextBlock HorizontalAlignment="Right"
                            FontFamily="Arial"
-                           FontSize="15"
+                           FontSize="18"
                            Text="Xóa"
                            FontWeight="Bold"
-                           Margin="180,40,0,0"
+                           Margin="150,40,0,0"
                            VerticalAlignment="Center"
                            ToolTip="Xóa tất cả"
                            Cursor="Hand">
@@ -125,7 +126,7 @@
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="72*" />
-                <ColumnDefinition Width="28*" />
+                <ColumnDefinition Width="32*" />
             </Grid.ColumnDefinitions>
 
             <materialDesign:Card Grid.Column="0"
@@ -137,7 +138,7 @@
                         <StackPanel.Resources>
                             <Style TargetType="materialDesign:Card">
                                 <Setter Property="Width"
-                                        Value="308.5" />
+                                        Value="263" />
                                 <Setter Property="Height"
                                         Value="40" />
                                 <Setter Property="FontSize"
@@ -240,7 +241,7 @@
                                 <materialDesign:Card BorderThickness="1"
                                                      UniformCornerRadius="5"
                                                      Margin="20,0,0,0"
-                                                     Width="200"
+                                                     Width="178"
                                                      Height="270">
                                     <Grid>
                                         <Grid.RowDefinitions>
@@ -530,6 +531,7 @@
                                        TextAlignment="Right" />
 
                             <TextBlock Text="Tổng:"
+                                       FontWeight="Bold"
                                        FontSize="30"
                                        FontFamily="Arial"
                                        VerticalAlignment="Center"

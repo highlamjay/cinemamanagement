@@ -116,7 +116,12 @@
 
                         <ListView.View>
                             <GridView>
-                                <GridViewColumn Header="ID">
+                                <GridViewColumn Header="ID"  Width="83">
+                                    <GridViewColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="ID" FontSize="20" />
+                                        </DataTemplate>
+                                    </GridViewColumn.HeaderTemplate>
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBlock Text="{Binding StaffId}"
@@ -124,7 +129,12 @@
                                         </DataTemplate>
                                     </GridViewColumn.CellTemplate>
                                 </GridViewColumn>
-                                <GridViewColumn Header="Họ và tên" Width="280">
+                                <GridViewColumn Header="Họ và tên" Width="200">
+                                    <GridViewColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="Họ và tên" FontSize="20" />
+                                        </DataTemplate>
+                                    </GridViewColumn.HeaderTemplate>
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBlock Text="{Binding StaffName}"
@@ -133,7 +143,12 @@
                                         </DataTemplate>
                                     </GridViewColumn.CellTemplate>
                                 </GridViewColumn>
-                                <GridViewColumn Header="Giới tính">
+                                <GridViewColumn Header="Giới tính" Width="140">
+                                    <GridViewColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="Giới tính" FontSize="20" />
+                                        </DataTemplate>
+                                    </GridViewColumn.HeaderTemplate>
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBlock Text="{Binding Sex}"
@@ -142,7 +157,12 @@
                                         </DataTemplate>
                                     </GridViewColumn.CellTemplate>
                                 </GridViewColumn>
-                                <GridViewColumn Header="Ngày sinh">
+                                <GridViewColumn Header="Ngày sinh" Width="160">
+                                    <GridViewColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="Ngày sinh" FontSize="20" />
+                                        </DataTemplate>
+                                    </GridViewColumn.HeaderTemplate>
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBlock Text="{Binding  StaffBirthDay,StringFormat=dd-MM-yyyy}"
@@ -150,25 +170,40 @@
                                         </DataTemplate>
                                     </GridViewColumn.CellTemplate>
                                 </GridViewColumn>
-                                <GridViewColumn Header="Số điện thoại">
+                                <GridViewColumn Header="Số điện thoại" Width="180">
+                                    <GridViewColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="Số điện thoại" FontSize="20" />
+                                        </DataTemplate>
+                                    </GridViewColumn.HeaderTemplate>
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBlock Text="{Binding PhoneNumber}"
                                                        FontSize="18"
-                                                       Margin="15,0,0,0"/>
+                                                       Margin="0,0,0,0"/>
                                         </DataTemplate>
                                     </GridViewColumn.CellTemplate>
                                 </GridViewColumn>
-                                <GridViewColumn Header="Email">
+                                <GridViewColumn Header="Email" Width="300">
+                                    <GridViewColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="Email" FontSize="20" />
+                                        </DataTemplate>
+                                    </GridViewColumn.HeaderTemplate>
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBlock Text="{Binding Email}"
-                                                       FontSize="18"
-                                                       Margin="15,0,0,0"/>
+                                                       FontSize="17"
+                                                       Margin="0,0,0,0"/>
                                         </DataTemplate>
                                     </GridViewColumn.CellTemplate>
                                 </GridViewColumn>
-                                <GridViewColumn Header="Chức vụ">
+                                <GridViewColumn Header="Chức vụ" Width="140">
+                                    <GridViewColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="Chức vụ" FontSize="20" />
+                                        </DataTemplate>
+                                    </GridViewColumn.HeaderTemplate>
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBlock Text="{Binding StaffRole}"
@@ -177,7 +212,12 @@
                                         </DataTemplate>
                                     </GridViewColumn.CellTemplate>
                                 </GridViewColumn>
-                                <GridViewColumn Header="Ngày bắt đầu">
+                                <GridViewColumn Header="Ngày bắt đầu" Width="185">
+                                    <GridViewColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="Ngày bắt đầu" FontSize="20" />
+                                        </DataTemplate>
+                                    </GridViewColumn.HeaderTemplate>
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBlock Text="{Binding StartingDate,StringFormat=dd-MM-yyyy}"

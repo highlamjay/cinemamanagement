@@ -32,18 +32,18 @@
           <Key>
             <PropertyRef Name="GenreID" />
           </Key>
-          <Property Name="GenreID" Type="int" Nullable="false" />
+          <Property Name="GenreID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="GenreDisplayName" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="Movie">
           <Key>
             <PropertyRef Name="MovieID" />
           </Key>
-          <Property Name="MovieID" Type="int" Nullable="false" />
+          <Property Name="MovieID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="DisplayName" Type="nvarchar" MaxLength="50" />
           <Property Name="RunningTime" Type="int" Nullable="false" />
           <Property Name="Country" Type="nvarchar" MaxLength="50" />
-          <Property Name="Description" Type="nvarchar" MaxLength="50" />
+          <Property Name="Description" Type="text" />
           <Property Name="ReleaseYear" Type="int" Nullable="false" />
           <Property Name="MovieType" Type="nvarchar" MaxLength="50" />
           <Property Name="Image" Type="varchar" MaxLength="250" />
@@ -63,7 +63,7 @@
           <Key>
             <PropertyRef Name="ProductID" />
           </Key>
-          <Property Name="ProductID" Type="int" Nullable="false" />
+          <Property Name="ProductID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="DisplayName" Type="nvarchar" MaxLength="50" />
           <Property Name="Categorylog" Type="nvarchar" MaxLength="50" />
           <Property Name="Quantity" Type="int" Nullable="false" />
@@ -103,7 +103,7 @@
           <Key>
             <PropertyRef Name="SeatID" />
           </Key>
-          <Property Name="SeatID" Type="int" Nullable="false" />
+          <Property Name="SeatID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="SeatNumber" Type="int" Nullable="false" />
           <Property Name="RowOfSeat" Type="varchar" MaxLength="2" />
           <Property Name="RoomID" Type="int" Nullable="false" />
@@ -124,7 +124,7 @@ warning 6002: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a 
           <Key>
             <PropertyRef Name="ShowTimeID" />
           </Key>
-          <Property Name="ShowTimeID" Type="int" Nullable="false" />
+          <Property Name="ShowTimeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="ShowTimeSettingID" Type="int" Nullable="false" />
           <Property Name="MovieID" Type="int" Nullable="false" />
           <Property Name="TicketPrice" Type="money" Nullable="false" />
@@ -134,7 +134,7 @@ warning 6002: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a 
           <Key>
             <PropertyRef Name="ShowtimeSettingID" />
           </Key>
-          <Property Name="ShowtimeSettingID" Type="int" Nullable="false" />
+          <Property Name="ShowtimeSettingID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="ShowDate" Type="date" Nullable="false" />
           <Property Name="RoomID" Type="int" Nullable="false" />
         </EntityType>
@@ -149,8 +149,8 @@ warning 6002: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a 
           <Property Name="PhoneNumber" Type="varchar" MaxLength="10" />
           <Property Name="Email" Type="varchar" MaxLength="50" />
           <Property Name="Sex" Type="varchar" MaxLength="10" />
-          <Property Name="StaffBirthDay" Type="datetime" />
-          <Property Name="StartingDate" Type="datetime" />
+          <Property Name="StaffBirthDay" Type="date" Nullable="false" />
+          <Property Name="StartingDate" Type="date" Nullable="false" />
           <Property Name="StaffRole" Type="nvarchar" MaxLength="50" />
           <Property Name="IsDeleted" Type="bit" Nullable="false" />
         </EntityType>
@@ -158,7 +158,7 @@ warning 6002: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a 
           <Key>
             <PropertyRef Name="TicketID" />
           </Key>
-          <Property Name="TicketID" Type="int" Nullable="false" />
+          <Property Name="TicketID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="BillID" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="ShowTimeID" Type="int" Nullable="false" />
           <Property Name="SeatID" Type="int" Nullable="false" />
@@ -207,18 +207,6 @@ warning 6002: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a 
           <Property Name="EnableMerge" Type="bit" Nullable="false" />
           <Property Name="StaffID" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
-        <Association Name="FK__Voucher__Custome__07C12930">
-          <End Role="Customer" Type="Self.Customer" Multiplicity="0..1" />
-          <End Role="Voucher" Type="Self.Voucher" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Customer">
-              <PropertyRef Name="CustomerID" />
-            </Principal>
-            <Dependent Role="Voucher">
-              <PropertyRef Name="CustomerId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="fk_Bill">
           <End Role="Bill" Type="Self.Bill" Multiplicity="1" />
           <End Role="Ticket" Type="Self.Ticket" Multiplicity="*" />
@@ -459,6 +447,18 @@ warning 6002: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a 
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="fk_voucher1">
+          <End Role="Customer" Type="Self.Customer" Multiplicity="0..1" />
+          <End Role="Voucher" Type="Self.Voucher" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Customer">
+              <PropertyRef Name="CustomerID" />
+            </Principal>
+            <Dependent Role="Voucher">
+              <PropertyRef Name="CustomerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="CinemaManagementModelStoreContainer">
           <EntitySet Name="Bill" EntityType="Self.Bill" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
@@ -484,10 +484,6 @@ warning 6002: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a 
     [SeatSetting].[Status] AS [Status]
     FROM [dbo].[SeatSetting] AS [SeatSetting]</DefiningQuery>
           </EntitySet>
-          <AssociationSet Name="FK__Voucher__Custome__07C12930" Association="Self.FK__Voucher__Custome__07C12930">
-            <End Role="Customer" EntitySet="Customer" />
-            <End Role="Voucher" EntitySet="Voucher" />
-          </AssociationSet>
           <AssociationSet Name="fk_Bill" Association="Self.fk_Bill">
             <End Role="Bill" EntitySet="Bill" />
             <End Role="Ticket" EntitySet="Ticket" />
@@ -568,6 +564,10 @@ warning 6002: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a 
             <End Role="VoucherRelease" EntitySet="VoucherRelease" />
             <End Role="Voucher" EntitySet="Voucher" />
           </AssociationSet>
+          <AssociationSet Name="fk_voucher1" Association="Self.fk_voucher1">
+            <End Role="Customer" EntitySet="Customer" />
+            <End Role="Voucher" EntitySet="Voucher" />
+          </AssociationSet>
         </EntityContainer>
       </Schema>
     </edmx:StorageModels>
@@ -601,13 +601,13 @@ warning 6002: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a 
           <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
           <Property Name="IsMember" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="Bills" Relationship="Self.fk_Customer_ID" FromRole="Customer" ToRole="Bill" />
-          <NavigationProperty Name="Vouchers" Relationship="Self.FK__Voucher__Custome__07C12930" FromRole="Customer" ToRole="Voucher" />
+          <NavigationProperty Name="Vouchers" Relationship="Self.fk_voucher1" FromRole="Customer" ToRole="Voucher" />
         </EntityType>
         <EntityType Name="Genre">
           <Key>
             <PropertyRef Name="GenreID" />
           </Key>
-          <Property Name="GenreID" Type="Int32" Nullable="false" />
+          <Property Name="GenreID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="GenreDisplayName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Movies" Relationship="Self.MovieGenre" FromRole="Genre" ToRole="Movie" />
         </EntityType>
@@ -615,11 +615,11 @@ warning 6002: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a 
           <Key>
             <PropertyRef Name="MovieID" />
           </Key>
-          <Property Name="MovieID" Type="Int32" Nullable="false" />
+          <Property Name="MovieID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="DisplayName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="RunningTime" Type="Int32" Nullable="false" />
           <Property Name="Country" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="ReleaseYear" Type="Int32" Nullable="false" />
           <Property Name="MovieType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Image" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
@@ -633,7 +633,7 @@ warning 6002: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a 
           <Key>
             <PropertyRef Name="ProductID" />
           </Key>
-          <Property Name="ProductID" Type="Int32" Nullable="false" />
+          <Property Name="ProductID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="DisplayName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Categorylog" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Quantity" Type="Int32" Nullable="false" />
@@ -681,7 +681,7 @@ warning 6002: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a 
           <Key>
             <PropertyRef Name="SeatID" />
           </Key>
-          <Property Name="SeatID" Type="Int32" Nullable="false" />
+          <Property Name="SeatID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="SeatNumber" Type="Int32" Nullable="false" />
           <Property Name="RowOfSeat" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
           <Property Name="RoomID" Type="Int32" Nullable="false" />
@@ -693,7 +693,7 @@ warning 6002: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a 
           <Key>
             <PropertyRef Name="ShowTimeID" />
           </Key>
-          <Property Name="ShowTimeID" Type="Int32" Nullable="false" />
+          <Property Name="ShowTimeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ShowTimeSettingID" Type="Int32" Nullable="false" />
           <Property Name="MovieID" Type="Int32" Nullable="false" />
           <Property Name="TicketPrice" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
@@ -707,7 +707,7 @@ warning 6002: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a 
           <Key>
             <PropertyRef Name="ShowtimeSettingID" />
           </Key>
-          <Property Name="ShowtimeSettingID" Type="Int32" Nullable="false" />
+          <Property Name="ShowtimeSettingID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ShowDate" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="RoomID" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Room" Relationship="Self.fk_Room_ID" FromRole="ShowtimeSetting" ToRole="Room" />
@@ -724,8 +724,8 @@ warning 6002: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a 
           <Property Name="PhoneNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
           <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="Sex" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-          <Property Name="StaffBirthDay" Type="DateTime" Precision="3" />
-          <Property Name="StartingDate" Type="DateTime" Precision="3" />
+          <Property Name="StaffBirthDay" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="StartingDate" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="StaffRole" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="Bills" Relationship="Self.fk_Staff_ID" FromRole="Staff" ToRole="Bill" />
@@ -737,7 +737,7 @@ warning 6002: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a 
           <Key>
             <PropertyRef Name="TicketID" />
           </Key>
-          <Property Name="TicketID" Type="Int32" Nullable="false" />
+          <Property Name="TicketID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="BillID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ShowTimeID" Type="Int32" Nullable="false" />
           <Property Name="SeatID" Type="Int32" Nullable="false" />
@@ -774,7 +774,7 @@ warning 6002: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a 
           <Property Name="CustomerId" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="UsedAt" Type="DateTime" Precision="3" />
           <Property Name="ReleaseAt" Type="DateTime" Precision="3" />
-          <NavigationProperty Name="Customer" Relationship="Self.FK__Voucher__Custome__07C12930" FromRole="Voucher" ToRole="Customer" />
+          <NavigationProperty Name="Customer" Relationship="Self.fk_voucher1" FromRole="Voucher" ToRole="Customer" />
           <NavigationProperty Name="VoucherRelease" Relationship="Self.fk_voucher" FromRole="Voucher" ToRole="VoucherRelease" />
         </EntityType>
         <EntityType Name="VoucherRelease">
@@ -854,7 +854,7 @@ warning 6002: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a 
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Voucher__Custome__07C12930">
+        <Association Name="fk_voucher1">
           <End Role="Customer" Type="Self.Customer" Multiplicity="0..1" />
           <End Role="Voucher" Type="Self.Voucher" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1072,7 +1072,7 @@ warning 6002: The table/view 'CinemaManagement.dbo.SeatSetting' does not have a 
             <End Role="Staff" EntitySet="Staffs" />
             <End Role="Bill" EntitySet="Bills" />
           </AssociationSet>
-          <AssociationSet Name="FK__Voucher__Custome__07C12930" Association="Self.FK__Voucher__Custome__07C12930">
+          <AssociationSet Name="fk_voucher1" Association="Self.fk_voucher1">
             <End Role="Customer" EntitySet="Customers" />
             <End Role="Voucher" EntitySet="Vouchers" />
           </AssociationSet>

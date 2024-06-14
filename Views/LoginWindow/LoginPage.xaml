@@ -32,7 +32,7 @@
                FontSize="35"
                FontWeight="UltraBlack"
                Foreground="#0c70b6"
-               Content="WELCOME BACK"
+               Content="VMN CINEMA"
                VerticalAlignment="Center"
                HorizontalAlignment="Center"
                Height="50"
@@ -48,6 +48,7 @@
                                      Width="20"
                                      VerticalAlignment="Bottom" />
             <TextBox materialDesign:HintAssist.Hint="Tên đăng nhập"
+                   
                      Foreground="Black"
                      FontSize="15"
                      Width="200"
@@ -94,7 +95,7 @@
             <StackPanel HorizontalAlignment="Right">
                 <Button Content="Quên mật khẩu?"
                         Foreground="Blue"
-                        FontSize="12"
+                        FontSize="15"
                         Margin="0,0,5,0"
                         FontWeight="Normal"
                         Background="Transparent"

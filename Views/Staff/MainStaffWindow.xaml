@@ -13,7 +13,7 @@
         TextOptions.TextFormattingMode="Ideal"
         TextOptions.TextRenderingMode="Auto"
         Background="{DynamicResource MaterialDesignPaper}"
-        FontFamily="{DynamicResource MaterialDesignFont}"
+        FontFamily="Arial"
         DataContext="{StaticResource MainStaffVM}"
         Name="Main_Staff"
         ResizeMode="NoResize"
@@ -34,13 +34,13 @@
     <Grid>
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="140" />
-                <ColumnDefinition Width="1300" />
+                <ColumnDefinition Width="285" />
+                <ColumnDefinition  />
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="0"
                   Background="#132644">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="80" />
+                    <RowDefinition Height="100" />
                     <RowDefinition Height="720" />
                 </Grid.RowDefinitions>
                 <Grid.Resources>
@@ -56,100 +56,105 @@
                         </Style.Triggers>
                     </Style>
                 </Grid.Resources>
-                <StackPanel Grid.Row="0"
-                            Orientation="Horizontal"
-                            Grid.ColumnSpan="2"
-                            Height="40">
-                    <Image Source="/Resources/Icon/iconApp.ico"
-                           Width="40"
-                           Margin="10,-5,5,0" />
-                    <TextBlock TextWrapping="Wrap"
-                               materialDesign:TextBlockAssist.AutoToolTip="True"
-                               VerticalAlignment="Bottom"
-                               TextAlignment="Center"
-                               Text="VMN Cinema"
-                               FontFamily="Helvetica"
-                               FontWeight="Bold"
-                               Foreground="#e3e9fa"
-                               FontSize="16"
-                               Width="70" />
-                </StackPanel>
+                <Grid Height="80" Margin="0,20,0,0">
+                    <StackPanel HorizontalAlignment="Center"
+                  Orientation="Horizontal"
+                  Height="60">
+                        <Image Source="/Resources/Icon/iconApp.ico"
+                 Width="60"
+                 Margin="10,-5,5,0" />
+                        <TextBlock TextWrapping="Wrap"
+                     materialDesign:TextBlockAssist.AutoToolTip="True"
+                     VerticalAlignment="Bottom"
+                     TextAlignment="Center"
+                     Text="VMN Cinema"
+                     FontFamily="Helvetica"
+                     FontWeight="Bold"
+                     Foreground="#e3e9fa"
+                     FontSize="24"
+                     Width="100"/>
+                    </StackPanel>
+                </Grid>
                 <StackPanel Grid.Row="1">
                     <Border CornerRadius="5">
                         <StackPanel Tag="{Binding ElementName=btnShowing}"
                                     Orientation="Horizontal"
-                                    Height="60"
-                                    Width="140">
+                                    Height="100"
+                                   >
                             <materialDesign:PackIcon Kind="Movie"
-                                                     Width="30"
-                                                     Height="32"
+                                                     Margin="20"
+                                                     Width="40"
+                                                     Height="40"
                                                      VerticalAlignment="Center"
                                                      Cursor="Hand"
                                                      Foreground="White" />
                             <RadioButton Style="{StaticResource MenuButtonMainStaff}"
                                          GroupName="mainOptions"
-                                         Content="Phim Đang chiếu"
-                                         FontWeight="Bold"
+                                         Content="Phim đang chiếu"
+                                         FontFamily="arial"
+                                         FontSize="25"
                                          x:Name="btnShowing"
                                          Width="auto"
                                          Command="{Binding LoadShowtimePageCM}"
-                                         CommandParameter="{Binding ElementName=mainFrame}" />
+                                         CommandParameter="{Binding ElementName=mainFrame}" Background="{x:Null}" Opacity="0.5" />
                         </StackPanel>
                     </Border>
                     <Border CornerRadius="5">
                         <StackPanel Tag="{Binding ElementName=btnFood}"
                                     Orientation="Horizontal"
-                                    Height="60"
-                                    Width="140">
+                                    Height="100"
+                                   >
                             <materialDesign:PackIcon Kind="Food"
-                                                     Width="30"
-                                                     Height="32"
+                                                     Width="40"
+                                                     Margin="20"
+                                                     Height="40"
                                                      VerticalAlignment="Center"
                                                      Cursor="Hand"
                                                      Foreground="White" />
                             <RadioButton Style="{StaticResource MenuButtonMainStaff}"
-                                         Content="Đồ Ăn"
-                                         FontWeight="Bold"
+                                         Content="Bắp nước"
+                                        
                                          GroupName="mainOptions"
                                          x:Name="btnFood"
-                                         Width="110"
+                                         Width="200"
                                          Command="{Binding LoadFoodPageCM}"
-                                         CommandParameter="{Binding ElementName=mainFrame}" />
+                                         CommandParameter="{Binding ElementName=mainFrame}" Opacity="0.49" />
                         </StackPanel>
                     </Border>
                     <Border CornerRadius="5">
                         <StackPanel Tag="{Binding ElementName=btnError}"
                                     Orientation="Horizontal"
-                                    Height="60"
-                                    Width="140">
+                                    Height="100"
+                                    >
                             <materialDesign:PackIcon Kind="WarningOctagon"
-                                                     Width="30"
-                                                     Height="32"
+                                                     Width="40"
+                                                     Height="40"
                                                      VerticalAlignment="Center"
                                                      Cursor="Hand"
+                                                     Margin="20"
                                                      Foreground="White" />
                             <RadioButton Style="{StaticResource MenuButtonMainStaff}"
-                                         Content="Báo cáo sự cố"
-                                         FontWeight="Bold"
+                                         Content="Sự cố"
+                                     
                                          GroupName="mainOptions"
                                          x:Name="btnError"
-                                         Width="110"
+                                         
                                          Command="{Binding LoadErrorPageCM}"
-                                         CommandParameter="{Binding ElementName=mainFrame}" />
+                                         CommandParameter="{Binding ElementName=mainFrame}" Opacity="0.501" />
                         </StackPanel>
                     </Border>
                 </StackPanel>
             </Grid>
             <Grid Grid.Column="1">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="80" />
+                    <RowDefinition Height="100" />
                     <RowDefinition Height="720" />
                 </Grid.RowDefinitions>
                 <!--thanh task bar de keo-->
                 <Border Grid.Row="0"
                         BorderThickness="0 0 0 0.5"
                         BorderBrush="White"
-                        Background="White">
+                        Background="#132644">
 
                     <Grid>
                         <Grid.RowDefinitions>
@@ -251,18 +256,18 @@
                                                              Width="50"
                                                              Height="50"
                                                              Background="Transparent"
-                                                             Foreground="Black" />
+                                                             Foreground="White" />
                                     <TextBlock VerticalAlignment="Bottom"
                                                x:Name="_StaffName"
                                                Height="40"
                                                FontSize="20"
                                                TextWrapping="Wrap"
-                                               Foreground="Black"
+                                               Foreground="White"
                                                Margin="0 10 0 5"
                                                Padding="0 10 0 0" />
                                     <materialDesign:PopupBox DockPanel.Dock="Right"
                                                              PlacementMode="BottomAndAlignRightEdges"
-                                                             Foreground="Black">
+                                                             Foreground="White">
                                         <StackPanel Orientation="Vertical">
                                             <Button Content="Đổi vai trò"
                                                     Command="{Binding ChangeRoleCM}"
@@ -279,7 +284,8 @@
                     </Grid>
                 </Border>
                 <Frame x:Name="mainFrame"
-                       Height="720"
+                       Margin="0,-20,0,0"
+                       Height="700"
                        Grid.Row="1"
                        NavigationUIVisibility="Hidden">
                     <i:Interaction.Triggers>

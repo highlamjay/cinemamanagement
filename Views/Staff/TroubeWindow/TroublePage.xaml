@@ -50,12 +50,13 @@
                         <ComboBox x:Name="cbxViewMode"
                                   Width="150"
                                   Height="30"
+                                  FontSize="19"
                                   VerticalAlignment="Bottom"
                                   VerticalContentAlignment="Center"
                                   HorizontalAlignment="Left"
                                   HorizontalContentAlignment="Center"
                                   Margin="60,0,0,15"
-                                  FontSize="15"
+                                  
                                   SelectedIndex="0"
                                   SelectedItem="{Binding ItemViewMode,Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}">
                             <ComboBoxItem>Toàn bộ</ComboBoxItem>
@@ -112,7 +113,13 @@
                             <ListView.View>
                                 <GridView>
                                     <GridViewColumn Header="Sự cố"
-                                                    Width="500">
+                                                    Width="500"
+                                                    >
+                                        <GridViewColumn.HeaderTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="Sự cố" FontSize="20" />
+                                            </DataTemplate>
+                                        </GridViewColumn.HeaderTemplate>
                                         <GridViewColumn.CellTemplate>
                                             <DataTemplate>
                                                 <StackPanel Orientation="Horizontal">
@@ -142,6 +149,11 @@
                                     </GridViewColumn>
                                     <GridViewColumn Header="Ngày gửi"
                                                     Width="350">
+                                        <GridViewColumn.HeaderTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="Ngày gửi" FontSize="20" />
+                                            </DataTemplate>
+                                        </GridViewColumn.HeaderTemplate>
                                         <GridViewColumn.CellTemplate>
                                             <DataTemplate>
                                                 <TextBlock Text="{Binding SubmittedAt, StringFormat='dd/MM/yyyy'}"
@@ -152,6 +164,11 @@
                                     </GridViewColumn>
                                     <GridViewColumn Header="Trạng thái"
                                                     Width="200">
+                                        <GridViewColumn.HeaderTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="Trạng thái" FontSize="20" />
+                                            </DataTemplate>
+                                        </GridViewColumn.HeaderTemplate>
                                         <GridViewColumn.CellTemplate>
                                             <DataTemplate>
                                                 <Border BorderThickness="1"

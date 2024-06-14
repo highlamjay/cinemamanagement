@@ -113,6 +113,11 @@
                             <GridView>
                                 <GridViewColumn Header="Tên phim"
                                                 Width="450">
+                                    <GridViewColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="Tên phim" FontSize="20" />
+                                        </DataTemplate>
+                                    </GridViewColumn.HeaderTemplate>
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBlock Text="{Binding DisplayName}"
@@ -122,6 +127,11 @@
                                 </GridViewColumn>
                                 <GridViewColumn Header="Loại phim"
                                                 Width="150">
+                                    <GridViewColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="Loại phim" FontSize="20" />
+                                        </DataTemplate>
+                                    </GridViewColumn.HeaderTemplate>
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBlock Text="{Binding MovieType}"
@@ -132,6 +142,11 @@
                                 </GridViewColumn>
                                 <GridViewColumn Header="Quốc gia"
                                                 Width="180">
+                                    <GridViewColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="Quốc gia" FontSize="20" />
+                                        </DataTemplate>
+                                    </GridViewColumn.HeaderTemplate>
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBlock Text="{Binding Country}"
@@ -140,7 +155,12 @@
                                         </DataTemplate>
                                     </GridViewColumn.CellTemplate>
                                 </GridViewColumn>
-                                <GridViewColumn Header="Thể loại">
+                                <GridViewColumn Header="Thể loại" Width="150">
+                                    <GridViewColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="Thể loại" FontSize="20" />
+                                        </DataTemplate>
+                                    </GridViewColumn.HeaderTemplate>
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBlock Text="{Binding Genres[0].DisplayName}"
@@ -150,7 +170,12 @@
                                     </GridViewColumn.CellTemplate>
                                 </GridViewColumn>
                                 <GridViewColumn Header="Thời lượng(phút)"
-                                                Width="200">
+                                                Width="250">
+                                    <GridViewColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="Thời lượng (phút)" FontSize="20" />
+                                        </DataTemplate>
+                                    </GridViewColumn.HeaderTemplate>
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBlock Text="{Binding RunningTime}"

@@ -22,6 +22,7 @@
         WindowStyle="None"
         WindowStartupLocation="CenterScreen"
         Panel.ZIndex="999">
+    
 
 
     <i:Interaction.Triggers>
@@ -176,7 +177,8 @@
                     <Grid Background="#132644"
                           Width="285"
                           Margin="-25,0,0,0">
-                        <StackPanel>
+                        
+                        <StackPanel >
                             <StackPanel.Resources>
                                 <Style TargetType="Button"
                                        BasedOn="{StaticResource MaterialDesignFlatMidBgButton}">
@@ -207,19 +209,19 @@
                                                FontFamily="Helvetica"
                                                FontWeight="Bold"
                                                Foreground="#e3e9fa"
-                                               FontSize="20"
+                                               FontSize="24"
                                                Width="100"/>
                                 </StackPanel>
                             </Grid>
 
-                            <StackPanel Orientation="Horizontal">
+                            <StackPanel Margin="10" Orientation="Horizontal">
                                 <materialDesign:PackIcon Kind="MovieEdit"
                                                          Height="30"
                                                          Width="30"
                                                          Margin="10,0,0,0"
                                                          VerticalAlignment="Center" />
                                 <Button Margin="0,0,0,5"
-                                        Content="Quản lý phim"
+                                        Content="Phim"
                                         Height="50"
                                         FontSize="25"
                                         HorizontalContentAlignment="Left"
@@ -230,13 +232,13 @@
                                         CommandParameter="{Binding ElementName=MainFrame}" Click="Button_Click_1" />
                             </StackPanel>
 
-                            <StackPanel  Orientation="Horizontal">
+                            <StackPanel Margin="10"  Orientation="Horizontal">
                                 <materialDesign:PackIcon Kind="Filmstrip"
                                                          Height="30"
                                                          Width="30"
                                                          Margin="10,0,0,0"
                                                          VerticalAlignment="Center" />
-                                <Button Content="Quản lý suất chiếu"
+                                <Button Content="Suất chiếu"
                                         Height="50"
                                         FontSize="25"
                                         Width="240"
@@ -248,14 +250,14 @@
 
                             </StackPanel>
 
-                            <StackPanel Orientation="Horizontal">
+                            <StackPanel Margin="10" Orientation="Horizontal">
                                 <materialDesign:PackIcon Kind="Food"
                                                          Height="30"
                                                          Width="30"
                                                          Margin="10,0,0,0"
                                                          VerticalAlignment="Center" />
                                 <Button Margin="0,0,0,5"
-                                        Content="Quản lý sản phẩm"
+                                        Content="Bắp nước"
                                         Height="50"
                                         FontSize="25"
                                         HorizontalContentAlignment="Left"
@@ -266,14 +268,14 @@
                                         CommandParameter="{Binding ElementName=MainFrame}" />
                             </StackPanel>
 
-                            <StackPanel Orientation="Horizontal">
+                            <StackPanel Margin="10" Orientation="Horizontal">
                                 <materialDesign:PackIcon Kind="AccountMultiple"
                                                          Width="30"
                                                          Height="30"
                                                          VerticalAlignment="Center"
                                                          Margin="10,0,0,0" />
                                 <Button Margin="0,0,0,5"
-                                        Content="Quản lý nhân sự"
+                                        Content="Nhân sự"
                                         Height="50"
                                         FontSize="25"
                                         Width="240"
@@ -284,14 +286,14 @@
                                         CommandParameter="{Binding ElementName=MainFrame}" />
                             </StackPanel>
 
-                            <StackPanel Orientation="Horizontal">
+                            <StackPanel Margin="10" Orientation="Horizontal">
                                 <materialDesign:PackIcon Kind="AccountGroupOutline"
                                                          Width="30"
                                                          Height="30"
                                                          VerticalAlignment="Center"
                                                          Margin="10,0,0,0" />
                                 <Button Margin="0,0,0,5"
-                                        Content="Quản lý khách hàng"
+                                        Content="Khách hàng"
                                         Height="50"
                                         FontSize="25"
                                         Width="256"
@@ -303,14 +305,16 @@
                             </StackPanel>
 
                             <StackPanel Orientation="Horizontal"
-                                        Margin="10,0,0,0">
+                                        Margin="10">
                                 <materialDesign:PackIcon Kind="Finance"
                                                          VerticalAlignment="Center"
                                                          Height="30"
-                                                         Width="30" />
+                                                         Width="30"
+                                                         Margin="10,0,0,0"/>
                                 <Button Content="Thống kê"
                                         Height="50"
                                         FontSize="25"
+                                        Margin="0,0,0,5"
                                         Width="240"
                                         HorizontalContentAlignment="Left"
                                         Background="Transparent"
@@ -320,10 +324,11 @@
                             </StackPanel>
 
                             <StackPanel Orientation="Horizontal"
-                                        Margin="10,0,0,0">
+                                        Margin="10">
                                 <materialDesign:PackIcon Kind="SwapVerticalBold"
                                                          Height="30"
                                                          Width="30"
+                                                         Margin="10,0,0,0"
                                                          VerticalAlignment="Center" />
                                 <Button Margin="0,0,0,5"
                                         Content="Lịch sử"
@@ -338,10 +343,11 @@
                             </StackPanel>
 
                             <StackPanel Orientation="Horizontal"
-                                        Margin="10,0,0,0">
+                                        Margin="10">
                                 <materialDesign:PackIcon Kind="TicketPercent"
                                                          Height="30"
                                                          Width="30"
+                                                         Margin="10,0,0,0"
                                                          VerticalAlignment="Center" />
                                 <Button Margin="0,0,0,5"
                                         Content="Voucher"
@@ -356,10 +362,11 @@
                             </StackPanel>
 
                             <StackPanel Orientation="Horizontal"
-                                        Margin="10,0,0,0">
+                                        Margin="10">
                                 <materialDesign:PackIcon Kind="AlertCircle"
                                                          Height="30"
                                                          Width="30"
+                                                         Margin="10,0,0,0"
                                                          VerticalAlignment="Center" />
                                 <Grid>
                                     <Button Margin="0,0,0,5"
@@ -367,6 +374,7 @@
                                             Height="50"
                                             FontSize="25"
                                             Width="240"
+                                            
                                             HorizontalContentAlignment="Left"
                                             Background="Transparent"
                                             BorderBrush="Transparent"
@@ -439,10 +447,12 @@
                                              PlacementMode="BottomAndAlignRightEdges">
                         <StackPanel Orientation="Vertical">
                             <Button Content="Đổi vai trò"
+                                    FontSize="20"
                                     Command="{Binding ChangeRoleCM}"
                                     CommandParameter="{Binding ElementName=mainadminwindow}"/>
                             <Button Content="Đăng xuất"
                                     Command="{Binding SignoutCM}"
+                                    FontSize="20"
                                     CommandParameter="{Binding ElementName=mainadminwindow}" />
                         </StackPanel>
                     </materialDesign:PopupBox>

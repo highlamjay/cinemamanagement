@@ -103,6 +103,11 @@
                             <GridView>
                                 <GridViewColumn Header="Mã phát hành"
                                                 Width="200">
+                                    <GridViewColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="Mã phát hành" FontSize="20" />
+                                        </DataTemplate>
+                                    </GridViewColumn.HeaderTemplate>
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBlock Text="{Binding Id}"
@@ -113,6 +118,11 @@
                                 </GridViewColumn>
                                 <GridViewColumn Header="Tên đợt phát hành"
                                                 Width="350">
+                                    <GridViewColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="Tên đợt phát hành" FontSize="20" />
+                                        </DataTemplate>
+                                    </GridViewColumn.HeaderTemplate>
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBlock Text="{Binding ReleaseName}"
@@ -123,6 +133,11 @@
                                 </GridViewColumn>
                                 <GridViewColumn Header="Từ ngày"
                                                 Width="150">
+                                    <GridViewColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="Từ ngày" FontSize="20" />
+                                        </DataTemplate>
+                                    </GridViewColumn.HeaderTemplate>
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBlock Text="{Binding StartDate,StringFormat=dd/MM/yyyy}"
@@ -133,6 +148,11 @@
                                 </GridViewColumn>
                                 <GridViewColumn Header="Đến ngày"
                                                 Width="150">
+                                    <GridViewColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="Đến ngày" FontSize="20" />
+                                        </DataTemplate>
+                                    </GridViewColumn.HeaderTemplate>
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBlock Text="{Binding FinishDate,StringFormat=dd/MM/yyyy}"
@@ -143,6 +163,11 @@
                                 </GridViewColumn>
                                 <GridViewColumn Header="Số lượng"
                                                 Width="150">
+                                    <GridViewColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="Số lượng" FontSize="20" />
+                                        </DataTemplate>
+                                    </GridViewColumn.HeaderTemplate>
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBlock Text="{Binding VCount}"
@@ -151,7 +176,12 @@
                                         </DataTemplate>
                                     </GridViewColumn.CellTemplate>
                                 </GridViewColumn>
-                                <GridViewColumn Header="Mệnh giá">
+                                <GridViewColumn Header="Mệnh giá" Width="145">
+                                    <GridViewColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="Mệnh giá" FontSize="20" />
+                                        </DataTemplate>
+                                    </GridViewColumn.HeaderTemplate>
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBlock Text="{Binding ParValue}"

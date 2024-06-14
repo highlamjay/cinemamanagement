@@ -138,11 +138,17 @@
                                  Grid.Row="2">
                 <ListView ItemsSource="{Binding Top5Movie}"
                           ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                  
                     <ListView.View>
 
                         <GridView>
                             <GridViewColumn Header="STT"
-                                            Width="90">
+                                            Width="105">
+                                <GridViewColumn.HeaderTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="STT" FontSize="20" />
+                                    </DataTemplate>
+                                </GridViewColumn.HeaderTemplate>
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
                                         <TextBlock  Text="{Binding RelativeSource={RelativeSource FindAncestor, 
@@ -155,6 +161,11 @@
                             </GridViewColumn>
                             <GridViewColumn Header="Tên phim"
                                             Width="290">
+                                <GridViewColumn.HeaderTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="Tên phim" FontSize="20" />
+                                    </DataTemplate>
+                                </GridViewColumn.HeaderTemplate>
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
                                         <TextBlock Text="{Binding DisplayName}"
@@ -163,8 +174,13 @@
                                     </DataTemplate>
                                 </GridViewColumn.CellTemplate>
                             </GridViewColumn>
-                            <GridViewColumn Header="Doanh thu"
+                            <GridViewColumn 
                                             Width="180">
+                                <GridViewColumn.HeaderTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="Doanh thu" FontSize="20" />
+                                    </DataTemplate>
+                                </GridViewColumn.HeaderTemplate>
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
                                         <TextBlock Text="{Binding RevenueStr}"
@@ -172,7 +188,12 @@
                                     </DataTemplate>
                                 </GridViewColumn.CellTemplate>
                             </GridViewColumn>
-                            <GridViewColumn Header="Số vé">
+                            <GridViewColumn Width="130" >
+                                <GridViewColumn.HeaderTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="Số vé" FontSize="20"  />
+                                    </DataTemplate>
+                                </GridViewColumn.HeaderTemplate>
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
                                         <TextBlock Text="{Binding TicketCount}"
@@ -287,8 +308,13 @@
                     <ListView.View>
 
                         <GridView>
-                            <GridViewColumn Header="STT"
-                                            Width="90">
+                            <GridViewColumn 
+                                            Width="105">
+                                <GridViewColumn.HeaderTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="STT" FontSize="20" />
+                                    </DataTemplate>
+                                </GridViewColumn.HeaderTemplate>
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
                                         <TextBlock  Text="{Binding RelativeSource={RelativeSource FindAncestor, 
@@ -301,6 +327,11 @@
                             </GridViewColumn>
                             <GridViewColumn Header="Tên sản phẩm"
                                             Width="280">
+                                <GridViewColumn.HeaderTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="Tên sản phẩm" FontSize="20" />
+                                    </DataTemplate>
+                                </GridViewColumn.HeaderTemplate>
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
                                         <TextBlock Text="{Binding DisplayName}"
@@ -311,6 +342,11 @@
                             </GridViewColumn>
                             <GridViewColumn Header="Doanh thu"
                                             Width="170">
+                                <GridViewColumn.HeaderTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="Doanh thu" FontSize="20" />
+                                    </DataTemplate>
+                                </GridViewColumn.HeaderTemplate>
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
                                         <TextBlock Text="{Binding RevenueStr}"
@@ -318,7 +354,12 @@
                                     </DataTemplate>
                                 </GridViewColumn.CellTemplate>
                             </GridViewColumn>
-                            <GridViewColumn Header="Số lượng">
+                            <GridViewColumn Header="Số lượng" Width="200">
+                                <GridViewColumn.HeaderTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="Số lượng" FontSize="20" />
+                                    </DataTemplate>
+                                </GridViewColumn.HeaderTemplate>
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
                                         <TextBlock Text="{Binding SalesQuantity}"

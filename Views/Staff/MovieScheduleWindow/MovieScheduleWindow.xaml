@@ -14,6 +14,7 @@
         Background="Transparent"
         WindowStartupLocation="CenterScreen"
         Height="400"
+        FontFamily="arial"
         AllowsTransparency="True"
         Width="700"
         MouseLeftButtonDown="Movie_Schedule_MouseLeftButtonDown">
@@ -27,9 +28,10 @@
                 <!--Thanh taskbar để kéo-->
                 <Border CornerRadius="8 8 0 0"
                         DockPanel.Dock="Top"
+                        BorderThickness="0"
                         Height="40"
                         Width="700"
-                        Background="#FF342B2B">
+                        Background="#132644">
                     <StackPanel Orientation="Horizontal">
                         <i:Interaction.Triggers>
                             <i:EventTrigger EventName="MouseLeftButtonDown">
@@ -45,18 +47,20 @@
                                     Width="auto"
                                     HorizontalAlignment="Center"
                                     Foreground="White"
-                                    Background="Blue"
+                                    Background="Transparent"
                                     Content="━"
+                                    BorderThickness="0"
                                     Click="Button_Click_1"
                                     FontSize="15"
                                     HorizontalContentAlignment="Left" />
                             <Button Cursor="Hand"
                                     Height="30"
                                     Width="auto"
+                                    BorderThickness="0"
                                     Margin="5,0,0,0"
                                     HorizontalAlignment="Center"
                                     Foreground="White"
-                                    Background="Red"
+                                    Background="Transparent"
                                     Content="X"
                                     Command="{Binding CloseCM}"
                                     CommandParameter="{Binding ElementName=Movie_Schedule}"
@@ -74,19 +78,20 @@
                 <StackPanel DockPanel.Dock="Top"
                             Height="60"
                             VerticalAlignment="Top"
-                            Background="#FFA1B9C0"
+                            Background="#132644"
                             Orientation="Horizontal">
                     <TextBlock FontSize="18"
                                VerticalAlignment="Center"
+                               Foreground="White"
                                Margin="20">
-                    <Italic>
+                
                         <Bold>
                             <Run Text="VMN Cinema" />
                         </Bold>
-                    </Italic>
+                    
                     </TextBlock>
-                    <Border BorderThickness="0.5"
-                            BorderBrush="Black"
+                    <Border BorderThickness="1"
+                            BorderBrush="White"
                             CornerRadius="8"
                             Width="150"
                             Height="35"
@@ -95,6 +100,7 @@
                                    Width="150"
                                    Height="40"
                                    FontSize="20"
+                                   Foreground="White"
                                    TextAlignment="Center"
                                    Margin="0,5,0,0" />
                     </Border>
@@ -105,7 +111,7 @@
                     <Image x:Name="imgframe"
                            Height="210"
                            HorizontalAlignment="Left"
-                           Margin="10 10 0 7" />
+                           Margin="10 10 10 10" />
                     <TextBlock Margin="10 0 0 10"
                                x:Name="txtframe"
                                FontWeight="Bold"
@@ -136,17 +142,19 @@
                                     </ListBox.ItemContainerStyle>
                                     <ListBox.ItemTemplate>
                                         <DataTemplate>
-                                            <Border Background="#ff97c5"
+                                            <Border Background="#ffffff"
                                                     BorderThickness="2"
                                                     BorderBrush="Black"
                                                     CornerRadius="5"
-                                                    Height="35"
-                                                    Width="75"
+                                                  
+                                                    Width="100"
                                                     HorizontalAlignment="Stretch"
                                                     x:Name="_borderShowtime"
                                                     MouseLeftButtonUp="Border_MouseLeftButtonUp"
                                                     Cursor="Hand">
                                                 <Label Content="{Binding StartTime}"
+                                                       VerticalAlignment="Center"
+                                                       HorizontalAlignment="Center"
                                                        FontSize="17" />
                                             </Border>
 
@@ -162,8 +170,9 @@
                                         x:Name="_Room"
                                         Visibility="Collapsed"
                                         BorderThickness="1"
-                                        BorderBrush="Black"
-                                        HorizontalAlignment="Left" />
+                                        BorderBrush="White"
+                                        Foreground="White"
+                                        HorizontalAlignment="Left" Background="#FF102A53" />
                             </Grid>
                         </StackPanel>
                     </Expander>

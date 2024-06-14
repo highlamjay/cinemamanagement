@@ -24,7 +24,7 @@
             <!---MAIN FRAME-->
             <Grid Grid.Row="1">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="15*" />
+                    <RowDefinition Height="17*" />
                     <RowDefinition Height="85*" />
                 </Grid.RowDefinitions>
 
@@ -103,13 +103,13 @@
                         <Label Content="Phim đang chiếu"
                                FontWeight="Bold"
                                FontSize="28"
-                               Margin="20,10,10,10" />
+                               Margin="30,15,10,10" />
                         <StackPanel Orientation="Horizontal"
-                                    Margin="0,0,0,10">
+                                    Margin="10,0,0,10">
                             <Grid>
                                 <StackPanel Orientation="Horizontal">
                                     <StackPanel Orientation="Horizontal"
-                                                Margin="20 10 0 5">
+                                                Margin="20 10 0 0">
                                         <materialDesign:PackIcon Kind="Magnify"
                                                                  Width="25"
                                                                  Height="35"
@@ -119,9 +119,10 @@
                                                  Width="300"
                                                  VerticalAlignment="Bottom"
                                                  Height="35"
-                                                 FontSize="16"
+                                                 FontSize="20"
                                                  Foreground="Black"
                                                  Padding="0 7 0 0"
+                                                 Margin="0,0,30,5"
                                                  materialDesign:HintAssist.Hint="Tìm kiếm phim"
                                                  FontWeight="DemiBold"
                                                  TextChanged="FilterBox_TextChanged" />
@@ -136,9 +137,10 @@
                                         <ComboBox materialDesign:HintAssist.Hint="Thể loại"
                                                   VerticalContentAlignment="Bottom"
                                                   Width="175"
+                                                  Margin="0,0,30,0"
                                                   Height="40"
                                                   HorizontalAlignment="Left"
-                                                  FontSize="17"
+                                                  FontSize="20"
                                                   FontWeight="DemiBold"
                                                   ItemsSource="{Binding GenreList}"
                                                   DisplayMemberPath="DisplayName"
@@ -166,9 +168,9 @@
                                     <DatePicker materialDesign:HintAssist.Hint="Ngày chiếu"
                                                 SelectedDate="{Binding SelectedDate,UpdateSourceTrigger=PropertyChanged}"
                                                 Text="{Binding SetCurrentDate,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
-                                                Width="175"
+                                                Width="205"
                                                 Height="40"
-                                                FontSize="15"
+                                                FontSize="20"
                                                 materialDesign:HintAssist.HintOpacity="0.5"
                                                 BorderBrush="Black"
                                                 Padding="0 10 0 0"

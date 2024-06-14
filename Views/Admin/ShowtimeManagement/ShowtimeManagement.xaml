@@ -111,12 +111,14 @@
             <!--Changing ROOM-->
             <StackPanel Orientation="Vertical"
                         Margin="5,18,0,0"
-                        Width="100"
+                        Width="200"
                         HorizontalAlignment="Left">
                 <RadioButton Style="{StaticResource MaterialDesignTabRadioButtonLeft}"
                              IsChecked="True"
                              Content="Toàn bộ"
                              x:Name="all"
+                             FontSize="20"
+                             Margin="10"
                              Padding="0,10,0,10"
                              BorderBrush="#0c70b6"
                              Command="{Binding ChangedRoomCM}"
@@ -126,14 +128,18 @@
                              IsChecked="False"
                              Content="Phòng 1"
                              x:Name="r1"
+                             Margin="10"
                              Padding="0,10,0,10"
                              Click="all_Click"
                              BorderBrush="#0c70b6"
+                             FontSize="20"
                              Command="{Binding ChangedRoomCM}"
                              CommandParameter="{Binding ElementName=r1}" />
                 <RadioButton Style="{StaticResource MaterialDesignTabRadioButtonLeft}"
                              IsChecked="False"
                              Content="Phòng 2"
+                             Margin="10"
+                             FontSize="20"
                              x:Name="r2"
                              Click="all_Click"
                              Padding="0,10,0,10"
@@ -143,7 +149,9 @@
                 <RadioButton Style="{StaticResource MaterialDesignTabRadioButtonLeft}"
                              Padding="0,10,0,10"
                              IsChecked="False"
+                             FontSize="20"
                              Content="Phòng 3"
+                             Margin="10"
                              x:Name="r3"
                              Click="all_Click"
                              BorderBrush="#0c70b6"
@@ -154,13 +162,16 @@
                              IsChecked="False"
                              Content="Phòng 4"
                              x:Name="r4"
+                             Margin="10"
                              Click="all_Click"
+                             FontSize="20"
                              BorderBrush="#0c70b6"
                              Command="{Binding ChangedRoomCM}"
                              CommandParameter="{Binding ElementName=r4}" />
                 <RadioButton Style="{StaticResource MaterialDesignTabRadioButtonLeft}"
                              Margin="0,4,4,4"
                              Padding="0,10,0,10"
+                             FontSize="20"
                              IsChecked="False"
                              Content="Phòng 5"
                              x:Name="r5"
@@ -173,7 +184,7 @@
 
             <!---Listview-->
             <materialDesign:Card Background="White"
-                                 Margin="100,20,30,20"
+                                 Margin="200,20,30,0"
                                  UniformCornerRadius="5">
                 <StackPanel>
                     <ListView x:Name="ShowtimeListview"
@@ -187,6 +198,11 @@
                             <GridView>
                                 <GridViewColumn Header="Tên phim"
                                                 Width="390">
+                                    <GridViewColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="Tên phim" FontSize="20" />
+                                        </DataTemplate>
+                                    </GridViewColumn.HeaderTemplate>
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBlock  Text="{Binding DisplayName}"
@@ -194,7 +210,12 @@
                                         </DataTemplate>
                                     </GridViewColumn.CellTemplate>
                                 </GridViewColumn>
-                                <GridViewColumn Header="Loại phim">
+                                <GridViewColumn Header="Loại phim" Width="150">
+                                    <GridViewColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="Loại phim" FontSize="20" />
+                                        </DataTemplate>
+                                    </GridViewColumn.HeaderTemplate>
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBlock  Text="{Binding MovieType}"
@@ -203,7 +224,12 @@
                                         </DataTemplate>
                                     </GridViewColumn.CellTemplate>
                                 </GridViewColumn>
-                                <GridViewColumn Header="Thời lượng">
+                                <GridViewColumn Header="Thời lượng" Width="170">
+                                    <GridViewColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="Thời lượng" FontSize="20" />
+                                        </DataTemplate>
+                                    </GridViewColumn.HeaderTemplate>
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBlock  Text="{Binding RunningTime}"
@@ -212,7 +238,12 @@
                                         </DataTemplate>
                                     </GridViewColumn.CellTemplate>
                                 </GridViewColumn>
-                                <GridViewColumn Header="Giờ chiếu">
+                                <GridViewColumn Header="Giờ chiếu" >
+                                    <GridViewColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="Giờ chiếu" FontSize="20" />
+                                        </DataTemplate>
+                                    </GridViewColumn.HeaderTemplate>
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
                                             <ListBox ItemsSource="{Binding Showtimes}">

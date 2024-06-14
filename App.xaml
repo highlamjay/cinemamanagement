@@ -58,11 +58,12 @@
                                       Background="{TemplateBinding Background}">
                                 <TextBlock Text="{TemplateBinding Property=Content}"
                                                VerticalAlignment="Center"
+                                           FontFamily="Arial"
                                                HorizontalAlignment="Left"
                                                Foreground="{TemplateBinding Property=Foreground}"
                                                Padding="1"
                                                Margin="2"
-                                               FontSize="13" />
+                                               FontSize="25" />
                             </Grid>
                         </ControlTemplate>
                     </Setter.Value>

@@ -34,7 +34,7 @@
                   VerticalAlignment="Bottom"
                   HorizontalAlignment="Left"
                   Margin="120,0,0,660"
-                  FontSize="15"
+                  FontSize="17"
                   Padding="0"
                   SelectedIndex="1"
                   x:Name="filtercbb"
@@ -97,6 +97,11 @@
 
                             <GridViewColumn Header="Sự cố"
                                             Width="590">
+                                <GridViewColumn.HeaderTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="Sự cố" FontSize="20" />
+                                    </DataTemplate>
+                                </GridViewColumn.HeaderTemplate>
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
                                         <StackPanel Orientation="Horizontal">
@@ -134,6 +139,11 @@
                             </GridViewColumn>
                             <GridViewColumn Header="Ngày nhận"
                                             Width="340">
+                                <GridViewColumn.HeaderTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="Ngày nhận" FontSize="20" />
+                                    </DataTemplate>
+                                </GridViewColumn.HeaderTemplate>
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
                                         <TextBlock Text="{Binding SubmittedAt}"
@@ -144,6 +154,11 @@
                             </GridViewColumn>
                             <GridViewColumn Header="Trạng thái"
                                             Width="170">
+                                <GridViewColumn.HeaderTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="Trạng thái" FontSize="20" />
+                                    </DataTemplate>
+                                </GridViewColumn.HeaderTemplate>
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
                                         <Border BorderThickness="1"

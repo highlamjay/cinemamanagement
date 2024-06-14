@@ -104,14 +104,16 @@
                                              Margin="30,10,0,10">
                             <StackPanel>
                                 <StackPanel Orientation="Horizontal">
-                                    <Label Content="Thu:"
+                                    <Label Content="Thu:        "
+                                           Margin="10,5,0,0"
                                            FontWeight="Bold"
-                                           FontSize="15" />
+                                           FontSize="20" />
                                     <TextBox Text="{Binding ReveRate}"
                                              BorderThickness="0"
+                                             Margin="10,5,0,0"
                                              IsHitTestVisible="False"
-                                             FontStyle="Italic"
-                                             FontSize="15"
+                                             FontWeight="Bold"
+                                             FontSize="20"
                                              TextChanged="TextBox_TextChanged" />
                                     <!--Tăng 🠕-->
                                 </StackPanel>
@@ -124,20 +126,29 @@
                                     <StackPanel Grid.Column="0"
                                                 Margin="5,0,0,0">
                                         <Label Content="Vé"
-                                               FontSize="20" />
+                                               FontSize="17"
+                                               Margin="5"/>
                                         <Label Content="{Binding TicketPc}"
                                                FontSize="25"
+                                               Margin="5"
                                                FontWeight="Bold" />
-                                        <Label Content="{Binding TicketReve}" />
+                                        <Label Content="{Binding TicketReve}"
+                                               FontSize="17"
+                                               Margin="5"/>
                                     </StackPanel>
                                     <StackPanel Grid.Column="1"
                                                 HorizontalAlignment="Center">
                                         <Label Content="Sản phẩm"
-                                               FontSize="20" />
+                                               Margin="5"
+                                               FontSize="17" />
                                         <Label Content="{Binding ProductPc}"
                                                FontWeight="Bold"
-                                               FontSize="25" />
-                                        <Label Content="{Binding ProductReve}" />
+                                               Margin="5"
+                                               FontSize="25"
+                                               />
+                                        <Label Content="{Binding ProductReve}" 
+                                               FontSize="17"
+                                               Margin="5"/>
                                     </StackPanel>
                                 </Grid>
                             </StackPanel>
@@ -147,12 +158,14 @@
                                              Margin="10,10,0,10">
                             <StackPanel>
                                 <StackPanel Orientation="Horizontal">
-                                    <Label Content="Chi:"
+                                    <Label Content="Chi:         "
                                            FontWeight="Bold"
-                                           FontSize="15" />
+                                           Margin="10,5,0,0"
+                                           FontSize="20" />
                                     <TextBox Text="{Binding ExpeRate}"
-                                             FontStyle="Italic"
-                                             FontSize="15"
+                                            Margin="10,5,0,0"
+                                             FontSize="20"
+                                             FontWeight="Bold"
                                              IsHitTestVisible="False"
                                              BorderThickness="0"
                                              TextChanged="TextBox_TextChanged_1" />
@@ -165,20 +178,28 @@
 
                                     <StackPanel Grid.Column="0">
                                         <Label Content="Sản phẩm"
-                                               FontSize="20" />
+                                               Margin="5"
+                                               FontSize="17" />
                                         <Label Content="{Binding ProductExPc}"
                                                FontSize="25"
+                                               Margin="5"
                                                FontWeight="Bold" />
-                                        <Label Content="{Binding ProductExpe}" />
+                                        <Label Content="{Binding ProductExpe}"
+                                               FontSize="17"
+                                               Margin="5"/>
                                     </StackPanel>
                                     <StackPanel Grid.Column="1"
                                                 HorizontalAlignment="Center">
                                         <Label Content="Sửa chữa"
-                                               FontSize="20" />
+                                               FontSize="17"
+                                               Margin="5"/>
                                         <Label Content="{Binding RepairPc}"
                                                FontWeight="Bold"
-                                               FontSize="25" />
-                                        <Label Content="{Binding RepairExpe}" />
+                                               FontSize="25"
+                                               Margin="5"/>
+                                        <Label Content="{Binding RepairExpe}"
+                                               FontSize="17"
+                                               Margin="5"/>
                                     </StackPanel>
                                 </Grid>
                             </StackPanel>
@@ -196,9 +217,9 @@
                                 </Grid.RowDefinitions>
 
                                 <Label Content="Tổng thu chi (VND)"
-                                       FontSize="15"
+                                       FontSize="17"
                                        FontWeight="Bold"
-                                       Margin="10,10,0,0"
+                                       Margin="20,10,0,0"
                                        Grid.Row="0" />
                                 <Grid Grid.Row="1">
                                     <Grid.ColumnDefinitions>
@@ -209,8 +230,9 @@
                                     <StackPanel Grid.Column="0">
 
                                         <!---BAR 1-->
-                                        <StackPanel Margin="10,0,0,0">
+                                        <StackPanel Margin="25,0,0,0">
                                             <Label Content="Thu"
+                                                   FontSize="17"
                                                    FontWeight="Bold" />
                                             <StackPanel Width="250"
                                                         HorizontalAlignment="Left">
@@ -259,8 +281,9 @@
                                         </StackPanel>
 
                                         <!---BAR 2-->
-                                        <StackPanel Margin="10,20,0,0">
+                                        <StackPanel Margin="25,20,0,0">
                                             <Label Content="Chi"
+                                                   FontSize="17"
                                                    FontWeight="Bold" />
                                             <StackPanel Width="250"
                                                         HorizontalAlignment="Left">

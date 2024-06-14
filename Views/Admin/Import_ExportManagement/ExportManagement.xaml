@@ -175,7 +175,12 @@
                 <ListView.View>
                     <GridView>
                         <GridViewColumn Header="Mã đơn"
-                                        Width="130">
+                                        Width="140">
+                            <GridViewColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="Mã đơn" FontSize="20" />
+                                </DataTemplate>
+                            </GridViewColumn.HeaderTemplate>
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
                                     <TextBlock  Text="{Binding Id}"
@@ -186,6 +191,11 @@
                         </GridViewColumn>
                         <GridViewColumn Header="Ngày xuất"
                                         Width="220">
+                            <GridViewColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="Ngày xuất" FontSize="20" />
+                                </DataTemplate>
+                            </GridViewColumn.HeaderTemplate>
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
                                     <TextBlock  Text="{Binding CreatedAt,
@@ -197,6 +207,11 @@ StringFormat=dd/MM/yyyy HH:mm:ss}"
                         </GridViewColumn>
                         <GridViewColumn Header="Khách hàng"
                                         Width="300">
+                            <GridViewColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="Khách hàng" FontSize="20" />
+                                </DataTemplate>
+                            </GridViewColumn.HeaderTemplate>
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
                                     <TextBlock  Text="{Binding CustomerName}"
@@ -208,6 +223,11 @@ StringFormat=dd/MM/yyyy HH:mm:ss}"
                         </GridViewColumn>
                         <GridViewColumn Header="Số điện thoại"
                                         Width="200">
+                            <GridViewColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="Số điện thoại" FontSize="20" />
+                                </DataTemplate>
+                            </GridViewColumn.HeaderTemplate>
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
                                     <TextBlock  Text="{Binding PhoneNumber}"
@@ -219,6 +239,11 @@ StringFormat=dd/MM/yyyy HH:mm:ss}"
 
                         <GridViewColumn Header="Tổng giá"
                                         Width="200">
+                            <GridViewColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="Tổng giá" FontSize="20" />
+                                </DataTemplate>
+                            </GridViewColumn.HeaderTemplate>
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
                                     <TextBlock  Text="{Binding OriginalTotalPriceStr}"
@@ -229,6 +254,11 @@ StringFormat=dd/MM/yyyy HH:mm:ss}"
                         </GridViewColumn>
                         <GridViewColumn Header="Giảm giá"
                                         Width="150">
+                            <GridViewColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="Giảm giá" FontSize="20" />
+                                </DataTemplate>
+                            </GridViewColumn.HeaderTemplate>
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
                                     <TextBlock  Text="{Binding DiscountPriceStr}"

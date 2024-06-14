@@ -59,7 +59,7 @@
                               Width="100"
                               Margin="10 0 0 0"
                               Padding="0,10,10,0"
-                              FontSize="13"
+                              FontSize="16"
                               SelectedIndex="0"
                               x:Name="cbbFilter"
                               SelectedValuePath="Content">
@@ -71,7 +71,7 @@
                               Width="100"
                               Margin="10 0 0 0"
                               Padding="0,10,10,0"
-                              FontSize="13"
+                              FontSize="16"
                               x:Name="filtercbb"
                               SelectedIndex="0"
                               SelectedItem="{Binding SelectedImportItemFilter}"
@@ -147,7 +147,12 @@
                 <ListView.View>
                     <GridView>
                         <GridViewColumn Header="Mã đơn"
-                                        Width="130">
+                                        Width="140">
+                            <GridViewColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="Mã đơn" FontSize="20" />
+                                </DataTemplate>
+                            </GridViewColumn.HeaderTemplate>
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
                                     <TextBlock  Text="{Binding Id}"
@@ -158,6 +163,11 @@
                         </GridViewColumn>
                         <GridViewColumn Header="Tên sản phẩm"
                                         Width="300">
+                            <GridViewColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="Tên sản phẩm" FontSize="20" />
+                                </DataTemplate>
+                            </GridViewColumn.HeaderTemplate>
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
                                     <TextBlock  Text="{Binding ProductName}"
@@ -168,6 +178,11 @@
                         </GridViewColumn>
                         <GridViewColumn Header="Số lượng"
                                         Width="200">
+                            <GridViewColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="Số lượng" FontSize="20" />
+                                </DataTemplate>
+                            </GridViewColumn.HeaderTemplate>
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
                                     <TextBlock  Text="{Binding Quantity}"
@@ -178,6 +193,11 @@
                         </GridViewColumn>
                         <GridViewColumn Header="Tổng giá"
                                         Width="200">
+                            <GridViewColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="Tổng giá" FontSize="20" />
+                                </DataTemplate>
+                            </GridViewColumn.HeaderTemplate>
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
                                     <TextBlock  Text="{Binding  ImportPriceStr}"
@@ -188,6 +208,11 @@
                         </GridViewColumn>
                         <GridViewColumn Header="Nhân viên"
                                         Width="200">
+                            <GridViewColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="Nhân viên" FontSize="20" />
+                                </DataTemplate>
+                            </GridViewColumn.HeaderTemplate>
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
                                     <TextBlock  Text="{Binding StaffName}"
@@ -198,6 +223,11 @@
                         </GridViewColumn>
                         <GridViewColumn Header="Ngày nhập"
                                         Width="200">
+                            <GridViewColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="Ngày nhập" FontSize="20" />
+                                </DataTemplate>
+                            </GridViewColumn.HeaderTemplate>
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
                                     <TextBlock  Text="{Binding CreatedAt, StringFormat=dd/MM/yyyy HH:mm:ss}"
